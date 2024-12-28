@@ -1,5 +1,6 @@
 [
   {
-    "category": "Test"
+    "category": "Test",
+    "json": "https://raw.githubusercontent.com/ios7jbpro/wallify/refs/heads/main/test.json"
   }
 ]
