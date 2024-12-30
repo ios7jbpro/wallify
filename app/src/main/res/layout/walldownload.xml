@@ -333,7 +333,7 @@
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="4dp"
 				android:layout_weight="1"
-				android:background="@drawable/roundedbg"
+				android:background="@drawable/activetab"
 				android:gravity="center_horizontal|center_vertical"
 				android:padding="16dp"
 				android:text="Download"
@@ -346,14 +346,14 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="4dp"
+				android:layout_weight="1"
+				android:background="@drawable/activetab"
 				android:gravity="center_horizontal|center_vertical"
 				android:padding="16dp"
 				android:text="Set wallpaper"
-				android:textSize="12sp"
-				android:layout_weight="1"
-				android:background="@drawable/roundedbg"
 				android:textColor="@color/textprimary"
-				android:textStyle="bold"/>
+				android:textSize="12sp"
+				android:textStyle="bold" />
 		</LinearLayout>
 	</LinearLayout>
 	<LinearLayout
