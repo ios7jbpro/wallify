@@ -3260,7 +3260,6 @@ int id ignore 0x7f0800da
 int id ignoreRequest 0x7f0800db
 int id image 0x7f0800dc
 int id imageview1 0x7f0800dd
-int id imageview2 0x7f0800de
 int id imageview3 0x7f0800df
 int id indeterminate 0x7f0800e0
 int id info 0x7f0800e1

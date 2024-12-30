@@ -51,7 +51,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private LinearLayout linear2;
 	private LinearLayout linear5;
 	private LinearLayout linear4;
-	private ImageView imageview2;
 	private TextView textview1;
 	private LinearLayout linear20;
 	private TextView textview4;
@@ -116,7 +115,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 		linear2 = findViewById(R.id.linear2);
 		linear5 = findViewById(R.id.linear5);
 		linear4 = findViewById(R.id.linear4);
-		imageview2 = findViewById(R.id.imageview2);
 		textview1 = findViewById(R.id.textview1);
 		linear20 = findViewById(R.id.linear20);
 		textview4 = findViewById(R.id.textview4);
@@ -161,13 +159,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 		wallLink = getSharedPreferences("wallLink", Activity.MODE_PRIVATE);
 		config = getSharedPreferences("config", Activity.MODE_PRIVATE);
 		temporaryCache = getSharedPreferences("temporaryCache", Activity.MODE_PRIVATE);
-		
-		imageview2.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View _view) {
-				finish();
-			}
-		});
 		
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -234,7 +225,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 			 
 			        break;
 			    case Configuration.UI_MODE_NIGHT_NO:
-			imageview2.setColorFilter(0xFF000000, PorterDuff.Mode.MULTIPLY);
 			break; 
 		}
 		linear7.setClipToOutline(true);

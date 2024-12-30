@@ -56,7 +56,6 @@ id edittext1
 id gridlinear
 id gridview1
 id imageview1
-id imageview2
 id imageview3
 id linear1
 id linear10
