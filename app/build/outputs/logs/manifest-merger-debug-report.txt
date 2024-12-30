@@ -10,6 +10,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\baris\.g
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\baris\.gradle\caches\8.9\transforms\898b79dd632f89eb91b6f092b9b23fc3\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\baris\.gradle\caches\8.9\transforms\49e7a79235e8cd2249e241b7909bd3a9\transformed\jetified-glide-4.16.0\AndroidManifest.xml:2:1-9:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\baris\.gradle\caches\8.9\transforms\fc9e761b238324c98a00fba01fd8aa16\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.palette:palette-ktx:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\ee3687f775e787cf88b35ff91cf519a5\transformed\jetified-palette-ktx-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.palette:palette:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\608bd8a4847e5ade6bce6128b5e4351f\transformed\palette-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\3d28088c251160997077d94e075ec889\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\baris\.gradle\caches\8.9\transforms\f7b0b8e4826151d4f0fde7ece106bc6f\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\baris\.gradle\caches\8.9\transforms\f769faa85cb03cfd6363f4c4b61de208\transformed\jetified-activity-1.8.0\AndroidManifest.xml:17:1-22:12
@@ -44,10 +46,10 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\baris\.gradle\cach
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\b75081d759d4d0661067dd98aaf00305\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\e0cfc2f1318aa9d743aaf78228a8a786\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\baris\.gradle\caches\8.9\transforms\6e326e57d992d9a53732c4a53fe9a6ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\baris\.gradle\caches\8.9\transforms\2dc212cba2a31f8fb70db43f771f87f8\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\f3b8cfd6ca7b1bb9db1b1c3ecfd48fb4\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\d3fb90e1b988627b08553c5f202e6c71\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\29fd2ee63e3ba22ca86cbdb18bc5b9f2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\baris\.gradle\caches\8.9\transforms\2dc212cba2a31f8fb70db43f771f87f8\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\baris\.gradle\caches\8.9\transforms\1ef3a90e6db74461d02942b37be1b4f3\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 	package
 		ADDED from C:\Users\baris\Downloads\Wallify\app\src\main\AndroidManifest.xml:4:2-28
@@ -241,6 +243,10 @@ MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\baris\.gradle\cach
 MERGED from [com.github.bumptech.glide:glide:4.16.0] C:\Users\baris\.gradle\caches\8.9\transforms\49e7a79235e8cd2249e241b7909bd3a9\transformed\jetified-glide-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\baris\.gradle\caches\8.9\transforms\fc9e761b238324c98a00fba01fd8aa16\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\baris\.gradle\caches\8.9\transforms\fc9e761b238324c98a00fba01fd8aa16\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.palette:palette-ktx:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\ee3687f775e787cf88b35ff91cf519a5\transformed\jetified-palette-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette-ktx:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\ee3687f775e787cf88b35ff91cf519a5\transformed\jetified-palette-ktx-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\608bd8a4847e5ade6bce6128b5e4351f\transformed\palette-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.palette:palette:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\608bd8a4847e5ade6bce6128b5e4351f\transformed\palette-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\3d28088c251160997077d94e075ec889\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\3d28088c251160997077d94e075ec889\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\baris\.gradle\caches\8.9\transforms\f7b0b8e4826151d4f0fde7ece106bc6f\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
@@ -309,14 +315,14 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\baris\.gradle\ca
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\e0cfc2f1318aa9d743aaf78228a8a786\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\baris\.gradle\caches\8.9\transforms\6e326e57d992d9a53732c4a53fe9a6ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\baris\.gradle\caches\8.9\transforms\6e326e57d992d9a53732c4a53fe9a6ef\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\baris\.gradle\caches\8.9\transforms\2dc212cba2a31f8fb70db43f771f87f8\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\baris\.gradle\caches\8.9\transforms\2dc212cba2a31f8fb70db43f771f87f8\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\f3b8cfd6ca7b1bb9db1b1c3ecfd48fb4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\f3b8cfd6ca7b1bb9db1b1c3ecfd48fb4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\d3fb90e1b988627b08553c5f202e6c71\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\d3fb90e1b988627b08553c5f202e6c71\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\29fd2ee63e3ba22ca86cbdb18bc5b9f2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\29fd2ee63e3ba22ca86cbdb18bc5b9f2\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\baris\.gradle\caches\8.9\transforms\2dc212cba2a31f8fb70db43f771f87f8\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\baris\.gradle\caches\8.9\transforms\2dc212cba2a31f8fb70db43f771f87f8\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\baris\.gradle\caches\8.9\transforms\1ef3a90e6db74461d02942b37be1b4f3\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\baris\.gradle\caches\8.9\transforms\1ef3a90e6db74461d02942b37be1b4f3\transformed\jetified-annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 	android:targetSdkVersion

@@ -28,6 +28,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.*;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -35,12 +37,14 @@ import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.*;
+import java.nio.file.attribute.FileTime;
 import java.text.*;
 import java.util.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.*;
 import org.json.*;
+import androidx.palette.graphics.Palette;
 
 public class WalldownloadActivity extends AppCompatActivity {
 	
@@ -89,6 +93,14 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private ImageView More;
 	private TextView button1;
 	private TextView button2;
+	private LinearLayout color1;
+	private LinearLayout color2;
+	private LinearLayout color3;
+	private LinearLayout color4;
+	private LinearLayout color5;
+	private LinearLayout color6;
+	private LinearLayout colorpreviews;
+	private LinearLayout colorpreviewsloading;
 	
 	private SharedPreferences selectedItemList;
 	private RequestNetwork fetchJson;
@@ -153,6 +165,14 @@ public class WalldownloadActivity extends AppCompatActivity {
 		More = findViewById(R.id.More);
 		button1 = findViewById(R.id.button1);
 		button2 = findViewById(R.id.button2);
+		color1 = findViewById(R.id.color1);
+		color2 = findViewById(R.id.color2);
+		color3 = findViewById(R.id.color3);
+		color4 = findViewById(R.id.color4);
+		color5 = findViewById(R.id.color5);
+		color6 = findViewById(R.id.color6);
+		colorpreviews = findViewById(R.id.colorpreviews);
+		colorpreviewsloading = findViewById(R.id.colorpreviewsloading);
 		selectedItemList = getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		fetchJson = new RequestNetwork(this);
 		downloadWall = new RequestNetwork(this);
@@ -215,7 +235,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 			}
 		};
 	}
-	
+
+
 	private void initializeLogic() {
 		// Calls the specified repo
 		fetchJson.startRequestNetwork(RequestNetworkController.GET, temporaryCache.getString("directrepo", ""), "", _fetchJson_request_listener);
@@ -229,6 +250,35 @@ public class WalldownloadActivity extends AppCompatActivity {
 		}
 		linear7.setClipToOutline(true);
 		linear9.setClipToOutline(true);
+
+		// Palette palette = Palette.from(imageview1.getDrawable()).getBitmap());
+		// int vibrantColor = palette.getVibrantColor(0x000000);
+		// color1.setBackgroundColor(vibrantColor);
+
+		colorpreviews.setVisibility(View.GONE);
+
+		new Handler(Looper.getMainLooper()).postDelayed(() -> {
+			// Code to execute after 5 seconds
+
+		Bitmap bitmap = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
+			Palette.from(bitmap).generate(palette -> {
+				int vibrant = palette.getDominantColor(0x000000); // <=== color you want
+				int vibrantLight = palette.getLightVibrantColor(0x000000);
+				int vibrantDark = palette.getDarkVibrantColor(0x000000);
+				int muted = palette.getMutedColor(0x000000);
+				int mutedLight = palette.getLightMutedColor(0x000000);
+				int mutedDark = palette.getDarkMutedColor(0x000000);
+				color1.setBackgroundColor(vibrant);
+				color2.setBackgroundColor(muted);
+				color3.setBackgroundColor(mutedDark);
+				color4.setBackgroundColor(mutedLight);
+				color5.setBackgroundColor(vibrantLight);
+				color6.setBackgroundColor(vibrantDark);
+			});
+			Log.d("DelayExample", "This code runs after 5 seconds");
+			colorpreviews.setVisibility(View.VISIBLE);
+			colorpreviewsloading.setVisibility(View.GONE);
+		}, (int)(Double.parseDouble(config.getString("timeout", ""))));
 	}
 	
 	

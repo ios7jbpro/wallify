@@ -3166,6 +3166,14 @@ int id clip_horizontal 0x7f08007c
 int id clip_vertical 0x7f08007d
 int id clockwise 0x7f08007e
 int id collapseActionView 0x7f08007f
+int id color1 0x7f080202
+int id color2 0x7f080207
+int id color3 0x7f080208
+int id color4 0x7f080209
+int id color5 0x7f08020a
+int id color6 0x7f08020b
+int id colorpreviews 0x7f080203
+int id colorpreviewsloading 0x7f080204
 int id compress 0x7f080080
 int id confirm_button 0x7f080081
 int id container 0x7f080082
@@ -3404,6 +3412,7 @@ int id pin 0x7f08016a
 int id position 0x7f08016b
 int id postLayout 0x7f08016c
 int id pressed 0x7f08016d
+int id progressBar 0x7f080205
 int id progress_circular 0x7f08016e
 int id progress_horizontal 0x7f08016f
 int id progressbar1 0x7f080170
@@ -3496,6 +3505,7 @@ int id textSpacerNoButtons 0x7f0801c6
 int id textSpacerNoTitle 0x7f0801c7
 int id textStart 0x7f0801c8
 int id textTop 0x7f0801c9
+int id textView 0x7f080206
 int id text_input_end_icon 0x7f0801ca
 int id text_input_error_icon 0x7f0801cb
 int id text_input_start_icon 0x7f0801cc
