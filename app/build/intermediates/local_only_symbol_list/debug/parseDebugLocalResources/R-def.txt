@@ -83,12 +83,14 @@ id linear6
 id linear7
 id linear8
 id linear9
+id linearpreviewcard
 id listview1
 id progressBar
 id progressbar1
 id rootlinear
 id tempcardview
 id textView
+id textView2
 id textview1
 id textview2
 id textview3

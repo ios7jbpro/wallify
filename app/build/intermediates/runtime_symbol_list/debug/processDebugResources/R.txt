@@ -3303,6 +3303,7 @@ int id linear6 0x7f080105
 int id linear7 0x7f080106
 int id linear8 0x7f080107
 int id linear9 0x7f080108
+int id linearpreviewcard 0x7f08020c
 int id listMode 0x7f080109
 int id list_item 0x7f08010a
 int id listview1 0x7f08010b
@@ -3506,6 +3507,7 @@ int id textSpacerNoTitle 0x7f0801d0
 int id textStart 0x7f0801d1
 int id textTop 0x7f0801d2
 int id textView 0x7f0801d3
+int id textView2 0x7f08020d
 int id text_input_end_icon 0x7f0801d4
 int id text_input_error_icon 0x7f0801d5
 int id text_input_start_icon 0x7f0801d6

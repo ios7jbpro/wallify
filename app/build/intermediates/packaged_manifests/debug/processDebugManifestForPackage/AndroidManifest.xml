@@ -24,11 +24,15 @@
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
         android:debuggable="true"
         android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="true"
+        android:screenOrientation="unspecified"
+        android:supportsPictureInPicture="true"
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
@@ -37,6 +41,7 @@
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:exported="true"
             android:hardwareAccelerated="true"
+            android:resizeableActivity="true"
             android:screenOrientation="portrait"
             android:supportsPictureInPicture="true"
             android:windowSoftInputMode="stateHidden" >
@@ -50,6 +55,7 @@
             android:name="com.ios7.wallify.WalldownloadActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
             android:hardwareAccelerated="true"
+            android:resizeableActivity="true"
             android:screenOrientation="portrait"
             android:supportsPictureInPicture="true"
             android:windowSoftInputMode="stateHidden" />
