@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="activetab">#FFE0E0E0</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="backgroundviolent">#f0f0f0</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorControlHighlight">#BBDEFB</color>
+    <color name="colorControlNormal">#90CAF9</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="textactivetab">#FFFFFFFF</color>
+    <color name="textprimary">#FF000000</color>
+    <color name="titletextcolor">#FF2196F3</color>
+    <string name="app_name">Wallify</string>
+    <string name="header">Hhhhh</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+<item name="colorPrimary">@color/colorPrimary</item>
+<item name="colorPrimaryDark">@color/backgroundviolent</item>
+<item name="colorAccent">@color/colorAccent</item>
+<item name="colorControlHighlight">@color/colorControlHighlight</item>
+<item name="colorControlNormal">@color/colorControlNormal</item>
+<item name="android:windowLightStatusBar">true</item>
+<item name="android:navigationBarColor">@color/backgroundviolent</item>
+<item name="android:windowLightNavigationBar">true</item>
+</style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+<item name="android:windowFullscreen">true</item>
+<item name="android:windowContentOverlay">@null</item>
+</style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light"/>
+</resources>

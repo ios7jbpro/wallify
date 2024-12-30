@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#FF000000</color>
+    <color name="backgroundviolent">#303030</color>
+    <color name="activetab">#FF424242</color>
+    <color name="textprimary">#FFFFFFFF</color>
+    <color name="textactivetab">#FF000000</color>
+    <color name="titletextcolor">#FF2196F3</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#FF000000</color>
+    <color name="colorControlHighlight">#1565C0</color>
+    <color name="colorControlNormal">#1976D2</color>
+</resources>

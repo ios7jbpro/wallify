@@ -1,0 +1,118 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical"
+		android:background="@drawable/roundedbg">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:orientation="vertical"
+			android:background="@drawable/roundedbg">
+			<TextView
+				android:id="@+id/textview5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Settings"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:textColor="@color/textprimary" />
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/roundedbgviolent">
+				<TextView
+					android:id="@+id/textview6"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Wallpaper load timeout"
+					android:textSize="12sp"
+					android:textColor="@color/textprimary" />
+				<LinearLayout
+					android:id="@+id/linear5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="right|center_vertical"
+					android:orientation="horizontal">
+					<EditText
+						android:id="@+id/edittext1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="12sp"
+						android:hint="Timeout"
+						android:textColorHint="#607D8B"
+						android:background="@color/backgroundviolent"
+						android:textColor="@color/textprimary" />
+					<TextView
+						android:id="@+id/textview7"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="ms"
+						android:textSize="11sp"
+						android:textColor="@color/textprimary" />
+				</LinearLayout>
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Wallify"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:textColor="@color/textprimary" />
+			<LinearLayout
+				android:id="@+id/linear3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:background="@drawable/roundedbgviolent">
+				<de.hdodenhof.circleimageview.CircleImageView
+					android:id="@+id/circleimageview1"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:src="@drawable/devpfp1"
+					app:civ_border_width="3dp"
+					app:civ_border_color="#008DCD"
+					app:civ_circle_background_color="#FFFFFF"
+					app:civ_border_overlay="true" />
+				<TextView
+					android:id="@+id/textview4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="ios7jbpro - Main Dev"
+					android:textSize="14sp"
+					android:textColor="@color/textprimary" />
+			</LinearLayout>
+			<TextView
+				android:id="@+id/textview3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="DESPITE ALL MY RAGE\n\nall image sources are mentioned in names"
+				android:textSize="12sp"
+				android:textColor="@color/textprimary" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
