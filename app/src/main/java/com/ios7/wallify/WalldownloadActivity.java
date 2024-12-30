@@ -4,6 +4,7 @@ import android.animation.*;
 import android.app.*;
 import android.app.Activity;
 import android.content.*;
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.*;
@@ -45,6 +46,8 @@ import java.util.HashMap;
 import java.util.regex.*;
 import org.json.*;
 import androidx.palette.graphics.Palette;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 
 public class WalldownloadActivity extends AppCompatActivity {
 	
@@ -120,7 +123,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 		initialize(_savedInstanceState);
 		initializeLogic();
 	}
-	
+
 	private void initialize(Bundle _savedInstanceState) {
 		linear1 = findViewById(R.id.linear1);
 		linear6 = findViewById(R.id.linear6);
@@ -274,11 +277,57 @@ public class WalldownloadActivity extends AppCompatActivity {
 				color4.setBackgroundColor(mutedLight);
 				color5.setBackgroundColor(vibrantLight);
 				color6.setBackgroundColor(vibrantDark);
+				// Code that when you tap on a color, it copies its hex code to clipboard
+				color1.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						String hexColor = String.format("#%06X", (0xFFFFFF & vibrant));
+						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+					}
+				});
+				color2.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						String hexColor = String.format("#%06X", (0xFFFFFF & muted));
+						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+					}
+				});
+				color3.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						String hexColor = String.format("#%06X", (0xFFFFFF & mutedDark));
+						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+					}
+				});
+				color4.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						String hexColor = String.format("#%06X", (0xFFFFFF & mutedLight));
+						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+					}
+				});
+				color5.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						String hexColor = String.format("#%06X", (0xFFFFFF & vibrantLight));
+						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+					}
+				});
+				color6.setOnClickListener(new OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						String hexColor = String.format("#%06X", (0xFFFFFF & vibrantDark));
+						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+					}
+				});
 			});
 			Log.d("DelayExample", "This code runs after 5 seconds");
 			colorpreviews.setVisibility(View.VISIBLE);
 			colorpreviewsloading.setVisibility(View.GONE);
 		}, (int)(Double.parseDouble(config.getString("timeout", ""))));
+
+		// Code that when you tap on a color, it copies its hex code to clipboard
+
 	}
 	
 	
