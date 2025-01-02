@@ -91,6 +91,7 @@ id rootlinear
 id tempcardview
 id textView
 id textView2
+id textView3
 id textview1
 id textview2
 id textview3
