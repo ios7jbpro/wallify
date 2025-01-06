@@ -119,6 +119,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private Intent setWallLoader = new Intent();
 	private SharedPreferences config;
 	private SharedPreferences temporaryCache;
+	private TextView textViewCrop;
+	private Intent intentCrop;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -181,6 +183,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 		color5 = findViewById(R.id.color5);
 		color6 = findViewById(R.id.color6);
 		colorpreviews = findViewById(R.id.colorpreviews);
+		textViewCrop = findViewById(R.id.textViewCrop);
 		colorpreviewsloading = findViewById(R.id.colorpreviewsloading);
 		selectedItemList = getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		fetchJson = new RequestNetwork(this);
@@ -188,6 +191,17 @@ public class WalldownloadActivity extends AppCompatActivity {
 		wallLink = getSharedPreferences("wallLink", Activity.MODE_PRIVATE);
 		config = getSharedPreferences("config", Activity.MODE_PRIVATE);
 		temporaryCache = getSharedPreferences("temporaryCache", Activity.MODE_PRIVATE);
+
+		textViewCrop.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				// Launch the crop activity
+				Intent intentCrop = new Intent(getApplicationContext(), CropWallpaper.class);
+				// Set an activity key that contains the sharedprefs so it can be loaded in the next activity directly
+				intentCrop.putExtra("link", Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()));
+				startActivity(intentCrop);
+			}
+		});
 		
 		button1.setOnClickListener(new View.OnClickListener() {
 			@Override

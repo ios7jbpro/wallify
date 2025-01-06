@@ -1,118 +1,138 @@
 [
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_categorylist.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\categorylist.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_main.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\main.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_hk_personal_wallpaper.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\hk_personal_wallpaper.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_content_crop_wallpaper.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\content_crop_wallpaper.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_setwall1.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\setwall1.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_jhgg_1.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\jhgg_1.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_jhgg_1.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\jhgg_1.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_fade.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\fade.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-33:/layout_setwall1.xml.flat",
-        "source": "com.ios7.wallify.app-main-35:/layout/setwall1.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_wall_icon.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\wall_icon.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_main.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\main.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_hk_personal_wallpaper.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\hk_personal_wallpaper.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable_roundedbgviolent.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable\\roundedbgviolent.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_walldownload.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/walldownload.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_heeh_3.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\heeh_3.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_heeh_2.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\heeh_2.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_ic_apps_white.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\ic_apps_white.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_massage.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\massage.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_setwall2.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\setwall2.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable_activetab.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable\\activetab.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_roundedbgviolent.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\roundedbgviolent.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable_inactivetab.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable\\inactivetab.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_fragment_second.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\fragment_second.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_ic_arrow_back_white.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\ic_arrow_back_white.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_heeh_1.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\heeh_1.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_heeh_1.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\heeh_1.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_devpfp1.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\devpfp1.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_settings_dialog_fragment.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\settings_dialog_fragment.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_activetab.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\activetab.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable_roundedbg.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable\\roundedbg.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_activity_crop_wallpaper.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\activity_crop_wallpaper.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_wall_icon.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\wall_icon.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_inactivetab.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\inactivetab.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_walldownload.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\walldownload.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_jhgg_2.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\jhgg_2.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_categorylist.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\categorylist.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_devpfp1.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\devpfp1.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_jhgg_2.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\jhgg_2.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable_fadecategory.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable\\fadecategory.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_ic_apps_white.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\ic_apps_white.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_setwall2.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\setwall2.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_heeh_3.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\heeh_3.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable_fade.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable\\fade.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_default_image.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\default_image.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_wallpapers_fragment.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\wallpapers_fragment.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_setwall1.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\setwall1.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\layout_wallpaperlist.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\layout\\wallpaperlist.xml"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_walldownload.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\walldownload.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_heeh_2.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\heeh_2.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_massage.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\massage.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_phone.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\phone.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_ic_arrow_back_white.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\ic_arrow_back_white.png"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\drawable-xhdpi_default_image.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\drawable-xhdpi\\default_image.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_fadecategory.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\fadecategory.xml"
     },
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-33:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-35:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_wallpaperlist.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\wallpaperlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_wallpapers_fragment.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\wallpapers_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_fragment_first.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_roundedbg.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\roundedbg.xml"
+    },
+    {
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_phone.png.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\phone.png"
+    },
+    {
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_settings_dialog_fragment.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\settings_dialog_fragment.xml"
     }
 ]
