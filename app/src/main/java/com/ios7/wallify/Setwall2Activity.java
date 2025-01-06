@@ -60,6 +60,8 @@ public class Setwall2Activity extends AppCompatActivity {
 	
 	private void initializeLogic() {
 		// Placebo activity. Its here to ensure that the user cant interact while wallpaper loads
+		progressbar1.setVisibility(View.GONE);
+		textview1.setText("Image failed to load. Going back in 5 seconds.");
 		dismissDelay = new TimerTask() {
 			@Override
 			public void run() {
@@ -202,4 +204,4 @@ public class Setwall2Activity extends AppCompatActivity {
 	public int getDisplayHeightPixels() {
 		return getResources().getDisplayMetrics().heightPixels;
 	}
-}
+}

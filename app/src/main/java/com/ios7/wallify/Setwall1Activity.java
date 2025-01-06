@@ -28,6 +28,9 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
+
 import java.io.*;
 import java.text.*;
 import java.util.*;
@@ -62,34 +65,48 @@ public class Setwall1Activity extends AppCompatActivity {
 	}
 	
 	private void initializeLogic() {
-		Glide.with(getApplicationContext()).load(Uri.parse(wallLink.getString("wallLink", ""))).into(imageview1);
-		// Calls the second temporary loader activity so that this activity loads the wallpaper
-		loadDialogIntent.setClass(getApplicationContext(), Setwall2Activity.class);
-		startActivity(loadDialogIntent);
-		// Waits the specified timeout for wallpaper to load, then sets the imageview1 as the wallpaper
-		loadDelay = new TimerTask() {
-			@Override
-			public void run() {
-				runOnUiThread(new Runnable() {
+		// Show a toast informing the user that the app will attempt to set wallpaper
+		Toast.makeText(getApplicationContext(), "Loading in high-res and setting wallpaper...", Toast.LENGTH_SHORT).show();
+		Glide.with(getApplicationContext())
+				.load(Uri.parse(wallLink.getString("wallLink", "")))
+				.into(new SimpleTarget<Drawable>() {
 					@Override
-					public void run() {
+					public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+						imageview1.setImageDrawable(resource); // Set the image into the ImageView
 						Bitmap bitmapImg = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
-						
-						            WallpaperManager wallManager = WallpaperManager.getInstance(getApplicationContext());
-						            try {
-							                wallManager.clear();
-							                wallManager.setBitmap(bitmapImg);
-							
-							
-							            } catch (IOException ex) {
-							
-							            }
+
+						WallpaperManager wallManager = WallpaperManager.getInstance(getApplicationContext());
+						try {
+							wallManager.clear();
+							wallManager.setBitmap(bitmapImg);
+
+
+						} catch (IOException ex) {
+
+						}
 						finish();
 					}
+
+					@Override
+					public void onLoadFailed(@Nullable Drawable errorDrawable) {
+						// Calls the second error activity
+						loadDialogIntent.setClass(getApplicationContext(), Setwall2Activity.class);
+						startActivity(loadDialogIntent);
+						// Waits the specified timeout then quits back to walldownload
+						loadDelay = new TimerTask() {
+							@Override
+							public void run() {
+								runOnUiThread(new Runnable() {
+									@Override
+									public void run() {
+										finish();
+									}
+								});
+							}
+						};
+						_timer.schedule(loadDelay, (int)(Double.parseDouble(config.getString("timeout", ""))));
+					}
 				});
-			}
-		};
-		_timer.schedule(loadDelay, (int)(Double.parseDouble(config.getString("timeout", ""))));
 	}
 	
 	
@@ -143,4 +160,4 @@ public class Setwall1Activity extends AppCompatActivity {
 	public int getDisplayHeightPixels() {
 		return getResources().getDisplayMetrics().heightPixels;
 	}
-}
+}

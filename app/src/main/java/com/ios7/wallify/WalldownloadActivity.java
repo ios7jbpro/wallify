@@ -35,6 +35,8 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.SimpleTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.*;
@@ -96,6 +98,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private ImageView More;
 	private TextView button1;
 	private TextView button2;
+	private TextView textViewLoading;
+	private ProgressBar progress_bar_loading;
 	private LinearLayout color1;
 	private LinearLayout color2;
 	private LinearLayout color3;
@@ -138,6 +142,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 		linear8 = findViewById(R.id.linear8);
 		textview3 = findViewById(R.id.textview3);
 		textview2 = findViewById(R.id.textview2);
+		textViewLoading = findViewById(R.id.textViewLoading);
+		progress_bar_loading = findViewById(R.id.progress_bar_loading);
 		linear19 = findViewById(R.id.linear19);
 		imageview1 = findViewById(R.id.imageview1);
 		linear10 = findViewById(R.id.linear10);
@@ -207,8 +213,95 @@ public class WalldownloadActivity extends AppCompatActivity {
 				final String _response = _param2;
 				final HashMap<String, Object> _responseHeaders = _param3;
 				walljsonlistmap = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>(){}.getType());
-				Glide.with(getApplicationContext()).load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString())).into(imageview1);
-				Glide.with(getApplicationContext()).load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString())).into(imageview3);
+				Glide.with(getApplicationContext())
+						.load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
+						.into(new SimpleTarget<Drawable>() {
+							@Override
+							public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+								imageview1.setImageDrawable(resource); // Set the image resource into the ImageView
+								Bitmap bitmap = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
+								Palette.from(bitmap).generate(palette -> {
+									int vibrant = palette.getDominantColor(0x000000); // <=== color you want
+									int vibrantLight = palette.getLightVibrantColor(0x000000);
+									int vibrantDark = palette.getDarkVibrantColor(0x000000);
+									int muted = palette.getMutedColor(0x000000);
+									int mutedLight = palette.getLightMutedColor(0x000000);
+									int mutedDark = palette.getDarkMutedColor(0x000000);
+									color1.setBackgroundColor(vibrant);
+									color2.setBackgroundColor(muted);
+									color3.setBackgroundColor(mutedDark);
+									color4.setBackgroundColor(mutedLight);
+									color5.setBackgroundColor(vibrantLight);
+									color6.setBackgroundColor(vibrantDark);
+									color1.setOnClickListener(new OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											String hexColor = String.format("#%06X", (0xFFFFFF & vibrant));
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+										}
+									});
+									color2.setOnClickListener(new OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											String hexColor = String.format("#%06X", (0xFFFFFF & muted));
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+										}
+									});
+									color3.setOnClickListener(new OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											String hexColor = String.format("#%06X", (0xFFFFFF & mutedDark));
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+										}
+									});
+									color4.setOnClickListener(new OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											String hexColor = String.format("#%06X", (0xFFFFFF & mutedLight));
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+										}
+									});
+									color5.setOnClickListener(new OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											String hexColor = String.format("#%06X", (0xFFFFFF & vibrantLight));
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+										}
+									});
+									color6.setOnClickListener(new OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											String hexColor = String.format("#%06X", (0xFFFFFF & vibrantDark));
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+										}
+									});
+									colorpreviews.setVisibility(View.VISIBLE);
+									colorpreviewsloading.setVisibility(View.GONE);
+								});
+							}
+
+							@Override
+							public void onLoadFailed(@Nullable Drawable errorDrawable) {
+								// Hide everything except the loadingpreview layout, also hide the progress bar, and tell the user the image can't be loaded
+								colorpreviews.setVisibility(View.GONE);
+								colorpreviewsloading.setVisibility(View.VISIBLE);
+								progress_bar_loading.setVisibility(View.GONE);
+								textViewLoading.setText("Image can't be loaded");
+							}
+						});
+
+				Glide.with(getApplicationContext())
+						.load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
+						.into(new SimpleTarget<Drawable>() {
+							@Override
+							public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+								imageview3.setImageDrawable(resource); // Set the image resource into the ImageView
+							}
+
+							@Override
+							public void onLoadFailed(@Nullable Drawable errorDrawable) {
+							}
+						});
 				textview1.setText(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("name").toString());
 				wallLink.edit().putString("wallLink", walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()).commit();
 			}
@@ -234,7 +327,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 			public void onErrorResponse(String _param1, String _param2) {
 				final String _tag = _param1;
 				final String _message = _param2;
-				
 			}
 		};
 	}
@@ -243,14 +335,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		// Calls the specified repo
 		fetchJson.startRequestNetwork(RequestNetworkController.GET, temporaryCache.getString("directrepo", ""), "", _fetchJson_request_listener);
-		// Sets the statusbar color from XML and changes the close button color on light theme
-		switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
-			    case Configuration.UI_MODE_NIGHT_YES:
-			 
-			        break;
-			    case Configuration.UI_MODE_NIGHT_NO:
-			break; 
-		}
 		linear7.setClipToOutline(true);
 		linear9.setClipToOutline(true);
 
@@ -261,8 +345,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 		colorpreviews.setVisibility(View.GONE);
 
 		new Handler(Looper.getMainLooper()).postDelayed(() -> {
-			// Code to execute after 5 seconds
-
 		Bitmap bitmap = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
 			Palette.from(bitmap).generate(palette -> {
 				int vibrant = palette.getDominantColor(0x000000); // <=== color you want
@@ -277,7 +359,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 				color4.setBackgroundColor(mutedLight);
 				color5.setBackgroundColor(vibrantLight);
 				color6.setBackgroundColor(vibrantDark);
-				// Code that when you tap on a color, it copies its hex code to clipboard
 				color1.setOnClickListener(new OnClickListener() {
 					@Override
 					public void onClick(View v) {
@@ -325,8 +406,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 			colorpreviews.setVisibility(View.VISIBLE);
 			colorpreviewsloading.setVisibility(View.GONE);
 		}, (int)(Double.parseDouble(config.getString("timeout", ""))));
-
-		// Code that when you tap on a color, it copies its hex code to clipboard
 
 	}
 	
