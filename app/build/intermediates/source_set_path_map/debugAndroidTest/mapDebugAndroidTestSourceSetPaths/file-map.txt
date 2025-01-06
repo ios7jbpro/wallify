@@ -1,4 +1,4 @@
-com.ios7.wallify.test.app-androidTest-0 C:\Users\baris\Downloads\Wallify\app\build\generated\res\resValues\androidTest\debug
-com.ios7.wallify.test.app-mergeDebugAndroidTestResources-1 C:\Users\baris\Downloads\Wallify\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.ios7.wallify.test.app-mergeDebugAndroidTestResources-2 C:\Users\baris\Downloads\Wallify\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.ios7.wallify.test.app-debugAndroidTest-3 C:\Users\baris\Downloads\Wallify\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.ios7.wallify.test.app-androidTest-0 C:\Users\ios7jbpro\Documents\GitHub\wallify\app\build\generated\res\resValues\androidTest\debug
+com.ios7.wallify.test.app-mergeDebugAndroidTestResources-1 C:\Users\ios7jbpro\Documents\GitHub\wallify\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.ios7.wallify.test.app-mergeDebugAndroidTestResources-2 C:\Users\ios7jbpro\Documents\GitHub\wallify\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.ios7.wallify.test.app-debugAndroidTest-3 C:\Users\ios7jbpro\Documents\GitHub\wallify\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

@@ -160,11 +160,11 @@
 86                android:value="androidx.startup" />
 86-->C:\Users\ios7jbpro\Documents\GitHub\wallify\app\src\main\AndroidManifest.xml:67:5-37
 87            <meta-data
-87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+88-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 89                android:value="androidx.startup" />
-89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
 90        </provider>
 91
 92        <uses-library
@@ -175,40 +175,40 @@
 94-->C:\Users\ios7jbpro\Documents\GitHub\wallify\app\src\main\AndroidManifest.xml:71:4-28
 95
 96        <receiver
-96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
 97            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
 98            android:directBootAware="false"
-98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
 99            android:enabled="true"
-99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
 100            android:exported="true"
-100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
 101            android:permission="android.permission.DUMP" >
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 102            <intent-filter>
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
 103                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 104            </intent-filter>
 105            <intent-filter>
-105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
 106                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+106-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 107            </intent-filter>
 108            <intent-filter>
-108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
 109                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 110            </intent-filter>
 111            <intent-filter>
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
 112                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\64e35c36d0cf189292b1b9a81d0488fc\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ios7jbpro\.gradle\caches\8.9\transforms\94f7b935d80453d04a3684479eec3b26\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
 113            </intent-filter>
 114        </receiver>
 115    </application>

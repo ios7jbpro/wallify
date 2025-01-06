@@ -201,8 +201,29 @@ public class WalldownloadActivity extends AppCompatActivity {
 		button2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				setWallLoader.setClass(getApplicationContext(), Setwall1Activity.class);
-				startActivity(setWallLoader);
+				Glide.with(getApplicationContext())
+						.asBitmap() // Directly load the image as a Bitmap
+						.load(Uri.parse(wallLink.getString("wallLink", "")))
+						.into(new SimpleTarget<Bitmap>() {
+							@Override
+							public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+								WallpaperManager wallManager = WallpaperManager.getInstance(getApplicationContext());
+								try {
+									Toast.makeText(getApplicationContext(), "Loading in high-res and setting wallpaper...", Toast.LENGTH_SHORT).show();
+									wallManager.clear(); // Clear the existing wallpaper
+									wallManager.setBitmap(resource); // Set the loaded Bitmap as wallpaper
+								} catch (IOException ex) {
+									ex.printStackTrace(); // Handle exceptions
+									Toast.makeText(getApplicationContext(),  "Failed to set wallpaper", Toast.LENGTH_SHORT).show();
+								}
+							}
+
+							@Override
+							public void onLoadFailed(@Nullable Drawable errorDrawable) {
+								// Handle load failure (optional: show a toast or log the error)
+							}
+						});
+
 			}
 		});
 		

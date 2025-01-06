@@ -3415,6 +3415,7 @@ id position
 id postLayout
 id pressed
 id progressBar
+id progress_bar_loading
 id progress_circular
 id progress_horizontal
 id progressbar1
@@ -3507,9 +3508,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView2
 id textView3
+id textViewLoading
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
