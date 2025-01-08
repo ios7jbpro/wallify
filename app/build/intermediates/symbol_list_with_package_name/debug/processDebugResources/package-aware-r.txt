@@ -3214,6 +3214,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable phone
 drawable roundedbg
+drawable roundedbgdialog
 drawable roundedbgviolent
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3423,6 +3424,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id dissmissButton
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -4046,6 +4048,7 @@ layout support_simple_spinner_dropdown_item
 layout walldownload
 layout wallpaperlist
 layout wallpapers_fragment
+layout warning_dialog
 menu crop_image_menu
 mipmap ic_launcher
 navigation nav_graph

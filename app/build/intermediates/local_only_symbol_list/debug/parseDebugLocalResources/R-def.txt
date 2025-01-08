@@ -29,6 +29,7 @@ drawable jhgg_2
 drawable massage
 drawable phone
 drawable roundedbg
+drawable roundedbgdialog
 drawable roundedbgviolent
 drawable wall_icon
 id AM_PM
@@ -71,6 +72,7 @@ id content
 id cropImageView
 id cropPreview
 id cropScreen
+id dissmissButton
 id edittext1
 id goBackButton
 id gridlinear
@@ -132,6 +134,7 @@ layout setwall2
 layout walldownload
 layout wallpaperlist
 layout wallpapers_fragment
+layout warning_dialog
 mipmap ic_launcher
 navigation nav_graph
 string app_name
