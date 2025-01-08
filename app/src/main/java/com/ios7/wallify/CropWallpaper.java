@@ -8,6 +8,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -34,6 +35,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.palette.graphics.Palette;
 
 import com.ios7.wallify.databinding.ActivityCropWallpaperBinding;
 
@@ -109,6 +111,18 @@ public class CropWallpaper extends AppCompatActivity {
                 cropPreview.setVisibility(View.GONE);
                 imageview1.setImageBitmap(cropImageView.getCroppedImage());
                 imageview3.setImageBitmap(cropImageView.getCroppedImage());
+                // Extract the color to use it in textview2
+                Bitmap bitmap = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
+                Palette.from(bitmap).generate(palette -> {
+                    int vibrant = palette.getDominantColor(0x000000); // <=== color you want
+                    int vibrantLight = palette.getLightVibrantColor(0x000000);
+                    int vibrantDark = palette.getDarkVibrantColor(0x000000);
+                    int muted = palette.getMutedColor(0x000000);
+                    int mutedLight = palette.getLightMutedColor(0x000000);
+                    int mutedDark = palette.getDarkMutedColor(0x000000);
+                    // Set the vibrantLight color to textview2
+                    textViewTopbar.setTextColor(vibrantLight);
+                });
             }
         });
 

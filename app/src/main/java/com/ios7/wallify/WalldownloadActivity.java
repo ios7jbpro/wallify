@@ -264,6 +264,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 									int mutedDark = palette.getDarkMutedColor(0x000000);
 									color1.setBackgroundColor(vibrant);
 									color2.setBackgroundColor(muted);
+									textview2.setTextColor(vibrantLight);
 									color3.setBackgroundColor(mutedDark);
 									color4.setBackgroundColor(mutedLight);
 									color5.setBackgroundColor(vibrantLight);
@@ -390,6 +391,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				int mutedDark = palette.getDarkMutedColor(0x000000);
 				color1.setBackgroundColor(vibrant);
 				color2.setBackgroundColor(muted);
+				textview2.setTextColor(vibrantLight);
 				color3.setBackgroundColor(mutedDark);
 				color4.setBackgroundColor(mutedLight);
 				color5.setBackgroundColor(vibrantLight);
