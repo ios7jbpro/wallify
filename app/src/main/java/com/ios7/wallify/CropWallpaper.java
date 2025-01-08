@@ -52,6 +52,8 @@ public class CropWallpaper extends AppCompatActivity {
     private TextView goBackButton;
     private TextView setWallpaperButton;
     private ImageView cropPreview;
+    private ImageView imageview1;
+    private ImageView imageview3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +70,8 @@ public class CropWallpaper extends AppCompatActivity {
         goBackButton = findViewById(R.id.goBackButton);
         setWallpaperButton = findViewById(R.id.setWallpaperButton);
         cropPreview = findViewById(R.id.cropPreview);
+        imageview1 = findViewById(R.id.imageview1);
+        imageview3 = findViewById(R.id.imageview3);
         confirmScreen.setVisibility(View.GONE);
         goBackButton.setVisibility(View.GONE);
         setWallpaperButton.setVisibility(View.GONE);
@@ -102,6 +106,9 @@ public class CropWallpaper extends AppCompatActivity {
                 textViewTopbar.setText("Preview");
                 // Show the cropped preview
                 cropPreview.setImageBitmap(cropImageView.getCroppedImage());
+                cropPreview.setVisibility(View.GONE);
+                imageview1.setImageBitmap(cropImageView.getCroppedImage());
+                imageview3.setImageBitmap(cropImageView.getCroppedImage());
             }
         });
 
