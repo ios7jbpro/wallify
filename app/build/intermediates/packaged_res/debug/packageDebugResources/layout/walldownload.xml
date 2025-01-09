@@ -372,6 +372,7 @@
 						android:layout_height="wrap_content"
 						android:layout_weight="0"
 						android:background="@drawable/roundedbg"
+						android:foreground="?attr/selectableItemBackground"
 						android:padding="6dp"
 						android:text="Crop"
 						android:textColor="@color/textprimary"
