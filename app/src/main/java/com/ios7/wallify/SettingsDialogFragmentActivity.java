@@ -100,6 +100,8 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	
 	private void initializeLogic() {
 		edittext1.setText(config.getString("timeout", ""));
+		// Remove the timeout option since it's unnecessary now as we are using Glide onResourceReady instead
+		linear4.setVisibility(View.GONE);
+		textview5.setVisibility(View.GONE);
 	}
-	
-}
+}
