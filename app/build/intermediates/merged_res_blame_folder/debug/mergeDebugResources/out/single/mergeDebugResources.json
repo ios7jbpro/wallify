@@ -24,10 +24,6 @@
         "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\hk_personal_wallpaper.png"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_walldownload.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/walldownload.xml"
-    },
-    {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_heeh_2.png.flat",
         "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\heeh_2.png"
     },
@@ -70,6 +66,10 @@
     {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable_inactivetab.xml.flat",
         "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\inactivetab.xml"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_categorylist.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/categorylist.xml"
     },
     {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\mipmap-xhdpi_ic_launcher.png.flat",

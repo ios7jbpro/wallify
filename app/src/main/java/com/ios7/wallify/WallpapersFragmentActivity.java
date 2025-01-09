@@ -350,6 +350,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
 			wallname.setText(walllist.get((int)_position).get("name").toString());
 			linear3.setBackgroundDrawable(getResources().getDrawable(R.drawable.fade));
+			linear2.setClipToOutline(true);
 			
 			return _view;
 		}
