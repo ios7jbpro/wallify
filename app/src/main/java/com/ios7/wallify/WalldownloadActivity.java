@@ -379,6 +379,9 @@ public class WalldownloadActivity extends AppCompatActivity {
 		// int vibrantColor = palette.getVibrantColor(0x000000);
 		// color1.setBackgroundColor(vibrantColor);
 
+		// Clip the croptext so the content inside clips to the rounded drawable bg
+		textViewCrop.setClipToOutline(true);
+
 		colorpreviews.setVisibility(View.GONE);
 
 		new Handler(Looper.getMainLooper()).postDelayed(() -> {
