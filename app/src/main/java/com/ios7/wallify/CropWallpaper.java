@@ -57,6 +57,7 @@ public class CropWallpaper extends AppCompatActivity {
     private ImageView imageview1;
     private ImageView imageview3;
     private TextView textview2;
+    private TextView time2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +77,7 @@ public class CropWallpaper extends AppCompatActivity {
         imageview1 = findViewById(R.id.imageview1);
         imageview3 = findViewById(R.id.imageview3);
         textview2 = findViewById(R.id.textview2);
+        time2 = findViewById(R.id.time2);
         confirmScreen.setVisibility(View.GONE);
         goBackButton.setVisibility(View.GONE);
         setWallpaperButton.setVisibility(View.GONE);
@@ -124,6 +126,8 @@ public class CropWallpaper extends AppCompatActivity {
                     int mutedDark = palette.getDarkMutedColor(0x000000);
                     // Set the vibrantLight color to textview2
                     textview2.setTextColor(vibrantLight);
+                    // Set the vibrantLight color to time2
+                    time2.setTextColor(vibrantLight);
                 });
             }
         });
