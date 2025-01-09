@@ -3668,6 +3668,8 @@ id position
 id postLayout
 id pressed
 id progressBar
+id progressBar2
+id progressBar3
 id progress_bar_loading
 id progress_circular
 id progress_horizontal

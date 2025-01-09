@@ -103,6 +103,8 @@ id mainEditingPage
 id nav_graph
 id nextButton
 id progressBar
+id progressBar2
+id progressBar3
 id progress_bar_loading
 id progressbar1
 id rootlinear

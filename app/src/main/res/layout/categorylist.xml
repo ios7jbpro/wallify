@@ -20,6 +20,14 @@
 			android:background="@drawable/roundedbg"
 			android:clipChildren="true">
 
+			<ProgressBar
+				android:id="@+id/progressBar3"
+				style="?android:attr/progressBarStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="right|center_vertical"
+				android:layout_marginRight="16dp" />
+
 			<LinearLayout
 				android:id="@+id/linear3"
 				android:layout_width="match_parent"
