@@ -46,7 +46,6 @@
         android:resizeableActivity="true"
         android:screenOrientation="unspecified"
         android:supportsPictureInPicture="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
