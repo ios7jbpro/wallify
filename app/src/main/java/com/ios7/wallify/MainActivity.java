@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
 	private void initializeLogic() {
 		// This SharedPrefs section sets your desired repo.
-		config.edit().putString("repo", "https://raw.githubusercontent.com/ios7jbpro/wallify/refs/heads/main/categories.json").commit();
+		config.edit().putString("repo", "https://raw.githubusercontent.com/ios7jbpro/wallify-walls/refs/heads/main/categories.json").commit();
 		// Enable or disable categories
 		config.edit().putString("categories", "1").commit();
 		config.edit().putString("directrepo", "https://altdisk.eimaen.pw/api/download/a69b5e5031f23e06cd1af7f885de5c0c/anime.json").commit();
