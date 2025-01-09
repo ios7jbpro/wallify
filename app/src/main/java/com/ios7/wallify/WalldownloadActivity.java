@@ -121,6 +121,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private SharedPreferences temporaryCache;
 	private TextView textViewCrop;
 	private Intent intentCrop;
+	private TextView textView3;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -182,6 +183,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 		color4 = findViewById(R.id.color4);
 		color5 = findViewById(R.id.color5);
 		color6 = findViewById(R.id.color6);
+		textView3 = findViewById(R.id.textView3);
 		colorpreviews = findViewById(R.id.colorpreviews);
 		textViewCrop = findViewById(R.id.textViewCrop);
 		colorpreviewsloading = findViewById(R.id.colorpreviewsloading);
@@ -265,7 +267,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 									color1.setBackgroundColor(vibrant);
 									color2.setBackgroundColor(muted);
 									textview2.setTextColor(vibrantLight);
-									time2.setTextColor(vibrantLight);
+									// time2.setTextColor(vibrantLight);
 									color3.setBackgroundColor(mutedDark);
 									color4.setBackgroundColor(mutedLight);
 									color5.setBackgroundColor(vibrantLight);
@@ -314,6 +316,15 @@ public class WalldownloadActivity extends AppCompatActivity {
 									});
 									colorpreviews.setVisibility(View.VISIBLE);
 									colorpreviewsloading.setVisibility(View.GONE);
+									// Hide the entire layout if colorextraction sharedPrefs is set to 0
+									if (config.getString("colorextraction", "").equals("0")) {
+										colorpreviews.setVisibility(View.GONE);
+										colorpreviewsloading.setVisibility(View.GONE);
+										textView3.setVisibility(View.GONE);
+										// Set the clock widget to be white again as color extraction is ignored
+										textview2.setTextColor(Color.WHITE);
+										time2.setTextColor(Color.WHITE);
+									}
 								});
 							}
 
@@ -396,7 +407,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				color1.setBackgroundColor(vibrant);
 				color2.setBackgroundColor(muted);
 				textview2.setTextColor(vibrantLight);
-				time2.setTextColor(vibrantLight);
+				// time2.setTextColor(vibrantLight);
 				color3.setBackgroundColor(mutedDark);
 				color4.setBackgroundColor(mutedLight);
 				color5.setBackgroundColor(vibrantLight);
@@ -443,10 +454,29 @@ public class WalldownloadActivity extends AppCompatActivity {
 						ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
 					}
 				});
+
+				// Hide the entire layout if colorextraction sharedPrefs is set to 0
+				if (config.getString("colorextraction", "").equals("0")) {
+					colorpreviews.setVisibility(View.GONE);
+					colorpreviewsloading.setVisibility(View.GONE);
+					textView3.setVisibility(View.GONE);
+					// Set the clock widget to be white again as color extraction is ignored
+					textview2.setTextColor(Color.WHITE);
+					time2.setTextColor(Color.WHITE);
+				}
 			});
 			Log.d("DelayExample", "This code runs after 5 seconds");
 			colorpreviews.setVisibility(View.VISIBLE);
 			colorpreviewsloading.setVisibility(View.GONE);
+			// Hide the entire layout if colorextraction sharedPrefs is set to 0
+			if (config.getString("colorextraction", "").equals("0")) {
+				colorpreviews.setVisibility(View.GONE);
+				colorpreviewsloading.setVisibility(View.GONE);
+				textView3.setVisibility(View.GONE);
+				// Set the clock widget to be white again as color extraction is ignored
+				textview2.setTextColor(Color.WHITE);
+				time2.setTextColor(Color.WHITE);
+			}
 		}, (int)(Double.parseDouble(config.getString("timeout", ""))));
 
 	}

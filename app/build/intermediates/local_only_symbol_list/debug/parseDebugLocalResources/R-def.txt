@@ -97,11 +97,13 @@ id linear6
 id linear7
 id linear8
 id linear9
+id linearColorPreviews
 id linearpreviewcard
 id listview1
 id mainEditingPage
 id nav_graph
 id nextButton
+id previewStatusBar
 id progressBar
 id progressBar2
 id progressBar3
@@ -109,6 +111,7 @@ id progress_bar_loading
 id progressbar1
 id rootlinear
 id setWallpaperButton
+id switchColorPreviews
 id tempcardview
 id textView2
 id textView3

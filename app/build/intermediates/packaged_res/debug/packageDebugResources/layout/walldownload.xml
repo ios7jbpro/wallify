@@ -1,24 +1,25 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
+
 	<LinearLayout
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:orientation="vertical"
-		android:background="@color/backgroundviolent">
+		android:background="@color/backgroundviolent"
+		android:orientation="vertical">
+
 		<LinearLayout
 			android:id="@+id/linear2"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:padding="8dp"
+			android:background="@color/backgroundviolent"
 			android:gravity="center_vertical"
 			android:orientation="horizontal"
-			android:background="@color/backgroundviolent">
+			android:padding="8dp">
 
 			<TextView
 				android:id="@+id/textview1"
@@ -26,19 +27,20 @@
 				android:layout_height="wrap_content"
 				android:padding="8dp"
 				android:text="Fetching..."
+				android:textColor="@color/textprimary"
 				android:textSize="18sp"
-				android:textStyle="bold"
-				android:textColor="@color/textprimary" />
+				android:textStyle="bold" />
 		</LinearLayout>
+
 		<LinearLayout
 			android:id="@+id/linear5"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:padding="8dp"
+			android:layout_weight="1"
+			android:background="@drawable/roundedbg"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="vertical"
-			android:layout_weight="1"
-			android:background="@drawable/roundedbg">
+			android:padding="8dp">
 
 			<TextView
 				android:id="@+id/textView2"
@@ -154,11 +156,28 @@
 								android:paddingRight="4dp">
 
 								<LinearLayout
+									android:id="@+id/previewStatusBar"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="horizontal">
+
+									<TextView
+										android:id="@+id/time2"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_gravity="center_horizontal"
+										android:layout_marginLeft="4dp"
+										android:text="9:30"
+										android:textColor="#FFFFFF"
+										android:textSize="10sp" />
+								</LinearLayout>
+
+								<LinearLayout
 									android:id="@+id/Search_bg"
 									android:layout_width="match_parent"
 									android:layout_height="wrap_content"
 									android:layout_marginLeft="5dp"
-									android:layout_marginTop="20dp"
+									android:layout_marginTop="8dp"
 									android:layout_marginRight="5dp"
 									android:background="@drawable/roundedbg"
 									android:gravity="center_vertical"
@@ -194,59 +213,6 @@
 											android:layout_height="15dp"
 											android:scaleType="fitCenter"
 											android:src="@drawable/heeh_3" />
-									</LinearLayout>
-								</LinearLayout>
-
-								<LinearLayout
-									android:id="@+id/LinearLayout2"
-									android:layout_width="match_parent"
-									android:layout_height="wrap_content"
-									android:gravity="center_vertical"
-									android:orientation="horizontal">
-
-									<LinearLayout
-										android:id="@+id/LinearLayout3"
-										android:layout_width="wrap_content"
-										android:layout_height="wrap_content"
-										android:layout_marginLeft="10dp"
-										android:orientation="vertical">
-
-										<TextView
-											android:id="@+id/time2"
-											android:layout_width="wrap_content"
-											android:layout_height="wrap_content"
-											android:layout_gravity="center_horizontal"
-											android:text="03\n11"
-											android:textColor="#FFFFFF"
-											android:textSize="16sp"
-											android:textStyle="bold" />
-									</LinearLayout>
-
-									<LinearLayout
-										android:id="@+id/LinearLayout15"
-										android:layout_width="match_parent"
-										android:layout_height="wrap_content"
-										android:gravity="bottom"
-										android:orientation="vertical"
-										android:padding="8dp">
-
-										<TextView
-											android:id="@+id/Tarik"
-											android:layout_width="wrap_content"
-											android:layout_height="wrap_content"
-											android:text="Saturday, 28 December"
-											android:textColor="#FFFFFF"
-											android:textSize="12sp"
-											android:textStyle="bold" />
-
-										<TextView
-											android:id="@+id/AM_PM"
-											android:layout_width="wrap_content"
-											android:layout_height="wrap_content"
-											android:text="PM"
-											android:textColor="#FFFFFF"
-											android:textSize="16sp"
-											android:textStyle="bold" />
 									</LinearLayout>
 								</LinearLayout>
 
@@ -538,13 +504,14 @@
 			</LinearLayout>
 
 		</LinearLayout>
+
 		<LinearLayout
 			android:id="@+id/linear4"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:padding="8dp"
+			android:background="@color/backgroundviolent"
 			android:orientation="horizontal"
-			android:background="@color/backgroundviolent">
+			android:padding="8dp">
 
 			<TextView
 				android:id="@+id/button1"
@@ -575,10 +542,11 @@
 				android:textStyle="bold" />
 		</LinearLayout>
 	</LinearLayout>
+
 	<LinearLayout
 		android:id="@+id/linear6"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:padding="8dp"
-		android:orientation="horizontal" />
+		android:orientation="horizontal"
+		android:padding="8dp" />
 </LinearLayout>

@@ -106,6 +106,10 @@ public class MainActivity extends AppCompatActivity {
 		if (config.getString("timeout", "").equals("")) {
 			config.edit().putString("timeout", "5000").commit();
 		}
+		// Disables color extraction.
+		if (config.getString("colorextraction", "").equals("")) {
+			config.edit().putString("colorextraction", "0").commit();
+		}
 		// This part sets the user statusbar color as same as the color pulled from the XMLs
 		switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
 			case Configuration.UI_MODE_NIGHT_YES:

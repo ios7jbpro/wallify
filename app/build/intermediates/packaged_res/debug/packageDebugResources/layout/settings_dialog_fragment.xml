@@ -19,6 +19,7 @@
 			android:padding="8dp"
 			android:orientation="vertical"
 			android:background="@drawable/roundedbg">
+
 			<TextView
 				android:id="@+id/textview5"
 				android:layout_width="wrap_content"
@@ -28,46 +29,73 @@
 				android:textSize="20sp"
 				android:textStyle="bold"
 				android:textColor="@color/textprimary" />
+
+			<LinearLayout
+				android:id="@+id/linearColorPreviews"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/roundedbgviolent"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:padding="8dp">
+
+				<Switch
+					android:id="@+id/switchColorPreviews"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="8dp"
+					android:text="Extract colors(unstable)"
+					android:textColor="@color/textprimary"
+					android:textSize="12sp" />
+
+			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear4"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/roundedbgviolent"
 				android:gravity="center_vertical"
 				android:orientation="horizontal"
-				android:background="@drawable/roundedbgviolent">
+				android:padding="8dp">
+
 				<TextView
 					android:id="@+id/textview6"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
 					android:text="Wallpaper load timeout"
-					android:textSize="12sp"
-					android:textColor="@color/textprimary" />
+					android:textColor="@color/textprimary"
+					android:textSize="12sp" />
+
 				<LinearLayout
 					android:id="@+id/linear5"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:gravity="right|center_vertical"
 					android:orientation="horizontal">
+
 					<EditText
 						android:id="@+id/edittext1"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:textSize="12sp"
-						android:hint="Timeout"
-						android:textColorHint="#607D8B"
 						android:background="@color/backgroundviolent"
-						android:textColor="@color/textprimary" />
+						android:hint="Timeout"
+						android:padding="8dp"
+						android:textColor="@color/textprimary"
+						android:textColorHint="#607D8B"
+						android:textSize="12sp" />
+
 					<TextView
 						android:id="@+id/textview7"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
 						android:text="ms"
-						android:textSize="11sp"
-						android:textColor="@color/textprimary" />
+						android:textColor="@color/textprimary"
+						android:textSize="11sp" />
 				</LinearLayout>
 			</LinearLayout>
 			<TextView

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_content_crop_wallpaper.xml.flat",
-        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\content_crop_wallpaper.xml"
-    },
-    {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_main.xml.flat",
         "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_content_crop_wallpaper.xml.flat",
+        "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\content_crop_wallpaper.xml"
     },
     {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_jhgg_1.png.flat",
@@ -68,12 +68,12 @@
         "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable\\inactivetab.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_categorylist.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/categorylist.xml"
-    },
-    {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\ios7jbpro\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_categorylist.xml.flat",

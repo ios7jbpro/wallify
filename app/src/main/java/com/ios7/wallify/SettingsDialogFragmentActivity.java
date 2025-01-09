@@ -51,6 +51,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private TextView textview7;
 	private CircleImageView circleimageview1;
 	private TextView textview4;
+	private Switch switchColorPreviews;
 	
 	private SharedPreferences config;
 	
@@ -75,6 +76,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linear5 = _view.findViewById(R.id.linear5);
 		edittext1 = _view.findViewById(R.id.edittext1);
 		textview7 = _view.findViewById(R.id.textview7);
+		switchColorPreviews = _view.findViewById(R.id.switchColorPreviews);
 		circleimageview1 = _view.findViewById(R.id.circleimageview1);
 		textview4 = _view.findViewById(R.id.textview4);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
@@ -100,8 +102,23 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	
 	private void initializeLogic() {
 		edittext1.setText(config.getString("timeout", ""));
+		if (config.getString("colorextraction", "").equals("1")) {
+			switchColorPreviews.setChecked(true);
+		}
+
+		// Listen for switchColorPreviews on check changed
+		switchColorPreviews.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+				if (isChecked) {
+					config.edit().putString("colorextraction", "1").commit();
+				} else {
+					config.edit().putString("colorextraction", "0").commit();
+				}
+			}
+		});
+
 		// Remove the timeout option since it's unnecessary now as we are using Glide onResourceReady instead
 		linear4.setVisibility(View.GONE);
-		textview5.setVisibility(View.GONE);
 	}
 }
