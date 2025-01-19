@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout-large_walldownload.xml.flat",
+        "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout-large/walldownload.xml"
+    },
+    {
         "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_devpfp1.png.flat",
         "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/devpfp1.png"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_activetab.xml.flat",
         "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/activetab.xml"
+    },
+    {
+        "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout-large_main.xml.flat",
+        "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout-large/main.xml"
     },
     {
         "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_1.png.flat",
