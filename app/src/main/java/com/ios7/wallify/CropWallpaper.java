@@ -89,7 +89,8 @@ public class CropWallpaper extends AppCompatActivity {
         bottomSheet.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
         // Set the view to the bottomsheet
         bottomSheet.setContentView(bottomSheetView);
-        bottomSheet.show();
+        // Removed since it's stable now
+        //bottomSheet.show();
         // Setup the dismiss button by finding the view ID
         MaterialButton dismissButton = bottomSheetView.findViewById(R.id.dissmissButton);
         // Dismiss button click listener

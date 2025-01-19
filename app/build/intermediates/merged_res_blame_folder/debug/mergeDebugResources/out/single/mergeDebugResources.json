@@ -76,10 +76,6 @@
         "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/walldownload.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-68:/layout-large_main.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout-large/main.xml"
-    },
-    {
         "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_massage.png.flat",
         "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/massage.png"
     },
@@ -118,6 +114,10 @@
     {
         "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_ic_arrow_back_white.png.flat",
         "source": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/ic_arrow_back_white.png"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-68:/layout-large_activity_crop_wallpaper.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout-large/activity_crop_wallpaper.xml"
     },
     {
         "merged": "/home/ios7jbpro/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_fadecategory.xml.flat",
