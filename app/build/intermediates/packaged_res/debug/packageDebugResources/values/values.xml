@@ -11,7 +11,6 @@
     <color name="textactivetab">#FFFFFFFF</color>
     <color name="textprimary">#FF000000</color>
     <color name="titletextcolor">#FF2196F3</color>
-    <dimen name="fab_margin">16dp</dimen>
     <string name="app_name">Wallify</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="header">Hhhhh</string>

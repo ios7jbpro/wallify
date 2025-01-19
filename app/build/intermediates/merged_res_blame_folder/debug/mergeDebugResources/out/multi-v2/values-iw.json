@@ -4,7 +4,7 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-iw/values-iw.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\a5845b19c5b14293b8ac9279d1dfac41\\transformed\\ui-release\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/a5845b19c5b14293b8ac9279d1dfac41/transformed/ui-release/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,41 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\7b2ccb1f08a69ade8072832b136ec43c\\transformed\\core-1.13.1\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/a7f12d042672ce53853615b7c99dcae5/transformed/foundation-release/res/values-iw/values-iw.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,149,251,348,445,546,646,752",
-                        "endColumns": "93,101,96,96,100,99,105,100",
-                        "endOffsets": "144,246,343,440,541,641,747,848"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,142",
+                        "endColumns": "86,87",
+                        "endOffsets": "137,225"
                     },
                     "to": {
-                        "startLines": "39,40,41,42,43,44,45,196",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3437,3531,3633,3730,3827,3928,4028,17322",
-                        "endColumns": "93,101,96,96,100,99,105,100",
-                        "endOffsets": "3526,3628,3725,3822,3923,4023,4129,17418"
+                        "startLines": "200,201",
+                        "startColumns": "4,4",
+                        "startOffsets": "17687,17774",
+                        "endColumns": "86,87",
+                        "endOffsets": "17769,17857"
                     }
                 },
                 {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\633c84dba2486822b76af12ac4b8a2f0\\transformed\\android-image-cropper-4.6.0\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,109,153,217,278,345,397",
-                        "endColumns": "53,43,63,60,66,51,61",
-                        "endOffsets": "104,148,212,273,340,392,454"
-                    },
-                    "to": {
-                        "startLines": "51,58,59,60,61,62,188",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "4593,5131,5175,5239,5300,5367,16716",
-                        "endColumns": "53,43,63,60,66,51,61",
-                        "endOffsets": "4642,5170,5234,5295,5362,5414,16773"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\17f7c726a60b7baaf09daff318c61790\\transformed\\material3-release\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/17f7c726a60b7baaf09daff318c61790/transformed/material3-release/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -72,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\81335119a568adab27dfc9fa2e61a412\\transformed\\material-1.12.0\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/7b2ccb1f08a69ade8072832b136ec43c/transformed/core-1.13.1/res/values-iw/values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,149,251,348,445,546,646,752",
+                        "endColumns": "93,101,96,96,100,99,105,100",
+                        "endOffsets": "144,246,343,440,541,641,747,848"
+                    },
+                    "to": {
+                        "startLines": "39,40,41,42,43,44,45,196",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3437,3531,3633,3730,3827,3928,4028,17322",
+                        "endColumns": "93,101,96,96,100,99,105,100",
+                        "endOffsets": "3526,3628,3725,3822,3923,4023,4129,17418"
+                    }
+                },
+                {
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/81335119a568adab27dfc9fa2e61a412/transformed/material-1.12.0/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -91,24 +91,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\5130c747187cf7ba214dc7bc1d2fe0a1\\transformed\\navigation-ui-2.6.0\\res\\values-iw\\values-iw.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,119",
-                        "endOffsets": "156,276"
-                    },
-                    "to": {
-                        "startLines": "181,182",
-                        "startColumns": "4,4",
-                        "startOffsets": "16118,16224",
-                        "endColumns": "105,119",
-                        "endOffsets": "16219,16339"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\898b79dd632f89eb91b6f092b9b23fc3\\transformed\\appcompat-1.7.0\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/898b79dd632f89eb91b6f092b9b23fc3/transformed/appcompat-1.7.0/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -125,20 +108,37 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\a7f12d042672ce53853615b7c99dcae5\\transformed\\foundation-release\\res\\values-iw\\values-iw.xml",
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/633c84dba2486822b76af12ac4b8a2f0/transformed/android-image-cropper-4.6.0/res/values-iw/values-iw.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,153,217,278,345,397",
+                        "endColumns": "53,43,63,60,66,51,61",
+                        "endOffsets": "104,148,212,273,340,392,454"
+                    },
+                    "to": {
+                        "startLines": "51,58,59,60,61,62,188",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "4593,5131,5175,5239,5300,5367,16716",
+                        "endColumns": "53,43,63,60,66,51,61",
+                        "endOffsets": "4642,5170,5234,5295,5362,5414,16773"
+                    }
+                },
+                {
+                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/5130c747187cf7ba214dc7bc1d2fe0a1/transformed/navigation-ui-2.6.0/res/values-iw/values-iw.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
-                        "startOffsets": "55,142",
-                        "endColumns": "86,87",
-                        "endOffsets": "137,225"
+                        "startOffsets": "55,161",
+                        "endColumns": "105,119",
+                        "endOffsets": "156,276"
                     },
                     "to": {
-                        "startLines": "200,201",
+                        "startLines": "181,182",
                         "startColumns": "4,4",
-                        "startOffsets": "17687,17774",
-                        "endColumns": "86,87",
-                        "endOffsets": "17769,17857"
+                        "startOffsets": "16118,16224",
+                        "endColumns": "105,119",
+                        "endOffsets": "16219,16339"
                     }
                 }
             ]

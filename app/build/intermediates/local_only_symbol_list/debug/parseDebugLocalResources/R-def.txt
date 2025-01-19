@@ -11,7 +11,6 @@ color colorPrimaryDark
 color textactivetab
 color textprimary
 color titletextcolor
-dimen fab_margin
 drawable activetab
 drawable default_image
 drawable devpfp1
@@ -33,7 +32,6 @@ drawable roundedbgdialog
 drawable roundedbgviolent
 drawable wall_icon
 id AM_PM
-id FirstFragment
 id Game
 id ImageView4
 id ImageView5
@@ -48,11 +46,8 @@ id Massage
 id More
 id Phone
 id Search_bg
-id SecondFragment
 id Tarik
 id Translator
-id action_FirstFragment_to_SecondFragment
-id action_SecondFragment_to_FirstFragment
 id bottomBar
 id bottombarroot
 id button1
@@ -101,7 +96,6 @@ id linearColorPreviews
 id linearpreviewcard
 id listview1
 id mainEditingPage
-id nav_graph
 id nextButton
 id previewStatusBar
 id progressBar
@@ -141,7 +135,6 @@ layout wallpaperlist
 layout wallpapers_fragment
 layout warning_dialog
 mipmap ic_launcher
-navigation nav_graph
 string app_name
 string first_fragment_label
 string header

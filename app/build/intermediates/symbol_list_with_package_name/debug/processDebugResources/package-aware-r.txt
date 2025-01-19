@@ -2347,7 +2347,6 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
-dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -3228,7 +3227,6 @@ id CTRL
 id CropOverlayView
 id CropProgressBar
 id FUNCTION
-id FirstFragment
 id Game
 id ImageView4
 id ImageView5
@@ -3251,7 +3249,6 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id Search_bg
-id SecondFragment
 id TOP_END
 id TOP_START
 id Tarik
@@ -3293,8 +3290,6 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
-id action_FirstFragment_to_SecondFragment
-id action_SecondFragment_to_FirstFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3609,7 +3604,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
-id nav_graph
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -4056,7 +4050,6 @@ layout wallpapers_fragment
 layout warning_dialog
 menu crop_image_menu
 mipmap ic_launcher
-navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

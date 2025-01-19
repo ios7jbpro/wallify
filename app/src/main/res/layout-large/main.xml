@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal">
+
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="250dp"
+		android:layout_height="match_parent"
+		android:background="@color/backgroundviolent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/backgroundviolent"
+			android:orientation="horizontal"
+			android:padding="8dp">
+
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Wallify"
+				android:textColor="@color/textprimary"
+				android:textSize="18sp"
+				android:textStyle="bold" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/bottombarroot"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/backgroundviolent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:id="@+id/linear4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/backgroundviolent"
+				android:orientation="vertical"
+				android:padding="8dp">
+
+				<TextView
+					android:id="@+id/button1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:background="@drawable/roundedbg"
+					android:gravity="center_horizontal|center_vertical"
+					android:padding="16dp"
+					android:text="Wallpapers"
+					android:textColor="@color/textprimary"
+					android:textSize="12sp"
+					android:textStyle="bold" />
+
+				<TextView
+					android:id="@+id/button2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:layout_weight="1"
+					android:background="@drawable/roundedbg"
+					android:gravity="center_horizontal|center_vertical"
+					android:padding="16dp"
+					android:paddingTop="16dp"
+					android:paddingBottom="16dp"
+					android:text="Settings / Info"
+					android:textColor="@color/textprimary"
+					android:textSize="12sp"
+					android:textStyle="bold" />
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/viewpager1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:background="@color/backgroundviolent" />
+
+</LinearLayout>
