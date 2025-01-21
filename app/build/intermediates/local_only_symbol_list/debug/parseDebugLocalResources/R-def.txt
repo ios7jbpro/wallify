@@ -94,6 +94,7 @@ id linear8
 id linear9
 id linearColorPreviews
 id linearpreviewcard
+id listView
 id listview1
 id mainEditingPage
 id nextButton
@@ -126,6 +127,7 @@ id wallimage
 id wallname
 layout activity_crop_wallpaper
 layout categorylist
+layout devs
 layout main
 layout settings_dialog_fragment
 layout setwall1

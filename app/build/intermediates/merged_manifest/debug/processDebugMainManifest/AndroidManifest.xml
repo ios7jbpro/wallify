@@ -131,6 +131,11 @@
             android:name="androidx.activity.ComponentActivity"
             android:exported="true" />
 
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.ios7.wallify.com.squareup.picasso"
+            android:exported="false" />
+
         <uses-library
             android:name="androidx.window.extensions"
             android:required="false" />

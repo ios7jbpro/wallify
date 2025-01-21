@@ -4,7 +4,7 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/898b79dd632f89eb91b6f092b9b23fc3/transformed/appcompat-1.7.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\898b79dd632f89eb91b6f092b9b23fc3\\transformed\\appcompat-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/81335119a568adab27dfc9fa2e61a412/transformed/material-1.12.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\81335119a568adab27dfc9fa2e61a412\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -34,7 +34,7 @@
                     }
                 },
                 {
-                    "source": "/home/ios7jbpro/.gradle/caches/8.9/transforms/77a733bcb0c5f0acd1891d9bb3a3ca38/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\ios7jbpro\\.gradle\\caches\\8.9\\transforms\\77a733bcb0c5f0acd1891d9bb3a3ca38\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -29,7 +29,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+
+import com.squareup.picasso.Picasso;
+
 import de.hdodenhof.circleimageview.*;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
 import java.io.*;
 import java.text.*;
 import java.util.*;
@@ -52,6 +61,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private CircleImageView circleimageview1;
 	private TextView textview4;
 	private Switch switchColorPreviews;
+	private ListView listView;
 	
 	private SharedPreferences config;
 	
@@ -59,6 +69,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	@Override
 	public View onCreateView(@NonNull LayoutInflater _inflater, @Nullable ViewGroup _container, @Nullable Bundle _savedInstanceState) {
 		View _view = _inflater.inflate(R.layout.settings_dialog_fragment, _container, false);
+		listView = _view.findViewById(R.id.listView);
 		initialize(_savedInstanceState, _view);
 		initializeLogic();
 		return _view;
@@ -98,8 +109,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				
 			}
 		});
+
 	}
-	
+
 	private void initializeLogic() {
 		edittext1.setText(config.getString("timeout", ""));
 		if (config.getString("colorextraction", "").equals("1")) {
@@ -120,5 +132,64 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 		// Remove the timeout option since it's unnecessary now as we are using Glide onResourceReady instead
 		linear4.setVisibility(View.GONE);
+		linear3.setVisibility(View.GONE);
+
+		// Create a network request to the json we have in Github with all the methods
+		// The URL
+		String url = "https://raw.githubusercontent.com/ios7jbpro/wallify-walls/refs/heads/main/devs.json";
+		// Create a new request to the URL
+		Request request = new Request.Builder().url(url).build();
+		// Create a new client
+		OkHttpClient client = new OkHttpClient();
+		// Do the call
+		client.newCall(request).enqueue(new Callback() {
+			@Override
+			public void onFailure(@NonNull Call call, @NonNull IOException e) {
+				Log.e("FETCH_ERROR", e.getMessage());
+			}
+
+			@Override
+			public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+				// Ensure the response is successful
+				if (!response.isSuccessful()) {
+					Log.e("FETCH_ERROR", "Request failed");
+					return;
+				}
+
+				// Get the JSON string from the response
+				String json = response.body().string();
+
+				// Use a JSON parsing library (like Gson or JSONObject)
+				try {
+					JSONArray jsonArray = new JSONArray(json);
+					// Initialize the list before adding items
+					List<Developer> developerList = new ArrayList<>();
+
+					// Iterate over the JSON array and create Developer objects
+					for (int i = 0; i < jsonArray.length(); i++) {
+						JSONObject jsonObject = jsonArray.getJSONObject(i);
+						String name = jsonObject.getString("name");
+						String imageUrl = jsonObject.getString("pfp");
+						Developer developer = new Developer(name, imageUrl);
+						// Add the developer to the list
+						developerList.add(developer);
+					}
+
+					// Now, update the UI with the list of developers
+					getActivity().runOnUiThread(new Runnable() {
+						@Override
+						public void run() {
+							// Create and set the custom adapter
+							DeveloperAdapter adapter = new DeveloperAdapter(getContext(), developerList);
+							listView.setAdapter(adapter);
+						}
+					});
+
+				} catch (JSONException e) {
+					Log.e("FETCH_ERROR", "JSON parsing error", e);
+				}
+			}
+
+		});
 	}
 }
