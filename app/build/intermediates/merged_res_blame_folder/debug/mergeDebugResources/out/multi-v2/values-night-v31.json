@@ -4,7 +4,7 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ios7jbpro\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night-v31\\colors.xml",
+                    "source": "C:\\Users\\baris\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night-v31\\colors.xml",
                     "from": {
                         "startLines": "4,2,3,8,11,12,9,10,6,5,7",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

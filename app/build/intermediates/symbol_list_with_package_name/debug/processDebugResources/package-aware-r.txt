@@ -3529,6 +3529,7 @@ id linear19
 id linear2
 id linear20
 id linear3
+id linear30
 id linear4
 id linear5
 id linear6
@@ -3792,6 +3793,7 @@ id textview1
 id textview2
 id textview3
 id textview4
+id textview40
 id textview5
 id textview6
 id textview7

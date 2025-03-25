@@ -62,6 +62,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private TextView textview4;
 	private Switch switchColorPreviews;
 	private ListView listView;
+	private LinearLayout linear30;
 	
 	private SharedPreferences config;
 	
@@ -90,6 +91,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		switchColorPreviews = _view.findViewById(R.id.switchColorPreviews);
 		circleimageview1 = _view.findViewById(R.id.circleimageview1);
 		textview4 = _view.findViewById(R.id.textview4);
+		linear30 = _view.findViewById(R.id.linear30);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 		
 		edittext1.addTextChangedListener(new TextWatcher() {
@@ -190,6 +192,18 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				}
 			}
 
+		});
+
+		// Listen for linear30 clicks
+		linear30.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				// Create a dialog
+				AlertDialog.Builder _builder = new AlertDialog.Builder(requireContext());
+				_builder.setMessage("The app has been abandoned because I don't have the mood to develop this project further anymore. This might change in the long future, but for now, there will be no updates.");
+				_builder.setPositiveButton("OK", null);
+				_builder.show();
+			}
 		});
 	}
 }

@@ -135,6 +135,27 @@
 					android:textColor="@color/textprimary" />
 			</LinearLayout>
 
+			<LinearLayout
+				android:id="@+id/linear30"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:background="@drawable/roundedbgviolent"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:padding="8dp">
+
+				<TextView
+					android:id="@+id/textview40"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="!! Project has been abandoned !!\n Click for more info"
+					android:textColor="#FF0000"
+					android:textSize="14sp" />
+			</LinearLayout>
+
 			<ListView
 				android:id="@+id/listView"
 				android:layout_width="match_parent"
