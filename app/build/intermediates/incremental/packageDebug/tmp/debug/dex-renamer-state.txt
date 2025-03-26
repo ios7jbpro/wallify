@@ -1,4 +1,4 @@
-#Wed Mar 26 20:41:53 TRT 2025
+#Wed Mar 26 21:42:20 TRT 2025
 base.0=C\:\\Users\\baris\\StudioProjects\\wallify\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\baris\\StudioProjects\\wallify\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\baris\\StudioProjects\\wallify\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex

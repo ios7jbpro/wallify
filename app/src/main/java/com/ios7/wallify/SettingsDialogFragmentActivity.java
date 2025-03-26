@@ -138,9 +138,16 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linear3.setVisibility(View.GONE);
 		// Set textview2 to app's current version
 		// Check the current app version via package name first
+		//try {
+		//	String versionName = getContext().getPackageManager().getPackageInfo(getContext().getPackageName(), 0).versionName;
+		//	textview2.setText("Wallify " + versionName);
+		//} catch (PackageManager.NameNotFoundException e) {
+		// Forget the above, lets extend it a bit more.
+		// Get the app name from strings and then the version number like above then set textview2 to be so using the same try and catch condition
 		try {
+			String appName = getContext().getString(R.string.app_name);
 			String versionName = getContext().getPackageManager().getPackageInfo(getContext().getPackageName(), 0).versionName;
-			textview2.setText("Wallify " + versionName);
+			textview2.setText(appName + " " + versionName);
 		} catch (PackageManager.NameNotFoundException e) {
 		}
 
