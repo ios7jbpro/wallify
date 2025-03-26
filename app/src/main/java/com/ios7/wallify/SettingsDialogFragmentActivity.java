@@ -219,6 +219,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 				// Show the dialog
 				AlertDialog dialog = _builder.create();
+				dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 				dialog.show();
 
 				// Handle button click to dismiss dialog
