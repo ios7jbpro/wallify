@@ -106,6 +106,7 @@ id progressBar2
 id progressBar3
 id progress_bar_loading
 id progressbar1
+id repobtn
 id rootlinear
 id setWallpaperButton
 id switchColorPreviews

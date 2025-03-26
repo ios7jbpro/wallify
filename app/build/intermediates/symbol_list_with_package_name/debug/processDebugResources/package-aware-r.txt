@@ -3679,6 +3679,7 @@ id rectangle
 id rectangleHorizontalOnly
 id rectangleVerticalOnly
 id rectangles
+id repobtn
 id report_drawn
 id reverseSawtooth
 id right

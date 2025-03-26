@@ -212,6 +212,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 				// Find views inside the custom layout
 				TextView closebtn = customView.findViewById(R.id.closebtn);
+				TextView repobtn = customView.findViewById(R.id.repobtn);
 
 				// Create a dialog and set the custom view
 				AlertDialog.Builder _builder = new AlertDialog.Builder(requireContext());
@@ -229,8 +230,19 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						dialog.dismiss();
 					}
 				});
+
+				// Handle button click to open the GitHub repository
+				repobtn.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						Uri uri = Uri.parse("https://github.com/ios7jbpro/wallify");
+						// Launch to the url using Intent
+						Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+						startActivity(intent);
+
 			}
 		});
-
+				}
+		});
 	}
 }

@@ -3678,6 +3678,7 @@ int id rectangle 0x7f0801c8
 int id rectangleHorizontalOnly 0x7f0801c9
 int id rectangleVerticalOnly 0x7f0801ca
 int id rectangles 0x7f0801cb
+int id repobtn 0x7f080275
 int id report_drawn 0x7f0801cc
 int id reverseSawtooth 0x7f0801cd
 int id right 0x7f0801ce
