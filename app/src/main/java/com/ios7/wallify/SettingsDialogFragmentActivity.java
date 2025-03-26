@@ -5,6 +5,7 @@ import android.app.*;
 import android.app.Activity;
 import android.content.*;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.*;
 import android.graphics.*;
 import android.graphics.drawable.*;
@@ -135,6 +136,13 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		// Remove the timeout option since it's unnecessary now as we are using Glide onResourceReady instead
 		linear4.setVisibility(View.GONE);
 		linear3.setVisibility(View.GONE);
+		// Set textview2 to app's current version
+		// Check the current app version via package name first
+		try {
+			String versionName = getContext().getPackageManager().getPackageInfo(getContext().getPackageName(), 0).versionName;
+			textview2.setText("Wallify " + versionName);
+		} catch (PackageManager.NameNotFoundException e) {
+		}
 
 		// Create a network request to the json we have in Github with all the methods
 		// The URL
