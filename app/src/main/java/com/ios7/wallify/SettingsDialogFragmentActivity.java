@@ -198,12 +198,30 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linear30.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				// Create a dialog
+				// Inflate the custom layout
+				LayoutInflater inflater = LayoutInflater.from(requireContext());
+				View customView = inflater.inflate(R.layout.abandon_dialog, null);
+
+				// Find views inside the custom layout
+				TextView closebtn = customView.findViewById(R.id.closebtn);
+
+				// Create a dialog and set the custom view
 				AlertDialog.Builder _builder = new AlertDialog.Builder(requireContext());
-				_builder.setMessage("The app has been abandoned because I don't have the mood to develop this project further anymore. This might change in the long future, but for now, there will be no updates.");
-				_builder.setPositiveButton("OK", null);
-				_builder.show();
+				_builder.setView(customView);
+
+				// Show the dialog
+				AlertDialog dialog = _builder.create();
+				dialog.show();
+
+				// Handle button click to dismiss dialog
+				closebtn.setOnClickListener(new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						dialog.dismiss();
+					}
+				});
 			}
 		});
+
 	}
 }

@@ -54,6 +54,7 @@ id button1
 id button2
 id cardview1
 id circleimageview1
+id closebtn
 id color1
 id color2
 id color3
@@ -109,8 +110,10 @@ id rootlinear
 id setWallpaperButton
 id switchColorPreviews
 id tempcardview
+id textView
 id textView2
 id textView3
+id textView4
 id textViewCrop
 id textViewLoading
 id textViewTopbar
@@ -127,6 +130,7 @@ id topBar
 id viewpager1
 id wallimage
 id wallname
+layout abandon_dialog
 layout activity_crop_wallpaper
 layout categorylist
 layout devs
@@ -146,6 +150,7 @@ string lorem_ipsum
 string next
 string previous
 string second_fragment_label
+string title_activity_abandon_dialog
 string title_activity_crop_wallpaper
 style AppTheme
 style AppTheme.AppBarOverlay

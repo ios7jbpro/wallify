@@ -4,7 +4,7 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-zh/values-zh.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\633c84dba2486822b76af12ac4b8a2f0\\transformed\\android-image-cropper-4.6.0\\res\\values-zh\\values-zh.xml",
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\72cb10608144cd39947f6d2b41c9c643\\transformed\\android-image-cropper-4.6.0\\res\\values-zh\\values-zh.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",

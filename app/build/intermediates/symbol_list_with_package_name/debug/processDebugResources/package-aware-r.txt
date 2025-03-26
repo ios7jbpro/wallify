@@ -3366,6 +3366,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id closebtn
 id closest
 id collapseActionView
 id color1
@@ -3775,8 +3776,10 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id textView2
 id textView3
+id textView4
 id textViewCrop
 id textViewLoading
 id textViewTopbar
@@ -3932,6 +3935,7 @@ interpolator mtrl_fast_out_linear_in
 interpolator mtrl_fast_out_slow_in
 interpolator mtrl_linear
 interpolator mtrl_linear_out_slow_in
+layout abandon_dialog
 layout abc_action_bar_title_item
 layout abc_action_bar_up_container
 layout abc_action_menu_item_layout
@@ -4313,6 +4317,7 @@ string status_bar_notification_info_overflow
 string switch_role
 string tab
 string template_percent
+string title_activity_abandon_dialog
 string title_activity_crop_wallpaper
 string tooltip_description
 string tooltip_label
