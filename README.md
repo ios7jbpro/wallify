@@ -1,4 +1,4 @@
 # wallify
 despite all my rage
 
-### project has been abandoned
+### project might be abandoned
