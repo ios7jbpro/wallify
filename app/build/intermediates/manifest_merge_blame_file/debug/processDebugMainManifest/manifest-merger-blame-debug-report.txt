@@ -85,235 +85,236 @@
 47-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:20:9-48
 48        android:supportsPictureInPicture="true"
 48-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:21:9-48
-49        android:theme="@style/AppTheme"
-49-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:22:9-40
-50        android:usesCleartextTraffic="true" >
-50-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:23:9-44
-51        <activity
-51-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:24:9-28:47
-52            android:name="com.ios7.wallify.abandon_dialog"
-52-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:25:13-43
-53            android:exported="false"
-53-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:26:13-37
-54            android:label="@string/title_activity_abandon_dialog"
-54-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:27:13-66
-55            android:theme="@style/AppTheme" />
-55-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:28:13-44
-56        <activity
-56-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:29:9-33:47
-57            android:name="com.ios7.wallify.CropWallpaper"
-57-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:30:13-42
-58            android:exported="false"
-58-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:31:13-37
-59            android:label="@string/title_activity_crop_wallpaper"
-59-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:32:13-66
-60            android:theme="@style/AppTheme" />
-60-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:33:13-44
-61        <activity
-61-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:34:9-48:20
-62            android:name="com.ios7.wallify.MainActivity"
-62-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:35:13-41
-63            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-63-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:36:13-106
-64            android:exported="true"
-64-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:37:13-36
-65            android:hardwareAccelerated="true"
-65-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:38:13-47
-66            android:resizeableActivity="true"
-66-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:39:13-46
-67            android:screenOrientation="fullSensor"
-67-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:40:13-51
-68            android:supportsPictureInPicture="true"
-68-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:41:13-52
-69            android:windowSoftInputMode="stateHidden" >
-69-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:42:13-54
-70            <intent-filter>
-70-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:43:13-47:29
-71                <action android:name="android.intent.action.MAIN" />
-71-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:44:17-69
-71-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:44:25-66
-72
-73                <category android:name="android.intent.category.LAUNCHER" />
-73-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:46:17-77
-73-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:46:27-74
-74            </intent-filter>
-75        </activity>
-76        <activity
-76-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:49:9-56:57
-77            android:name="com.ios7.wallify.WalldownloadActivity"
-77-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:50:13-49
-78            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-78-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:51:13-106
-79            android:hardwareAccelerated="true"
-79-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:52:13-47
-80            android:resizeableActivity="true"
-80-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:53:13-46
-81            android:screenOrientation="portrait"
-81-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:54:13-49
-82            android:supportsPictureInPicture="true"
-82-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:55:13-52
-83            android:windowSoftInputMode="stateHidden" />
-83-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:56:13-54
-84        <activity
-84-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:57:9-63:57
-85            android:name="com.ios7.wallify.Setwall1Activity"
-85-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:58:13-45
-86            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-86-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:59:13-106
-87            android:hardwareAccelerated="true"
-87-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:60:13-47
-88            android:supportsPictureInPicture="true"
-88-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:61:13-52
-89            android:theme="@style/AppTheme.FullScreen"
-89-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:62:13-55
-90            android:windowSoftInputMode="stateHidden" />
-90-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:63:13-54
-91        <activity
-91-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:64:9-70:57
-92            android:name="com.ios7.wallify.Setwall2Activity"
-92-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:65:13-45
-93            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
-93-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:66:13-106
-94            android:hardwareAccelerated="true"
-94-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:67:13-47
-95            android:supportsPictureInPicture="true"
-95-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:68:13-52
-96            android:theme="@style/AppTheme.FullScreen"
-96-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:69:13-55
-97            android:windowSoftInputMode="stateHidden" />
-97-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:70:13-54
-98
-99        <provider
-99-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:72:9-82:20
-100            android:name="androidx.startup.InitializationProvider"
-100-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:73:13-67
-101            android:authorities="com.ios7.wallify.androidx-startup"
-101-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:74:13-68
-102            android:exported="false" >
-102-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:75:13-37
-103            <meta-data
-103-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:76:13-78:52
-104                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-104-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:77:17-78
-105                android:value="androidx.startup" />
-105-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:78:17-49
-106            <meta-data
-106-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:79:13-81:52
-107                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-107-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:80:17-75
-108                android:value="androidx.startup" />
-108-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:81:17-49
-109            <meta-data
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-110                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-111                android:value="androidx.startup" />
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-112        </provider>
-113
-114        <uses-library
-114-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:84:9-86:40
-115            android:name="org.apache.http.legacy"
-115-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:85:13-50
-116            android:required="false" />
-116-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:86:13-37
-117
-118        <provider
-118-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:21:9-29:20
-119            android:name="com.canhub.cropper.CropFileProvider"
-119-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:22:13-63
-120            android:authorities="com.ios7.wallify.cropper.fileprovider"
-120-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:23:13-72
-121            android:exported="false"
-121-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:24:13-37
-122            android:grantUriPermissions="true" >
-122-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:25:13-47
-123            <meta-data
-123-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:26:13-28:62
-124                android:name="android.support.FILE_PROVIDER_PATHS"
-124-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:27:17-67
-125                android:resource="@xml/library_file_paths" />
-125-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:28:17-59
-126        </provider>
-127
-128        <activity
-128-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:31:9-33:39
-129            android:name="com.canhub.cropper.CropImageActivity"
-129-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:32:13-64
-130            android:exported="true" />
-130-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:33:13-36
-131        <activity
-131-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\e20dc7b218c178f67915e4fda7c6f6a6\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-132            android:name="androidx.compose.ui.tooling.PreviewActivity"
-132-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\e20dc7b218c178f67915e4fda7c6f6a6\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-133            android:exported="true" />
-133-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\e20dc7b218c178f67915e4fda7c6f6a6\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-134        <activity
-134-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\76f113ea5cb3e7d674619030d353c2be\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
-135            android:name="androidx.activity.ComponentActivity"
-135-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\76f113ea5cb3e7d674619030d353c2be\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
-136            android:exported="true" />
-136-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\76f113ea5cb3e7d674619030d353c2be\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
-137
-138        <provider
-138-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
-139            android:name="com.squareup.picasso.PicassoProvider"
-139-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
-140            android:authorities="com.ios7.wallify.com.squareup.picasso"
-140-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
-141            android:exported="false" />
-141-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
-142
-143        <uses-library
-143-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-144            android:name="androidx.window.extensions"
-144-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-145            android:required="false" />
-145-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-146        <uses-library
-146-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-147            android:name="androidx.window.sidecar"
-147-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-148            android:required="false" />
-148-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-149
-150        <receiver
-150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-151            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-152            android:directBootAware="false"
-152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-153            android:enabled="true"
-153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-154            android:exported="true"
-154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-155            android:permission="android.permission.DUMP" >
-155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-156            <intent-filter>
-156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-157                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-158            </intent-filter>
-159            <intent-filter>
-159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-160                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-161            </intent-filter>
-162            <intent-filter>
-162-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-163                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-164            </intent-filter>
-165            <intent-filter>
-165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-166                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-167            </intent-filter>
-168        </receiver>
-169    </application>
-170
-171</manifest>
+49        android:testOnly="true"
+50        android:theme="@style/AppTheme"
+50-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:22:9-40
+51        android:usesCleartextTraffic="true" >
+51-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:23:9-44
+52        <activity
+52-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:24:9-28:47
+53            android:name="com.ios7.wallify.abandon_dialog"
+53-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:25:13-43
+54            android:exported="false"
+54-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:26:13-37
+55            android:label="@string/title_activity_abandon_dialog"
+55-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:27:13-66
+56            android:theme="@style/AppTheme" />
+56-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:28:13-44
+57        <activity
+57-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:29:9-33:47
+58            android:name="com.ios7.wallify.CropWallpaper"
+58-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:30:13-42
+59            android:exported="false"
+59-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:31:13-37
+60            android:label="@string/title_activity_crop_wallpaper"
+60-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:32:13-66
+61            android:theme="@style/AppTheme" />
+61-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:33:13-44
+62        <activity
+62-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:34:9-48:20
+63            android:name="com.ios7.wallify.MainActivity"
+63-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:35:13-41
+64            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+64-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:36:13-106
+65            android:exported="true"
+65-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:37:13-36
+66            android:hardwareAccelerated="true"
+66-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:38:13-47
+67            android:resizeableActivity="true"
+67-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:39:13-46
+68            android:screenOrientation="fullSensor"
+68-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:40:13-51
+69            android:supportsPictureInPicture="true"
+69-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:41:13-52
+70            android:windowSoftInputMode="stateHidden" >
+70-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:42:13-54
+71            <intent-filter>
+71-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:43:13-47:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:44:17-69
+72-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:44:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:46:17-77
+74-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:46:27-74
+75            </intent-filter>
+76        </activity>
+77        <activity
+77-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:49:9-56:57
+78            android:name="com.ios7.wallify.WalldownloadActivity"
+78-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:50:13-49
+79            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+79-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:51:13-106
+80            android:hardwareAccelerated="true"
+80-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:52:13-47
+81            android:resizeableActivity="true"
+81-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:53:13-46
+82            android:screenOrientation="portrait"
+82-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:54:13-49
+83            android:supportsPictureInPicture="true"
+83-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:55:13-52
+84            android:windowSoftInputMode="stateHidden" />
+84-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:56:13-54
+85        <activity
+85-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:57:9-63:57
+86            android:name="com.ios7.wallify.Setwall1Activity"
+86-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:58:13-45
+87            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+87-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:59:13-106
+88            android:hardwareAccelerated="true"
+88-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:60:13-47
+89            android:supportsPictureInPicture="true"
+89-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:61:13-52
+90            android:theme="@style/AppTheme.FullScreen"
+90-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:62:13-55
+91            android:windowSoftInputMode="stateHidden" />
+91-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:63:13-54
+92        <activity
+92-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:64:9-70:57
+93            android:name="com.ios7.wallify.Setwall2Activity"
+93-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:65:13-45
+94            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+94-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:66:13-106
+95            android:hardwareAccelerated="true"
+95-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:67:13-47
+96            android:supportsPictureInPicture="true"
+96-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:68:13-52
+97            android:theme="@style/AppTheme.FullScreen"
+97-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:69:13-55
+98            android:windowSoftInputMode="stateHidden" />
+98-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:70:13-54
+99
+100        <provider
+100-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:72:9-82:20
+101            android:name="androidx.startup.InitializationProvider"
+101-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:73:13-67
+102            android:authorities="com.ios7.wallify.androidx-startup"
+102-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:74:13-68
+103            android:exported="false" >
+103-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:75:13-37
+104            <meta-data
+104-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:76:13-78:52
+105                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+105-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:77:17-78
+106                android:value="androidx.startup" />
+106-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:78:17-49
+107            <meta-data
+107-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:79:13-81:52
+108                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+108-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:80:17-75
+109                android:value="androidx.startup" />
+109-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:81:17-49
+110            <meta-data
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+111                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+112                android:value="androidx.startup" />
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+113        </provider>
+114
+115        <uses-library
+115-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:84:9-86:40
+116            android:name="org.apache.http.legacy"
+116-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:85:13-50
+117            android:required="false" />
+117-->C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:86:13-37
+118
+119        <provider
+119-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:21:9-29:20
+120            android:name="com.canhub.cropper.CropFileProvider"
+120-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:22:13-63
+121            android:authorities="com.ios7.wallify.cropper.fileprovider"
+121-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:23:13-72
+122            android:exported="false"
+122-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:24:13-37
+123            android:grantUriPermissions="true" >
+123-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:25:13-47
+124            <meta-data
+124-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:26:13-28:62
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:27:17-67
+126                android:resource="@xml/library_file_paths" />
+126-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:28:17-59
+127        </provider>
+128
+129        <activity
+129-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:31:9-33:39
+130            android:name="com.canhub.cropper.CropImageActivity"
+130-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:32:13-64
+131            android:exported="true" />
+131-->[com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:33:13-36
+132        <activity
+132-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\e20dc7b218c178f67915e4fda7c6f6a6\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+133            android:name="androidx.compose.ui.tooling.PreviewActivity"
+133-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\e20dc7b218c178f67915e4fda7c6f6a6\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+134            android:exported="true" />
+134-->[androidx.compose.ui:ui-tooling-android:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\e20dc7b218c178f67915e4fda7c6f6a6\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+135        <activity
+135-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\76f113ea5cb3e7d674619030d353c2be\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:23:9-25:39
+136            android:name="androidx.activity.ComponentActivity"
+136-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\76f113ea5cb3e7d674619030d353c2be\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:24:13-63
+137            android:exported="true" />
+137-->[androidx.compose.ui:ui-test-manifest:1.6.6] C:\Users\baris\.gradle\caches\8.9\transforms\76f113ea5cb3e7d674619030d353c2be\transformed\ui-test-manifest-1.6.6\AndroidManifest.xml:25:13-36
+138
+139        <provider
+139-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:8:9-11:40
+140            android:name="com.squareup.picasso.PicassoProvider"
+140-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:9:13-64
+141            android:authorities="com.ios7.wallify.com.squareup.picasso"
+141-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:10:13-72
+142            android:exported="false" />
+142-->[com.squareup.picasso:picasso:2.8] C:\Users\baris\.gradle\caches\8.9\transforms\34400cf323a3ae709b558b618f7c0667\transformed\picasso-2.8\AndroidManifest.xml:11:13-37
+143
+144        <uses-library
+144-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+145            android:name="androidx.window.extensions"
+145-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+146            android:required="false" />
+146-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+147        <uses-library
+147-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+148            android:name="androidx.window.sidecar"
+148-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+149            android:required="false" />
+149-->[androidx.window:window:1.0.0] C:\Users\baris\.gradle\caches\8.9\transforms\5e808f122fc7c02b690d7ec571e42f6a\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+150
+151        <receiver
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+152            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+153            android:directBootAware="false"
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+154            android:enabled="true"
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+155            android:exported="true"
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+156            android:permission="android.permission.DUMP" >
+156-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+157            <intent-filter>
+157-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+158                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+158-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+159            </intent-filter>
+160            <intent-filter>
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+161                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+162            </intent-filter>
+163            <intent-filter>
+163-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+164                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+165            </intent-filter>
+166            <intent-filter>
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+167                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\baris\.gradle\caches\8.9\transforms\9924e395a3168969936ecfee3c6f53a1\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+168            </intent-filter>
+169        </receiver>
+170    </application>
+171
+172</manifest>

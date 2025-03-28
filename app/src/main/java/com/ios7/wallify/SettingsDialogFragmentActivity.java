@@ -246,6 +246,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						// Launch to the url using Intent
 						Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 						startActivity(intent);
+						dialog.dismiss();
 
 			}
 		});
