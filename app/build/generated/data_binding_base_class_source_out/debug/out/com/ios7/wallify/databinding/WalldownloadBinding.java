@@ -160,6 +160,22 @@ public final class WalldownloadBinding implements ViewBinding {
   @NonNull
   public final TextView textView3;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView textView5;
+
   @NonNull
   public final TextView textViewCrop;
 
@@ -199,7 +215,7 @@ public final class WalldownloadBinding implements ViewBinding {
       @NonNull LinearLayout linear7, @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
       @NonNull LinearLayout linearpreviewcard, @NonNull LinearLayout previewStatusBar,
       @NonNull ProgressBar progressBarLoading, @NonNull TextView textView2,
-      @NonNull TextView textView3, @NonNull TextView textViewCrop,
+      @NonNull TextView textView3, @Nullable TextView textView5, @NonNull TextView textViewCrop,
       @NonNull TextView textViewLoading, @NonNull TextView textview1, @NonNull TextView textview2,
       @NonNull TextView textview3, @NonNull TextView textview4, @NonNull TextView time2) {
     this.rootView = rootView;
@@ -249,6 +265,7 @@ public final class WalldownloadBinding implements ViewBinding {
     this.progressBarLoading = progressBarLoading;
     this.textView2 = textView2;
     this.textView3 = textView3;
+    this.textView5 = textView5;
     this.textViewCrop = textViewCrop;
     this.textViewLoading = textViewLoading;
     this.textview1 = textview1;
@@ -561,6 +578,9 @@ public final class WalldownloadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView5;
+      TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.textViewCrop;
       TextView textViewCrop = ViewBindings.findChildViewById(rootView, id);
       if (textViewCrop == null) {
@@ -609,8 +629,8 @@ public final class WalldownloadBinding implements ViewBinding {
           colorpreviews, colorpreviewsloading, imageview1, imageview3, linear1, linear10, linear11,
           linear14, linear15, linear16, linear17, linear18, linear19, linear2, linear20, linear4,
           linear5, linear6, linear7, linear8, linear9, linearpreviewcard, previewStatusBar,
-          progressBarLoading, textView2, textView3, textViewCrop, textViewLoading, textview1,
-          textview2, textview3, textview4, time2);
+          progressBarLoading, textView2, textView3, textView5, textViewCrop, textViewLoading,
+          textview1, textview2, textview3, textview4, time2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

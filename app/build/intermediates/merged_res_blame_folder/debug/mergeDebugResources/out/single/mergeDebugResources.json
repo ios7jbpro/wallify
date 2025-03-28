@@ -16,10 +16,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\hk_personal_wallpaper.png"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_abandon_dialog.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/abandon_dialog.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_jhgg_2.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\jhgg_2.png"
     },

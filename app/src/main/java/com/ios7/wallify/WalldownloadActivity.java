@@ -106,6 +106,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private LinearLayout color4;
 	private LinearLayout color5;
 	private LinearLayout color6;
+	private TextView textView5;
 	private LinearLayout colorpreviews;
 	private LinearLayout colorpreviewsloading;
 	
@@ -183,6 +184,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 		color4 = findViewById(R.id.color4);
 		color5 = findViewById(R.id.color5);
 		color6 = findViewById(R.id.color6);
+		textView5 = findViewById(R.id.textView5);
 		textView3 = findViewById(R.id.textView3);
 		colorpreviews = findViewById(R.id.colorpreviews);
 		textViewCrop = findViewById(R.id.textViewCrop);
@@ -272,6 +274,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 									color4.setBackgroundColor(mutedLight);
 									color5.setBackgroundColor(vibrantLight);
 									color6.setBackgroundColor(vibrantDark);
+									textView5.setVisibility(View.GONE);
 									color1.setOnClickListener(new OnClickListener() {
 										@Override
 										public void onClick(View v) {
@@ -324,6 +327,20 @@ public class WalldownloadActivity extends AppCompatActivity {
 										// Set the clock widget to be white again as color extraction is ignored
 										textview2.setTextColor(Color.WHITE);
 										time2.setTextColor(Color.WHITE);
+									}
+									// Check if any of the color views are white or transparent
+									if (color1.getBackground().getAlpha() == 0 || color2.getBackground().getAlpha() == 0 || color3.getBackground().getAlpha() == 0 ||
+											color4.getBackground().getAlpha() == 0 || color5.getBackground().getAlpha() == 0 || color6.getBackground().getAlpha() == 0) {
+										// Hide all of the color views by setting visiblity to gone and show textView5 instead
+										color1.setVisibility(View.GONE);
+										color2.setVisibility(View.GONE);
+										color3.setVisibility(View.GONE);
+										color4.setVisibility(View.GONE);
+										color5.setVisibility(View.GONE);
+										color6.setVisibility(View.GONE);
+										textView5.setVisibility(View.VISIBLE);
+										// Set textView2 back to white color as the color extraction fails and the text can't be colored in this state, so we do this to avoid an invisible text
+										textview2.setTextColor(Color.WHITE);
 									}
 								});
 							}

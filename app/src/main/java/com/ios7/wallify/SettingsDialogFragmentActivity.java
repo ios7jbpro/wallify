@@ -135,6 +135,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 		// Remove the timeout option since it's unnecessary now as we are using Glide onResourceReady instead
 		linear4.setVisibility(View.GONE);
+		// Remove the old dev list layout as we now have a new one using a custom adapter over JSON parsing
 		linear3.setVisibility(View.GONE);
 		// Set textview2 to app's current version
 		// Check the current app version via package name first

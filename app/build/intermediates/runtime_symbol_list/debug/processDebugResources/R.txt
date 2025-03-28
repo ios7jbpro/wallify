@@ -3780,6 +3780,7 @@ int id textView 0x7f08022e
 int id textView2 0x7f08022f
 int id textView3 0x7f080230
 int id textView4 0x7f080231
+int id textView5 0x7f080276
 int id textViewCrop 0x7f080232
 int id textViewLoading 0x7f080233
 int id textViewTopbar 0x7f080234
