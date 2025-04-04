@@ -160,20 +160,7 @@ public final class WalldownloadBinding implements ViewBinding {
   @NonNull
   public final TextView textView3;
 
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-large/</li>
-   * </ul>
-   */
-  @Nullable
+  @NonNull
   public final TextView textView5;
 
   @NonNull
@@ -215,7 +202,7 @@ public final class WalldownloadBinding implements ViewBinding {
       @NonNull LinearLayout linear7, @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
       @NonNull LinearLayout linearpreviewcard, @NonNull LinearLayout previewStatusBar,
       @NonNull ProgressBar progressBarLoading, @NonNull TextView textView2,
-      @NonNull TextView textView3, @Nullable TextView textView5, @NonNull TextView textViewCrop,
+      @NonNull TextView textView3, @NonNull TextView textView5, @NonNull TextView textViewCrop,
       @NonNull TextView textViewLoading, @NonNull TextView textview1, @NonNull TextView textview2,
       @NonNull TextView textview3, @NonNull TextView textview4, @NonNull TextView time2) {
     this.rootView = rootView;
@@ -580,6 +567,9 @@ public final class WalldownloadBinding implements ViewBinding {
 
       id = R.id.textView5;
       TextView textView5 = ViewBindings.findChildViewById(rootView, id);
+      if (textView5 == null) {
+        break missingId;
+      }
 
       id = R.id.textViewCrop;
       TextView textViewCrop = ViewBindings.findChildViewById(rootView, id);
