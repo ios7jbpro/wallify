@@ -66,6 +66,8 @@ public class WallpapersFragmentActivity extends Fragment {
 	private LinearLayout linear2;
 	private GridView gridview1;
 	private TextView textview1;
+	private TextView textloading;
+	private LinearLayout linearloading;
 	
 	private RequestNetwork fetchwalljson;
 	private RequestNetwork.RequestListener _fetchwalljson_request_listener;
@@ -96,11 +98,28 @@ public class WallpapersFragmentActivity extends Fragment {
 		linear2 = _view.findViewById(R.id.linear2);
 		gridview1 = _view.findViewById(R.id.gridview1);
 		textview1 = _view.findViewById(R.id.textview1);
+		textloading = _view.findViewById(R.id.textloading);
+		linearloading = _view.findViewById(R.id.linearloading);
+		textloading.setVisibility(View.GONE);
 		fetchwalljson = new RequestNetwork((Activity) getContext());
 		selectedItemList = getContext().getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 		temporaryCache = getContext().getSharedPreferences("temporaryCache", Activity.MODE_PRIVATE);
 		fetchcategoryjson = new RequestNetwork((Activity) getContext());
+		// Create a timer that waits for 5 seconds
+		relay = new TimerTask() {
+			@Override
+			public void run() {
+				getActivity().runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						textloading.setVisibility(View.VISIBLE);
+					}
+
+				});
+			}
+		};
+		_timer.schedule(relay, 5000);
 		
 		listview1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
@@ -179,16 +198,18 @@ public class WallpapersFragmentActivity extends Fragment {
 				final String _tag = _param1;
 				final String _response = _param2;
 				final HashMap<String, Object> _responseHeaders = _param3;
-				walllist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>(){}.getType());
+				walllist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>() {
+				}.getType());
 				gridview1.setAdapter(new Gridview1Adapter(walllist));
-				gridview1.setNumColumns((int)2);
+				gridview1.setNumColumns((int) 2);
 			}
-			
+
 			@Override
 			public void onErrorResponse(String _param1, String _param2) {
 				final String _tag = _param1;
 				final String _message = _param2;
-				
+				// Create a toast message saying there is no internet
+				Toast.makeText(getContext(), "Failed to fetch, are you connected to the internet?", Toast.LENGTH_SHORT).show();
 			}
 		};
 		
@@ -201,6 +222,7 @@ public class WallpapersFragmentActivity extends Fragment {
 				categorylist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>(){}.getType());
 				listview1.setAdapter(new Listview1Adapter(categorylist));
 				((BaseAdapter)listview1.getAdapter()).notifyDataSetChanged();
+				linearloading.setVisibility(View.GONE);
 			}
 			
 			@Override
