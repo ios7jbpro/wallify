@@ -3538,6 +3538,7 @@ id linear7
 id linear8
 id linear9
 id linearColorPreviews
+id linearloading
 id linearpreviewcard
 id listMode
 id listView
@@ -3669,6 +3670,7 @@ id previewStatusBar
 id progressBar
 id progressBar2
 id progressBar3
+id progressBar4
 id progress_bar_loading
 id progress_circular
 id progress_horizontal
@@ -3794,6 +3796,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textloading
 id textview1
 id textview2
 id textview3

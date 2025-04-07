@@ -95,6 +95,7 @@ id linear7
 id linear8
 id linear9
 id linearColorPreviews
+id linearloading
 id linearpreviewcard
 id listView
 id listview1
@@ -104,6 +105,7 @@ id previewStatusBar
 id progressBar
 id progressBar2
 id progressBar3
+id progressBar4
 id progress_bar_loading
 id progressbar1
 id repobtn
@@ -119,6 +121,7 @@ id textView5
 id textViewCrop
 id textViewLoading
 id textViewTopbar
+id textloading
 id textview1
 id textview2
 id textview3

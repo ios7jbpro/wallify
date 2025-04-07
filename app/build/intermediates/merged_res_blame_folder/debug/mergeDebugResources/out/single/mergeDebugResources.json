@@ -28,12 +28,12 @@
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-68:/layout-large_walldownload.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout-large/walldownload.xml"
-    },
-    {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_ic_arrow_back_white.png.flat",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/ic_arrow_back_white.png"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_wallpapers_fragment.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/wallpapers_fragment.xml"
     },
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_wallpapers_fragment.xml.flat",

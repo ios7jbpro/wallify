@@ -65,7 +65,6 @@
             android:exported="true"
             android:hardwareAccelerated="true"
             android:resizeableActivity="true"
-            android:screenOrientation="fullSensor"
             android:supportsPictureInPicture="true"
             android:windowSoftInputMode="stateHidden" >
             <intent-filter>

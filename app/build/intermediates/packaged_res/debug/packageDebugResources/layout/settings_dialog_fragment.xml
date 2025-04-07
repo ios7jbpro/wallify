@@ -45,7 +45,7 @@
 					android:layout_height="wrap_content"
 					android:layout_weight="1"
 					android:padding="8dp"
-					android:text="Extract wallpaper colors"
+					android:text="Extract wallpaper colors\n(debugger suggested)"
 					android:textColor="@color/textprimary"
 					android:textSize="12sp" />
 

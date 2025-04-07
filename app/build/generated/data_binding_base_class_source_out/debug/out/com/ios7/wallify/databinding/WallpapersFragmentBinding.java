@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -35,7 +36,13 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   public final LinearLayout linear2;
 
   @NonNull
+  public final LinearLayout linearloading;
+
+  @NonNull
   public final ListView listview1;
+
+  @NonNull
+  public final ProgressBar progressBar4;
 
   @NonNull
   public final LinearLayout rootlinear;
@@ -44,20 +51,28 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   public final CardView tempcardview;
 
   @NonNull
+  public final TextView textloading;
+
+  @NonNull
   public final TextView textview1;
 
   private WallpapersFragmentBinding(@NonNull LinearLayout rootView,
       @NonNull LinearLayout gridlinear, @NonNull GridView gridview1, @NonNull LinearLayout linear1,
-      @NonNull LinearLayout linear2, @NonNull ListView listview1, @NonNull LinearLayout rootlinear,
-      @NonNull CardView tempcardview, @NonNull TextView textview1) {
+      @NonNull LinearLayout linear2, @NonNull LinearLayout linearloading,
+      @NonNull ListView listview1, @NonNull ProgressBar progressBar4,
+      @NonNull LinearLayout rootlinear, @NonNull CardView tempcardview,
+      @NonNull TextView textloading, @NonNull TextView textview1) {
     this.rootView = rootView;
     this.gridlinear = gridlinear;
     this.gridview1 = gridview1;
     this.linear1 = linear1;
     this.linear2 = linear2;
+    this.linearloading = linearloading;
     this.listview1 = listview1;
+    this.progressBar4 = progressBar4;
     this.rootlinear = rootlinear;
     this.tempcardview = tempcardview;
+    this.textloading = textloading;
     this.textview1 = textview1;
   }
 
@@ -112,9 +127,21 @@ public final class WallpapersFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearloading;
+      LinearLayout linearloading = ViewBindings.findChildViewById(rootView, id);
+      if (linearloading == null) {
+        break missingId;
+      }
+
       id = R.id.listview1;
       ListView listview1 = ViewBindings.findChildViewById(rootView, id);
       if (listview1 == null) {
+        break missingId;
+      }
+
+      id = R.id.progressBar4;
+      ProgressBar progressBar4 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar4 == null) {
         break missingId;
       }
 
@@ -130,6 +157,12 @@ public final class WallpapersFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textloading;
+      TextView textloading = ViewBindings.findChildViewById(rootView, id);
+      if (textloading == null) {
+        break missingId;
+      }
+
       id = R.id.textview1;
       TextView textview1 = ViewBindings.findChildViewById(rootView, id);
       if (textview1 == null) {
@@ -137,7 +170,8 @@ public final class WallpapersFragmentBinding implements ViewBinding {
       }
 
       return new WallpapersFragmentBinding((LinearLayout) rootView, gridlinear, gridview1, linear1,
-          linear2, listview1, rootlinear, tempcardview, textview1);
+          linear2, linearloading, listview1, progressBar4, rootlinear, tempcardview, textloading,
+          textview1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
