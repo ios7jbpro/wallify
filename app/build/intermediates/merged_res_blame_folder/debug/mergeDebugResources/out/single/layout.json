@@ -12,10 +12,6 @@
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/activity_crop_wallpaper.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-67:/layout/wallpapers_fragment.xml",
-        "source": "com.ios7.wallify.app-main-70:/layout/wallpapers_fragment.xml"
-    },
-    {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-mergeDebugResources-67:/layout/setwall1.xml",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/setwall1.xml"
     },
@@ -30,6 +26,10 @@
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-mergeDebugResources-67:/layout/main.xml",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/main.xml"
+    },
+    {
+        "merged": "com.ios7.wallify.app-mergeDebugResources-67:/layout/devs.xml",
+        "source": "com.ios7.wallify.app-main-70:/layout/devs.xml"
     },
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-mergeDebugResources-67:/layout/devs.xml",

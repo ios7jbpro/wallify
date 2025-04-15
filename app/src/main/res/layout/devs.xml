@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linear3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundedbgviolent"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:background="@drawable/roundedbgviolent">
+        android:padding="8dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleimageview1"
@@ -22,14 +24,15 @@
             app:civ_border_overlay="true"
             app:civ_border_width="3dp"
             app:civ_circle_background_color="#FFFFFF" />
+
         <TextView
             android:id="@+id/textview4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="ios7jbpro - Main Dev"
-            android:textSize="14sp"
-            android:textColor="@color/textprimary" />
+            android:textColor="@color/textprimary"
+            android:textSize="14sp" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

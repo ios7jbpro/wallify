@@ -8,7 +8,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.ios7.wallify.R;
@@ -19,7 +18,7 @@ import java.lang.String;
 
 public final class DevsBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
   @NonNull
   public final CircleImageView circleimageview1;
@@ -30,7 +29,7 @@ public final class DevsBinding implements ViewBinding {
   @NonNull
   public final TextView textview4;
 
-  private DevsBinding(@NonNull ConstraintLayout rootView, @NonNull CircleImageView circleimageview1,
+  private DevsBinding(@NonNull LinearLayout rootView, @NonNull CircleImageView circleimageview1,
       @NonNull LinearLayout linear3, @NonNull TextView textview4) {
     this.rootView = rootView;
     this.circleimageview1 = circleimageview1;
@@ -40,7 +39,7 @@ public final class DevsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -83,7 +82,7 @@ public final class DevsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DevsBinding((ConstraintLayout) rootView, circleimageview1, linear3, textview4);
+      return new DevsBinding((LinearLayout) rootView, circleimageview1, linear3, textview4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

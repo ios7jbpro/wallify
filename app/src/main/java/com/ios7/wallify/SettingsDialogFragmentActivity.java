@@ -152,7 +152,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		} catch (PackageManager.NameNotFoundException e) {
 		}
 
-		String url = "https://ihs.ios7.xyz/wallify-api/devs.json";
+		String url = "http://ihs.ios7.xyz/wallify-api/devs.json";
 		Request request = new Request.Builder().url(url).build();
 		OkHttpClient client = new OkHttpClient();
 		client.newCall(request).enqueue(new Callback() {
