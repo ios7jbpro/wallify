@@ -28,10 +28,6 @@
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/main.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-67:/layout/devs.xml",
-        "source": "com.ios7.wallify.app-main-70:/layout/devs.xml"
-    },
-    {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-mergeDebugResources-67:/layout/devs.xml",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/devs.xml"
     },
@@ -46,6 +42,10 @@
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-mergeDebugResources-67:/layout/warning_dialog.xml",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/warning_dialog.xml"
+    },
+    {
+        "merged": "com.ios7.wallify.app-mergeDebugResources-67:/layout/settings_dialog_fragment.xml",
+        "source": "com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
     },
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-mergeDebugResources-67:/layout/walldownload.xml",

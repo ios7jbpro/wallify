@@ -40,12 +40,12 @@
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/activetab.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_devpfp1.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/devpfp1.png"
-    },
-    {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout-large_walldownload.xml.flat",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout-large/walldownload.xml"
+    },
+    {
+        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_devpfp1.png.flat",
+        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/devpfp1.png"
     },
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_roundedbg.xml.flat",
@@ -62,10 +62,6 @@
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
-    },
-    {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_devs.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/devs.xml"
     },
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_wallpaperlist.xml.flat",
@@ -86,6 +82,10 @@
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_3.png.flat",
         "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_3.png"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
     },
     {
         "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_wall_icon.png.flat",
