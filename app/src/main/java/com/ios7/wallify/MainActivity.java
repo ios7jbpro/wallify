@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 		// ^^ This is no longer required as we added an exception catch to the extraction logic, the app won't fail anymore even if it fails.
 		// So now we enable it by default.
 		if (config.getString("colorextraction", "").equals("")) {
-			config.edit().putString("colorextraction", "1").commit();
+			config.edit().putString("colorextraction", "0").commit();
 		}
 		// This part sets the user statusbar color as same as the color pulled from the XMLs
 		switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {
