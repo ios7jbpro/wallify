@@ -24,7 +24,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The app might be abandoned because I don't have the mood to develop this project further anymore. This might change in the long future, but for now, there will be no updates. I don't see the point in developing the app anymore, as no one actually really cares. It might receive minor QOL updates and SDK updates overtime, but that's about it.\n\nOne of my other plans is to fill this app with wallpapers before actually letting it to rot.\n\nThe endpoint has been changed to j1 rep. If you want to add wallpapers, dig through the code and find the repo yourself first. It's not hard."
+        android:text="The app might be abandoned because I don't have the mood to develop this project further anymore. This might change in the long future, but for now, there will be no updates. I don't see the point in developing the app anymore, as no one actually really cares. It might receive minor QOL updates and SDK updates overtime, but that's about it.\n\nOne of my other plans is to fill this app with wallpapers before actually letting it to rot.\n\nThe endpoint has been changed to the internal ihs.ios7.xyz repo.\n\nContributions are closed except for insider people."
         android:textColor="@color/textprimary" />
 
     <LinearLayout
