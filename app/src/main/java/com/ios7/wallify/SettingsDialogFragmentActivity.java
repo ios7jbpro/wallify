@@ -152,14 +152,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		} catch (PackageManager.NameNotFoundException e) {
 		}
 
-		// Create a network request to the json we have in Github with all the methods
-		// The URL
-		String url = "https://raw.githubusercontent.com/ios7jbpro/wallify-walls/refs/heads/main/devs.json";
-		// Create a new request to the URL
+		String url = "https://ihs.ios7.xyz/wallify-api/devs.json";
 		Request request = new Request.Builder().url(url).build();
-		// Create a new client
 		OkHttpClient client = new OkHttpClient();
-		// Do the call
 		client.newCall(request).enqueue(new Callback() {
 			@Override
 			public void onFailure(@NonNull Call call, @NonNull IOException e) {
@@ -177,10 +172,8 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				// Get the JSON string from the response
 				String json = response.body().string();
 
-				// Use a JSON parsing library (like Gson or JSONObject)
 				try {
 					JSONArray jsonArray = new JSONArray(json);
-					// Initialize the list before adding items
 					List<Developer> developerList = new ArrayList<>();
 
 					// Iterate over the JSON array and create Developer objects
@@ -189,15 +182,12 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						String name = jsonObject.getString("name");
 						String imageUrl = jsonObject.getString("pfp");
 						Developer developer = new Developer(name, imageUrl);
-						// Add the developer to the list
 						developerList.add(developer);
 					}
 
-					// Now, update the UI with the list of developers
 					getActivity().runOnUiThread(new Runnable() {
 						@Override
 						public void run() {
-							// Create and set the custom adapter
 							DeveloperAdapter adapter = new DeveloperAdapter(getContext(), developerList);
 							listView.setAdapter(adapter);
 						}
