@@ -370,8 +370,19 @@ public class WallpapersFragmentActivity extends Fragment {
 			
 			cardview1.setPreventCornerOverlap(true);
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
-			wallname.setText(walllist.get((int)_position).get("name").toString());
-			linear3.setBackgroundDrawable(getResources().getDrawable(R.drawable.fade));
+			// If "name" equals a blank space, hide linear3
+			if (walllist.get((int)_position).get("name").toString().equals("")) {
+				linear3.setVisibility(View.GONE);
+				// Also set linear3 background to transparent
+				linear3.setBackgroundColor(Color.TRANSPARENT);
+				// Set drawable to nothing as well
+				linear3.setBackgroundDrawable(null);
+				wallname.setText("");
+			} else {
+				linear3.setVisibility(View.VISIBLE);
+				linear3.setBackgroundDrawable(getResources().getDrawable(R.drawable.fade));
+				wallname.setText(walllist.get((int)_position).get("name").toString());
+			}
 			linear2.setClipToOutline(true);
 			
 			return _view;
