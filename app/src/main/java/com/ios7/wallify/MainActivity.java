@@ -95,6 +95,32 @@ public class MainActivity extends AppCompatActivity {
 		 	});
 		 }
 
+		 // Handle back button press
+		 @Override
+		 public void onBackPressed() {
+			 config.edit().putString("backSignal", "1").commit();
+
+			 // Check if we are on tab 1
+			 if (config.getString("currenttab", "").equals("1")) {
+				 // Delay the viewpager switch to tab 0
+				 new Handler().postDelayed(new Runnable() {
+					 @Override
+					 public void run() {
+						 viewpager1.setCurrentItem(0);  // Set to the first tab with a delay
+					 }
+				 }, 150); // Delay of 75ms to allow fragment to handle back press
+
+			 } else {
+				 // Normal back press behavior
+				 if (config.getString("fragmentCanExit", "").equals("0")) {
+					 // Do nothing
+				 } else {
+					 super.onBackPressed();
+					 finish();
+				 }
+			 }
+		 }
+
 
 	private void initializeLogic() {
 		// This SharedPrefs section sets your desired repo.
@@ -141,11 +167,13 @@ public class MainActivity extends AppCompatActivity {
 					// tab1bg.setBackgroundResource(R.drawable.activetab);
 					button1.setBackgroundResource(R.drawable.activetab);
 					button2.setBackgroundResource(R.drawable.roundedbgviolent);
+					config.edit().putString("currenttab", "0").commit();
 				}
 				if (position == 1) {
 					// tab1bg.setBackgroundResource(R.drawable.roundedbgviolent);
 					button2.setBackgroundResource(R.drawable.activetab);
 					button1.setBackgroundResource(R.drawable.roundedbgviolent);
+					config.edit().putString("currenttab", "1").commit();
 				}
 
 			}

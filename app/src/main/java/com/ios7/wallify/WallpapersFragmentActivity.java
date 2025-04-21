@@ -130,32 +130,61 @@ public class WallpapersFragmentActivity extends Fragment {
 				gridlinear.setVisibility(View.VISIBLE);
 				listview1.setVisibility(View.GONE);
 				isGridVisible = true;
+				config.edit().putString("fragmentCanExit", "0").commit();
 				// Create a looped timer to get the back button press from config and run it if so
 			}
 		});
 
 // Handle back button press
-		backPressedCallback = new OnBackPressedCallback(true /* enabled by default */) {
+		// Forget all this, it's jank. I'm building my own signal system.
+		//backPressedCallback = new OnBackPressedCallback(true) {
+		//	@Override
+		//	public void handleOnBackPressed() {
+		//		if (config.getString("currenttab", "").equals("0")) {
+		//			if (isGridVisible) {
+		//				gridlinear.setVisibility(View.GONE);
+		//				listview1.setVisibility(View.VISIBLE);
+		//				isGridVisible = false;
+		//				config.edit().putString("fragmentCanExit", "1").commit();
+		//			} else {
+		//				setEnabled(false); // temporarily disable this callback
+		//				requireActivity().getOnBackPressedDispatcher().onBackPressed(); // let activity handle it
+		//			}
+		//		}
+		//		// else: do nothing, let activity handle it directly
+		//	}
+		//};
+        //
+		// requireActivity()
+		//		.getOnBackPressedDispatcher()
+		//		.addCallback(getViewLifecycleOwner(), backPressedCallback);
+
+		// Create a timer that runs every 75 miliseconds
+		Handler handler = new Handler();
+		Runnable runnable = new Runnable() {
 			@Override
-			public void handleOnBackPressed() {
-				if (isGridVisible) {
-					gridlinear.setVisibility(View.GONE);
-					listview1.setVisibility(View.VISIBLE);
-					isGridVisible = false;
-				} else {
-					// If grid is not visible, let the default back behavior happen
-					setEnabled(false); // Disable this callback
-					requireActivity().onBackPressed(); // Call the default back behavior
-					setEnabled(true); // Re-enable this callback
-					// Finish the activity inside the fragment
-					getActivity().finish();
+			public void run() {
+				if (config.getString("backSignal", "").equals("1")) {
+					config.edit().putString("backSignal", "0").commit();
+					if (config.getString("currenttab", "").equals("0")) {
+						if (isGridVisible) {
+							gridlinear.setVisibility(View.GONE);
+							listview1.setVisibility(View.VISIBLE);
+							isGridVisible = false;
+							config.edit().putString("fragmentCanExit", "1").commit();
+						} else {
+							// Do nothing
+						}
+					} else {
+						// Do nothing
+					}
 				}
+				handler.postDelayed(this, 75);
 			}
-
 		};
-		requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), backPressedCallback);
+		handler.post(runnable);
 
-		
+
 		listview1.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> _param1, View _param2, int _param3, long _param4) {
@@ -170,6 +199,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			public void onClick(View _view) {
 				gridlinear.setVisibility(View.GONE);
 				listview1.setVisibility(View.VISIBLE);
+				config.edit().putString("fragmentCanExit", "1").commit();
 			}
 		});
 		
