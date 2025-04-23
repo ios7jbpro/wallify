@@ -252,6 +252,11 @@ public class WalldownloadActivity extends AppCompatActivity {
 				final String _response = _param2;
 				final HashMap<String, Object> _responseHeaders = _param3;
 				walljsonlistmap = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>(){}.getType());
+				Log.d("WallpaperDebug", "Name = '" + config.getString("wallpaperName", "") + "'");
+				// Check if categoryName under config equals nothing
+				if (config.getString("wallpaperName", "").equals("")) {
+					textview1.setText(config.getString("categoryName", ""));
+				}
 				Glide.with(getApplicationContext())
 						.load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
 						.into(new SimpleTarget<Drawable>() {
@@ -368,6 +373,10 @@ public class WalldownloadActivity extends AppCompatActivity {
 							}
 						});
 				textview1.setText(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("name").toString());
+				// Check if categoryName under config equals nothing
+				if (config.getString("wallpaperName", "").equals("")) {
+					textview1.setText(config.getString("categoryName", ""));
+				}
 				wallLink.edit().putString("wallLink", walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()).commit();
 			}
 			

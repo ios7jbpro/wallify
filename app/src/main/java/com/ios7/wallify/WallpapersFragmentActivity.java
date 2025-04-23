@@ -131,7 +131,7 @@ public class WallpapersFragmentActivity extends Fragment {
 				listview1.setVisibility(View.GONE);
 				isGridVisible = true;
 				config.edit().putString("fragmentCanExit", "0").commit();
-				// Create a looped timer to get the back button press from config and run it if so
+				config.edit().putString("categoryName", categorylist.get((int)_position).get("category").toString()).commit();
 			}
 		});
 
@@ -208,6 +208,8 @@ public class WallpapersFragmentActivity extends Fragment {
 			public void onItemClick(AdapterView<?> _param1, View _param2, int _param3, long _param4) {
 				final int _position = _param3;
 				selectedItemList.edit().putString("selectedWall", String.valueOf((long)(_position))).commit();
+				// Set wallpaperName on config
+				config.edit().putString("wallpaperName", walllist.get((int)_position).get("name").toString()).commit();
 				launchWallPreview.setClass(getContext().getApplicationContext(), WalldownloadActivity.class);
 				startActivity(launchWallPreview);
 			}

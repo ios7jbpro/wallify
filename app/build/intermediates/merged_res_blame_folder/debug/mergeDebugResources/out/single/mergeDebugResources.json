@@ -1,150 +1,146 @@
 [
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_roundedbgviolent.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/roundedbgviolent.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_setwall2.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/setwall2.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_activity_crop_wallpaper.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/activity_crop_wallpaper.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_3.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_3.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_categorylist.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/categorylist.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_roundedbgviolent.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/roundedbgviolent.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout-large_activity_crop_wallpaper.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout-large/activity_crop_wallpaper.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_hk_personal_wallpaper.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/hk_personal_wallpaper.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_fadecategory.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/fadecategory.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout-large_walldownload.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout-large/walldownload.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_ic_apps_white.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/ic_apps_white.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_wallpapers_fragment.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/wallpapers_fragment.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_abandon_dialog.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/abandon_dialog.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_ic_arrow_back_white.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/ic_arrow_back_white.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_walldownload.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/walldownload.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_wallpapers_fragment.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/wallpapers_fragment.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_activity_crop_wallpaper.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/activity_crop_wallpaper.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_activetab.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/activetab.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_phone.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/phone.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout-large_walldownload.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout-large/walldownload.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_wallpaperlist.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/wallpaperlist.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_devpfp1.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/devpfp1.png"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_roundedbgdialog.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/roundedbgdialog.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_roundedbg.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/roundedbg.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_devs.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/devs.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_setwall1.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/setwall1.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_ic_apps_white.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/ic_apps_white.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_hk_personal_wallpaper.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/hk_personal_wallpaper.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_main.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/main.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_roundedbg.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/roundedbg.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_wallpaperlist.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/wallpaperlist.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_1.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_1.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_jhgg_1.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/jhgg_1.png"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_wall_icon.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/wall_icon.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_phone.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/phone.png"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_devpfp1.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/devpfp1.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_2.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_2.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_categorylist.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/categorylist.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_3.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_3.png"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_massage.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/massage.png"
     },
     {
         "merged": "com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
         "source": "com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_wall_icon.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/wall_icon.png"
+        "merged": "com.ios7.wallify.app-debug-68:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_massage.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/massage.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_setwall1.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/setwall1.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_jhgg_2.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/jhgg_2.png"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_fade.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/fade.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_main.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/main.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_ic_arrow_back_white.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/ic_arrow_back_white.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_inactivetab.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/inactivetab.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_fadecategory.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/fadecategory.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_warning_dialog.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/warning_dialog.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout-large_main.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout-large/main.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_default_image.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/default_image.png"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_2.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_2.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout-large_main.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout-large/main.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_jhgg_1.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/jhgg_1.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_fade.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/fade.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_inactivetab.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/inactivetab.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable-xhdpi_heeh_1.png.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable-xhdpi/heeh_1.png"
+        "merged": "com.ios7.wallify.app-debug-68:/layout-large_activity_crop_wallpaper.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout-large/activity_crop_wallpaper.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_devs.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/devs.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_jhgg_2.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/jhgg_2.png"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_abandon_dialog.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/abandon_dialog.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/layout_warning_dialog.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/warning_dialog.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_walldownload.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/walldownload.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable_activetab.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable/activetab.xml"
     },
     {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/drawable_roundedbgdialog.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/drawable/roundedbgdialog.xml"
-    },
-    {
-        "merged": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-debug-68:/layout_setwall2.xml.flat",
-        "source": "/home/ios7/.gradle/daemon/8.9/com.ios7.wallify.app-main-70:/layout/setwall2.xml"
+        "merged": "com.ios7.wallify.app-debug-68:/drawable-xhdpi_default_image.png.flat",
+        "source": "com.ios7.wallify.app-main-70:/drawable-xhdpi/default_image.png"
     }
 ]
