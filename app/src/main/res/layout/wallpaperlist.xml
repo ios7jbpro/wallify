@@ -5,23 +5,26 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
+
 	<LinearLayout
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:padding="8dp"
+		android:layout_weight="1"
 		android:gravity="center_horizontal|center_vertical"
-		android:orientation="horizontal"
-		android:layout_weight="1">
+		android:orientation="horizontal">
+
 		<androidx.cardview.widget.CardView
 			android:id="@+id/cardview1"
 			android:layout_width="match_parent"
 			android:layout_height="350dp"
-			app:cardBackgroundColor="#000000"
+			android:layout_marginBottom="6dp"
 			android:layout_weight="1"
-			app:cardElevation="0dp"
+			android:background="@drawable/roundedbg"
+			app:cardBackgroundColor="#000000"
 			app:cardCornerRadius="8dp"
-			android:background="@drawable/roundedbg">
+			app:cardElevation="0dp">
+
 			<FrameLayout
 				android:id="@+id/linear2"
 				android:layout_width="match_parent"
@@ -38,31 +41,33 @@
 
 				<ImageView
 					android:id="@+id/wallimage"
-					android:focusable="false"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
-					android:src="@drawable/default_image"
+					android:layout_weight="1"
+					android:focusable="false"
 					android:scaleType="centerCrop"
-					android:layout_weight="1" />
+					android:src="@drawable/default_image" />
+
 				<LinearLayout
 					android:id="@+id/linear3"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
+					android:layout_gravity="bottom"
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="horizontal"
-					android:layout_gravity="bottom">
+					android:padding="8dp">
+
 					<TextView
 						android:id="@+id/wallname"
-						android:focusable="false"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
+						android:focusable="false"
 						android:padding="8dp"
+						android:singleLine="true"
 						android:text="TextView"
-						android:textSize="12sp"
-						android:textStyle="bold"
 						android:textColor="#FFFFFF"
-						android:singleLine="true" />
+						android:textSize="12sp"
+						android:textStyle="bold" />
 				</LinearLayout>
 			</FrameLayout>
 		</androidx.cardview.widget.CardView>

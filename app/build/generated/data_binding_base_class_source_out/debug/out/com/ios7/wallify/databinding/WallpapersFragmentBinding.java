@@ -24,6 +24,9 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final LinearLayout gridRounderLayout;
+
+  @NonNull
   public final LinearLayout gridlinear;
 
   @NonNull
@@ -57,12 +60,13 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   public final TextView textview1;
 
   private WallpapersFragmentBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout gridlinear, @NonNull GridView gridview1, @NonNull LinearLayout linear1,
-      @NonNull LinearLayout linear2, @NonNull LinearLayout linearloading,
-      @NonNull ListView listview1, @NonNull ProgressBar progressBar4,
-      @NonNull LinearLayout rootlinear, @NonNull CardView tempcardview,
-      @NonNull TextView textloading, @NonNull TextView textview1) {
+      @NonNull LinearLayout gridRounderLayout, @NonNull LinearLayout gridlinear,
+      @NonNull GridView gridview1, @NonNull LinearLayout linear1, @NonNull LinearLayout linear2,
+      @NonNull LinearLayout linearloading, @NonNull ListView listview1,
+      @NonNull ProgressBar progressBar4, @NonNull LinearLayout rootlinear,
+      @NonNull CardView tempcardview, @NonNull TextView textloading, @NonNull TextView textview1) {
     this.rootView = rootView;
+    this.gridRounderLayout = gridRounderLayout;
     this.gridlinear = gridlinear;
     this.gridview1 = gridview1;
     this.linear1 = linear1;
@@ -103,6 +107,12 @@ public final class WallpapersFragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.gridRounderLayout;
+      LinearLayout gridRounderLayout = ViewBindings.findChildViewById(rootView, id);
+      if (gridRounderLayout == null) {
+        break missingId;
+      }
+
       id = R.id.gridlinear;
       LinearLayout gridlinear = ViewBindings.findChildViewById(rootView, id);
       if (gridlinear == null) {
@@ -169,9 +179,9 @@ public final class WallpapersFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new WallpapersFragmentBinding((LinearLayout) rootView, gridlinear, gridview1, linear1,
-          linear2, linearloading, listview1, progressBar4, rootlinear, tempcardview, textloading,
-          textview1);
+      return new WallpapersFragmentBinding((LinearLayout) rootView, gridRounderLayout, gridlinear,
+          gridview1, linear1, linear2, linearloading, listview1, progressBar4, rootlinear,
+          tempcardview, textloading, textview1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

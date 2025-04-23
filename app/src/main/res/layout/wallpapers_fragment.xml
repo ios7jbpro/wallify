@@ -1,38 +1,41 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
+
 	<LinearLayout
 		android:id="@+id/rootlinear"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:orientation="vertical"
-		android:background="@drawable/roundedbg">
+		android:background="@drawable/roundedbg"
+		android:orientation="vertical">
+
 		<LinearLayout
 			android:id="@+id/linear1"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
-			android:orientation="vertical"
 			android:layout_weight="1"
-			android:background="@drawable/roundedbg">
+			android:background="@drawable/roundedbg"
+			android:orientation="vertical">
+
 			<androidx.cardview.widget.CardView
 				android:id="@+id/tempcardview"
 				android:layout_width="0dp"
 				android:layout_height="0dp"
-				app:contentPadding="8dp"
+				app:cardCornerRadius="20dp"
 				app:cardElevation="10dp"
-				app:cardCornerRadius="20dp" />
+				app:contentPadding="8dp" />
+
 			<ListView
 				android:id="@+id/listview1"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:dividerHeight="0dp"
-				android:divider="@null"
+				android:layout_weight="1"
 				android:choiceMode="none"
-				android:layout_weight="1" />
+				android:divider="@null"
+				android:dividerHeight="0dp" />
 
 			<LinearLayout
 				android:id="@+id/linearloading"
@@ -75,14 +78,29 @@
 					android:layout_weight="1"
 					android:orientation="vertical">
 
-					<GridView
-						android:id="@+id/gridview1"
+					<LinearLayout
+						android:id="@+id/gridRounderLayout"
 						android:layout_width="match_parent"
 						android:layout_height="match_parent"
+						android:layout_marginLeft="8dp"
 						android:layout_marginTop="8dp"
+						android:layout_marginRight="8dp"
 						android:layout_weight="1"
-						android:numColumns="3"
-						android:stretchMode="columnWidth" />
+						android:background="@drawable/roundedbg"
+						android:orientation="vertical">
+
+						<GridView
+							android:id="@+id/gridview1"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:horizontalSpacing="8dp"
+							android:numColumns="3"
+							android:scrollIndicators="none"
+							android:scrollbars="none"
+							android:stretchMode="columnWidth" />
+					</LinearLayout>
+
 				</LinearLayout>
 
 				<LinearLayout

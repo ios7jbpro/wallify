@@ -71,6 +71,7 @@ id cropScreen
 id dissmissButton
 id edittext1
 id goBackButton
+id gridRounderLayout
 id gridlinear
 id gridview1
 id imageview1

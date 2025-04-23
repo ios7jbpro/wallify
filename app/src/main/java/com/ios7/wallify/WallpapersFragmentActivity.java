@@ -68,6 +68,7 @@ public class WallpapersFragmentActivity extends Fragment {
 	private TextView textview1;
 	private TextView textloading;
 	private LinearLayout linearloading;
+	private LinearLayout gridRounderLayout;
 	
 	private RequestNetwork fetchwalljson;
 	private RequestNetwork.RequestListener _fetchwalljson_request_listener;
@@ -101,6 +102,8 @@ public class WallpapersFragmentActivity extends Fragment {
 		textloading = _view.findViewById(R.id.textloading);
 		linearloading = _view.findViewById(R.id.linearloading);
 		textloading.setVisibility(View.GONE);
+		gridRounderLayout = _view.findViewById(R.id.gridRounderLayout);
+		gridRounderLayout.setClipToOutline(true);
 		fetchwalljson = new RequestNetwork((Activity) getContext());
 		selectedItemList = getContext().getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
