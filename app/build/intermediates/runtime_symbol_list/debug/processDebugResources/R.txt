@@ -3340,6 +3340,7 @@ int id bounce 0x7f080076
 int id bounceBoth 0x7f080077
 int id bounceEnd 0x7f080078
 int id bounceStart 0x7f080079
+int id button 0x7f08027c
 int id button1 0x7f08007a
 int id button2 0x7f08007b
 int id buttonPanel 0x7f08007c
@@ -3547,6 +3548,7 @@ int id listview1 0x7f080144
 int id locale 0x7f080145
 int id ltr 0x7f080146
 int id m3_side_sheet 0x7f080147
+int id main 0x7f08027b
 int id mainEditingPage 0x7f080148
 int id marquee 0x7f080149
 int id masked 0x7f08014a
@@ -3688,6 +3690,7 @@ int id right 0x7f0801d1
 int id rightToLeft 0x7f0801d2
 int id right_icon 0x7f0801d3
 int id right_side 0x7f0801d4
+int id rootlayout 0x7f08027d
 int id rootlinear 0x7f0801d5
 int id rounded 0x7f0801d6
 int id row_index_key 0x7f0801d7
@@ -3784,6 +3787,10 @@ int id textView2 0x7f080231
 int id textView3 0x7f080232
 int id textView4 0x7f080233
 int id textView5 0x7f080234
+int id textView6 0x7f08027e
+int id textView7 0x7f08027f
+int id textView8 0x7f080280
+int id textView9 0x7f080281
 int id textViewCrop 0x7f080235
 int id textViewLoading 0x7f080236
 int id textViewTopbar 0x7f080237
@@ -3970,6 +3977,7 @@ int layout abc_search_view 0x7f0b001a
 int layout abc_select_dialog_material 0x7f0b001b
 int layout abc_tooltip 0x7f0b001c
 int layout activity_crop_wallpaper 0x7f0b001d
+int layout activity_setup1 0x7f0b0079
 int layout categorylist 0x7f0b001e
 int layout crop_image_activity 0x7f0b001f
 int layout crop_image_view 0x7f0b0020

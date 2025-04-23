@@ -4,6 +4,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\setwall1.xml"
     },
     {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-67:\\layout\\activity_setup1.xml",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\activity_setup1.xml"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-67:\\layout\\abandon_dialog.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\abandon_dialog.xml"
     },
@@ -24,10 +28,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\warning_dialog.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-67:/layout/wallpaperlist.xml",
-        "source": "com.ios7.wallify.app-main-70:/layout/wallpaperlist.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-67:\\layout\\setwall2.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\setwall2.xml"
     },
@@ -42,6 +42,10 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-67:\\layout\\walldownload.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\walldownload.xml"
+    },
+    {
+        "merged": "com.ios7.wallify.app-mergeDebugResources-67:/layout/activity_setup1.xml",
+        "source": "com.ios7.wallify.app-main-70:/layout/activity_setup1.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-67:\\layout\\devs.xml",

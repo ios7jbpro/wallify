@@ -50,6 +50,7 @@ id Tarik
 id Translator
 id bottomBar
 id bottombarroot
+id button
 id button1
 id button2
 id cardview1
@@ -100,6 +101,7 @@ id linearloading
 id linearpreviewcard
 id listView
 id listview1
+id main
 id mainEditingPage
 id nextButton
 id previewStatusBar
@@ -110,6 +112,7 @@ id progressBar4
 id progress_bar_loading
 id progressbar1
 id repobtn
+id rootlayout
 id rootlinear
 id setWallpaperButton
 id switchColorPreviews
@@ -119,6 +122,10 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id textViewCrop
 id textViewLoading
 id textViewTopbar
@@ -138,6 +145,7 @@ id wallimage
 id wallname
 layout abandon_dialog
 layout activity_crop_wallpaper
+layout activity_setup1
 layout categorylist
 layout devs
 layout main

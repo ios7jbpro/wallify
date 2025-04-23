@@ -132,9 +132,14 @@ public class MainActivity extends AppCompatActivity {
 		if (config.getString("timeout", "").equals("")) {
 			config.edit().putString("timeout", "5000").commit();
 		}
+		if (config.getString("setupcomplete", "").equals("")) {
+			Intent intent = new Intent(MainActivity.this, SetupActivity1.class);
+			startActivity(intent);
+		}
 		// Disables color extraction.
 		// ^^ This is no longer required as we added an exception catch to the extraction logic, the app won't fail anymore even if it fails.
 		// So now we enable it by default.
+		// nvm, we fucked up, disabled it.
 		if (config.getString("colorextraction", "").equals("")) {
 			config.edit().putString("colorextraction", "0").commit();
 		}
