@@ -65,8 +65,26 @@
 				android:id="@+id/gridlinear"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
+				android:layout_weight="1"
 				android:orientation="vertical"
-				android:layout_weight="1">
+				android:padding="0dp">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:orientation="vertical">
+
+					<GridView
+						android:id="@+id/gridview1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginTop="8dp"
+						android:layout_weight="1"
+						android:numColumns="3"
+						android:stretchMode="columnWidth" />
+				</LinearLayout>
+
 				<LinearLayout
 					android:id="@+id/linear2"
 					android:layout_width="match_parent"
@@ -74,27 +92,22 @@
 					android:layout_marginLeft="8dp"
 					android:layout_marginTop="8dp"
 					android:layout_marginRight="8dp"
-					android:padding="8dp"
+					android:layout_marginBottom="8dp"
+					android:background="@drawable/roundedbgviolent"
 					android:orientation="horizontal"
-					android:background="@drawable/roundedbgviolent">
+					android:padding="8dp">
+
 					<TextView
 						android:id="@+id/textview1"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
 						android:text="Back"
+						android:textColor="@color/textprimary"
 						android:textSize="14sp"
-						android:textStyle="bold"
-						android:textColor="@color/textprimary" />
+						android:textStyle="bold" />
 				</LinearLayout>
-				<GridView
-					android:id="@+id/gridview1"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:layout_marginTop="8dp"
-					android:layout_weight="1"
-					android:numColumns="3"
-					android:stretchMode="columnWidth" />
+
 			</LinearLayout>
 		</LinearLayout>
 	</LinearLayout>
