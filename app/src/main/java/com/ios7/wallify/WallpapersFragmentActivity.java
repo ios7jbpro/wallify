@@ -39,6 +39,9 @@ import androidx.fragment.app.FragmentManager;
 import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.ios7.wallify.MyClasses.EzTimer;
+import com.ios7.wallify.MyClasses.EzTimerLooped;
+
 import java.io.*;
 import java.text.*;
 import java.util.*;
@@ -132,9 +135,20 @@ public class WallpapersFragmentActivity extends Fragment {
 				temporaryCache.edit().putString("directrepo", categorylist.get((int)_position).get("json").toString()).commit();
 				gridlinear.setVisibility(View.VISIBLE);
 				listview1.setVisibility(View.GONE);
+				gridlinear.setAlpha(0);
 				isGridVisible = true;
 				config.edit().putString("fragmentCanExit", "0").commit();
 				config.edit().putString("categoryName", categorylist.get((int)_position).get("category").toString()).commit();
+				EzTimer.runWithDelay(50, () -> {
+					EzTimerLooped loopedTimer = new EzTimerLooped();
+					loopedTimer.start(1, () -> {
+						if (Math.abs(gridlinear.getAlpha() - 1) < 0.01f) {
+							loopedTimer.stop();
+						} else {
+							gridlinear.setAlpha(gridlinear.getAlpha() + 0.05f);
+						}
+					});
+				});
 			}
 		});
 
@@ -173,8 +187,19 @@ public class WallpapersFragmentActivity extends Fragment {
 						if (isGridVisible) {
 							gridlinear.setVisibility(View.GONE);
 							listview1.setVisibility(View.VISIBLE);
+							listview1.setAlpha(0);
 							isGridVisible = false;
 							config.edit().putString("fragmentCanExit", "1").commit();
+							EzTimer.runWithDelay(100, () -> {
+								EzTimerLooped loopedTimer = new EzTimerLooped();
+								loopedTimer.start(1, () -> {
+									if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
+										loopedTimer.stop();
+									} else {
+										listview1.setAlpha(listview1.getAlpha() + 0.05f);
+									}
+								});
+							});
 						} else {
 							// Do nothing
 						}
@@ -202,7 +227,18 @@ public class WallpapersFragmentActivity extends Fragment {
 			public void onClick(View _view) {
 				gridlinear.setVisibility(View.GONE);
 				listview1.setVisibility(View.VISIBLE);
+				listview1.setAlpha(0);
 				config.edit().putString("fragmentCanExit", "1").commit();
+				EzTimer.runWithDelay(100, () -> {
+					EzTimerLooped loopedTimer = new EzTimerLooped();
+					loopedTimer.start(1, () -> {
+						if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
+							loopedTimer.stop();
+						} else {
+							listview1.setAlpha(listview1.getAlpha() + 0.05f);
+						}
+					});
+				});
 			}
 		});
 		
@@ -356,10 +392,21 @@ public class WallpapersFragmentActivity extends Fragment {
 			final LinearLayout linear3 = _view.findViewById(R.id.linear3);
 			final ImageView imageview1 = _view.findViewById(R.id.imageview1);
 			final TextView textview1 = _view.findViewById(R.id.textview1);
+			linear1.setAlpha(0);
 			
 			textview1.setText(categorylist.get((int)_position).get("category").toString());
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(categorylist.get((int)_position).get("preview").toString())).into(imageview1);
 			linear2.setClipToOutline(true);
+			EzTimer.runWithDelay(((int)_position * 50) + 100, () -> {
+				EzTimerLooped loopedTimer = new EzTimerLooped();
+				loopedTimer.start(1, () -> {
+					if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
+						loopedTimer.stop();
+					} else {
+						linear1.setAlpha(linear1.getAlpha() + 0.05f);
+					}
+				});
+			});
 			
 			return _view;
 		}
@@ -402,6 +449,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			final ImageView wallimage = _view.findViewById(R.id.wallimage);
 			final LinearLayout linear3 = _view.findViewById(R.id.linear3);
 			final TextView wallname = _view.findViewById(R.id.wallname);
+			linear1.setAlpha(0);
 			
 			cardview1.setPreventCornerOverlap(true);
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
@@ -419,6 +467,17 @@ public class WallpapersFragmentActivity extends Fragment {
 				wallname.setText(walllist.get((int)_position).get("name").toString());
 			}
 			linear2.setClipToOutline(true);
+
+			EzTimer.runWithDelay(((int)_position * 100) + 200, () -> {
+				EzTimerLooped loopedTimer = new EzTimerLooped();
+				loopedTimer.start(1, () -> {
+					if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
+						loopedTimer.stop();
+					} else {
+						linear1.setAlpha(linear1.getAlpha() + 0.05f);
+					}
+				});
+			});
 			
 			return _view;
 		}
