@@ -51,6 +51,8 @@ id Massage
 id More
 id Phone
 id Search_bg
+id SetupProgress1
+id SetupProgress2
 id Tarik
 id Translator
 id background_bottomleft
@@ -60,7 +62,6 @@ id background_topright
 id backgroundlayout
 id bottomBar
 id bottombarroot
-id button
 id button1
 id button2
 id cardview1
@@ -120,6 +121,7 @@ id main
 id mainEditingPage
 id mainframe
 id nextButton
+id nextbutton1
 id previewStatusBar
 id progressBar
 id progressBar2
@@ -131,6 +133,7 @@ id repobtn
 id rootlayout
 id rootlinear
 id setWallpaperButton
+id skipbutton
 id switchColorPreviews
 id tempcardview
 id textView

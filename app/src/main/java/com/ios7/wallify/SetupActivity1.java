@@ -10,24 +10,23 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.ios7.wallify.MyClasses.EzTimer;
 import com.ios7.wallify.MyClasses.EzTimerLooped;
 
 
 public class SetupActivity1 extends AppCompatActivity {
-    private TextView textView9;
     private TextView button;
+    private TextView nextbutton1;
+    private TextView nextbutton2;
     private LinearLayout backgroundlayout;
     private LinearLayout background_topleft;
     private LinearLayout background_topright;
     private LinearLayout background_bottomleft;
     private LinearLayout background_bottomright;
     private FrameLayout mainframe;
+    private LinearLayout SetupProgress1;
+    private LinearLayout SetupProgress2;
     private int funny = 0;
     private int easteregg = 0;
     private int canStop = 0;
@@ -43,23 +42,28 @@ public class SetupActivity1 extends AppCompatActivity {
         background_topright = findViewById(R.id.background_topright);
         background_bottomleft = findViewById(R.id.background_bottomleft);
         background_bottomright = findViewById(R.id.background_bottomright);
+        nextbutton1 = findViewById(R.id.nextbutton1);
+        nextbutton2 = findViewById(R.id.nextbutton2);
+        button = findViewById(R.id.skipbutton);
         mainframe = findViewById(R.id.mainframe);
+        SetupProgress1 = findViewById(R.id.SetupProgress1);
+        SetupProgress2 = findViewById(R.id.SetupProgress2);
         backgroundlayout.setClipToOutline(true);
         background_topleft.setClipToOutline(true);
         background_topright.setClipToOutline(true);
         background_bottomleft.setClipToOutline(true);
         background_bottomright.setClipToOutline(true);
         config = getSharedPreferences("config", MODE_PRIVATE);
-
-        textView9 = findViewById(R.id.textView9);
-        textView9.setVisibility(View.GONE);
-
+        SetupProgress2.setVisibility(View.GONE);
+        SetupProgress2.setAlpha(0);
         mainframe.setAlpha(0);
         backgroundlayout.setAlpha(0);
         background_topleft.setAlpha(0);
         background_topright.setAlpha(0);
         background_bottomleft.setAlpha(0);
         background_bottomright.setAlpha(0);
+        button.setAlpha(0);
+        nextbutton1.setAlpha(0);
         EzTimer.runWithDelay(1500, () -> {
                     EzTimerLooped loopedTimer = new EzTimerLooped();
                     loopedTimer.start(25, () -> {
@@ -145,14 +149,60 @@ public class SetupActivity1 extends AppCompatActivity {
             });
         });
 
+        EzTimer.runWithDelay(4300, () -> {
+            EzTimerLooped loopedTimer8 = new EzTimerLooped();
+            loopedTimer8.start(1, () -> {
+                if (Math.abs(button.getAlpha() - 1) < 0.01f) {
+                    loopedTimer8.stop();
+                } else {
+                    button.setAlpha(button.getAlpha() + 0.05f);
+                }
+            });
+        });
+
+        EzTimer.runWithDelay(4500, () -> {
+            EzTimerLooped loopedTimer8 = new EzTimerLooped();
+            loopedTimer8.start(1, () -> {
+                if (Math.abs(nextbutton1.getAlpha() - 1) < 0.01f) {
+                    loopedTimer8.stop();
+                } else {
+                    nextbutton1.setAlpha(nextbutton1.getAlpha() + 0.05f);
+                }
+            });
+        });
 
 
-        button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                     config.edit().putString("setupcomplete", "1").commit();
                     finish();
+            }
+        });
+
+        nextbutton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EzTimerLooped loopedTimer9 = new EzTimerLooped();
+                loopedTimer9.start(1, () -> {
+                    if (Math.abs(SetupProgress1.getAlpha() - 0) < 0.01f) {
+                        loopedTimer9.stop();
+                    } else {
+                        SetupProgress1.setAlpha(SetupProgress1.getAlpha() - 0.08f);
+                    }
+                });
+                EzTimer.runWithDelay(200, () -> {
+                    SetupProgress1.setVisibility(View.GONE);
+                    SetupProgress2.setVisibility(View.VISIBLE);
+                EzTimerLooped loopedTimer10 = new EzTimerLooped();
+                loopedTimer10.start(1, () -> {
+                    if (Math.abs(SetupProgress2.getAlpha() - 1) < 0.01f) {
+                        loopedTimer10.stop();
+                    } else {
+                        SetupProgress2.setAlpha(SetupProgress2.getAlpha() + 0.08f);
+                    }
+                });
+                });
             }
         });
 

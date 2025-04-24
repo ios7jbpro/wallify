@@ -3254,6 +3254,8 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id Search_bg
+id SetupProgress1
+id SetupProgress2
 id TOP_END
 id TOP_START
 id Tarik
@@ -3351,7 +3353,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id button1
 id button2
 id buttonPanel
@@ -3639,6 +3640,7 @@ id never
 id neverCompleteToEnd
 id neverCompleteToStart
 id nextButton
+id nextbutton1
 id noScroll
 id noState
 id none
@@ -3744,6 +3746,7 @@ id showHome
 id showTitle
 id sin
 id skipCollapsed
+id skipbutton
 id skipped
 id slide
 id sliding_pane_detail_container
