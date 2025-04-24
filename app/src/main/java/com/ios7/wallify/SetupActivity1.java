@@ -10,6 +10,10 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.ios7.wallify.MyClasses.EzTimer;
 import com.ios7.wallify.MyClasses.EzTimerLooped;
@@ -46,20 +50,10 @@ public class SetupActivity1 extends AppCompatActivity {
         background_bottomleft.setClipToOutline(true);
         background_bottomright.setClipToOutline(true);
         config = getSharedPreferences("config", MODE_PRIVATE);
-        // ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-        //     Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-        //    v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-        //    return insets;
-        //});
 
-        // Disable the easter egg, commenting this out entirely as well. We are building animations now instead.
-        //EzTimer.delay(2000, () -> {
-        //        easteregg = 1;
-        //});
         textView9 = findViewById(R.id.textView9);
         textView9.setVisibility(View.GONE);
 
-        // We will do a fade effect using timers and alpha here.
         mainframe.setAlpha(0);
         backgroundlayout.setAlpha(0);
         background_topleft.setAlpha(0);
@@ -157,24 +151,8 @@ public class SetupActivity1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (easteregg == 1) {
-                    if (funny == 1) {
-                        config.edit().putString("setupcomplete", "1").commit();
-                        finish();
-                    } else {
-                        button.setVisibility(View.GONE);
-                        textView9.setText("OOPS I THINK I ACCIDENTALLY ATE YOUR BUTTON\nGIVE ME A MINUTE LET ME FIND IT");
-                        EzTimer.runWithDelay(2000, () -> {
-                                button.setVisibility(View.VISIBLE);
-                                textView9.setText("\n\n\n\n\nHERE IS YOUR BUTTON MY BAD MAN");
-                                funny = 1;
-                        });
-                    }
-                } else {
-                    // I AM ACTUALLY REALLY STUPID don't let me be a dev for any corpo
                     config.edit().putString("setupcomplete", "1").commit();
                     finish();
-                }
             }
         });
 

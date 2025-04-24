@@ -76,10 +76,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\settings_dialog_fragment.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\layout_activity_crop_wallpaper.xml.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\activity_crop_wallpaper.xml"
     },
@@ -122,6 +118,10 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_ic_arrow_back_white.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\ic_arrow_back_white.png"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_activity_setup1.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/activity_setup1.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_ic_apps_white.png.flat",
