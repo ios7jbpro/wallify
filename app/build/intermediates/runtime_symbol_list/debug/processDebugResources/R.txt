@@ -3255,6 +3255,7 @@ int id SYM 0x7f08001c
 int id Search_bg 0x7f08001d
 int id SetupProgress1 0x7f08028e
 int id SetupProgress2 0x7f080291
+int id SetupProgress3 0x7f080292
 int id TOP_END 0x7f08001e
 int id TOP_START 0x7f08001f
 int id Tarik 0x7f080020
@@ -3640,6 +3641,8 @@ int id neverCompleteToEnd 0x7f080191
 int id neverCompleteToStart 0x7f080192
 int id nextButton 0x7f080193
 int id nextbutton1 0x7f08028f
+int id nextbutton2 0x7f080293
+int id nextbutton3 0x7f080294
 int id noScroll 0x7f080194
 int id noState 0x7f080195
 int id none 0x7f080196
@@ -3802,6 +3805,9 @@ int id textSpacerNoTitle 0x7f080231
 int id textStart 0x7f080232
 int id textTop 0x7f080233
 int id textView 0x7f080234
+int id textView11 0x7f080295
+int id textView12 0x7f080296
+int id textView13 0x7f080297
 int id textView2 0x7f080235
 int id textView3 0x7f080236
 int id textView4 0x7f080237

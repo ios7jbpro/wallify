@@ -53,6 +53,7 @@ id Phone
 id Search_bg
 id SetupProgress1
 id SetupProgress2
+id SetupProgress3
 id Tarik
 id Translator
 id background_bottomleft
@@ -122,6 +123,8 @@ id mainEditingPage
 id mainframe
 id nextButton
 id nextbutton1
+id nextbutton2
+id nextbutton3
 id previewStatusBar
 id progressBar
 id progressBar2
@@ -137,6 +140,9 @@ id skipbutton
 id switchColorPreviews
 id tempcardview
 id textView
+id textView11
+id textView12
+id textView13
 id textView2
 id textView3
 id textView4

@@ -3256,6 +3256,7 @@ id SYM
 id Search_bg
 id SetupProgress1
 id SetupProgress2
+id SetupProgress3
 id TOP_END
 id TOP_START
 id Tarik
@@ -3641,6 +3642,8 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id nextButton
 id nextbutton1
+id nextbutton2
+id nextbutton3
 id noScroll
 id noState
 id none
@@ -3803,6 +3806,9 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView11
+id textView12
+id textView13
 id textView2
 id textView3
 id textView4

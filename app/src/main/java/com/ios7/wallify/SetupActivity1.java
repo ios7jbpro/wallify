@@ -19,6 +19,7 @@ public class SetupActivity1 extends AppCompatActivity {
     private TextView button;
     private TextView nextbutton1;
     private TextView nextbutton2;
+    private TextView nextbutton3;
     private LinearLayout backgroundlayout;
     private LinearLayout background_topleft;
     private LinearLayout background_topright;
@@ -27,6 +28,7 @@ public class SetupActivity1 extends AppCompatActivity {
     private FrameLayout mainframe;
     private LinearLayout SetupProgress1;
     private LinearLayout SetupProgress2;
+    private LinearLayout SetupProgress3;
     private int funny = 0;
     private int easteregg = 0;
     private int canStop = 0;
@@ -44,10 +46,12 @@ public class SetupActivity1 extends AppCompatActivity {
         background_bottomright = findViewById(R.id.background_bottomright);
         nextbutton1 = findViewById(R.id.nextbutton1);
         nextbutton2 = findViewById(R.id.nextbutton2);
+        nextbutton3 = findViewById(R.id.nextbutton3);
         button = findViewById(R.id.skipbutton);
         mainframe = findViewById(R.id.mainframe);
         SetupProgress1 = findViewById(R.id.SetupProgress1);
         SetupProgress2 = findViewById(R.id.SetupProgress2);
+        SetupProgress3 = findViewById(R.id.SetupProgress3);
         backgroundlayout.setClipToOutline(true);
         background_topleft.setClipToOutline(true);
         background_topright.setClipToOutline(true);
@@ -56,6 +60,8 @@ public class SetupActivity1 extends AppCompatActivity {
         config = getSharedPreferences("config", MODE_PRIVATE);
         SetupProgress2.setVisibility(View.GONE);
         SetupProgress2.setAlpha(0);
+        SetupProgress3.setVisibility(View.GONE);
+        SetupProgress3.setAlpha(0);
         mainframe.setAlpha(0);
         backgroundlayout.setAlpha(0);
         background_topleft.setAlpha(0);
@@ -185,10 +191,11 @@ public class SetupActivity1 extends AppCompatActivity {
             public void onClick(View v) {
                 EzTimerLooped loopedTimer9 = new EzTimerLooped();
                 loopedTimer9.start(1, () -> {
-                    if (Math.abs(SetupProgress1.getAlpha() - 0) < 0.01f) {
+                    if (Math.abs(SetupProgress1.getAlpha() - 0) < 0.1f) {
                         loopedTimer9.stop();
                     } else {
                         SetupProgress1.setAlpha(SetupProgress1.getAlpha() - 0.08f);
+                        Log.d("DEBUG", "Prog1lpha: " + SetupProgress1.getAlpha());
                     }
                 });
                 EzTimer.runWithDelay(200, () -> {
@@ -196,15 +203,59 @@ public class SetupActivity1 extends AppCompatActivity {
                     SetupProgress2.setVisibility(View.VISIBLE);
                 EzTimerLooped loopedTimer10 = new EzTimerLooped();
                 loopedTimer10.start(1, () -> {
-                    if (Math.abs(SetupProgress2.getAlpha() - 1) < 0.01f) {
+                    if (Math.abs(SetupProgress2.getAlpha() - 1) < 0.1f) {
                         loopedTimer10.stop();
                     } else {
                         SetupProgress2.setAlpha(SetupProgress2.getAlpha() + 0.08f);
+                        Log.d("DEBUG", "Prog2lpha: " + SetupProgress2.getAlpha());
                     }
                 });
                 });
             }
         });
 
+        nextbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EzTimerLooped loopedTimer15 = new EzTimerLooped();
+                loopedTimer15.start(1, () -> {
+                    if (Math.abs(SetupProgress2.getAlpha() - 0) < 0.1f) {
+                        loopedTimer15.stop();
+                    } else {
+                        SetupProgress2.setAlpha(SetupProgress2.getAlpha() - 0.08f);
+                        Log.d("DEBUG", "Prog2lpha: " + SetupProgress2.getAlpha());
+                    }
+                });
+                EzTimer.runWithDelay(200, () -> {
+                    SetupProgress2.setVisibility(View.GONE);
+                    SetupProgress3.setVisibility(View.VISIBLE);
+                    EzTimerLooped loopedTimer16 = new EzTimerLooped();
+                    loopedTimer16.start(1, () -> {
+                        if (Math.abs(SetupProgress3.getAlpha() - 1) < 0.1f) {
+                            loopedTimer16.stop();
+                        } else {
+                            SetupProgress3.setAlpha(SetupProgress3.getAlpha() + 0.08f);
+                            Log.d("DEBUG", "Prog3lpha: " + SetupProgress3.getAlpha());
+                        }
+                    });
+                });
+            }
+        });
+
+        nextbutton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EzTimerLooped loopedTimer18 = new EzTimerLooped();
+                loopedTimer18.start(1, () -> {
+                    if (Math.abs(SetupProgress3.getAlpha() - 0) < 0.1f) {
+                        config.edit().putString("setupcomplete", "1").commit();
+                        finish();
+                        loopedTimer18.stop();
+                    } else {
+                        SetupProgress3.setAlpha(SetupProgress3.getAlpha() - 0.08f);
+                    }
+                });
+            }
+        });
     }
 }
