@@ -8,6 +8,7 @@
     <color name="colorControlNormal">#90CAF9</color>
     <color name="colorPrimary">#2196F3</color>
     <color name="colorPrimaryDark">#FFFFFFFF</color>
+    <color name="splashbackground">#FFFFFFFF</color>
     <color name="textactivetab">#FFFFFFFF</color>
     <color name="textprimary">#FF000000</color>
     <color name="titletextcolor">#FF2196F3</color>

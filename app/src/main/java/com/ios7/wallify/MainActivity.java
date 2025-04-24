@@ -132,9 +132,12 @@ public class MainActivity extends AppCompatActivity {
 		if (config.getString("timeout", "").equals("")) {
 			config.edit().putString("timeout", "5000").commit();
 		}
-		if (config.getString("setupcomplete", "").equals("")) {
-			Intent intent = new Intent(MainActivity.this, SetupActivity1.class);
-			startActivity(intent);
+		String setupFlag = config.getString("setupcomplete", "");
+		Log.d("DEBUG", "setupcomplete read: " + setupFlag);
+
+		if (setupFlag.equals("")) {
+			Log.d("DEBUG", "Launching setup activity");
+			startActivity(new Intent(MainActivity.this, SetupActivity1.class));
 		}
 		// Disables color extraction.
 		// ^^ This is no longer required as we added an exception catch to the extraction logic, the app won't fail anymore even if it fails.

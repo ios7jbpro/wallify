@@ -2190,6 +2190,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color splashbackground
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -3218,7 +3219,11 @@ drawable roundedbgviolent
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable wall_bottomleft
+drawable wall_bottomright
 drawable wall_icon
+drawable wall_topleft
+drawable wall_topright
 id ALT
 id AM_PM
 id BOTTOM_END
@@ -3328,6 +3333,11 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id background_bottomleft
+id background_bottomright
+id background_topleft
+id background_topright
+id backgroundlayout
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3498,6 +3508,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
+id imageView2
+id imageView3
+id imageView4
 id imageview1
 id imageview3
 id immediateStop
@@ -3540,6 +3554,7 @@ id linear7
 id linear8
 id linear9
 id linearColorPreviews
+id linearReinitSetup
 id linearloading
 id linearpreviewcard
 id listMode
@@ -3551,6 +3566,7 @@ id ltr
 id m3_side_sheet
 id main
 id mainEditingPage
+id mainframe
 id marquee
 id masked
 id match_constraint
@@ -3813,6 +3829,7 @@ id textview40
 id textview5
 id textview6
 id textview7
+id textviewReinitSetup
 id time
 id time2
 id title

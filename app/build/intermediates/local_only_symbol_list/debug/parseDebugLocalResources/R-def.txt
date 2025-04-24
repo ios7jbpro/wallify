@@ -8,6 +8,7 @@ color colorControlHighlight
 color colorControlNormal
 color colorPrimary
 color colorPrimaryDark
+color splashbackground
 color textactivetab
 color textprimary
 color titletextcolor
@@ -30,7 +31,11 @@ drawable phone
 drawable roundedbg
 drawable roundedbgdialog
 drawable roundedbgviolent
+drawable wall_bottomleft
+drawable wall_bottomright
 drawable wall_icon
+drawable wall_topleft
+drawable wall_topright
 id AM_PM
 id Game
 id ImageView4
@@ -48,6 +53,11 @@ id Phone
 id Search_bg
 id Tarik
 id Translator
+id background_bottomleft
+id background_bottomright
+id background_topleft
+id background_topright
+id backgroundlayout
 id bottomBar
 id bottombarroot
 id button
@@ -75,6 +85,10 @@ id goBackButton
 id gridRounderLayout
 id gridlinear
 id gridview1
+id imageView
+id imageView2
+id imageView3
+id imageView4
 id imageview1
 id imageview3
 id linear1
@@ -97,12 +111,14 @@ id linear7
 id linear8
 id linear9
 id linearColorPreviews
+id linearReinitSetup
 id linearloading
 id linearpreviewcard
 id listView
 id listview1
 id main
 id mainEditingPage
+id mainframe
 id nextButton
 id previewStatusBar
 id progressBar
@@ -138,6 +154,7 @@ id textview40
 id textview5
 id textview6
 id textview7
+id textviewReinitSetup
 id time2
 id topBar
 id viewpager1

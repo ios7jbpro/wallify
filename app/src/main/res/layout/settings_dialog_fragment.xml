@@ -141,7 +141,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="8dp"
-				android:layout_marginBottom="8dp"
+				android:layout_marginBottom="4dp"
 				android:background="@drawable/roundedbgviolent"
 				android:gravity="center_vertical"
 				android:orientation="horizontal"
@@ -154,6 +154,27 @@
 					android:padding="8dp"
 					android:text="!! Project might be abandoned !!\n Click for more info"
 					android:textColor="#FFC107"
+					android:textSize="14sp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/linearReinitSetup"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:layout_marginBottom="8dp"
+				android:background="@drawable/roundedbgviolent"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:padding="8dp">
+
+				<TextView
+					android:id="@+id/textviewReinitSetup"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Reinitiate setup screen"
+					android:textColor="@color/textprimary"
 					android:textSize="14sp" />
 			</LinearLayout>
 

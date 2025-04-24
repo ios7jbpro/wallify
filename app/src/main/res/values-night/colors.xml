@@ -2,6 +2,7 @@
 <resources>
     <color name="background">#FF000000</color>
     <color name="backgroundviolent">#303030</color>
+    <color name="splashbackground">#FF000000</color>
     <color name="activetab">#FF424242</color>
     <color name="textprimary">#FFFFFFFF</color>
     <color name="textactivetab">#FF000000</color>

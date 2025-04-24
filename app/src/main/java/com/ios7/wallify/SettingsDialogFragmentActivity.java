@@ -31,6 +31,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.ios7.wallify.MyClasses.EzIntent;
 import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.*;
@@ -64,6 +65,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private Switch switchColorPreviews;
 	private ListView listView;
 	private LinearLayout linear30;
+	private LinearLayout linearReinitSetup;
 	
 	private SharedPreferences config;
 	
@@ -93,6 +95,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		circleimageview1 = _view.findViewById(R.id.circleimageview1);
 		textview4 = _view.findViewById(R.id.textview4);
 		linear30 = _view.findViewById(R.id.linear30);
+		linearReinitSetup = _view.findViewById(R.id.linearReinitSetup);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 		
 		edittext1.addTextChangedListener(new TextWatcher() {
@@ -243,6 +246,14 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			}
 		});
 				}
+		});
+
+		linearReinitSetup.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				Intent intent = new Intent(getContext(), SetupActivity1.class);
+				startActivity(intent);
+			}
 		});
 	}
 }
