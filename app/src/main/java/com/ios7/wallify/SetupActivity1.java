@@ -32,12 +32,18 @@ public class SetupActivity1 extends AppCompatActivity {
     private LinearLayout SetupProgress1;
     private LinearLayout SetupProgress2;
     private LinearLayout SetupProgress3;
+    private LinearLayout setupGui;
+    private LinearLayout quitGui;
+    private TextView textView60;
+    private TextView leavebutton;
+    private TextView cancelbutton;
     private int funny = 0;
     private int easteregg = 0;
     private int canStop = 0;
     private SharedPreferences config;
     private Switch switchColorPreviews;
     private Switch switchDisableAnims;
+    private int quitState = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +60,14 @@ public class SetupActivity1 extends AppCompatActivity {
         nextbutton3 = findViewById(R.id.nextbutton3);
         button = findViewById(R.id.skipbutton);
         mainframe = findViewById(R.id.mainframe);
+        leavebutton = findViewById(R.id.leavebutton);
+        cancelbutton = findViewById(R.id.cancelbutton);
         SetupProgress1 = findViewById(R.id.SetupProgress1);
         SetupProgress2 = findViewById(R.id.SetupProgress2);
         SetupProgress3 = findViewById(R.id.SetupProgress3);
+        setupGui = findViewById(R.id.setupGui);
+        quitGui = findViewById(R.id.quitGui);
+        textView60 = findViewById(R.id.textView60);
         switchColorPreviews = findViewById(R.id.switchColorPreviews);
         switchDisableAnims = findViewById(R.id.switchDisableAnims);
         backgroundlayout.setClipToOutline(true);
@@ -77,6 +88,8 @@ public class SetupActivity1 extends AppCompatActivity {
         background_bottomright.setAlpha(0);
         button.setAlpha(0);
         nextbutton1.setAlpha(0);
+        quitGui.setVisibility(View.GONE);
+        quitGui.setAlpha(0);
         EzTimer.runWithDelay(1500, () -> {
                     EzTimerLooped loopedTimer = new EzTimerLooped();
                     loopedTimer.start(25, () -> {
@@ -287,11 +300,86 @@ public class SetupActivity1 extends AppCompatActivity {
             }
         });
 
+        cancelbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EzTimerLooped loopedTimer15 = new EzTimerLooped();
+                loopedTimer15.start(1, () -> {
+                    if (Math.abs(quitGui.getAlpha() - 0) < 0.1f) {
+                        loopedTimer15.stop();
+                    } else {
+                        quitGui.setAlpha(quitGui.getAlpha() - 0.08f);
+                    }
+                });
+                EzTimer.runWithDelay(200, () -> {
+                    quitGui.setVisibility(View.GONE);
+                    setupGui.setVisibility(View.VISIBLE);
+                    EzTimerLooped loopedTimer16 = new EzTimerLooped();
+                    loopedTimer16.start(1, () -> {
+                        if (Math.abs(setupGui.getAlpha() - 1) < 0.1f) {
+                            loopedTimer16.stop();
+                        } else {
+                            setupGui.setAlpha(setupGui.getAlpha() + 0.08f);
+                        }
+                    });
+                });
+                quitState = 0;
+            }
+        });
+
+        leavebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
     }
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(this, "Complete the setup first", Toast.LENGTH_SHORT).show();
+        if (quitState == 0) {
+            EzTimerLooped loopedTimer15 = new EzTimerLooped();
+            loopedTimer15.start(1, () -> {
+                if (Math.abs(setupGui.getAlpha() - 0) < 0.1f) {
+                    loopedTimer15.stop();
+                } else {
+                    setupGui.setAlpha(setupGui.getAlpha() - 0.08f);
+                }
+            });
+            EzTimer.runWithDelay(200, () -> {
+                setupGui.setVisibility(View.GONE);
+                quitGui.setVisibility(View.VISIBLE);
+                EzTimerLooped loopedTimer16 = new EzTimerLooped();
+                loopedTimer16.start(1, () -> {
+                    if (Math.abs(quitGui.getAlpha() - 1) < 0.1f) {
+                        loopedTimer16.stop();
+                    } else {
+                        quitGui.setAlpha(quitGui.getAlpha() + 0.08f);
+                    }
+                });
+            });
+            quitState = 1;
+        } else {
+            EzTimer.runWithDelay(250, () -> {
+                textView60.setText(">Quit Setup?<");
+            });
+            EzTimer.runWithDelay(500, () -> {
+                textView60.setText("Quit Setup?");
+            });
+            EzTimer.runWithDelay(750, () -> {
+                textView60.setText(">Quit Setup?<");
+            });
+            EzTimer.runWithDelay(1000, () -> {
+                textView60.setText("Quit Setup?");
+            });
+            EzTimer.runWithDelay(1250, () -> {
+                textView60.setText(">Quit Setup?<");
+            });
+            EzTimer.runWithDelay(1500, () -> {
+                textView60.setText("Quit Setup?");
+            });
+        }
     }
 
 }

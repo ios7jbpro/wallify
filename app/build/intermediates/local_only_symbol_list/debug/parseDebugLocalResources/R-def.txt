@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color RED
 color activetab
 color background
 color backgroundviolent
@@ -30,6 +31,8 @@ drawable massage
 drawable phone
 drawable roundedbg
 drawable roundedbgdialog
+drawable roundedbginfocard
+drawable roundedbginfocardcompleter
 drawable roundedbgviolent
 drawable wall_bottomleft
 drawable wall_bottomright
@@ -37,6 +40,7 @@ drawable wall_icon
 drawable wall_topleft
 drawable wall_topright
 id AM_PM
+id ExitSetup1
 id Game
 id ImageView4
 id ImageView5
@@ -65,6 +69,7 @@ id bottomBar
 id bottombarroot
 id button1
 id button2
+id cancelbutton
 id cardview1
 id circleimageview1
 id closebtn
@@ -93,8 +98,11 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView6
+id imageView7
 id imageview1
 id imageview3
+id leavebutton
 id linear1
 id linear10
 id linear11
@@ -136,10 +144,12 @@ id progressBar4
 id progressBar5
 id progress_bar_loading
 id progressbar1
+id quitGui
 id repobtn
 id rootlayout
 id rootlinear
 id setWallpaperButton
+id setupGui
 id skipbutton
 id switchColorPreviews
 id switchDisableAnims
@@ -153,13 +163,16 @@ id textView3
 id textView4
 id textView5
 id textView6
+id textView60
 id textView7
+id textView70
 id textView8
 id textView9
 id textViewCrop
 id textViewLoading
 id textViewTopbar
 id textloading
+id textview
 id textview1
 id textview2
 id textview3

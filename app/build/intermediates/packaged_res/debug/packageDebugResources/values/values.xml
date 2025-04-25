@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="RED">#FFFF0000</color>
     <color name="activetab">#FFE0E0E0</color>
     <color name="background">#FFFFFFFF</color>
     <color name="backgroundviolent">#f0f0f0</color>

@@ -125,214 +125,293 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/SetupProgress1"
+                android:id="@+id/setupGui"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/SetupProgress1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Welcome to Wallify!"
-                    android:textColor="@color/textprimary"
-                    android:textSize="35sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="0.5"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="This is a new experimental wallpaper app project.\nIt's made to test my skills.\nThe main point is to not use a single external library.\nI'd love your feedback and ideas in the GitHub!"
-                    android:textColor="@color/textprimary"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="0.5"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="an actual setup screen will be here\n(soon i hope trust me)"
-                    android:textColor="@color/textprimary"
-                    android:textSize="11sp"
-                    android:textStyle="italic" />
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome to Wallify!"
+                        android:textColor="@color/textprimary"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="This is a new experimental wallpaper app project.\nIt's made to test my skills.\nThe main point is to not use a single external library.\nI'd love your feedback and ideas in the GitHub!"
+                        android:textColor="@color/textprimary"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="an actual setup screen will be here\n(soon i hope trust me)"
+                        android:textColor="@color/textprimary"
+                        android:textSize="11sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/skipbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/roundedbgviolent"
+                            android:elevation="0px"
+                            android:padding="10dp"
+                            android:text="Skip setup"
+                            android:textAllCaps="false"
+                            android:textColor="@color/textprimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nextbutton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/roundedbgviolent"
+                            android:elevation="0px"
+                            android:padding="10dp"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:textColor="@color/textprimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal">
+                    android:id="@+id/SetupProgress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/skipbutton"
+                        android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="4dp"
-                        android:background="@drawable/roundedbgviolent"
-                        android:elevation="0px"
-                        android:padding="10dp"
-                        android:text="Skip setup"
-                        android:textAllCaps="false"
+                        android:text="Configuration"
                         android:textColor="@color/textprimary"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/linearColorPreviews"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <Switch
+                            android:id="@+id/switchColorPreviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Extract wallpaper colors)"
+                            android:textColor="@color/textprimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearDisableAnims"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <Switch
+                            android:id="@+id/switchDisableAnims"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:text="Disable app animatons\n(suggested for lowend devices)"
+                            android:textColor="@color/textprimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.5"
+                        android:text="Don't worry, you can change these later."
+                        android:textColor="@color/textprimary"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nextbutton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundedbgviolent"
+                            android:elevation="0px"
+                            android:padding="10dp"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:textColor="@color/textprimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SetupProgress3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You're done!"
+                        android:textColor="@color/textprimary"
+                        android:textSize="35sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/nextbutton1"
+                        android:id="@+id/textView13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="4dp"
-                        android:background="@drawable/roundedbgviolent"
-                        android:elevation="0px"
-                        android:padding="10dp"
-                        android:text="Continue"
-                        android:textAllCaps="false"
+                        android:alpha="0.5"
+                        android:text="Press the button below to begin."
                         android:textColor="@color/textprimary"
-                        android:textStyle="bold" />
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/nextbutton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundedbgviolent"
+                            android:elevation="0px"
+                            android:padding="10dp"
+                            android:text="Continue"
+                            android:textAllCaps="false"
+                            android:textColor="@color/textprimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/SetupProgress2"
+                android:id="@+id/quitGui"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Configuration"
-                    android:textColor="@color/textprimary"
-                    android:textSize="35sp"
-                    android:textStyle="bold" />
-
                 <LinearLayout
-                    android:id="@+id/linearColorPreviews"
+                    android:id="@+id/ExitSetup1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:layout_margin="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:padding="8dp">
-
-                    <Switch
-                        android:id="@+id/switchColorPreviews"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="Extract wallpaper colors)"
-                        android:textColor="@color/textprimary"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearDisableAnims"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:layout_margin="8dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:padding="8dp">
-
-                    <Switch
-                        android:id="@+id/switchDisableAnims"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="8dp"
-                        android:text="Disable app animatons\n(suggested for lowend devices)"
-                        android:textColor="@color/textprimary"
-                        android:textSize="12sp" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="0.5"
-                    android:text="Don't worry, you can change these later."
-                    android:textColor="@color/textprimary"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal">
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nextbutton2"
+                        android:id="@+id/textView60"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/roundedbgviolent"
-                        android:elevation="0px"
-                        android:padding="10dp"
-                        android:text="Continue"
-                        android:textAllCaps="false"
+                        android:text="Quit Setup?"
                         android:textColor="@color/textprimary"
+                        android:textSize="35sp"
                         android:textStyle="bold" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/SetupProgress3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="You're done!"
-                    android:textColor="@color/textprimary"
-                    android:textSize="35sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:alpha="0.5"
-                    android:text="Press the button below to begin."
-                    android:textColor="@color/textprimary"
-                    android:textSize="15sp"
-                    android:textStyle="italic" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/nextbutton3"
+                        android:id="@+id/textView70"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/roundedbgviolent"
-                        android:elevation="0px"
-                        android:padding="10dp"
-                        android:text="Continue"
-                        android:textAllCaps="false"
+                        android:alpha="0.5"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="You will be asked to go through this setup again next time you open the app!"
                         android:textColor="@color/textprimary"
-                        android:textStyle="bold" />
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/leavebutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/roundedbgviolent"
+                            android:elevation="0px"
+                            android:padding="10dp"
+                            android:text="Leave"
+                            android:textAllCaps="false"
+                            android:textColor="@color/textprimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cancelbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:background="@drawable/roundedbgviolent"
+                            android:elevation="0px"
+                            android:padding="10dp"
+                            android:text="Cancel"
+                            android:textAllCaps="false"
+                            android:textColor="@color/textprimary"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </LinearLayout>
 

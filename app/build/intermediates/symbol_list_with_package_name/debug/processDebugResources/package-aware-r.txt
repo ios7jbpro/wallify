@@ -1417,6 +1417,7 @@ attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
+color RED
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -3215,6 +3216,8 @@ drawable notify_panel_notification_icon_bg
 drawable phone
 drawable roundedbg
 drawable roundedbgdialog
+drawable roundedbginfocard
+drawable roundedbginfocardcompleter
 drawable roundedbgviolent
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3231,6 +3234,7 @@ id BOTTOM_START
 id CTRL
 id CropOverlayView
 id CropProgressBar
+id ExitSetup1
 id FUNCTION
 id Game
 id ImageView4
@@ -3360,6 +3364,7 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cancelbutton
 id cardview1
 id carryVelocity
 id center
@@ -3516,6 +3521,8 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView6
+id imageView7
 id imageview1
 id imageview3
 id immediateStop
@@ -3532,6 +3539,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id leavebutton
 id left
 id leftToRight
 id legacy
@@ -3703,6 +3711,7 @@ id progress_bar_loading
 id progress_circular
 id progress_horizontal
 id progressbar1
+id quitGui
 id radio
 id ratio
 id rectangle
@@ -3745,6 +3754,7 @@ id select_dialog_listview
 id selected
 id selection_type
 id setWallpaperButton
+id setupGui
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3819,7 +3829,9 @@ id textView3
 id textView4
 id textView5
 id textView6
+id textView60
 id textView7
+id textView70
 id textView8
 id textView9
 id textViewCrop
@@ -3835,6 +3847,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id textloading
+id textview
 id textview1
 id textview2
 id textview3

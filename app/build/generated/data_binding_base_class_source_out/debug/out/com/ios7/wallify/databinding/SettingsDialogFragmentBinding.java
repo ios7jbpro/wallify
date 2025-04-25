@@ -30,6 +30,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final EditText edittext1;
 
   @NonNull
+  public final CircleImageView imageView6;
+
+  @NonNull
+  public final CircleImageView imageView7;
+
+  @NonNull
   public final LinearLayout linear1;
 
   @NonNull
@@ -66,6 +72,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final Switch switchDisableAnims;
 
   @NonNull
+  public final TextView textview;
+
+  @NonNull
   public final TextView textview2;
 
   @NonNull
@@ -91,17 +100,21 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
 
   private SettingsDialogFragmentBinding(@NonNull LinearLayout rootView,
       @NonNull CircleImageView circleimageview1, @NonNull EditText edittext1,
+      @NonNull CircleImageView imageView6, @NonNull CircleImageView imageView7,
       @NonNull LinearLayout linear1, @NonNull LinearLayout linear2, @NonNull LinearLayout linear3,
       @NonNull LinearLayout linear30, @NonNull LinearLayout linear4, @NonNull LinearLayout linear5,
       @NonNull LinearLayout linearColorPreviews, @NonNull LinearLayout linearDisableAnims,
       @NonNull LinearLayout linearReinitSetup, @NonNull ListView listView,
       @NonNull Switch switchColorPreviews, @NonNull Switch switchDisableAnims,
-      @NonNull TextView textview2, @NonNull TextView textview3, @NonNull TextView textview4,
-      @NonNull TextView textview40, @NonNull TextView textview5, @NonNull TextView textview6,
-      @NonNull TextView textview7, @NonNull TextView textviewReinitSetup) {
+      @NonNull TextView textview, @NonNull TextView textview2, @NonNull TextView textview3,
+      @NonNull TextView textview4, @NonNull TextView textview40, @NonNull TextView textview5,
+      @NonNull TextView textview6, @NonNull TextView textview7,
+      @NonNull TextView textviewReinitSetup) {
     this.rootView = rootView;
     this.circleimageview1 = circleimageview1;
     this.edittext1 = edittext1;
+    this.imageView6 = imageView6;
+    this.imageView7 = imageView7;
     this.linear1 = linear1;
     this.linear2 = linear2;
     this.linear3 = linear3;
@@ -114,6 +127,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.listView = listView;
     this.switchColorPreviews = switchColorPreviews;
     this.switchDisableAnims = switchDisableAnims;
+    this.textview = textview;
     this.textview2 = textview2;
     this.textview3 = textview3;
     this.textview4 = textview4;
@@ -160,6 +174,18 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       id = R.id.edittext1;
       EditText edittext1 = ViewBindings.findChildViewById(rootView, id);
       if (edittext1 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView6;
+      CircleImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView6 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView7;
+      CircleImageView imageView7 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView7 == null) {
         break missingId;
       }
 
@@ -235,6 +261,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textview;
+      TextView textview = ViewBindings.findChildViewById(rootView, id);
+      if (textview == null) {
+        break missingId;
+      }
+
       id = R.id.textview2;
       TextView textview2 = ViewBindings.findChildViewById(rootView, id);
       if (textview2 == null) {
@@ -284,10 +316,10 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       }
 
       return new SettingsDialogFragmentBinding((LinearLayout) rootView, circleimageview1, edittext1,
-          linear1, linear2, linear3, linear30, linear4, linear5, linearColorPreviews,
-          linearDisableAnims, linearReinitSetup, listView, switchColorPreviews, switchDisableAnims,
-          textview2, textview3, textview4, textview40, textview5, textview6, textview7,
-          textviewReinitSetup);
+          imageView6, imageView7, linear1, linear2, linear3, linear30, linear4, linear5,
+          linearColorPreviews, linearDisableAnims, linearReinitSetup, listView, switchColorPreviews,
+          switchDisableAnims, textview, textview2, textview3, textview4, textview40, textview5,
+          textview6, textview7, textviewReinitSetup);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

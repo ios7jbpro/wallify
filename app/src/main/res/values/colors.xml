@@ -12,4 +12,5 @@
     <color name="colorPrimaryDark">#FFFFFFFF</color>
     <color name="colorControlHighlight">#BBDEFB</color>
     <color name="colorControlNormal">#90CAF9</color>
+    <color name="RED">#FFFF0000</color>
 </resources>
