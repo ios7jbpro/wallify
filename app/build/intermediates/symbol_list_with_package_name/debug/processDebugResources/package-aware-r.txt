@@ -3558,6 +3558,7 @@ id linear7
 id linear8
 id linear9
 id linearColorPreviews
+id linearDisableAnims
 id linearReinitSetup
 id linearloading
 id linearpreviewcard
@@ -3786,6 +3787,7 @@ id submenuarrow
 id submit_area
 id supportScrollUp
 id switchColorPreviews
+id switchDisableAnims
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans

@@ -115,6 +115,7 @@ id linear7
 id linear8
 id linear9
 id linearColorPreviews
+id linearDisableAnims
 id linearReinitSetup
 id linearloading
 id linearpreviewcard
@@ -141,6 +142,7 @@ id rootlinear
 id setWallpaperButton
 id skipbutton
 id switchColorPreviews
+id switchDisableAnims
 id tempcardview
 id textView
 id textView11

@@ -3557,6 +3557,7 @@ int id linear7 0x7f080148
 int id linear8 0x7f080149
 int id linear9 0x7f08014a
 int id linearColorPreviews 0x7f08014b
+int id linearDisableAnims 0x7f08029a
 int id linearReinitSetup 0x7f08014c
 int id linearloading 0x7f08014d
 int id linearpreviewcard 0x7f08014e
@@ -3785,6 +3786,7 @@ int id submenuarrow 0x7f08022b
 int id submit_area 0x7f08022c
 int id supportScrollUp 0x7f08022d
 int id switchColorPreviews 0x7f08022e
+int id switchDisableAnims 0x7f08029b
 int id tabMode 0x7f08022f
 int id tag_accessibility_actions 0x7f080230
 int id tag_accessibility_clickable_spans 0x7f080231

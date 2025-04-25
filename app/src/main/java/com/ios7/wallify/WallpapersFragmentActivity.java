@@ -146,16 +146,26 @@ public class WallpapersFragmentActivity extends Fragment {
 				isGridVisible = true;
 				config.edit().putString("fragmentCanExit", "0").commit();
 				config.edit().putString("categoryName", categorylist.get((int)_position).get("category").toString()).commit();
-				EzTimer.runWithDelay(50, () -> {
-					EzTimerLooped loopedTimer = new EzTimerLooped();
-					loopedTimer.start(1, () -> {
-						if (Math.abs(gridfadelinear.getAlpha() - 1) < 0.01f) {
-							loopedTimer.stop();
-						} else {
-							gridfadelinear.setAlpha(gridfadelinear.getAlpha() + 0.1f);
-						}
+				if (config.getString("disableanims", "").equals("1")) {
+					gridfadelinear.setVisibility(View.VISIBLE);
+					gridlinear.setVisibility(View.GONE);
+					gridloading.setVisibility(View.VISIBLE);
+					listview1.setVisibility(View.GONE);
+					gridlinear.setAlpha(1);
+					gridfadelinear.setAlpha(1);
+					listview1.setAlpha(1);
+				} else {
+					EzTimer.runWithDelay(50, () -> {
+						EzTimerLooped loopedTimer = new EzTimerLooped();
+						loopedTimer.start(1, () -> {
+							if (Math.abs(gridfadelinear.getAlpha() - 1) < 0.01f) {
+								loopedTimer.stop();
+							} else {
+								gridfadelinear.setAlpha(gridfadelinear.getAlpha() + 0.1f);
+							}
+						});
 					});
-				});
+				}
 			}
 		});
 
@@ -199,16 +209,24 @@ public class WallpapersFragmentActivity extends Fragment {
 							listview1.setAlpha(0);
 							isGridVisible = false;
 							config.edit().putString("fragmentCanExit", "1").commit();
-							EzTimer.runWithDelay(100, () -> {
-								EzTimerLooped loopedTimer = new EzTimerLooped();
-								loopedTimer.start(1, () -> {
-									if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
-										loopedTimer.stop();
-									} else {
-										listview1.setAlpha(listview1.getAlpha() + 0.05f);
-									}
+							if (config.getString("disableanims", "").equals("1")) {
+								gridfadelinear.setVisibility(View.GONE);
+								gridlinear.setVisibility(View.GONE);
+								gridloading.setVisibility(View.GONE);
+								listview1.setVisibility(View.VISIBLE);
+								listview1.setAlpha(1);
+							} else {
+								EzTimer.runWithDelay(100, () -> {
+									EzTimerLooped loopedTimer = new EzTimerLooped();
+									loopedTimer.start(1, () -> {
+										if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
+											loopedTimer.stop();
+										} else {
+											listview1.setAlpha(listview1.getAlpha() + 0.05f);
+										}
+									});
 								});
-							});
+							}
 						} else {
 							// Do nothing
 						}
@@ -240,16 +258,24 @@ public class WallpapersFragmentActivity extends Fragment {
 				listview1.setVisibility(View.VISIBLE);
 				listview1.setAlpha(0);
 				config.edit().putString("fragmentCanExit", "1").commit();
-				EzTimer.runWithDelay(100, () -> {
-					EzTimerLooped loopedTimer = new EzTimerLooped();
-					loopedTimer.start(1, () -> {
-						if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
-							loopedTimer.stop();
-						} else {
-							listview1.setAlpha(listview1.getAlpha() + 0.05f);
-						}
+				if (config.getString("disableanims", "").equals("1")) {
+					gridfadelinear.setVisibility(View.GONE);
+					gridlinear.setVisibility(View.GONE);
+					gridloading.setVisibility(View.GONE);
+					listview1.setVisibility(View.VISIBLE);
+					listview1.setAlpha(1);
+				} else {
+					EzTimer.runWithDelay(100, () -> {
+						EzTimerLooped loopedTimer = new EzTimerLooped();
+						loopedTimer.start(1, () -> {
+							if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
+								loopedTimer.stop();
+							} else {
+								listview1.setAlpha(listview1.getAlpha() + 0.05f);
+							}
+						});
 					});
-				});
+				}
 			}
 		});
 		
@@ -285,18 +311,24 @@ public class WallpapersFragmentActivity extends Fragment {
 				gridview1.setAdapter(new Gridview1Adapter(walllist));
 				gridview1.setNumColumns((int) 2);
 				gridlinear.setAlpha(0);
-				EzTimer.runWithDelay(500, () -> {
+				if (config.getString("disableanims", "").equals("1")) {
 					gridlinear.setVisibility(View.VISIBLE);
 					gridloading.setVisibility(View.GONE);
-					EzTimerLooped loopedTimer = new EzTimerLooped();
-					loopedTimer.start(1, () -> {
-						if (Math.abs(gridlinear.getAlpha() - 1) < 0.01f) {
-							loopedTimer.stop();
-						} else {
-							gridlinear.setAlpha(gridlinear.getAlpha() + 0.05f);
-						}
+					gridlinear.setAlpha(1);
+				} else {
+					EzTimer.runWithDelay(500, () -> {
+						gridlinear.setVisibility(View.VISIBLE);
+						gridloading.setVisibility(View.GONE);
+						EzTimerLooped loopedTimer = new EzTimerLooped();
+						loopedTimer.start(1, () -> {
+							if (Math.abs(gridlinear.getAlpha() - 1) < 0.01f) {
+								loopedTimer.stop();
+							} else {
+								gridlinear.setAlpha(gridlinear.getAlpha() + 0.05f);
+							}
+						});
 					});
-				});
+				}
 			}
 
 			@Override
@@ -421,16 +453,21 @@ public class WallpapersFragmentActivity extends Fragment {
 			textview1.setText(categorylist.get((int)_position).get("category").toString());
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(categorylist.get((int)_position).get("preview").toString())).into(imageview1);
 			linear2.setClipToOutline(true);
-			EzTimer.runWithDelay(((int)_position * 50) + 100, () -> {
-				EzTimerLooped loopedTimer = new EzTimerLooped();
-				loopedTimer.start(1, () -> {
-					if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
-						loopedTimer.stop();
-					} else {
-						linear1.setAlpha(linear1.getAlpha() + 0.05f);
-					}
+			if (config.getString("disableanims", "").equals(1)) {
+				linear1.setVisibility(View.VISIBLE);
+				linear1.setAlpha(1);
+			} else {
+				EzTimer.runWithDelay(((int) _position * 50) + 100, () -> {
+					EzTimerLooped loopedTimer = new EzTimerLooped();
+					loopedTimer.start(1, () -> {
+						if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
+							loopedTimer.stop();
+						} else {
+							linear1.setAlpha(linear1.getAlpha() + 0.05f);
+						}
+					});
 				});
-			});
+			}
 			
 			return _view;
 		}
@@ -492,17 +529,21 @@ public class WallpapersFragmentActivity extends Fragment {
 			}
 			linear2.setClipToOutline(true);
 
-			EzTimer.runWithDelay(((int)_position * 100) + 200, () -> {
-				EzTimerLooped loopedTimer = new EzTimerLooped();
-				loopedTimer.start(1, () -> {
-					if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
-						loopedTimer.stop();
-					} else {
-						linear1.setAlpha(linear1.getAlpha() + 0.05f);
-					}
+			if (config.getString("disableanims", "").equals("1")) {
+				linear1.setVisibility(View.VISIBLE);
+				linear1.setAlpha(1);
+			} else {
+				EzTimer.runWithDelay(((int) _position * 50) + 100, () -> {
+					EzTimerLooped loopedTimer = new EzTimerLooped();
+					loopedTimer.start(1, () -> {
+						if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
+							loopedTimer.stop();
+						} else {
+							linear1.setAlpha(linear1.getAlpha() + 0.05f);
+						}
+					});
 				});
-			});
-			
+			}
 			return _view;
 		}
 	}

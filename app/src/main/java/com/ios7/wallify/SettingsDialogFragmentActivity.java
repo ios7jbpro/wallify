@@ -63,6 +63,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private CircleImageView circleimageview1;
 	private TextView textview4;
 	private Switch switchColorPreviews;
+	private Switch switchDisableAnims;
 	private ListView listView;
 	private LinearLayout linear30;
 	private LinearLayout linearReinitSetup;
@@ -92,6 +93,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		edittext1 = _view.findViewById(R.id.edittext1);
 		textview7 = _view.findViewById(R.id.textview7);
 		switchColorPreviews = _view.findViewById(R.id.switchColorPreviews);
+		switchDisableAnims = _view.findViewById(R.id.switchDisableAnims);
 		circleimageview1 = _view.findViewById(R.id.circleimageview1);
 		textview4 = _view.findViewById(R.id.textview4);
 		linear30 = _view.findViewById(R.id.linear30);
@@ -124,6 +126,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		if (config.getString("colorextraction", "").equals("1")) {
 			switchColorPreviews.setChecked(true);
 		}
+		if (config.getString("disableanims", "").equals("1")) {
+			switchDisableAnims.setChecked(true);
+		}
 
 		// Listen for switchColorPreviews on check changed
 		switchColorPreviews.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -133,6 +138,16 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 					config.edit().putString("colorextraction", "1").commit();
 				} else {
 					config.edit().putString("colorextraction", "0").commit();
+				}
+			}
+		});
+		switchDisableAnims.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+			@Override
+			public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+				if (b) {
+					config.edit().putString("disableanims", "1").commit();
+				} else {
+					config.edit().putString("disableanims", "0").commit();
 				}
 			}
 		});
