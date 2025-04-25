@@ -146,7 +146,7 @@
                     android:layout_height="wrap_content"
                     android:alpha="0.5"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="This is a new experimental wallpaper app project.\nIt's made to test my skills.\nI'd love your feedback and ideas in the GitHub!"
+                    android:text="This is a new experimental wallpaper app project.\nIt's made to test my skills.\nThe main point is to not use a single external library.\nI'd love your feedback and ideas in the GitHub!"
                     android:textColor="@color/textprimary"
                     android:textSize="15sp"
                     android:textStyle="italic" />
