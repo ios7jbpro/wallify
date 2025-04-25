@@ -188,6 +188,9 @@ layout wallpaperlist
 layout wallpapers_fragment
 layout warning_dialog
 mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_monochrome
 string app_name
 string first_fragment_label
 string header

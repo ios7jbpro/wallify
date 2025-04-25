@@ -4103,6 +4103,9 @@ layout wallpapers_fragment
 layout warning_dialog
 menu crop_image_menu
 mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_monochrome
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

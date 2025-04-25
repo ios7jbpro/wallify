@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ios7.wallify"
     android:versionCode="1"
-    android:versionName="1.2" >
+    android:versionName="1.4" >
 
     <uses-sdk
         android:minSdkVersion="27"

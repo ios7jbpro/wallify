@@ -9,6 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -287,4 +288,10 @@ public class SetupActivity1 extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "Complete the setup first", Toast.LENGTH_SHORT).show();
+    }
+
 }
