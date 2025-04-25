@@ -72,6 +72,8 @@ public class WallpapersFragmentActivity extends Fragment {
 	private TextView textloading;
 	private LinearLayout linearloading;
 	private LinearLayout gridRounderLayout;
+	private LinearLayout gridfadelinear;
+	private LinearLayout gridloading;
 	
 	private RequestNetwork fetchwalljson;
 	private RequestNetwork.RequestListener _fetchwalljson_request_listener;
@@ -99,6 +101,8 @@ public class WallpapersFragmentActivity extends Fragment {
 		tempcardview = _view.findViewById(R.id.tempcardview);
 		listview1 = _view.findViewById(R.id.listview1);
 		gridlinear = _view.findViewById(R.id.gridlinear);
+		gridfadelinear = _view.findViewById(R.id.gridfadelinear);
+		gridloading = _view.findViewById(R.id.gridloading);
 		linear2 = _view.findViewById(R.id.linear2);
 		gridview1 = _view.findViewById(R.id.gridview1);
 		textview1 = _view.findViewById(R.id.textview1);
@@ -107,6 +111,7 @@ public class WallpapersFragmentActivity extends Fragment {
 		textloading.setVisibility(View.GONE);
 		gridRounderLayout = _view.findViewById(R.id.gridRounderLayout);
 		gridRounderLayout.setClipToOutline(true);
+		gridfadelinear.setVisibility(View.GONE);
 		fetchwalljson = new RequestNetwork((Activity) getContext());
 		selectedItemList = getContext().getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
@@ -133,19 +138,21 @@ public class WallpapersFragmentActivity extends Fragment {
 				final int _position = _param3;
 				fetchwalljson.startRequestNetwork(RequestNetworkController.GET, categorylist.get((int)_position).get("json").toString(), "", _fetchwalljson_request_listener);
 				temporaryCache.edit().putString("directrepo", categorylist.get((int)_position).get("json").toString()).commit();
-				gridlinear.setVisibility(View.VISIBLE);
+				gridlinear.setVisibility(View.GONE);
+				gridfadelinear.setVisibility(View.VISIBLE);
 				listview1.setVisibility(View.GONE);
 				gridlinear.setAlpha(0);
+				gridfadelinear.setAlpha(0);
 				isGridVisible = true;
 				config.edit().putString("fragmentCanExit", "0").commit();
 				config.edit().putString("categoryName", categorylist.get((int)_position).get("category").toString()).commit();
 				EzTimer.runWithDelay(50, () -> {
 					EzTimerLooped loopedTimer = new EzTimerLooped();
 					loopedTimer.start(1, () -> {
-						if (Math.abs(gridlinear.getAlpha() - 1) < 0.01f) {
+						if (Math.abs(gridfadelinear.getAlpha() - 1) < 0.01f) {
 							loopedTimer.stop();
 						} else {
-							gridlinear.setAlpha(gridlinear.getAlpha() + 0.05f);
+							gridfadelinear.setAlpha(gridfadelinear.getAlpha() + 0.1f);
 						}
 					});
 				});
@@ -185,7 +192,9 @@ public class WallpapersFragmentActivity extends Fragment {
 					config.edit().putString("backSignal", "0").commit();
 					if (config.getString("currenttab", "").equals("0")) {
 						if (isGridVisible) {
+							gridfadelinear.setVisibility(View.GONE);
 							gridlinear.setVisibility(View.GONE);
+							gridloading.setVisibility(View.VISIBLE);
 							listview1.setVisibility(View.VISIBLE);
 							listview1.setAlpha(0);
 							isGridVisible = false;
@@ -225,7 +234,9 @@ public class WallpapersFragmentActivity extends Fragment {
 		linear2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
+				gridfadelinear.setVisibility(View.GONE);
 				gridlinear.setVisibility(View.GONE);
+				gridloading.setVisibility(View.VISIBLE);
 				listview1.setVisibility(View.VISIBLE);
 				listview1.setAlpha(0);
 				config.edit().putString("fragmentCanExit", "1").commit();
@@ -273,6 +284,19 @@ public class WallpapersFragmentActivity extends Fragment {
 				}.getType());
 				gridview1.setAdapter(new Gridview1Adapter(walllist));
 				gridview1.setNumColumns((int) 2);
+				gridlinear.setAlpha(0);
+				EzTimer.runWithDelay(500, () -> {
+					gridlinear.setVisibility(View.VISIBLE);
+					gridloading.setVisibility(View.GONE);
+					EzTimerLooped loopedTimer = new EzTimerLooped();
+					loopedTimer.start(1, () -> {
+						if (Math.abs(gridlinear.getAlpha() - 1) < 0.01f) {
+							loopedTimer.stop();
+						} else {
+							gridlinear.setAlpha(gridlinear.getAlpha() + 0.05f);
+						}
+					});
+				});
 			}
 
 			@Override

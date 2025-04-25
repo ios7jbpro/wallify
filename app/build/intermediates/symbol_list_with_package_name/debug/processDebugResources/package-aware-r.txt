@@ -3486,7 +3486,9 @@ id gone
 id graph
 id graph_wrap
 id gridRounderLayout
+id gridfadelinear
 id gridlinear
+id gridloading
 id gridview1
 id group_divider
 id grouping
@@ -3695,6 +3697,7 @@ id progressBar
 id progressBar2
 id progressBar3
 id progressBar4
+id progressBar5
 id progress_bar_loading
 id progress_circular
 id progress_horizontal

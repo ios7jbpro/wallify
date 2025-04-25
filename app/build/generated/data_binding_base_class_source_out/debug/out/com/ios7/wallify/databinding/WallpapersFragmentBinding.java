@@ -27,7 +27,13 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   public final LinearLayout gridRounderLayout;
 
   @NonNull
+  public final LinearLayout gridfadelinear;
+
+  @NonNull
   public final LinearLayout gridlinear;
+
+  @NonNull
+  public final LinearLayout gridloading;
 
   @NonNull
   public final GridView gridview1;
@@ -48,6 +54,9 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   public final ProgressBar progressBar4;
 
   @NonNull
+  public final ProgressBar progressBar5;
+
+  @NonNull
   public final LinearLayout rootlinear;
 
   @NonNull
@@ -60,20 +69,25 @@ public final class WallpapersFragmentBinding implements ViewBinding {
   public final TextView textview1;
 
   private WallpapersFragmentBinding(@NonNull LinearLayout rootView,
-      @NonNull LinearLayout gridRounderLayout, @NonNull LinearLayout gridlinear,
+      @NonNull LinearLayout gridRounderLayout, @NonNull LinearLayout gridfadelinear,
+      @NonNull LinearLayout gridlinear, @NonNull LinearLayout gridloading,
       @NonNull GridView gridview1, @NonNull LinearLayout linear1, @NonNull LinearLayout linear2,
       @NonNull LinearLayout linearloading, @NonNull ListView listview1,
-      @NonNull ProgressBar progressBar4, @NonNull LinearLayout rootlinear,
-      @NonNull CardView tempcardview, @NonNull TextView textloading, @NonNull TextView textview1) {
+      @NonNull ProgressBar progressBar4, @NonNull ProgressBar progressBar5,
+      @NonNull LinearLayout rootlinear, @NonNull CardView tempcardview,
+      @NonNull TextView textloading, @NonNull TextView textview1) {
     this.rootView = rootView;
     this.gridRounderLayout = gridRounderLayout;
+    this.gridfadelinear = gridfadelinear;
     this.gridlinear = gridlinear;
+    this.gridloading = gridloading;
     this.gridview1 = gridview1;
     this.linear1 = linear1;
     this.linear2 = linear2;
     this.linearloading = linearloading;
     this.listview1 = listview1;
     this.progressBar4 = progressBar4;
+    this.progressBar5 = progressBar5;
     this.rootlinear = rootlinear;
     this.tempcardview = tempcardview;
     this.textloading = textloading;
@@ -113,9 +127,21 @@ public final class WallpapersFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.gridfadelinear;
+      LinearLayout gridfadelinear = ViewBindings.findChildViewById(rootView, id);
+      if (gridfadelinear == null) {
+        break missingId;
+      }
+
       id = R.id.gridlinear;
       LinearLayout gridlinear = ViewBindings.findChildViewById(rootView, id);
       if (gridlinear == null) {
+        break missingId;
+      }
+
+      id = R.id.gridloading;
+      LinearLayout gridloading = ViewBindings.findChildViewById(rootView, id);
+      if (gridloading == null) {
         break missingId;
       }
 
@@ -155,6 +181,12 @@ public final class WallpapersFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar5;
+      ProgressBar progressBar5 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar5 == null) {
+        break missingId;
+      }
+
       id = R.id.rootlinear;
       LinearLayout rootlinear = ViewBindings.findChildViewById(rootView, id);
       if (rootlinear == null) {
@@ -179,9 +211,9 @@ public final class WallpapersFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new WallpapersFragmentBinding((LinearLayout) rootView, gridRounderLayout, gridlinear,
-          gridview1, linear1, linear2, linearloading, listview1, progressBar4, rootlinear,
-          tempcardview, textloading, textview1);
+      return new WallpapersFragmentBinding((LinearLayout) rootView, gridRounderLayout,
+          gridfadelinear, gridlinear, gridloading, gridview1, linear1, linear2, linearloading,
+          listview1, progressBar4, progressBar5, rootlinear, tempcardview, textloading, textview1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
