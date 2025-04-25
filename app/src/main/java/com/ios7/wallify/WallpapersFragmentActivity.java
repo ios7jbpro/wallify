@@ -453,7 +453,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			textview1.setText(categorylist.get((int)_position).get("category").toString());
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(categorylist.get((int)_position).get("preview").toString())).into(imageview1);
 			linear2.setClipToOutline(true);
-			if (config.getString("disableanims", "").equals(1)) {
+			if (config.getString("disableanims", "").equals("1")) {
 				linear1.setVisibility(View.VISIBLE);
 				linear1.setAlpha(1);
 			} else {
