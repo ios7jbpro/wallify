@@ -213,6 +213,52 @@
                     android:textSize="35sp"
                     android:textStyle="bold" />
 
+                <LinearLayout
+                    android:id="@+id/linearColorPreviews"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="8dp">
+
+                    <Switch
+                        android:id="@+id/switchColorPreviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Extract wallpaper colors)"
+                        android:textColor="@color/textprimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearDisableAnims"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_margin="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:padding="8dp">
+
+                    <Switch
+                        android:id="@+id/switchDisableAnims"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="8dp"
+                        android:text="Disable app animatons\n(suggested for lowend devices)"
+                        android:textColor="@color/textprimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"

@@ -4,8 +4,10 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -33,6 +35,8 @@ public class SetupActivity1 extends AppCompatActivity {
     private int easteregg = 0;
     private int canStop = 0;
     private SharedPreferences config;
+    private Switch switchColorPreviews;
+    private Switch switchDisableAnims;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,8 @@ public class SetupActivity1 extends AppCompatActivity {
         SetupProgress1 = findViewById(R.id.SetupProgress1);
         SetupProgress2 = findViewById(R.id.SetupProgress2);
         SetupProgress3 = findViewById(R.id.SetupProgress3);
+        switchColorPreviews = findViewById(R.id.switchColorPreviews);
+        switchDisableAnims = findViewById(R.id.switchDisableAnims);
         backgroundlayout.setClipToOutline(true);
         background_topleft.setClipToOutline(true);
         background_topright.setClipToOutline(true);
@@ -257,5 +263,28 @@ public class SetupActivity1 extends AppCompatActivity {
                 });
             }
         });
+
+        switchColorPreviews.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    config.edit().putString("colorextraction", "1").commit();
+                } else {
+                    config.edit().putString("colorextraction", "0").commit();
+                }
+            }
+        });
+
+        switchDisableAnims.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b) {
+                    config.edit().putString("disableanims", "1").commit();
+                } else {
+                    config.edit().putString("disableanims", "0").commit();
+                }
+            }
+        });
+
     }
 }
