@@ -240,7 +240,6 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 				dialog.show();
 
-				// Handle button click to dismiss dialog
 				closebtn.setOnClickListener(new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
