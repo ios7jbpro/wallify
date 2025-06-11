@@ -3821,6 +3821,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
 id textView11
 id textView12
 id textView13
@@ -4021,6 +4022,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_app_abandoned
 layout activity_crop_wallpaper
 layout activity_setup1
 layout categorylist

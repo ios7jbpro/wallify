@@ -79,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
 		 button2.setBackgroundResource(R.drawable.roundedbgviolent);
 		pageLoaderInit = new PageLoaderInitFragmentAdapter(getApplicationContext(), getSupportFragmentManager());
 		config = getSharedPreferences("config", Activity.MODE_PRIVATE);
+		startActivity(new Intent(MainActivity.this, AppAbandoned.class));
+		finish();
 
 			button1.setOnClickListener(new View.OnClickListener() {
 				@Override

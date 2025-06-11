@@ -16,6 +16,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\activity_setup1.xml"
     },
     {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_activity_app_abandoned.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/activity_app_abandoned.xml"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_hk_personal_wallpaper.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\hk_personal_wallpaper.png"
     },
@@ -218,10 +222,6 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_wall_topright.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\drawable-xhdpi\\wall_topright.png"
-    },
-    {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_activity_setup1.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/activity_setup1.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_ic_apps_white.png.flat",

@@ -3820,6 +3820,7 @@ int id textSpacerNoTitle 0x7f08024e
 int id textStart 0x7f08024f
 int id textTop 0x7f080250
 int id textView 0x7f080251
+int id textView10 0x7f0802a6
 int id textView11 0x7f080252
 int id textView12 0x7f080253
 int id textView13 0x7f080254
@@ -4020,6 +4021,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0019
 int layout abc_search_view 0x7f0b001a
 int layout abc_select_dialog_material 0x7f0b001b
 int layout abc_tooltip 0x7f0b001c
+int layout activity_app_abandoned 0x7f0b007a
 int layout activity_crop_wallpaper 0x7f0b001d
 int layout activity_setup1 0x7f0b001e
 int layout categorylist 0x7f0b001f

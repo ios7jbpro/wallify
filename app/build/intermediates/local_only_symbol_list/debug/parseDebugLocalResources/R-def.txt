@@ -155,6 +155,7 @@ id switchColorPreviews
 id switchDisableAnims
 id tempcardview
 id textView
+id textView10
 id textView11
 id textView12
 id textView13
@@ -188,6 +189,7 @@ id viewpager1
 id wallimage
 id wallname
 layout abandon_dialog
+layout activity_app_abandoned
 layout activity_crop_wallpaper
 layout activity_setup1
 layout categorylist
