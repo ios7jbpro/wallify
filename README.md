@@ -39,3 +39,5 @@ despite all my rage
 > ---
 >
 > **This repository remains available for archival and reference purposes only.**
+> 
+> This may change in the future where I find a backend to host, e.g GitHub.
