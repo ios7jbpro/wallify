@@ -514,7 +514,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			linear1.setAlpha(0);
 			
 			cardview1.setPreventCornerOverlap(true);
-			Glide.with(getContext().getApplicationContext()).load(Uri.parse(walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
+			Glide.with(getContext().getApplicationContext()).load(Uri.parse(config.getString("repo", "") + walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
 			// If "name" equals a blank space, hide linear3
 			if (walllist.get((int)_position).get("name").toString().equals("")) {
 				linear3.setVisibility(View.GONE);
