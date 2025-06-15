@@ -85,6 +85,7 @@ public class WallpapersFragmentActivity extends Fragment {
 	private TimerTask loadDelay;
 	private RequestNetwork fetchcategoryjson;
 	private RequestNetwork.RequestListener _fetchcategoryjson_request_listener;
+	private String combinedOutput;
 	
 	@NonNull
 	@Override
@@ -136,7 +137,8 @@ public class WallpapersFragmentActivity extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> _param1, View _param2, int _param3, long _param4) {
 				final int _position = _param3;
-				fetchwalljson.startRequestNetwork(RequestNetworkController.GET, categorylist.get((int)_position).get("json").toString(), "", _fetchwalljson_request_listener);
+				fetchwalljson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", "") + categorylist.get((int)_position).get("json").toString(), "", _fetchwalljson_request_listener);
+				combinedOutput = config.getString("repo", "") + categorylist.get((int)_position).get("json").toString();
 				temporaryCache.edit().putString("directrepo", categorylist.get((int)_position).get("json").toString()).commit();
 				gridlinear.setVisibility(View.GONE);
 				gridfadelinear.setVisibility(View.VISIBLE);
@@ -306,8 +308,7 @@ public class WallpapersFragmentActivity extends Fragment {
 				final String _tag = _param1;
 				final String _response = _param2;
 				final HashMap<String, Object> _responseHeaders = _param3;
-				walllist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>() {
-				}.getType());
+				walllist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>() {}.getType());
 				gridview1.setAdapter(new Gridview1Adapter(walllist));
 				gridview1.setNumColumns((int) 2);
 				gridlinear.setAlpha(0);
@@ -346,7 +347,7 @@ public class WallpapersFragmentActivity extends Fragment {
 				final String _tag = _param1;
 				final String _response = _param2;
 				final HashMap<String, Object> _responseHeaders = _param3;
-				categorylist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>(){}.getType());
+				categorylist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>() {}.getType());
 				listview1.setAdapter(new Listview1Adapter(categorylist));
 				((BaseAdapter)listview1.getAdapter()).notifyDataSetChanged();
 				linearloading.setVisibility(View.GONE);
@@ -375,7 +376,7 @@ public class WallpapersFragmentActivity extends Fragment {
 						@Override
 						public void run() {
 							if (config.getString("categories", "").equals("1")) {
-								fetchcategoryjson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", ""), "", _fetchcategoryjson_request_listener);
+								fetchcategoryjson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", "") + "categories.json", "", _fetchcategoryjson_request_listener);
 							} else {
 								fetchwalljson.startRequestNetwork(RequestNetworkController.GET, config.getString("directrepo", ""), "", _fetchwalljson_request_listener);
 							}
@@ -387,7 +388,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			temporaryCache.edit().putString("firstTimeLoad", "0").commit();
 		} else {
 			if (config.getString("categories", "").equals("1")) {
-				fetchcategoryjson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", ""), "", _fetchcategoryjson_request_listener);
+				fetchcategoryjson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", "") + "categories.json", "", _fetchcategoryjson_request_listener);
 			} else {
 				fetchwalljson.startRequestNetwork(RequestNetworkController.GET, config.getString("directrepo", ""), "", _fetchwalljson_request_listener);
 				gridlinear.setVisibility(View.VISIBLE);

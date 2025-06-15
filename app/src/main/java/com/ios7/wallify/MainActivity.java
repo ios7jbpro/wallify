@@ -79,8 +79,8 @@ public class MainActivity extends AppCompatActivity {
 		 button2.setBackgroundResource(R.drawable.roundedbgviolent);
 		pageLoaderInit = new PageLoaderInitFragmentAdapter(getApplicationContext(), getSupportFragmentManager());
 		config = getSharedPreferences("config", Activity.MODE_PRIVATE);
-		startActivity(new Intent(MainActivity.this, AppAbandoned.class));
-		finish();
+		// startActivity(new Intent(MainActivity.this, AppAbandoned.class));
+		// finish();
 
 			button1.setOnClickListener(new View.OnClickListener() {
 				@Override
@@ -127,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
 	private void initializeLogic() {
 		// This SharedPrefs section sets your desired repo.
 		config.edit().putString("repo", "https://ihs.ios7.xyz/wallify-api/categories.json").commit();
+		config.edit().putString("repo", "https://raw.githubusercontent.com/j1459863h/wallify-walls/refs/heads/main/").commit();
 		// Enable or disable categories
 		config.edit().putString("categories", "1").commit();
 		config.edit().putString("directrepo", "https://altdisk.eimaen.pw/api/download/a69b5e5031f23e06cd1af7f885de5c0c/anime.json").commit();
