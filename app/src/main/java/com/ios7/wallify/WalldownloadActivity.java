@@ -258,129 +258,174 @@ public class WalldownloadActivity extends AppCompatActivity {
 				if (config.getString("wallpaperName", "").equals("")) {
 					textview1.setText(config.getString("categoryName", ""));
 				}
-				mixedUrl = config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString();
-				Log.d("WallpaperDebug", "Mixed URL = '" + mixedUrl + "'");
-				Glide.with(getApplicationContext())
-						.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
-						.into(new SimpleTarget<Drawable>() {
-							@Override
-							public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
-								imageview1.setImageDrawable(resource); // Set the image resource into the ImageView
-								Bitmap bitmap = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
-								Palette.from(bitmap).generate(palette -> {
-									int vibrant = palette.getDominantColor(0x000000); // <=== color you want
-									int vibrantLight = palette.getLightVibrantColor(0x000000);
-									int vibrantDark = palette.getDarkVibrantColor(0x000000);
-									int muted = palette.getMutedColor(0x000000);
-									int mutedLight = palette.getLightMutedColor(0x000000);
-									int mutedDark = palette.getDarkMutedColor(0x000000);
-									color1.setBackgroundColor(vibrant);
-									color2.setBackgroundColor(muted);
-									textview2.setTextColor(vibrantLight);
-									// time2.setTextColor(vibrantLight);
-									color3.setBackgroundColor(mutedDark);
-									color4.setBackgroundColor(mutedLight);
-									color5.setBackgroundColor(vibrantLight);
-									color6.setBackgroundColor(vibrantDark);
-									textView5.setVisibility(View.GONE);
-									color1.setOnClickListener(new OnClickListener() {
-										@Override
-										public void onClick(View v) {
-											String hexColor = String.format("#%06X", (0xFFFFFF & vibrant));
-											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
+				// mixedUrl = config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString();
+				// Log.d("WallpaperDebug", "Mixed URL = '" + mixedUrl + "'");
+				try {
+					Glide.with(getApplicationContext())
+							.load(Uri.parse(config.getString("repo", "") +
+									walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", "0")))
+											.get("lowprew").toString()))
+							.into(new SimpleTarget<Drawable>() {
+								@Override
+								public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+									imageview1.setImageDrawable(resource);
+
+									Drawable drawable = imageview1.getDrawable();
+									if (!(drawable instanceof BitmapDrawable)) {
+										Log.e("WallpaperDebug", "Drawable is not a BitmapDrawable");
+										showColorExtractionFailed();
+										return;
+									}
+
+									Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
+									if (bitmap == null || bitmap.getWidth() == 0 || bitmap.getHeight() == 0) {
+										Log.e("WallpaperDebug", "Bitmap is null or empty");
+										showColorExtractionFailed();
+										return;
+									}
+
+									Palette.from(bitmap).generate(palette -> {
+										int defaultColor = Color.DKGRAY;
+
+										int vibrant = palette.getDominantColor(defaultColor);
+										int muted = palette.getMutedColor(defaultColor);
+										int vibrantLight = palette.getLightVibrantColor(defaultColor);
+										int vibrantDark = palette.getDarkVibrantColor(defaultColor);
+										int mutedLight = palette.getLightMutedColor(defaultColor);
+										int mutedDark = palette.getDarkMutedColor(defaultColor);
+
+										int[] colors = {vibrant, muted, mutedDark, mutedLight, vibrantLight, vibrantDark};
+
+										// Check if any extracted color is fully transparent (alpha == 0)
+										for (int c : colors) {
+											if (Color.alpha(c) == 0) {
+												Log.e("WallpaperDebug", "Color extraction failed: transparent color detected");
+												showColorExtractionFailed();
+												return;
+											}
 										}
-									});
-									color2.setOnClickListener(new OnClickListener() {
-										@Override
-										public void onClick(View v) {
-											String hexColor = String.format("#%06X", (0xFFFFFF & muted));
-											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
-										}
-									});
-									color3.setOnClickListener(new OnClickListener() {
-										@Override
-										public void onClick(View v) {
-											String hexColor = String.format("#%06X", (0xFFFFFF & mutedDark));
-											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
-										}
-									});
-									color4.setOnClickListener(new OnClickListener() {
-										@Override
-										public void onClick(View v) {
-											String hexColor = String.format("#%06X", (0xFFFFFF & mutedLight));
-											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
-										}
-									});
-									color5.setOnClickListener(new OnClickListener() {
-										@Override
-										public void onClick(View v) {
-											String hexColor = String.format("#%06X", (0xFFFFFF & vibrantLight));
-											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
-										}
-									});
-									color6.setOnClickListener(new OnClickListener() {
-										@Override
-										public void onClick(View v) {
-											String hexColor = String.format("#%06X", (0xFFFFFF & vibrantDark));
-											ClipboardUtils.copyTextToClipboard(getApplicationContext(), String.valueOf(hexColor));
-										}
-									});
-									colorpreviews.setVisibility(View.VISIBLE);
-									colorpreviewsloading.setVisibility(View.GONE);
-									// Hide the entire layout if colorextraction sharedPrefs is set to 0
-									if (config.getString("colorextraction", "").equals("0")) {
-										colorpreviews.setVisibility(View.GONE);
+
+										// Set background colors
+										color1.setBackgroundColor(vibrant);
+										color2.setBackgroundColor(muted);
+										color3.setBackgroundColor(mutedDark);
+										color4.setBackgroundColor(mutedLight);
+										color5.setBackgroundColor(vibrantLight);
+										color6.setBackgroundColor(vibrantDark);
+
+										// Set text colors
+										textview2.setTextColor(vibrantLight);
+										// time2.setTextColor(vibrantLight); // Uncomment if you want
+
+										// Show color previews and hide loading/failure messages
+										colorpreviews.setVisibility(View.VISIBLE);
 										colorpreviewsloading.setVisibility(View.GONE);
-										textView3.setVisibility(View.GONE);
-										// Set the clock widget to be white again as color extraction is ignored
-										textview2.setTextColor(Color.WHITE);
-										time2.setTextColor(Color.WHITE);
-									}
-									// Check if any of the color views are white or transparent
-									if (color1.getBackground().getAlpha() == 0 || color2.getBackground().getAlpha() == 0 || color3.getBackground().getAlpha() == 0 ||
-											color4.getBackground().getAlpha() == 0 || color5.getBackground().getAlpha() == 0 || color6.getBackground().getAlpha() == 0) {
-										// Hide all of the color views by setting visiblity to gone and show textView5 instead
-										color1.setVisibility(View.GONE);
-										color2.setVisibility(View.GONE);
-										color3.setVisibility(View.GONE);
-										color4.setVisibility(View.GONE);
-										color5.setVisibility(View.GONE);
-										color6.setVisibility(View.GONE);
-										textView5.setVisibility(View.VISIBLE);
-										// Set textView2 back to white color as the color extraction fails and the text can't be colored in this state, so we do this to avoid an invisible text
-										textview2.setTextColor(Color.WHITE);
-									}
-								});
-							}
+										textView5.setVisibility(View.GONE);
 
-							@Override
-							public void onLoadFailed(@Nullable Drawable errorDrawable) {
-								// Hide everything except the loadingpreview layout, also hide the progress bar, and tell the user the image can't be loaded
-								colorpreviews.setVisibility(View.GONE);
-								colorpreviewsloading.setVisibility(View.VISIBLE);
-								progress_bar_loading.setVisibility(View.GONE);
-								textViewLoading.setText("Image can't be loaded");
-							}
-						});
+										// Copy to clipboard on color click
+										setupColorClick(color1, vibrant);
+										setupColorClick(color2, muted);
+										setupColorClick(color3, mutedDark);
+										setupColorClick(color4, mutedLight);
+										setupColorClick(color5, vibrantLight);
+										setupColorClick(color6, vibrantDark);
 
-				Glide.with(getApplicationContext())
-						.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
-						.into(new SimpleTarget<Drawable>() {
-							@Override
-							public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
-								imageview3.setImageDrawable(resource); // Set the image resource into the ImageView
-							}
+										// Handle user preference for disabling color extraction
+										if (config.getString("colorextraction", "").equals("0")) {
+											colorpreviews.setVisibility(View.GONE);
+											colorpreviewsloading.setVisibility(View.GONE);
+											textView3.setVisibility(View.GONE);
+											textview2.setTextColor(Color.WHITE);
+											// time2.setTextColor(Color.WHITE); // Uncomment if used
+										}
+									});
+								}
 
-							@Override
-							public void onLoadFailed(@Nullable Drawable errorDrawable) {
-							}
-						});
-				textview1.setText(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("name").toString());
+								@Override
+								public void onLoadFailed(@Nullable Drawable errorDrawable) {
+									Log.e("WallpaperDebug", "Glide image load failed");
+									showColorExtractionFailed();
+								}
+
+								private void showColorExtractionFailed() {
+									// Hide all color views
+									color1.setVisibility(View.GONE);
+									color2.setVisibility(View.GONE);
+									color3.setVisibility(View.GONE);
+									color4.setVisibility(View.GONE);
+									color5.setVisibility(View.GONE);
+									color6.setVisibility(View.GONE);
+
+									// Show failure message
+									textView5.setVisibility(View.VISIBLE);
+
+									// Set default text colors to visible state
+									textview2.setTextColor(Color.WHITE);
+									// time2.setTextColor(Color.WHITE); // Uncomment if used
+
+									// Hide previews and loading spinner if visible
+									colorpreviews.setVisibility(View.GONE);
+									colorpreviewsloading.setVisibility(View.GONE);
+								}
+
+								private void setupColorClick(View colorView, int color) {
+									colorView.setOnClickListener(v -> {
+										String hexColor = String.format("#%06X", (0xFFFFFF & color));
+										ClipboardUtils.copyTextToClipboard(getApplicationContext(), hexColor);
+									});
+								}
+							});
+
+				} catch (Exception e) {
+					Log.e("WallpaperDebug", "Exception: " + e.getMessage());
+					//Log.e("WallpaperDebug", "Tried to load in:" + config.getString("repo", "") + walljsonlistmap.get((int)Integer.parseInt(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString());
+					Log.e("WallpaperDebug", "Detected values:");
+					Log.e("WallpaperDebug", "repo:" + config.getString("repo", ""));
+					Log.e("WallpaperDebug", "selectedWall:" + selectedItemList.getString("selectedWall", ""));
+				}
+
+				try {
+					Glide.with(getApplicationContext())
+							.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int) Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
+							.into(new SimpleTarget<Drawable>() {
+								@Override
+								public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
+									imageview3.setImageDrawable(resource); // Set the image resource into the ImageView
+								}
+
+								@Override
+								public void onLoadFailed(@Nullable Drawable errorDrawable) {
+								}
+							});
+				} catch (Exception e) {
+					Log.e("WallpaperDebug", "Exception: " + e.getMessage());
+					//Log.e("WallpaperDebug", "Tried to load in:" + config.getString("repo", "") + walljsonlistmap.get((int)Integer.parseInt(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString());
+					Log.e("WallpaperDebug", "Detected values:");
+					Log.e("WallpaperDebug", "repo:" + config.getString("repo", ""));
+					Log.e("WallpaperDebug", "selectedWall:" + selectedItemList.getString("selectedWall", ""));
+				}
+				try {
+					textview1.setText(walljsonlistmap.get((int) Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("name").toString());
+				} catch (Exception e) {
+					Log.e("WallpaperDebug", "Exception: " + e.getMessage());
+					//Log.e("WallpaperDebug", "Tried to load in:" + config.getString("repo", "") + walljsonlistmap.get((int)Integer.parseInt(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString());
+					Log.e("WallpaperDebug", "Detected values:");
+					Log.e("WallpaperDebug", "repo:" + config.getString("repo", ""));
+					Log.e("WallpaperDebug", "selectedWall:" + selectedItemList.getString("selectedWall", ""));
+				}
 				// Check if categoryName under config equals nothing
 				if (config.getString("wallpaperName", "").equals("")) {
 					textview1.setText(config.getString("categoryName", ""));
 				}
-				wallLink.edit().putString("wallLink", walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()).commit();
+				try {
+					wallLink.edit().putString("wallLink", walljsonlistmap.get((int) Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()).commit();
+				} catch (Exception e) {
+					Log.e("WallpaperDebug", "Exception: " + e.getMessage());
+					//Log.e("WallpaperDebug", "Tried to load in:" + config.getString("repo", "") + walljsonlistmap.get((int)Integer.parseInt(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString());
+					Log.e("WallpaperDebug", "Detected values:");
+					Log.e("WallpaperDebug", "repo:" + config.getString("repo", ""));
+					Log.e("WallpaperDebug", "selectedWall:" + selectedItemList.getString("selectedWall", ""));
+				}
 			}
 			
 			@Override
@@ -425,7 +470,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 
 		colorpreviews.setVisibility(View.GONE);
 
-		new Handler(Looper.getMainLooper()).postDelayed(() -> {
+		/* new Handler(Looper.getMainLooper()).postDelayed(() -> {
 		Bitmap bitmap = ((BitmapDrawable) imageview1.getDrawable()).getBitmap();
 			Palette.from(bitmap).generate(palette -> {
 				int vibrant = palette.getDominantColor(0x000000); // <=== color you want
@@ -507,7 +552,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				textview2.setTextColor(Color.WHITE);
 				time2.setTextColor(Color.WHITE);
 			}
-		}, (int)(Double.parseDouble(config.getString("timeout", ""))));
+		}, (int)(Double.parseDouble(config.getString("timeout", "")))); */
 
 	}
 	

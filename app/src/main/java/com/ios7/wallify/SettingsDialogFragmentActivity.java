@@ -122,7 +122,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 	private void initializeLogic() {
 		edittext1.setText(config.getString("timeout", ""));
-		// linear30.setVisibility(View.GONE);
+		linear30.setVisibility(View.GONE);
 		if (config.getString("colorextraction", "").equals("1")) {
 			switchColorPreviews.setChecked(true);
 		}

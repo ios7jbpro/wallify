@@ -285,7 +285,8 @@ public class WallpapersFragmentActivity extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> _param1, View _param2, int _param3, long _param4) {
 				final int _position = _param3;
-				selectedItemList.edit().putString(config.getString("repo", "") + "selectedWall", String.valueOf((long)(_position))).commit();
+				selectedItemList.edit().putString("selectedWall", String.valueOf(_position)).commit();
+				Log.d("WallpaperDebug", "Setting selected wall to = '" + String.valueOf((long)(_position)) + "'");
 				// Set wallpaperName on config
 				config.edit().putString("wallpaperName", walllist.get((int)_position).get("name").toString()).commit();
 				launchWallPreview.setClass(getContext().getApplicationContext(), WalldownloadActivity.class);

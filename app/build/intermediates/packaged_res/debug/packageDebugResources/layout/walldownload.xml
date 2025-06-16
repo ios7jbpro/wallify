@@ -389,8 +389,8 @@
 
 					<LinearLayout
 						android:id="@+id/color1"
-						android:layout_width="45dp"
-						android:layout_height="45dp"
+						android:layout_width="42dp"
+						android:layout_height="42dp"
 						android:orientation="vertical"></LinearLayout>
 				</androidx.cardview.widget.CardView>
 
@@ -404,8 +404,8 @@
 
 					<LinearLayout
 						android:id="@+id/color2"
-						android:layout_width="45dp"
-						android:layout_height="45dp"
+						android:layout_width="42dp"
+						android:layout_height="42dp"
 						android:orientation="vertical"></LinearLayout>
 				</androidx.cardview.widget.CardView>
 
@@ -419,8 +419,8 @@
 
 					<LinearLayout
 						android:id="@+id/color3"
-						android:layout_width="45dp"
-						android:layout_height="45dp"
+						android:layout_width="42dp"
+						android:layout_height="42dp"
 						android:orientation="vertical"></LinearLayout>
 				</androidx.cardview.widget.CardView>
 
@@ -445,8 +445,8 @@
 
 					<LinearLayout
 						android:id="@+id/color4"
-						android:layout_width="45dp"
-						android:layout_height="45dp"
+						android:layout_width="42dp"
+						android:layout_height="42dp"
 						android:orientation="vertical"></LinearLayout>
 				</androidx.cardview.widget.CardView>
 
@@ -460,8 +460,8 @@
 
 					<LinearLayout
 						android:id="@+id/color5"
-						android:layout_width="45dp"
-						android:layout_height="45dp"
+						android:layout_width="42dp"
+						android:layout_height="42dp"
 						android:orientation="vertical"></LinearLayout>
 				</androidx.cardview.widget.CardView>
 
@@ -475,8 +475,8 @@
 
 					<LinearLayout
 						android:id="@+id/color6"
-						android:layout_width="45dp"
-						android:layout_height="45dp"
+						android:layout_width="42dp"
+						android:layout_height="42dp"
 						android:orientation="vertical"></LinearLayout>
 				</androidx.cardview.widget.CardView>
 			</LinearLayout>
