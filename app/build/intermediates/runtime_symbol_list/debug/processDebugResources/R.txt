@@ -3247,6 +3247,7 @@ int id LinearLayout2 0x7f080010
 int id LinearLayout3 0x7f080011
 int id LinearLayout4 0x7f080012
 int id LinearLayout5 0x7f080013
+int id LinearOptionsContainer 0x7f0802a9
 int id META 0x7f080014
 int id Massage 0x7f080015
 int id More 0x7f080016
@@ -3858,6 +3859,7 @@ int id textview40 0x7f080272
 int id textview5 0x7f080273
 int id textview6 0x7f080274
 int id textview7 0x7f080275
+int id textview8 0x7f0802aa
 int id textviewReinitSetup 0x7f080276
 int id time 0x7f080277
 int id time2 0x7f080278

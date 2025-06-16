@@ -24,6 +24,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final LinearLayout LinearOptionsContainer;
+
+  @NonNull
   public final CircleImageView circleimageview1;
 
   @NonNull
@@ -102,22 +105,27 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final TextView textview7;
 
   @NonNull
+  public final TextView textview8;
+
+  @NonNull
   public final TextView textviewReinitSetup;
 
   private SettingsDialogFragmentBinding(@NonNull LinearLayout rootView,
-      @NonNull CircleImageView circleimageview1, @NonNull EditText edittext1,
-      @NonNull CircleImageView imageView6, @NonNull CircleImageView imageView7,
-      @NonNull LinearLayout linear1, @NonNull LinearLayout linear2, @NonNull LinearLayout linear3,
-      @NonNull LinearLayout linear30, @NonNull LinearLayout linear4, @NonNull LinearLayout linear5,
+      @NonNull LinearLayout LinearOptionsContainer, @NonNull CircleImageView circleimageview1,
+      @NonNull EditText edittext1, @NonNull CircleImageView imageView6,
+      @NonNull CircleImageView imageView7, @NonNull LinearLayout linear1,
+      @NonNull LinearLayout linear2, @NonNull LinearLayout linear3, @NonNull LinearLayout linear30,
+      @NonNull LinearLayout linear4, @NonNull LinearLayout linear5,
       @NonNull LinearLayout linearColorPreviews, @NonNull LinearLayout linearDisableAnims,
       @NonNull LinearLayout linearDisableBlur, @NonNull LinearLayout linearReinitSetup,
       @NonNull ListView listView, @NonNull Switch switchColorPreviews,
       @NonNull Switch switchDisableAnims, @NonNull Switch switchDisableBlur,
       @NonNull TextView textview, @NonNull TextView textview2, @NonNull TextView textview3,
       @NonNull TextView textview4, @NonNull TextView textview40, @NonNull TextView textview5,
-      @NonNull TextView textview6, @NonNull TextView textview7,
+      @NonNull TextView textview6, @NonNull TextView textview7, @NonNull TextView textview8,
       @NonNull TextView textviewReinitSetup) {
     this.rootView = rootView;
+    this.LinearOptionsContainer = LinearOptionsContainer;
     this.circleimageview1 = circleimageview1;
     this.edittext1 = edittext1;
     this.imageView6 = imageView6;
@@ -144,6 +152,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.textview5 = textview5;
     this.textview6 = textview6;
     this.textview7 = textview7;
+    this.textview8 = textview8;
     this.textviewReinitSetup = textviewReinitSetup;
   }
 
@@ -174,6 +183,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.LinearOptionsContainer;
+      LinearLayout LinearOptionsContainer = ViewBindings.findChildViewById(rootView, id);
+      if (LinearOptionsContainer == null) {
+        break missingId;
+      }
+
       id = R.id.circleimageview1;
       CircleImageView circleimageview1 = ViewBindings.findChildViewById(rootView, id);
       if (circleimageview1 == null) {
@@ -330,17 +345,24 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textview8;
+      TextView textview8 = ViewBindings.findChildViewById(rootView, id);
+      if (textview8 == null) {
+        break missingId;
+      }
+
       id = R.id.textviewReinitSetup;
       TextView textviewReinitSetup = ViewBindings.findChildViewById(rootView, id);
       if (textviewReinitSetup == null) {
         break missingId;
       }
 
-      return new SettingsDialogFragmentBinding((LinearLayout) rootView, circleimageview1, edittext1,
-          imageView6, imageView7, linear1, linear2, linear3, linear30, linear4, linear5,
-          linearColorPreviews, linearDisableAnims, linearDisableBlur, linearReinitSetup, listView,
-          switchColorPreviews, switchDisableAnims, switchDisableBlur, textview, textview2,
-          textview3, textview4, textview40, textview5, textview6, textview7, textviewReinitSetup);
+      return new SettingsDialogFragmentBinding((LinearLayout) rootView, LinearOptionsContainer,
+          circleimageview1, edittext1, imageView6, imageView7, linear1, linear2, linear3, linear30,
+          linear4, linear5, linearColorPreviews, linearDisableAnims, linearDisableBlur,
+          linearReinitSetup, listView, switchColorPreviews, switchDisableAnims, switchDisableBlur,
+          textview, textview2, textview3, textview4, textview40, textview5, textview6, textview7,
+          textview8, textviewReinitSetup);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

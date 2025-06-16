@@ -52,6 +52,7 @@ id LinearLayout2
 id LinearLayout3
 id LinearLayout4
 id LinearLayout5
+id LinearOptionsContainer
 id Massage
 id More
 id Phone
@@ -184,6 +185,7 @@ id textview40
 id textview5
 id textview6
 id textview7
+id textview8
 id textviewReinitSetup
 id time2
 id topBar
