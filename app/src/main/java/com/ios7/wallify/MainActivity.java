@@ -146,8 +146,18 @@ public class MainActivity extends AppCompatActivity {
 		// ^^ This is no longer required as we added an exception catch to the extraction logic, the app won't fail anymore even if it fails.
 		// So now we enable it by default.
 		// nvm, we fucked up, disabled it.
+		// FINALLY IT WORKS!
 		if (config.getString("colorextraction", "").equals("")) {
-			config.edit().putString("colorextraction", "0").commit();
+			config.edit().putString("colorextraction", "1").commit();
+		}
+		// Check for debuuger/debug build
+		if (android.os.Debug.isDebuggerConnected()) {
+			config.edit().putString("debugMode", "1").commit();
+			textview1.setText("Wallify(DEBUGGER DETECTED, DO NOT USE THIS IN PRODUCTION)");
+			config.edit().putString("disableanims", "1").commit();
+		} else  {
+			config.edit().putString("debugMode", "0").commit();
+			config.edit().remove("disableanims").commit();
 		}
 		// This part sets the user statusbar color as same as the color pulled from the XMLs
 		switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {

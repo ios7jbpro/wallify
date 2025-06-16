@@ -32,6 +32,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.ios7.wallify.MyClasses.EzIntent;
+import com.ios7.wallify.MyClasses.EzTimerLooped;
 import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.*;
@@ -269,5 +270,25 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				startActivity(intent);
 			}
 		});
+
+		if (config.getString("debugMode", "").equals("1")) {
+			textview2.setText("DEBUG");
+			linear30.setVisibility(View.GONE);
+			listView.setVisibility(View.GONE);
+			textview3.setText("Loading debug values...\nStarting a timer...");
+			EzTimerLooped loopedTimer15 = new EzTimerLooped();
+			loopedTimer15.start(50, () -> {
+				String repoval = config.getString("repo", "");
+				String timeoutval = config.getString("timeout", "");
+				String colorextractionval = config.getString("colorextraction", "");
+				String disableanimsval = ("(enforced on debug)"+config.getString("disableanims", ""));
+				String setupcompleteval = config.getString("setupcomplete", "");
+				String debugmodeval = config.getString("debugMode", "");
+				String endOutput = ("repo:" + repoval + "\ntimeoutval:" + timeoutval + "\ncolorextraction:" + colorextractionval + "\ndisableanims:" + disableanimsval + "\nsetupcomplete:" + setupcompleteval + "\ndebugMode:" + debugmodeval);
+				textview3.setText(endOutput);
+				switchDisableAnims.setChecked(true);
+			});
+		}
+
 	}
 }

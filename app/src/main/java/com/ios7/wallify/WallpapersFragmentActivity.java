@@ -453,6 +453,9 @@ public class WallpapersFragmentActivity extends Fragment {
 			linear1.setAlpha(0);
 			
 			textview1.setText(categorylist.get((int)_position).get("category").toString());
+			if (config.getString("debugMode", "").equals("1")) {
+				textview1.setText(categorylist.get((int)_position).get("category").toString()+"(index:"+_position+")");
+			}
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(config.getString("repo", "") + categorylist.get((int)_position).get("preview").toString())).into(imageview1);
 			linear2.setClipToOutline(true);
 			if (config.getString("disableanims", "").equals("1")) {
@@ -524,10 +527,20 @@ public class WallpapersFragmentActivity extends Fragment {
 				// Set drawable to nothing as well
 				linear3.setBackgroundDrawable(null);
 				wallname.setText("");
+				if (config.getString("debugMode", "").equals("1")) {
+					wallname.setText(walllist.get((int)_position).get("name").toString()+"(index:"+_position+")");
+					linear3.setVisibility(View.VISIBLE);
+					linear3.setBackground(getResources().getDrawable(R.drawable.fade));
+				}
 			} else {
 				linear3.setVisibility(View.VISIBLE);
 				linear3.setBackgroundDrawable(getResources().getDrawable(R.drawable.fade));
 				wallname.setText(walllist.get((int)_position).get("name").toString());
+				if (config.getString("debugMode", "").equals("1")) {
+					wallname.setText(walllist.get((int)_position).get("name").toString()+"(index:"+_position+")");
+					linear3.setVisibility(View.VISIBLE);
+					linear3.setBackground(getResources().getDrawable(R.drawable.fade));
+				}
 			}
 			linear2.setClipToOutline(true);
 

@@ -1,38 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-66:\\values-night-v31\\values-night-v31.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\baris\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night-v31\\colors.xml",
-                    "from": {
-                        "startLines": "4,2,3,8,11,12,9,10,6,5,7",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "209,57,130,456,683,766,529,604,329,280,380",
-                        "endColumns": "69,71,77,71,81,78,73,77,49,47,74",
-                        "endOffsets": "274,124,203,523,760,840,598,677,374,323,450"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,197,275,347,429,508,582,660,710,758",
-                        "endColumns": "69,71,77,71,81,78,73,77,49,47,74",
-                        "endOffsets": "120,192,270,342,424,503,577,655,705,753,828"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night-v31\\colors.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,4,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,4,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,209,-1,-1,-1",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,-1,-1,52,-1,-1,-1",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,257,-1,-1,-1"
+                        "startLines": "5,2,3,9,12,13,10,11,4,7,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "263,57,130,510,737,820,583,658,209,383,334,434",
+                        "endColumns": "69,71,77,71,81,78,73,77,52,49,47,74",
+                        "endOffsets": "328,124,203,577,814,894,652,731,257,428,377,504"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",

@@ -35,7 +35,8 @@
 				android:layout_weight="1"
 				android:choiceMode="none"
 				android:divider="@null"
-				android:dividerHeight="0dp" />
+				android:dividerHeight="0dp"
+				android:listSelector="@android:color/transparent" />
 
 			<LinearLayout
 				android:id="@+id/linearloading"
@@ -120,7 +121,8 @@
 								android:numColumns="3"
 								android:scrollIndicators="none"
 								android:scrollbars="none"
-								android:stretchMode="columnWidth" />
+								android:stretchMode="columnWidth"
+								android:listSelector="@android:color/transparent" />
 						</LinearLayout>
 
 					</LinearLayout>
