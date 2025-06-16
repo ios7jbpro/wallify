@@ -3226,6 +3226,7 @@ int drawable wall_bottomright 0x7f0700fe
 int drawable wall_icon 0x7f0700ff
 int drawable wall_topleft 0x7f070100
 int drawable wall_topright 0x7f070101
+int font saira_medium 0x7f140000
 int id ALT 0x7f080000
 int id AM_PM 0x7f080001
 int id BOTTOM_END 0x7f080002
@@ -3364,7 +3365,6 @@ int id cache_measures 0x7f080086
 int id callMeasure 0x7f080087
 int id cancel_button 0x7f080088
 int id cancelbutton 0x7f080089
-int id cardview1 0x7f08008a
 int id carryVelocity 0x7f08008b
 int id center 0x7f08008c
 int id centerCrop 0x7f08008d
@@ -3566,6 +3566,7 @@ int id linear8 0x7f080150
 int id linear9 0x7f080151
 int id linearColorPreviews 0x7f080152
 int id linearDisableAnims 0x7f080153
+int id linearDisableBlur 0x7f0802a7
 int id linearReinitSetup 0x7f080154
 int id linearloading 0x7f080155
 int id linearpreviewcard 0x7f080156
@@ -3797,6 +3798,7 @@ int id submit_area 0x7f080237
 int id supportScrollUp 0x7f080238
 int id switchColorPreviews 0x7f080239
 int id switchDisableAnims 0x7f08023a
+int id switchDisableBlur 0x7f0802a8
 int id tabMode 0x7f08023b
 int id tag_accessibility_actions 0x7f08023c
 int id tag_accessibility_clickable_spans 0x7f08023d

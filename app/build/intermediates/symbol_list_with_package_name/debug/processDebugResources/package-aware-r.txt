@@ -3227,6 +3227,7 @@ drawable wall_bottomright
 drawable wall_icon
 drawable wall_topleft
 drawable wall_topright
+font saira_medium
 id ALT
 id AM_PM
 id BOTTOM_END
@@ -3365,7 +3366,6 @@ id cache_measures
 id callMeasure
 id cancel_button
 id cancelbutton
-id cardview1
 id carryVelocity
 id center
 id centerCrop
@@ -3567,6 +3567,7 @@ id linear8
 id linear9
 id linearColorPreviews
 id linearDisableAnims
+id linearDisableBlur
 id linearReinitSetup
 id linearloading
 id linearpreviewcard
@@ -3798,6 +3799,7 @@ id submit_area
 id supportScrollUp
 id switchColorPreviews
 id switchDisableAnims
+id switchDisableBlur
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans

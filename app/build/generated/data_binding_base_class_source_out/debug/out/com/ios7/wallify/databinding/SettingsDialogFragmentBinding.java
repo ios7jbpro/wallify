@@ -60,6 +60,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final LinearLayout linearDisableAnims;
 
   @NonNull
+  public final LinearLayout linearDisableBlur;
+
+  @NonNull
   public final LinearLayout linearReinitSetup;
 
   @NonNull
@@ -70,6 +73,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
 
   @NonNull
   public final Switch switchDisableAnims;
+
+  @NonNull
+  public final Switch switchDisableBlur;
 
   @NonNull
   public final TextView textview;
@@ -104,8 +110,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       @NonNull LinearLayout linear1, @NonNull LinearLayout linear2, @NonNull LinearLayout linear3,
       @NonNull LinearLayout linear30, @NonNull LinearLayout linear4, @NonNull LinearLayout linear5,
       @NonNull LinearLayout linearColorPreviews, @NonNull LinearLayout linearDisableAnims,
-      @NonNull LinearLayout linearReinitSetup, @NonNull ListView listView,
-      @NonNull Switch switchColorPreviews, @NonNull Switch switchDisableAnims,
+      @NonNull LinearLayout linearDisableBlur, @NonNull LinearLayout linearReinitSetup,
+      @NonNull ListView listView, @NonNull Switch switchColorPreviews,
+      @NonNull Switch switchDisableAnims, @NonNull Switch switchDisableBlur,
       @NonNull TextView textview, @NonNull TextView textview2, @NonNull TextView textview3,
       @NonNull TextView textview4, @NonNull TextView textview40, @NonNull TextView textview5,
       @NonNull TextView textview6, @NonNull TextView textview7,
@@ -123,10 +130,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.linear5 = linear5;
     this.linearColorPreviews = linearColorPreviews;
     this.linearDisableAnims = linearDisableAnims;
+    this.linearDisableBlur = linearDisableBlur;
     this.linearReinitSetup = linearReinitSetup;
     this.listView = listView;
     this.switchColorPreviews = switchColorPreviews;
     this.switchDisableAnims = switchDisableAnims;
+    this.switchDisableBlur = switchDisableBlur;
     this.textview = textview;
     this.textview2 = textview2;
     this.textview3 = textview3;
@@ -237,6 +246,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearDisableBlur;
+      LinearLayout linearDisableBlur = ViewBindings.findChildViewById(rootView, id);
+      if (linearDisableBlur == null) {
+        break missingId;
+      }
+
       id = R.id.linearReinitSetup;
       LinearLayout linearReinitSetup = ViewBindings.findChildViewById(rootView, id);
       if (linearReinitSetup == null) {
@@ -258,6 +273,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       id = R.id.switchDisableAnims;
       Switch switchDisableAnims = ViewBindings.findChildViewById(rootView, id);
       if (switchDisableAnims == null) {
+        break missingId;
+      }
+
+      id = R.id.switchDisableBlur;
+      Switch switchDisableBlur = ViewBindings.findChildViewById(rootView, id);
+      if (switchDisableBlur == null) {
         break missingId;
       }
 
@@ -317,9 +338,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
 
       return new SettingsDialogFragmentBinding((LinearLayout) rootView, circleimageview1, edittext1,
           imageView6, imageView7, linear1, linear2, linear3, linear30, linear4, linear5,
-          linearColorPreviews, linearDisableAnims, linearReinitSetup, listView, switchColorPreviews,
-          switchDisableAnims, textview, textview2, textview3, textview4, textview40, textview5,
-          textview6, textview7, textviewReinitSetup);
+          linearColorPreviews, linearDisableAnims, linearDisableBlur, linearReinitSetup, listView,
+          switchColorPreviews, switchDisableAnims, switchDisableBlur, textview, textview2,
+          textview3, textview4, textview40, textview5, textview6, textview7, textviewReinitSetup);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

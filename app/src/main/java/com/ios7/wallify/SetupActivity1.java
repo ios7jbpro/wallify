@@ -1,5 +1,6 @@
 package com.ios7.wallify;
 
+import com.ios7.wallify.MyClasses.EzBlur;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -90,6 +91,7 @@ public class SetupActivity1 extends AppCompatActivity {
         nextbutton1.setAlpha(0);
         quitGui.setVisibility(View.GONE);
         quitGui.setAlpha(0);
+        EzBlur.setBlur(backgroundlayout, 10);
         EzTimer.runWithDelay(1500, () -> {
                     EzTimerLooped loopedTimer = new EzTimerLooped();
                     loopedTimer.start(25, () -> {

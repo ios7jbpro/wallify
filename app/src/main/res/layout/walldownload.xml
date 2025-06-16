@@ -105,6 +105,7 @@
 								android:layout_gravity="center_horizontal"
 								android:layout_marginTop="40dp"
 								android:elevation="5dp"
+								android:fontFamily="@font/saira_medium"
 								android:padding="8dp"
 								android:text="9:30"
 								android:textColor="@color/colorAccent"

@@ -155,9 +155,20 @@ public class MainActivity extends AppCompatActivity {
 			config.edit().putString("debugMode", "1").commit();
 			textview1.setText("Wallify(DEBUGGER DETECTED, DO NOT USE THIS IN PRODUCTION)");
 			config.edit().putString("disableanims", "1").commit();
+			config.edit().putString("disableblur", "1").commit();
 		} else  {
 			config.edit().putString("debugMode", "0").commit();
 			config.edit().remove("disableanims").commit();
+			config.edit().remove("disableblur").commit();
+		}
+		if (config.getString("disableblur", "").equals("")) {
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) { // API 31+
+				config.edit().putString("disableblur", "0").commit();
+			} else {
+				config.edit().putString("disableblur", "1").commit();
+			}
+		} else {
+			// Nothing
 		}
 		// This part sets the user statusbar color as same as the color pulled from the XMLs
 		switch (getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK) {

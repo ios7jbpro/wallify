@@ -11,7 +11,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.ios7.wallify.R;
@@ -22,9 +21,6 @@ import java.lang.String;
 public final class WallpaperlistBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
-
-  @NonNull
-  public final CardView cardview1;
 
   @NonNull
   public final LinearLayout linear1;
@@ -44,11 +40,10 @@ public final class WallpaperlistBinding implements ViewBinding {
   @NonNull
   public final TextView wallname;
 
-  private WallpaperlistBinding(@NonNull LinearLayout rootView, @NonNull CardView cardview1,
-      @NonNull LinearLayout linear1, @NonNull FrameLayout linear2, @NonNull LinearLayout linear3,
+  private WallpaperlistBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout linear1,
+      @NonNull FrameLayout linear2, @NonNull LinearLayout linear3,
       @NonNull ProgressBar progressBar2, @NonNull ImageView wallimage, @NonNull TextView wallname) {
     this.rootView = rootView;
-    this.cardview1 = cardview1;
     this.linear1 = linear1;
     this.linear2 = linear2;
     this.linear3 = linear3;
@@ -84,12 +79,6 @@ public final class WallpaperlistBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.cardview1;
-      CardView cardview1 = ViewBindings.findChildViewById(rootView, id);
-      if (cardview1 == null) {
-        break missingId;
-      }
-
       id = R.id.linear1;
       LinearLayout linear1 = ViewBindings.findChildViewById(rootView, id);
       if (linear1 == null) {
@@ -126,7 +115,7 @@ public final class WallpaperlistBinding implements ViewBinding {
         break missingId;
       }
 
-      return new WallpaperlistBinding((LinearLayout) rootView, cardview1, linear1, linear2, linear3,
+      return new WallpaperlistBinding((LinearLayout) rootView, linear1, linear2, linear3,
           progressBar2, wallimage, wallname);
     }
     String missingId = rootView.getResources().getResourceName(id);

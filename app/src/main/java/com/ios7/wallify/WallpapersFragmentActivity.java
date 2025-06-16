@@ -1,5 +1,6 @@
 package com.ios7.wallify;
 
+import com.ios7.wallify.MyClasses.EzBlur;
 import android.animation.*;
 import android.app.*;
 import android.app.Activity;
@@ -51,6 +52,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.regex.*;
 import org.json.*;
+import android.view.View;
 
 public class WallpapersFragmentActivity extends Fragment {
 	private boolean isGridVisible = false;
@@ -451,7 +453,13 @@ public class WallpapersFragmentActivity extends Fragment {
 			final ImageView imageview1 = _view.findViewById(R.id.imageview1);
 			final TextView textview1 = _view.findViewById(R.id.textview1);
 			linear1.setAlpha(0);
-			
+
+			if (config.getString("disableblur", "").equals("1")) {
+				// Do nothing
+			} else {
+				EzBlur.setBlur(imageview1, 20);
+			}
+
 			textview1.setText(categorylist.get((int)_position).get("category").toString());
 			if (config.getString("debugMode", "").equals("1")) {
 				textview1.setText(categorylist.get((int)_position).get("category").toString()+"(index:"+_position+")");
@@ -510,14 +518,12 @@ public class WallpapersFragmentActivity extends Fragment {
 			}
 			
 			final LinearLayout linear1 = _view.findViewById(R.id.linear1);
-			final androidx.cardview.widget.CardView cardview1 = _view.findViewById(R.id.cardview1);
 			final FrameLayout linear2 = _view.findViewById(R.id.linear2);
 			final ImageView wallimage = _view.findViewById(R.id.wallimage);
 			final LinearLayout linear3 = _view.findViewById(R.id.linear3);
 			final TextView wallname = _view.findViewById(R.id.wallname);
 			linear1.setAlpha(0);
-			
-			cardview1.setPreventCornerOverlap(true);
+
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(config.getString("repo", "") + walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
 			// If "name" equals a blank space, hide linear3
 			if (walllist.get((int)_position).get("name").toString().equals("")) {

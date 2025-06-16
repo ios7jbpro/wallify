@@ -152,6 +152,28 @@
 			</LinearLayout>
 
 			<LinearLayout
+				android:id="@+id/linearDisableBlur"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:background="@drawable/roundedbgviolent"
+				android:gravity="center_vertical"
+				android:orientation="horizontal"
+				android:padding="8dp">
+
+				<Switch
+					android:id="@+id/switchDisableBlur"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="8dp"
+					android:text="Disable blur\n(Currently broken, blurs anyway)"
+					android:textColor="@color/textprimary"
+					android:textSize="12sp" />
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:id="@+id/linear4"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"

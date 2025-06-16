@@ -39,6 +39,7 @@ drawable wall_bottomright
 drawable wall_icon
 drawable wall_topleft
 drawable wall_topright
+font saira_medium
 id AM_PM
 id ExitSetup1
 id Game
@@ -70,7 +71,6 @@ id bottombarroot
 id button1
 id button2
 id cancelbutton
-id cardview1
 id circleimageview1
 id closebtn
 id color1
@@ -124,6 +124,7 @@ id linear8
 id linear9
 id linearColorPreviews
 id linearDisableAnims
+id linearDisableBlur
 id linearReinitSetup
 id linearloading
 id linearpreviewcard
@@ -153,6 +154,7 @@ id setupGui
 id skipbutton
 id switchColorPreviews
 id switchDisableAnims
+id switchDisableBlur
 id tempcardview
 id textView
 id textView10

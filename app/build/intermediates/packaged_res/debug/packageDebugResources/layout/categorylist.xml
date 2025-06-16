@@ -5,22 +5,29 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
+
 	<LinearLayout
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:padding="8dp"
+		android:clickable="false"
 		android:orientation="horizontal"
-		android:clickable="false">
+		android:paddingStart="8dp"
+		android:paddingLeft="8dp"
+		android:paddingTop="8dp"
+		android:paddingEnd="8dp"
+		android:paddingRight="8dp"
+		android:paddingBottom="4dp">
+
 		<FrameLayout
 			android:id="@+id/linear2"
 			android:layout_width="match_parent"
 			android:layout_height="80dp"
-			android:gravity="center_vertical"
-			android:orientation="horizontal"
 			android:background="@drawable/roundedbg"
+			android:clipChildren="true"
 			android:foreground="?attr/selectableItemBackground"
-			android:clipChildren="true">
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
 
 			<ProgressBar
 				android:id="@+id/progressBar3"
@@ -52,13 +59,14 @@
 					android:textSize="18sp"
 					android:textStyle="bold" />
 			</LinearLayout>
+
 			<ImageView
 				android:id="@+id/imageview1"
-				android:focusable="false"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:src="@drawable/default_image"
-				android:scaleType="centerCrop" />
+				android:focusable="false"
+				android:scaleType="centerCrop"
+				android:src="@drawable/default_image" />
 		</FrameLayout>
 	</LinearLayout>
 </LinearLayout>
