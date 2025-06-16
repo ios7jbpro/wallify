@@ -203,7 +203,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				// Launch the crop activity
 				Intent intentCrop = new Intent(getApplicationContext(), CropWallpaper.class);
 				// Set an activity key that contains the sharedprefs so it can be loaded in the next activity directly
-				intentCrop.putExtra("link", Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()));
+				intentCrop.putExtra("link", Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()));
 				startActivity(intentCrop);
 			}
 		});

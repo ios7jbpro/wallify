@@ -1,5 +1,7 @@
 # wallify
 despite all my rage
+
+## !!!IGNORE THIS, THE APP FUNCTIONALITY IS BEING RESTORED!!!
 > ⚠ **WARNING: This project is abandoned and no longer functional**
 >
 > This application has been intentionally disabled. At launch, it immediately starts a placeholder activity that informs users the project has been discontinued:
