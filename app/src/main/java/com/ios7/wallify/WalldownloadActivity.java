@@ -123,6 +123,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private TextView textViewCrop;
 	private Intent intentCrop;
 	private TextView textView3;
+	private String mixedUrl;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -211,7 +212,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View _view) {
 				intentDownloadRemoteWall.setAction(Intent.ACTION_VIEW);
-				intentDownloadRemoteWall.setData(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()));
+				intentDownloadRemoteWall.setData(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()));
 				startActivity(intentDownloadRemoteWall);
 			}
 		});
@@ -221,7 +222,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 			public void onClick(View _view) {
 				Glide.with(getApplicationContext())
 						.asBitmap() // Directly load the image as a Bitmap
-						.load(Uri.parse(wallLink.getString("wallLink", "")))
+						.load(Uri.parse(config.getString("repo", "") + wallLink.getString("wallLink", "")))
 						.into(new SimpleTarget<Bitmap>() {
 							@Override
 							public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
@@ -257,8 +258,10 @@ public class WalldownloadActivity extends AppCompatActivity {
 				if (config.getString("wallpaperName", "").equals("")) {
 					textview1.setText(config.getString("categoryName", ""));
 				}
+				mixedUrl = config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString();
+				Log.d("WallpaperDebug", "Mixed URL = '" + mixedUrl + "'");
 				Glide.with(getApplicationContext())
-						.load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
+						.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
 						.into(new SimpleTarget<Drawable>() {
 							@Override
 							public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
@@ -361,7 +364,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 						});
 
 				Glide.with(getApplicationContext())
-						.load(Uri.parse(walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
+						.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
 						.into(new SimpleTarget<Drawable>() {
 							@Override
 							public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
@@ -408,7 +411,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 
 	private void initializeLogic() {
 		// Calls the specified repo
-		fetchJson.startRequestNetwork(RequestNetworkController.GET, temporaryCache.getString("directrepo", ""), "", _fetchJson_request_listener);
+		fetchJson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", "") + temporaryCache.getString("directrepo", ""), "", _fetchJson_request_listener);
+		Log.d("WallpaperDebug", "Starting request to:" + config.getString("repo", "") + temporaryCache.getString("directrepo", ""));
 		linear7.setClipToOutline(true);
 		linear9.setClipToOutline(true);
 
