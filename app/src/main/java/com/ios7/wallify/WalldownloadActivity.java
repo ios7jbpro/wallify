@@ -124,6 +124,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private Intent intentCrop;
 	private TextView textView3;
 	private String mixedUrl;
+	private String allhexvals;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -216,6 +217,18 @@ public class WalldownloadActivity extends AppCompatActivity {
 				startActivity(intentDownloadRemoteWall);
 			}
 		});
+
+		button1.setOnLongClickListener(new View.OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View _view) {
+				if (config.getString("debugMode", "").equals("1")) {
+					ClipboardUtils.copyTextToClipboard(getApplicationContext(), config.getString("repo", "") + wallLink.getString("wallLink", ""));
+					return true;
+				} else {
+					return false;
+				}
+			}
+		});
 		
 		button2.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -245,7 +258,19 @@ public class WalldownloadActivity extends AppCompatActivity {
 
 			}
 		});
-		
+
+		button2.setOnLongClickListener(new View.OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View _view) {
+				if (config.getString("debugMode", "").equals("1")) {
+					ClipboardUtils.copyTextToClipboard(getApplicationContext(), allhexvals);
+					return true;
+				} else {
+					return false;
+				}
+			}
+		});
+
 		_fetchJson_request_listener = new RequestNetwork.RequestListener() {
 			@Override
 			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
@@ -293,6 +318,24 @@ public class WalldownloadActivity extends AppCompatActivity {
 										int vibrantDark = palette.getDarkVibrantColor(defaultColor);
 										int mutedLight = palette.getLightMutedColor(defaultColor);
 										int mutedDark = palette.getDarkMutedColor(defaultColor);
+
+										if (config.getString("debugMode", "").equals("1")) {
+											textview4.setText(vibrant + " " + muted + " " + mutedDark + " " + mutedLight + " " + vibrantLight + " " + vibrantDark);
+											textview4.setTextSize(8);
+											String vibrantHex = String.format("#%08X", vibrant);
+											String mutedHex = String.format("#%08X", muted);
+											String vibrantLightHex = String.format("#%08X", vibrantLight);
+											String vibrantDarkHex = String.format("#%08X", vibrantDark);
+											String mutedLightHex = String.format("#%08X", mutedLight);
+											String mutedDarkHex = String.format("#%08X", mutedDark);
+
+											textview4.setText("INTERNAL:"+ vibrant + " " + muted + " " + mutedDark + " " + mutedLight + " " + vibrantLight + " " + vibrantDark+"\nHEX:" +vibrantHex + " " + mutedHex + " " + mutedDarkHex + " " + mutedLightHex + " " + vibrantLightHex + " " + vibrantDarkHex+"\n*VALUE AUTOMATICALLY COPIED TO CLIPBOARD*");
+											// Copy all of the values to clipboard
+											ClipboardUtils.copyTextToClipboard(getApplicationContext(), "INTERNAL:"+ vibrant + " " + muted + " " + mutedDark + " " + mutedLight + " " + vibrantLight + " " + vibrantDark+"\nHEX:" +vibrantHex + " " + mutedHex + " " + mutedDarkHex + " " + mutedLightHex + " " + vibrantLightHex + " " + vibrantDarkHex);
+											allhexvals = ("INTERNAL:"+ vibrant + " " + muted + " " + mutedDark + " " + mutedLight + " " + vibrantLight + " " + vibrantDark+"\nHEX:" +vibrantHex + " " + mutedHex + " " + mutedDarkHex + " " + mutedLightHex + " " + vibrantLightHex + " " + vibrantDarkHex);
+											button1.setText("Download\nHOLD FOR URL");
+											button2.setText("Set wallpaper\nHOLD FOR HEX");
+										}
 
 										int[] colors = {vibrant, muted, mutedDark, mutedLight, vibrantLight, vibrantDark};
 
@@ -555,8 +598,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 		}, (int)(Double.parseDouble(config.getString("timeout", "")))); */
 
 	}
-	
-	
+
+
 	@Deprecated
 	public void showMessage(String _s) {
 		Toast.makeText(getApplicationContext(), _s, Toast.LENGTH_SHORT).show();
