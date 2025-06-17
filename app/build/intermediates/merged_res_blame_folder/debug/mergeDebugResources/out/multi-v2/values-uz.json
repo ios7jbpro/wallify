@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-uz/values-uz.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-uz/values-uz.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-uz\\values-uz.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,156",
+                        "endColumns": "100,121",
+                        "endOffsets": "151,273"
+                    },
+                    "to": {
+                        "startLines": "174,175",
+                        "startColumns": "4,4",
+                        "startOffsets": "16250,16351",
+                        "endColumns": "100,121",
+                        "endOffsets": "16346,16468"
+                    }
+                },
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\e35751b27c3979408742dde5289f70b0\\transformed\\material3-release\\res\\values-uz\\values-uz.xml",
                     "from": {
@@ -105,23 +122,6 @@
                         "startOffsets": "17795,17906",
                         "endColumns": "110,100",
                         "endOffsets": "17901,18002"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-uz\\values-uz.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,156",
-                        "endColumns": "100,121",
-                        "endOffsets": "151,273"
-                    },
-                    "to": {
-                        "startLines": "174,175",
-                        "startColumns": "4,4",
-                        "startOffsets": "16250,16351",
-                        "endColumns": "100,121",
-                        "endOffsets": "16346,16468"
                     }
                 }
             ]

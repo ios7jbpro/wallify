@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
@@ -37,6 +37,23 @@
                         "startOffsets": "5630,5777,5922,6044,6192,6318,6412,6524,6666,6785,6944,7028,7129,7230,7331,7452,7587,7693,7843,7989,8125,8327,8456,8574,8697,8830,8932,9037,9161,9289,9391,9503,9608,9753,9905,10014,10123,10201,10294,10389,10479,10565,10672,10752,10837,10934,11045,11138,11242,11330,11446,11547,11656,11778,11858,11968",
                         "endColumns": "146,144,121,147,125,93,111,141,118,158,83,100,100,100,120,134,105,149,145,135,201,128,117,122,132,101,104,123,127,101,111,104,144,151,108,108,77,92,94,89,85,106,79,84,96,110,92,103,87,115,100,108,121,79,109,96",
                         "endOffsets": "5772,5917,6039,6187,6313,6407,6519,6661,6780,6939,7023,7124,7225,7326,7447,7582,7688,7838,7984,8120,8322,8451,8569,8692,8825,8927,9032,9156,9284,9386,9498,9603,9748,9900,10009,10118,10196,10289,10384,10474,10560,10667,10747,10832,10929,11040,11133,11237,11325,11441,11542,11651,11773,11853,11963,12060"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,168",
+                        "endColumns": "112,125",
+                        "endOffsets": "163,289"
+                    },
+                    "to": {
+                        "startLines": "174,175",
+                        "startColumns": "4,4",
+                        "startOffsets": "16796,16909",
+                        "endColumns": "112,125",
+                        "endOffsets": "16904,17030"
                     }
                 },
                 {
@@ -88,23 +105,6 @@
                         "startOffsets": "4608,4707,4795,4893,4999,5394,5474,17035,17127,17214,17285,17442,17523,17859,18117,18196,18265",
                         "endColumns": "98,87,97,105,86,79,93,91,86,70,67,80,84,75,78,68,121",
                         "endOffsets": "4702,4790,4888,4994,5081,5469,5563,17122,17209,17280,17348,17518,17603,17930,18191,18260,18382"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-fr-rCA\\values-fr-rCA.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,168",
-                        "endColumns": "112,125",
-                        "endOffsets": "163,289"
-                    },
-                    "to": {
-                        "startLines": "174,175",
-                        "startColumns": "4,4",
-                        "startOffsets": "16796,16909",
-                        "endColumns": "112,125",
-                        "endOffsets": "16904,17030"
                     }
                 },
                 {

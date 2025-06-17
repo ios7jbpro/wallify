@@ -1,25 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-km/values-km.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-km/values-km.xml",
             "map": [
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-km\\values-km.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,160",
-                        "endColumns": "104,104",
-                        "endOffsets": "155,260"
-                    },
-                    "to": {
-                        "startLines": "174,175",
-                        "startColumns": "4,4",
-                        "startOffsets": "16230,16335",
-                        "endColumns": "104,104",
-                        "endOffsets": "16330,16435"
-                    }
-                },
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-km\\values-km.xml",
                     "from": {
@@ -37,6 +20,23 @@
                         "endLines": "5,33,34,35,36,37,45,46,47,53,54,55,56,59,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,180,184,185,187",
                         "endColumns": "12,77,75,79,78,78,99,111,79,65,64,93,69,61,86,62,64,58,64,60,56,118,57,60,56,70,129,85,75,84,81,77,137,74,70,149,96,77,54,55,65,79,89,70,84,78,76,69,74,111,87,72,99,98,73,75,106,53,89,72,90,95,61,63,62,70,98,97,91,95,57,59,82,81,77,75",
                         "endOffsets": "314,3080,3156,3236,3315,3394,4215,4327,4407,4928,4993,5087,5157,5386,11643,11706,11771,11830,11895,11956,12013,12132,12190,12251,12308,12379,12509,12595,12671,12756,12838,12916,13054,13129,13200,13350,13447,13525,13580,13636,13702,13782,13872,13943,14028,14107,14184,14254,14329,14441,14529,14602,14702,14801,14875,14951,15058,15112,15202,15275,15366,15462,15524,15588,15651,15722,15821,15919,16011,16107,16165,16225,16820,17151,17229,17381"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-km\\values-km.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,160",
+                        "endColumns": "104,104",
+                        "endOffsets": "155,260"
+                    },
+                    "to": {
+                        "startLines": "174,175",
+                        "startColumns": "4,4",
+                        "startOffsets": "16230,16335",
+                        "endColumns": "104,104",
+                        "endOffsets": "16330,16435"
                     }
                 },
                 {

@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-pl/values-pl.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-pl/values-pl.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-pl\\values-pl.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,163",
+                        "endColumns": "107,116",
+                        "endOffsets": "158,275"
+                    },
+                    "to": {
+                        "startLines": "182,183",
+                        "startColumns": "4,4",
+                        "startOffsets": "16750,16858",
+                        "endColumns": "107,116",
+                        "endOffsets": "16853,16970"
+                    }
+                },
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-pl\\values-pl.xml",
                     "from": {
@@ -20,23 +37,6 @@
                         "endLines": "7,35,36,37,38,39,47,48,49,56,57,58,64,67,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,188,193,194,196",
                         "endColumns": "12,74,74,78,103,94,84,116,81,64,63,80,63,60,110,63,67,53,68,61,53,110,60,61,53,71,128,88,78,94,84,81,148,81,82,136,86,76,53,50,65,70,75,70,82,76,77,77,75,107,89,72,94,96,71,73,99,51,84,65,87,89,61,63,62,70,106,111,98,106,57,54,75,83,76,77",
                         "endOffsets": "431,3218,3293,3372,3476,3571,4393,4510,4592,5186,5250,5331,5682,5913,12171,12235,12303,12357,12426,12488,12542,12653,12714,12776,12830,12902,13031,13120,13199,13294,13379,13461,13610,13692,13775,13912,13999,14076,14130,14181,14247,14318,14394,14465,14548,14625,14703,14781,14857,14965,15055,15128,15223,15320,15392,15466,15566,15618,15703,15769,15857,15947,16009,16073,16136,16207,16314,16426,16525,16632,16690,16745,17360,17765,17842,17992"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-pl\\values-pl.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,163",
-                        "endColumns": "107,116",
-                        "endOffsets": "158,275"
-                    },
-                    "to": {
-                        "startLines": "182,183",
-                        "startColumns": "4,4",
-                        "startOffsets": "16750,16858",
-                        "endColumns": "107,116",
-                        "endOffsets": "16853,16970"
                     }
                 },
                 {

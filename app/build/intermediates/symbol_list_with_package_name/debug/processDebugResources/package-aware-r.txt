@@ -3237,6 +3237,7 @@ id CropOverlayView
 id CropProgressBar
 id ExitSetup1
 id FUNCTION
+id FirstFragment
 id Game
 id ImageView4
 id ImageView5
@@ -3260,6 +3261,7 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id Search_bg
+id SecondFragment
 id SetupProgress1
 id SetupProgress2
 id SetupProgress3
@@ -3304,6 +3306,8 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_FirstFragment_to_SecondFragment
+id action_SecondFragment_to_FirstFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3641,6 +3645,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
+id nav_graph
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3888,6 +3893,7 @@ id useLogo
 id vertical_only
 id view_offset_helper
 id view_transition
+id view_tree_disjoint_parent
 id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
 id view_tree_saved_state_registry_owner
@@ -4114,6 +4120,7 @@ layout setwall1
 layout setwall2
 layout support_simple_spinner_dropdown_item
 layout walldownload
+layout walldownloadkotlin
 layout wallpaperlist
 layout wallpapers_fragment
 layout warning_dialog
@@ -4122,6 +4129,7 @@ mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_monochrome
+navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description

@@ -50,6 +50,13 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.ios7.wallify.WalldownloadkotlinActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ios7.wallify.WallDownloadKotlin"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name="com.ios7.wallify.AppAbandoned"
             android:exported="false" />
         <activity
@@ -141,17 +148,17 @@
             android:name="androidx.activity.ComponentActivity"
             android:exported="true" />
 
-        <provider
-            android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.ios7.wallify.com.squareup.picasso"
-            android:exported="false" />
-
         <uses-library
             android:name="androidx.window.extensions"
             android:required="false" />
         <uses-library
             android:name="androidx.window.sidecar"
             android:required="false" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.ios7.wallify.com.squareup.picasso"
+            android:exported="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

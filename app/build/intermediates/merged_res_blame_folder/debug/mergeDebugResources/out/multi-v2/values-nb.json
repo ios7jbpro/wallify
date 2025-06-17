@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-nb/values-nb.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-nb/values-nb.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-nb\\values-nb.xml",
@@ -57,6 +57,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-nb\\values-nb.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,161",
+                        "endColumns": "105,113",
+                        "endOffsets": "156,270"
+                    },
+                    "to": {
+                        "startLines": "180,181",
+                        "startColumns": "4,4",
+                        "startOffsets": "16213,16319",
+                        "endColumns": "105,113",
+                        "endOffsets": "16314,16428"
+                    }
+                },
+                {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\3e3dbb8b698303324171bd9019e07afe\\transformed\\core-1.13.1\\res\\values-nb\\values-nb.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -105,23 +122,6 @@
                         "startOffsets": "4548,5105,5149,5215,5279,5352,16810",
                         "endColumns": "56,43,65,63,72,52,63",
                         "endOffsets": "4600,5144,5210,5274,5347,5400,16869"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-nb\\values-nb.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,161",
-                        "endColumns": "105,113",
-                        "endOffsets": "156,270"
-                    },
-                    "to": {
-                        "startLines": "180,181",
-                        "startColumns": "4,4",
-                        "startOffsets": "16213,16319",
-                        "endColumns": "105,113",
-                        "endOffsets": "16314,16428"
                     }
                 },
                 {

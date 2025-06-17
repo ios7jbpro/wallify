@@ -259,11 +259,13 @@
 
 				<TextView
 					android:id="@+id/textview3"
-					android:layout_width="wrap_content"
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
 					android:text="'DESPITE ALL MY RAGE'\n\nAll image sources are mentioned in names, as well as in the list above this piece of text.\n\Click this text to see the remote repository."
 					android:textColor="@color/textprimary"
+					android:background="@drawable/roundedbg"
+					android:foreground="?attr/selectableItemBackground"
 					android:textSize="12sp" />
 
 			</LinearLayout>

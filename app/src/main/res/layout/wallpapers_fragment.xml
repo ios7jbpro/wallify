@@ -136,6 +136,7 @@
 						android:layout_marginRight="8dp"
 						android:layout_marginBottom="8dp"
 						android:background="@drawable/roundedbgviolent"
+						android:foreground="?attr/selectableItemBackground"
 						android:orientation="horizontal"
 						android:padding="8dp">
 

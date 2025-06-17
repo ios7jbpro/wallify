@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-zh-rCN/values-zh-rCN.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-zh-rCN/values-zh-rCN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\e35751b27c3979408742dde5289f70b0\\transformed\\material3-release\\res\\values-zh-rCN\\values-zh-rCN.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "5304,5408,5511,5615,5717,5809,5897,6001,6109,6212,6327,6409,6505,6589,6678,6784,6898,6999,7109,7217,7325,7441,7548,7649,7753,7859,7944,8039,8144,8253,8343,8441,8539,8649,8764,8864,8955,9028,9118,9207,9290,9372,9464,9544,9626,9724,9818,9911,10006,10090,10186,10282,10379,10487,10567,10659",
                         "endColumns": "103,102,103,101,91,87,103,107,102,114,81,95,83,88,105,113,100,109,107,107,115,106,100,103,105,84,94,104,108,89,97,97,109,114,99,90,72,89,88,82,81,91,79,81,97,93,92,94,83,95,95,96,107,79,91,89",
                         "endOffsets": "5403,5506,5610,5712,5804,5892,5996,6104,6207,6322,6404,6500,6584,6673,6779,6893,6994,7104,7212,7320,7436,7543,7644,7748,7854,7939,8034,8139,8248,8338,8436,8534,8644,8759,8859,8950,9023,9113,9202,9285,9367,9459,9539,9621,9719,9813,9906,10001,10085,10181,10277,10374,10482,10562,10654,10744"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,156",
+                        "endColumns": "100,102",
+                        "endOffsets": "151,254"
+                    },
+                    "to": {
+                        "startLines": "180,181",
+                        "startColumns": "4,4",
+                        "startOffsets": "14783,14884",
+                        "endColumns": "100,102",
+                        "endOffsets": "14879,14982"
                     }
                 },
                 {
@@ -122,23 +139,6 @@
                         "startOffsets": "4284,4779,4821,4878,4933,4985,15339",
                         "endColumns": "51,41,56,54,51,49,57",
                         "endOffsets": "4331,4816,4873,4928,4980,5030,15392"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-zh-rCN\\values-zh-rCN.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,156",
-                        "endColumns": "100,102",
-                        "endOffsets": "151,254"
-                    },
-                    "to": {
-                        "startLines": "180,181",
-                        "startColumns": "4,4",
-                        "startOffsets": "14783,14884",
-                        "endColumns": "100,102",
-                        "endOffsets": "14879,14982"
                     }
                 }
             ]

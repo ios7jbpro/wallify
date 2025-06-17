@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-ro/values-ro.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-ro/values-ro.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\1789f3822bb68a1b25a5c8b79d065cce\\transformed\\ui-release\\res\\values-ro\\values-ro.xml",
@@ -35,23 +35,6 @@
                         "startOffsets": "18090,18185",
                         "endColumns": "94,99",
                         "endOffsets": "18180,18280"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-ro\\values-ro.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,165",
-                        "endColumns": "109,123",
-                        "endOffsets": "160,284"
-                    },
-                    "to": {
-                        "startLines": "175,176",
-                        "startColumns": "4,4",
-                        "startOffsets": "16528,16638",
-                        "endColumns": "109,123",
-                        "endOffsets": "16633,16757"
                     }
                 },
                 {
@@ -122,6 +105,23 @@
                         "startOffsets": "3559,3657,3759,3859,3958,4060,4169,17730",
                         "endColumns": "97,101,99,98,101,108,116,100",
                         "endOffsets": "3652,3754,3854,3953,4055,4164,4281,17826"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-ro\\values-ro.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,165",
+                        "endColumns": "109,123",
+                        "endOffsets": "160,284"
+                    },
+                    "to": {
+                        "startLines": "175,176",
+                        "startColumns": "4,4",
+                        "startOffsets": "16528,16638",
+                        "endColumns": "109,123",
+                        "endOffsets": "16633,16757"
                     }
                 }
             ]

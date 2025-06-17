@@ -252,7 +252,8 @@ public class WallpapersFragmentActivity extends Fragment {
 				return true;
 			}
 		});
-		
+
+		linear2.setClipToOutline(true);
 		linear2.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -300,8 +301,20 @@ public class WallpapersFragmentActivity extends Fragment {
 			@Override
 			public boolean onItemLongClick(AdapterView<?> _param1, View _param2, int _param3, long _param4) {
 				final int _position = _param3;
-				
-				return true;
+				if (config.getString("debugMode", "").equals("1")) {
+					Toast.makeText(getContext(), "Launching the new beta kotlin activity", Toast.LENGTH_SHORT).show();
+					selectedItemList.edit().putString("selectedWall", String.valueOf(_position)).commit();
+					Log.d("WallpaperDebug", "Setting selected wall to = '" + String.valueOf((long) (_position)) + "'");
+					// Set wallpaperName on config
+					config.edit().putString("wallpaperName", walllist.get((int) _position).get("name").toString()).commit();
+					launchWallPreview.putExtra("wallpaperName", walllist.get((int) _position).get("name").toString());
+					launchWallPreview.putExtra("wallpaperLink", walllist.get((int) _position).get("link").toString());
+					launchWallPreview.setClass(getContext().getApplicationContext(), WalldownloadkotlinActivity.class);
+					startActivity(launchWallPreview);
+					return true;
+				} else {
+					return false;
+				}
 			}
 		});
 		

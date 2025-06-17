@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-gl/values-gl.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-gl/values-gl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-gl\\values-gl.xml",
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-gl\\values-gl.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

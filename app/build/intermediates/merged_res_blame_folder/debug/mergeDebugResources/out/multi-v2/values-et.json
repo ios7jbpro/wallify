@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-et/values-et.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-et/values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\99aa19e2537dfec2c4bda1d0f8508f1d\\transformed\\foundation-release\\res\\values-et\\values-et.xml",
@@ -91,23 +91,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-et\\values-et.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,164",
-                        "endColumns": "108,120",
-                        "endOffsets": "159,280"
-                    },
-                    "to": {
-                        "startLines": "180,181",
-                        "startColumns": "4,4",
-                        "startOffsets": "16556,16665",
-                        "endColumns": "108,120",
-                        "endOffsets": "16660,16781"
-                    }
-                },
-                {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\f52ee1f8005bee6fc35c97b7506200cc\\transformed\\appcompat-1.7.0\\res\\values-et\\values-et.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
@@ -139,6 +122,23 @@
                         "startOffsets": "4661,5198,5249,5326,5399,5462,17176",
                         "endColumns": "54,50,76,72,62,52,67",
                         "endOffsets": "4711,5244,5321,5394,5457,5510,17239"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-et\\values-et.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,164",
+                        "endColumns": "108,120",
+                        "endOffsets": "159,280"
+                    },
+                    "to": {
+                        "startLines": "180,181",
+                        "startColumns": "4,4",
+                        "startOffsets": "16556,16665",
+                        "endColumns": "108,120",
+                        "endOffsets": "16660,16781"
                     }
                 }
             ]

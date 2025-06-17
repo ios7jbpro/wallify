@@ -4,6 +4,7 @@ import android.animation.*;
 import android.app.*;
 import android.app.Activity;
 import android.content.*;
+import android.content.ClipboardManager;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.*;
@@ -150,9 +151,15 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		textview3.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
-				String remoterepo = "https://github.com/j1459863h/wallify-walls/";
-				Intent repolauncher = new Intent(Intent.ACTION_VIEW, Uri.parse(remoterepo));
-				startActivity(repolauncher);
+				if (config.getString("debugMode", "").equals("1")) {
+					ClipboardManager clipboardManager = (ClipboardManager) getContext().getSystemService(Context.CLIPBOARD_SERVICE);
+					ClipData clipData = ClipData.newPlainText("DEBUG", textview3.getText());
+					clipboardManager.setPrimaryClip(clipData);
+				} else {
+					String remoterepo = "https://github.com/j1459863h/wallify-walls/";
+					Intent repolauncher = new Intent(Intent.ACTION_VIEW, Uri.parse(remoterepo));
+					startActivity(repolauncher);
+				}
 			}
 		});
 
@@ -317,6 +324,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			});
 		}
 		tipsLoader();
+		textview3.setClipToOutline(true);
 	}
 
 	private void tipsLoader() {
@@ -366,7 +374,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 								requireActivity().runOnUiThread(new Runnable() {
 									@Override
 									public void run() {
-										textview3.setText(responseBody);
+										textview3.setText(responseBody+"\nClick me to see wallpapers repository");
 									}
 								});
 							}

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-ur/values-ur.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-ur/values-ur.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\99aa19e2537dfec2c4bda1d0f8508f1d\\transformed\\foundation-release\\res\\values-ur\\values-ur.xml",
@@ -74,23 +74,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-ur\\values-ur.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,167",
-                        "endColumns": "111,114",
-                        "endOffsets": "162,277"
-                    },
-                    "to": {
-                        "startLines": "180,181",
-                        "startColumns": "4,4",
-                        "startOffsets": "16643,16755",
-                        "endColumns": "111,114",
-                        "endOffsets": "16750,16865"
-                    }
-                },
-                {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\72cb10608144cd39947f6d2b41c9c643\\transformed\\android-image-cropper-4.6.0\\res\\values-ur\\values-ur.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
@@ -105,6 +88,23 @@
                         "startOffsets": "4657,5212,5259,5324,5395,5462,17258",
                         "endColumns": "64,46,64,70,66,54,69",
                         "endOffsets": "4717,5254,5319,5390,5457,5512,17323"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-ur\\values-ur.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,167",
+                        "endColumns": "111,114",
+                        "endOffsets": "162,277"
+                    },
+                    "to": {
+                        "startLines": "180,181",
+                        "startColumns": "4,4",
+                        "startOffsets": "16643,16755",
+                        "endColumns": "111,114",
+                        "endOffsets": "16750,16865"
                     }
                 },
                 {

@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-nl/values-nl.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-nl/values-nl.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\075ac325fc5074c8b2fbbb5ee5b30b7f\\transformed\\navigation-ui-2.9.0\\res\\values-nl\\values-nl.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,166",
+                        "endColumns": "110,108",
+                        "endOffsets": "161,270"
+                    },
+                    "to": {
+                        "startLines": "180,181",
+                        "startColumns": "4,4",
+                        "startOffsets": "16706,16817",
+                        "endColumns": "110,108",
+                        "endOffsets": "16812,16921"
+                    }
+                },
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\1789f3822bb68a1b25a5c8b79d065cce\\transformed\\ui-release\\res\\values-nl\\values-nl.xml",
                     "from": {
@@ -105,23 +122,6 @@
                         "startOffsets": "319,437,542,649,734,838,958,1036,1112,1204,1298,1393,1487,1587,1681,1777,1872,1964,2056,2138,2249,2352,2451,2566,2680,2783,2938,17654",
                         "endColumns": "117,104,106,84,103,119,77,75,91,93,94,93,99,93,95,94,91,91,81,110,102,98,114,113,102,154,102,82",
                         "endOffsets": "432,537,644,729,833,953,1031,1107,1199,1293,1388,1482,1582,1676,1772,1867,1959,2051,2133,2244,2347,2446,2561,2675,2778,2933,3036,17732"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\dd3120ecdf2d92ee90baee75d31a1ffd\\transformed\\navigation-ui-2.6.0\\res\\values-nl\\values-nl.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,166",
-                        "endColumns": "110,108",
-                        "endOffsets": "161,270"
-                    },
-                    "to": {
-                        "startLines": "180,181",
-                        "startColumns": "4,4",
-                        "startOffsets": "16706,16817",
-                        "endColumns": "110,108",
-                        "endOffsets": "16812,16921"
                     }
                 },
                 {

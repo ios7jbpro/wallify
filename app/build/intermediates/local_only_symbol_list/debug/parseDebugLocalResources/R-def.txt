@@ -42,6 +42,7 @@ drawable wall_topright
 font saira_medium
 id AM_PM
 id ExitSetup1
+id FirstFragment
 id Game
 id ImageView4
 id ImageView5
@@ -57,11 +58,14 @@ id Massage
 id More
 id Phone
 id Search_bg
+id SecondFragment
 id SetupProgress1
 id SetupProgress2
 id SetupProgress3
 id Tarik
 id Translator
+id action_FirstFragment_to_SecondFragment
+id action_SecondFragment_to_FirstFragment
 id background_bottomleft
 id background_bottomright
 id background_topleft
@@ -133,6 +137,7 @@ id listview1
 id main
 id mainEditingPage
 id mainframe
+id nav_graph
 id nextButton
 id nextbutton1
 id nextbutton2
@@ -200,6 +205,7 @@ layout settings_dialog_fragment
 layout setwall1
 layout setwall2
 layout walldownload
+layout walldownloadkotlin
 layout wallpaperlist
 layout wallpapers_fragment
 layout warning_dialog
@@ -207,6 +213,7 @@ mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_monochrome
+navigation nav_graph
 string app_name
 string first_fragment_label
 string header
