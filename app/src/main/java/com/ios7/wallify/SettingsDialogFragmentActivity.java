@@ -30,7 +30,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.privacysandbox.tools.core.model.Method;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.ios7.wallify.MyClasses.EzIntent;
 import com.ios7.wallify.MyClasses.EzTimerLooped;
 import com.squareup.picasso.Picasso;
@@ -49,18 +54,13 @@ import java.util.regex.*;
 import org.json.*;
 
 public class SettingsDialogFragmentActivity extends DialogFragment {
-	
+
 	private LinearLayout linear1;
 	private LinearLayout linear2;
 	private TextView textview5;
-	private LinearLayout linear4;
 	private TextView textview2;
-	private LinearLayout linear3;
 	private TextView textview3;
-	private TextView textview6;
 	private LinearLayout linear5;
-	private EditText edittext1;
-	private TextView textview7;
 	private CircleImageView circleimageview1;
 	private TextView textview4;
 	private Switch switchColorPreviews;
@@ -69,9 +69,11 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private ListView listView;
 	private LinearLayout linear30;
 	private LinearLayout linearReinitSetup;
-	
+
 	private SharedPreferences config;
-	
+	private Intent repolauncher;
+	private int totalTips;
+
 	@NonNull
 	@Override
 	public View onCreateView(@NonNull LayoutInflater _inflater, @Nullable ViewGroup _container, @Nullable Bundle _savedInstanceState) {
@@ -81,19 +83,14 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		initializeLogic();
 		return _view;
 	}
-	
+
 	private void initialize(Bundle _savedInstanceState, View _view) {
 		linear1 = _view.findViewById(R.id.linear1);
 		linear2 = _view.findViewById(R.id.linear2);
 		textview5 = _view.findViewById(R.id.textview5);
-		linear4 = _view.findViewById(R.id.linear4);
 		textview2 = _view.findViewById(R.id.textview2);
-		linear3 = _view.findViewById(R.id.linear3);
 		textview3 = _view.findViewById(R.id.textview3);
-		textview6 = _view.findViewById(R.id.textview6);
 		linear5 = _view.findViewById(R.id.linear5);
-		edittext1 = _view.findViewById(R.id.edittext1);
-		textview7 = _view.findViewById(R.id.textview7);
 		switchColorPreviews = _view.findViewById(R.id.switchColorPreviews);
 		switchDisableAnims = _view.findViewById(R.id.switchDisableAnims);
 		switchDisableBlur = _view.findViewById(R.id.switchDisableBlur);
@@ -102,29 +99,10 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linear30 = _view.findViewById(R.id.linear30);
 		linearReinitSetup = _view.findViewById(R.id.linearReinitSetup);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
-		
-		edittext1.addTextChangedListener(new TextWatcher() {
-			@Override
-			public void onTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
-				final String _charSeq = _param1.toString();
-				config.edit().putString("timeout", _charSeq).commit();
-			}
-			
-			@Override
-			public void beforeTextChanged(CharSequence _param1, int _param2, int _param3, int _param4) {
-				
-			}
-			
-			@Override
-			public void afterTextChanged(Editable _param1) {
-				
-			}
-		});
 
 	}
 
 	private void initializeLogic() {
-		edittext1.setText(config.getString("timeout", ""));
 		linear30.setVisibility(View.GONE);
 		if (config.getString("colorextraction", "").equals("1")) {
 			switchColorPreviews.setChecked(true);
@@ -169,10 +147,15 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			}
 		});
 
-		// Remove the timeout option since it's unnecessary now as we are using Glide onResourceReady instead
-		linear4.setVisibility(View.GONE);
-		// Remove the old dev list layout as we now have a new one using a custom adapter over JSON parsing
-		linear3.setVisibility(View.GONE);
+		textview3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view) {
+				String remoterepo = "https://github.com/j1459863h/wallify-walls/";
+				Intent repolauncher = new Intent(Intent.ACTION_VIEW, Uri.parse(remoterepo));
+				startActivity(repolauncher);
+			}
+		});
+
 		// Set textview2 to app's current version
 		// Check the current app version via package name first
 		//try {
@@ -243,7 +226,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 									String name = clickedDeveloper.getName();
 									String imageUrl = clickedDeveloper.getImageUrl();
 									String devUrl = clickedDeveloper.getDevUrl();
-									Toast.makeText(getContext(), "Clicked on: " + name+", URL:" + devUrl, Toast.LENGTH_SHORT).show();
+									Toast.makeText(getContext(), "Clicked on: " + name + ", URL:" + devUrl, Toast.LENGTH_SHORT).show();
 									if (devUrl == null || devUrl.isEmpty()) {
 										Toast.makeText(getContext(), "No URL found for this developer.", Toast.LENGTH_SHORT).show();
 									} else {
@@ -301,9 +284,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						startActivity(intent);
 						dialog.dismiss();
 
+					}
+				});
 			}
-		});
-				}
 		});
 
 		linearReinitSetup.setOnClickListener(new View.OnClickListener() {
@@ -323,8 +306,8 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			loopedTimer15.start(50, () -> {
 				String repoval = config.getString("repo", "");
 				String timeoutval = config.getString("timeout", "");
-				String colorextractionval = ("(enforced on debug)"+config.getString("colorextraction", ""));
-				String disableanimsval = ("(enforced on debug)"+config.getString("disableanims", ""));
+				String colorextractionval = ("(enforced on debug)" + config.getString("colorextraction", ""));
+				String disableanimsval = ("(enforced on debug)" + config.getString("disableanims", ""));
 				String setupcompleteval = config.getString("setupcomplete", "");
 				String debugmodeval = config.getString("debugMode", "");
 				String endOutput = ("repo:" + repoval + "\ntimeoutval:" + timeoutval + "\ncolorextraction:" + colorextractionval + "\ndisableanims:" + disableanimsval + "\nsetupcomplete:" + setupcompleteval + "\ndebugMode:" + debugmodeval + "\n*USING DEBUG WILL RESET SOME OF THE FLAGS*");
@@ -333,6 +316,65 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				switchColorPreviews.setChecked(true);
 			});
 		}
-
+		tipsLoader();
 	}
+
+	private void tipsLoader() {
+		textview3.findViewById(R.id.textview3);
+		OkHttpClient client = new OkHttpClient();
+		String url = (config.getString("repo", "") + "tips/total");
+		Request request = new Request.Builder()
+					.url(url)
+					.build();
+
+		client.newCall(request).enqueue(new Callback() {
+			@Override
+			public void onFailure(Call call, IOException e) {
+				textview3.setText("Cannot reach tips service");
+				e.printStackTrace();
+			}
+
+			@Override
+			public void onResponse(Call call, Response response) throws IOException {
+				if (response.isSuccessful()) {
+					final String responseBody = response.body().string();
+					try {
+						totalTips = Integer.parseInt(responseBody.trim());
+					} catch (NumberFormatException e) {
+						Log.e("NumberFormatException", "Error parsing totalTips: " + e.getMessage());
+						Log.e("NumberFormatException", "Response body: " + responseBody);
+						Log.e("NumberFormatException", "Setting totalTips to 5 as a fallback");
+						totalTips = 5;
+					}
+					Random rand = new Random();
+					int randomNum = rand.nextInt(totalTips) + 1;
+					Request request = new Request.Builder()
+							.url((config.getString("repo", "") + "tips/" + randomNum))
+							.build();
+
+					client.newCall(request).enqueue(new Callback() {
+						@Override
+						public void onFailure(Call call, IOException e) {
+							textview3.setText("Cannot reach tips service");
+							e.printStackTrace();
+						}
+
+						@Override
+						public void onResponse(Call call, Response response) throws IOException {
+							if (response.isSuccessful()) {
+								final String responseBody = response.body().string();
+								requireActivity().runOnUiThread(new Runnable() {
+									@Override
+									public void run() {
+										textview3.setText(responseBody);
+									}
+								});
+							}
+						}
+					});
+				}
+			}
+		});
+	}
+
 }

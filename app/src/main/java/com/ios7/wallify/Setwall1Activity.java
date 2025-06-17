@@ -99,6 +99,7 @@ public class Setwall1Activity extends AppCompatActivity {
 								runOnUiThread(new Runnable() {
 									@Override
 									public void run() {
+										Log.e("WallpaperDebug", "Cannot load the wallpaper:" + wallLink.getString("wallLink", ""));
 										finish();
 									}
 								});

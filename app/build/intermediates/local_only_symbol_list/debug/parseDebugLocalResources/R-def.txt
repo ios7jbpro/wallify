@@ -88,7 +88,6 @@ id cropImageView
 id cropPreview
 id cropScreen
 id dissmissButton
-id edittext1
 id goBackButton
 id gridRounderLayout
 id gridfadelinear
@@ -183,8 +182,6 @@ id textview3
 id textview4
 id textview40
 id textview5
-id textview6
-id textview7
 id textview8
 id textviewReinitSetup
 id time2

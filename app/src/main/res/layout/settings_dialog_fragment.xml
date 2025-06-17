@@ -16,6 +16,7 @@
 		<ScrollView
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
+			android:layout_weight="1"
 			android:fillViewport="true">
 
 			<LinearLayout
@@ -188,83 +189,6 @@
 				</LinearLayout>
 
 				<LinearLayout
-					android:id="@+id/linear4"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="8dp"
-					android:background="@drawable/roundedbgviolent"
-					android:gravity="center_vertical"
-					android:orientation="horizontal"
-					android:padding="8dp">
-
-					<TextView
-						android:id="@+id/textview6"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="Wallpaper load timeout"
-						android:textColor="@color/textprimary"
-						android:textSize="12sp" />
-
-					<LinearLayout
-						android:id="@+id/linear5"
-						android:layout_width="match_parent"
-						android:layout_height="wrap_content"
-						android:gravity="right|center_vertical"
-						android:orientation="horizontal">
-
-						<EditText
-							android:id="@+id/edittext1"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:background="@color/backgroundviolent"
-							android:hint="Timeout"
-							android:padding="8dp"
-							android:textColor="@color/textprimary"
-							android:textColorHint="#607D8B"
-							android:textSize="12sp" />
-
-						<TextView
-							android:id="@+id/textview7"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="ms"
-							android:textColor="@color/textprimary"
-							android:textSize="11sp" />
-					</LinearLayout>
-				</LinearLayout>
-
-				<LinearLayout
-					android:id="@+id/linear3"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:background="@drawable/roundedbgviolent"
-					android:gravity="center_vertical"
-					android:orientation="horizontal"
-					android:padding="8dp">
-
-					<de.hdodenhof.circleimageview.CircleImageView
-						android:id="@+id/circleimageview1"
-						android:layout_width="40dp"
-						android:layout_height="40dp"
-						android:src="@drawable/devpfp1"
-						app:civ_border_color="@color/colorAccent"
-						app:civ_border_overlay="true"
-						app:civ_border_width="3dp"
-						app:civ_circle_background_color="#FFFFFF" />
-
-					<TextView
-						android:id="@+id/textview4"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="PlaceholderDevListLayout"
-						android:textColor="@color/textprimary"
-						android:textSize="14sp" />
-				</LinearLayout>
-
-				<LinearLayout
 					android:id="@+id/linear30"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -316,22 +240,29 @@
 					android:textSize="20sp"
 					android:textStyle="bold" />
 
-				<ListView
-					android:id="@+id/listView"
+				<LinearLayout
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:layout_marginTop="4dp"
 					android:background="@drawable/roundedbgviolent"
-					android:divider="@android:color/transparent"
-					android:dividerHeight="0dp"
-					android:listSelector="@android:color/transparent" />
+					android:orientation="vertical">
+
+					<ListView
+						android:id="@+id/listView"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="4dp"
+						android:divider="@android:color/transparent"
+						android:dividerHeight="0dp"
+						android:listSelector="@android:color/transparent"
+						android:nestedScrollingEnabled="false" />
+				</LinearLayout>
 
 				<TextView
 					android:id="@+id/textview3"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:text="DESPITE ALL MY RAGE\n\nall image sources are mentioned in names"
+					android:text="'DESPITE ALL MY RAGE'\n\nAll image sources are mentioned in names, as well as in the list above this piece of text.\n\Click this text to see the remote repository."
 					android:textColor="@color/textprimary"
 					android:textSize="12sp" />
 

@@ -125,6 +125,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private TextView textView3;
 	private String mixedUrl;
 	private String allhexvals;
+	private Intent legacyWallLauncher;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -266,7 +267,11 @@ public class WalldownloadActivity extends AppCompatActivity {
 					ClipboardUtils.copyTextToClipboard(getApplicationContext(), allhexvals);
 					return true;
 				} else {
-					return false;
+					Toast.makeText(getApplicationContext(), "Using the legacy wallpaper loader", Toast.LENGTH_SHORT).show();
+					wallLink.edit().putString("wallLink", config.getString("repo", "")+walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString()).commit();
+					Intent legacyWallLauncher = new Intent(getApplicationContext(), Setwall1Activity.class);
+					startActivity(legacyWallLauncher);
+					return true;
 				}
 			}
 		});
@@ -287,9 +292,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				// Log.d("WallpaperDebug", "Mixed URL = '" + mixedUrl + "'");
 				try {
 					Glide.with(getApplicationContext())
-							.load(Uri.parse(config.getString("repo", "") +
-									walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", "0")))
-											.get("lowprew").toString()))
+							.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString()))
 							.into(new SimpleTarget<Drawable>() {
 								@Override
 								public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {

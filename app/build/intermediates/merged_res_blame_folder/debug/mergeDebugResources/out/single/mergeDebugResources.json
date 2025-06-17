@@ -72,6 +72,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\layout\\settings_dialog_fragment.xml"
     },
     {
+        "merged": "com.ios7.wallify.app-debug-68:/layout_settings_dialog_fragment.xml.flat",
+        "source": "com.ios7.wallify.app-main-70:/layout/settings_dialog_fragment.xml"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\mipmap-xxxhdpi_ic_launcher_monochrome.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\mipmap-xxxhdpi\\ic_launcher_monochrome.png"
     },
@@ -166,10 +170,6 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\mipmap-hdpi_ic_launcher_monochrome.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-70:\\mipmap-hdpi\\ic_launcher_monochrome.png"
-    },
-    {
-        "merged": "com.ios7.wallify.app-debug-68:/layout_devs.xml.flat",
-        "source": "com.ios7.wallify.app-main-70:/layout/devs.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-68:\\drawable-xhdpi_wall_bottomright.png.flat",
