@@ -554,7 +554,7 @@ public class WallpapersFragmentActivity extends Fragment {
 				linear1.setVisibility(View.VISIBLE);
 				linear1.setAlpha(1);
 			} else {
-				EzTimer.runWithDelay(((int) _position * 50) + 100, () -> {
+				EzTimer.runWithDelay(((int) _position) + 100, () -> {
 					EzTimerLooped loopedTimer = new EzTimerLooped();
 					loopedTimer.start(1, () -> {
 						if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {

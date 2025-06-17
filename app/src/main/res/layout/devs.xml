@@ -13,7 +13,8 @@
         android:background="@drawable/roundedbgviolent"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="8dp"
+        android:foreground="?attr/selectableItemBackground">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/circleimageview1"
