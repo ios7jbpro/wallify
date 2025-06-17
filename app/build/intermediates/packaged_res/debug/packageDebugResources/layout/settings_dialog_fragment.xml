@@ -323,7 +323,8 @@
 					android:layout_marginTop="4dp"
 					android:background="@drawable/roundedbgviolent"
 					android:divider="@android:color/transparent"
-					android:dividerHeight="0dp" />
+					android:dividerHeight="0dp"
+					android:listSelector="@android:color/transparent" />
 
 				<TextView
 					android:id="@+id/textview3"

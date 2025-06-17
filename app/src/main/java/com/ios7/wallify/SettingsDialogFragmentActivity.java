@@ -217,6 +217,12 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						JSONObject jsonObject = jsonArray.getJSONObject(i);
 						String name = jsonObject.getString("name");
 						String imageUrl = jsonObject.getString("pfp");
+						try {
+							String devUrl = jsonObject.getString("url");
+						} catch (JSONException e) {
+							Log.e("FETCH_ERROR", "JSON parsing error. Setting devurl to nothing." + "Error at position:" + i, e);
+							String devUrl = "";
+						}
 						Developer developer = new Developer(name, imageUrl);
 						developerList.add(developer);
 					}
@@ -226,6 +232,27 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						public void run() {
 							DeveloperAdapter adapter = new DeveloperAdapter(getContext(), developerList);
 							listView.setAdapter(adapter);
+							listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+								@Override
+								public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+									// Get the clicked Developer object from the adapters
+									Developer clickedDeveloper = (Developer) parent.getItemAtPosition(position);
+
+									// Now you have access to the clickedDeveloper's data
+									// For example, you can get their name or image URL:
+									String name = clickedDeveloper.getName();
+									String imageUrl = clickedDeveloper.getImageUrl();
+									String devUrl = clickedDeveloper.getDevUrl();
+									Toast.makeText(getContext(), "Clicked on: " + name+", URL:" + devUrl, Toast.LENGTH_SHORT).show();
+									if (devUrl == null || devUrl.isEmpty()) {
+										Toast.makeText(getContext(), "No URL found for this developer.", Toast.LENGTH_SHORT).show();
+									} else {
+										Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(devUrl));
+										startActivity(intent);
+									}
+
+								}
+							});
 						}
 					});
 

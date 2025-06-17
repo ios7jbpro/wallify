@@ -4,7 +4,7 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-66:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "/home/ios7/.gradle/caches/8.9/transforms/517a29f9572219eff507b09edda77ea2/transformed/material-1.12.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

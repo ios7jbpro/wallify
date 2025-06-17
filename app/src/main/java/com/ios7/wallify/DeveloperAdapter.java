@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.squareup.picasso.Picasso;  // You can use Picasso or Glide for image loading
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
