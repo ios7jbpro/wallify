@@ -361,7 +361,7 @@
                         android:gravity="center_horizontal|center_vertical"
                         android:padding="8dp"
                         android:singleLine="false"
-                        android:text="Thanks HK's Launcher3 project for home layout!\n*Be aware that the cropped output wallpaper will differ depending on the OEM.*\nEach OEM does it differently."
+                        android:text="Kotlin edition of this activity.\nSome features are disabled."
                         android:textColor="@color/textprimary"
                         android:textSize="12sp"
                         android:textStyle="italic" />

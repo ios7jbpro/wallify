@@ -1,6 +1,7 @@
 package com.ios7.wallify;
 
 import com.ios7.wallify.MyClasses.EzBlur;
+import com.ios7.wallify.MyClasses.EzFade;
 import android.animation.*;
 import android.app.*;
 import android.app.Activity;
@@ -159,7 +160,8 @@ public class WallpapersFragmentActivity extends Fragment {
 					gridfadelinear.setAlpha(1);
 					listview1.setAlpha(1);
 				} else {
-					EzTimer.runWithDelay(50, () -> {
+					EzFade.fadeIn(gridfadelinear, 500);
+/*					EzTimer.runWithDelay(50, () -> {
 						EzTimerLooped loopedTimer = new EzTimerLooped();
 						loopedTimer.start(1, () -> {
 							if (Math.abs(gridfadelinear.getAlpha() - 1) < 0.01f) {
@@ -168,7 +170,7 @@ public class WallpapersFragmentActivity extends Fragment {
 								gridfadelinear.setAlpha(gridfadelinear.getAlpha() + 0.1f);
 							}
 						});
-					});
+					});*/
 				}
 			}
 		});
@@ -220,7 +222,8 @@ public class WallpapersFragmentActivity extends Fragment {
 								listview1.setVisibility(View.VISIBLE);
 								listview1.setAlpha(1);
 							} else {
-								EzTimer.runWithDelay(100, () -> {
+								EzFade.crossfade(gridfadelinear, listview1, 250);
+								/*EzTimer.runWithDelay(100, () -> {
 									EzTimerLooped loopedTimer = new EzTimerLooped();
 									loopedTimer.start(1, () -> {
 										if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
@@ -229,7 +232,7 @@ public class WallpapersFragmentActivity extends Fragment {
 											listview1.setAlpha(listview1.getAlpha() + 0.05f);
 										}
 									});
-								});
+								});*/
 							}
 						} else {
 							// Do nothing
@@ -270,7 +273,8 @@ public class WallpapersFragmentActivity extends Fragment {
 					listview1.setVisibility(View.VISIBLE);
 					listview1.setAlpha(1);
 				} else {
-					EzTimer.runWithDelay(100, () -> {
+					EzFade.crossfade(gridfadelinear, listview1, 250);
+					/*EzTimer.runWithDelay(100, () -> {
 						EzTimerLooped loopedTimer = new EzTimerLooped();
 						loopedTimer.start(1, () -> {
 							if (Math.abs(listview1.getAlpha() - 1) < 0.01f) {
@@ -279,7 +283,7 @@ public class WallpapersFragmentActivity extends Fragment {
 								listview1.setAlpha(listview1.getAlpha() + 0.05f);
 							}
 						});
-					});
+					});*/
 				}
 			}
 		});
@@ -333,9 +337,11 @@ public class WallpapersFragmentActivity extends Fragment {
 					gridloading.setVisibility(View.GONE);
 					gridlinear.setAlpha(1);
 				} else {
-					EzTimer.runWithDelay(500, () -> {
-						gridlinear.setVisibility(View.VISIBLE);
-						gridloading.setVisibility(View.GONE);
+					gridlinear.setVisibility(View.VISIBLE);
+					gridloading.setVisibility(View.GONE);
+					gridlinear.setAlpha(1);
+					EzFade.fadeIn(gridlinear, 500);
+					/*EzTimer.runWithDelay(500, () -> {
 						EzTimerLooped loopedTimer = new EzTimerLooped();
 						loopedTimer.start(1, () -> {
 							if (Math.abs(gridlinear.getAlpha() - 1) < 0.01f) {
@@ -344,7 +350,7 @@ public class WallpapersFragmentActivity extends Fragment {
 								gridlinear.setAlpha(gridlinear.getAlpha() + 0.05f);
 							}
 						});
-					});
+					});*/
 				}
 			}
 
@@ -403,14 +409,7 @@ public class WallpapersFragmentActivity extends Fragment {
 			_timer.schedule(loadDelay, (int)(250));
 			temporaryCache.edit().putString("firstTimeLoad", "0").commit();
 		} else {
-			if (config.getString("categories", "").equals("1")) {
 				fetchcategoryjson.startRequestNetwork(RequestNetworkController.GET, config.getString("repo", "") + "categories.json", "", _fetchcategoryjson_request_listener);
-			} else {
-				fetchwalljson.startRequestNetwork(RequestNetworkController.GET, config.getString("directrepo", ""), "", _fetchwalljson_request_listener);
-				gridlinear.setVisibility(View.VISIBLE);
-				linear2.setVisibility(View.GONE);
-				listview1.setVisibility(View.GONE);
-			}
 		}
 	}
 
@@ -483,7 +482,8 @@ public class WallpapersFragmentActivity extends Fragment {
 				linear1.setVisibility(View.VISIBLE);
 				linear1.setAlpha(1);
 			} else {
-				EzTimer.runWithDelay(((int) _position * 50) + 100, () -> {
+				EzFade.fadeIn(linear1, 100);
+				/*EzTimer.runWithDelay(((int) _position * 50) + 100, () -> {
 					EzTimerLooped loopedTimer = new EzTimerLooped();
 					loopedTimer.start(1, () -> {
 						if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
@@ -492,7 +492,7 @@ public class WallpapersFragmentActivity extends Fragment {
 							linear1.setAlpha(linear1.getAlpha() + 0.05f);
 						}
 					});
-				});
+				});*/
 			}
 			
 			return _view;
@@ -567,7 +567,8 @@ public class WallpapersFragmentActivity extends Fragment {
 				linear1.setVisibility(View.VISIBLE);
 				linear1.setAlpha(1);
 			} else {
-				EzTimer.runWithDelay(((int) _position) + 100, () -> {
+				EzFade.fadeIn(linear1, 250);
+				/*EzTimer.runWithDelay(((int) _position) + 100, () -> {
 					EzTimerLooped loopedTimer = new EzTimerLooped();
 					loopedTimer.start(1, () -> {
 						if (Math.abs(linear1.getAlpha() - 1) < 0.01f) {
@@ -576,7 +577,7 @@ public class WallpapersFragmentActivity extends Fragment {
 							linear1.setAlpha(linear1.getAlpha() + 0.05f);
 						}
 					});
-				});
+				});*/
 			}
 			return _view;
 		}
