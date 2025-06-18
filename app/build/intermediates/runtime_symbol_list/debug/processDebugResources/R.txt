@@ -3137,8 +3137,10 @@ int drawable ic_rotate_right_24 0x7f0700a5
 int drawable ic_search_black_24 0x7f0700a6
 int drawable inactivetab 0x7f0700a7
 int drawable indeterminate_static 0x7f0700a8
+int drawable java 0x7f070102
 int drawable jhgg_1 0x7f0700a9
 int drawable jhgg_2 0x7f0700aa
+int drawable kotlin 0x7f070103
 int drawable m3_avd_hide_password 0x7f0700ab
 int drawable m3_avd_show_password 0x7f0700ac
 int drawable m3_bottom_sheet_drag_handle 0x7f0700ad
@@ -3524,8 +3526,10 @@ int id imageView 0x7f090125
 int id imageView2 0x7f090126
 int id imageView3 0x7f090127
 int id imageView4 0x7f090128
+int id imageView5 0x7f0902ad
 int id imageView6 0x7f090129
 int id imageView7 0x7f09012a
+int id imageView8 0x7f0902ae
 int id imageview1 0x7f09012b
 int id imageview3 0x7f09012c
 int id immediateStop 0x7f09012d

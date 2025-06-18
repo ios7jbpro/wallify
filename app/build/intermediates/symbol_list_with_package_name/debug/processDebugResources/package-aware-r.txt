@@ -3138,8 +3138,10 @@ drawable ic_rotate_right_24
 drawable ic_search_black_24
 drawable inactivetab
 drawable indeterminate_static
+drawable java
 drawable jhgg_1
 drawable jhgg_2
+drawable kotlin
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
 drawable m3_bottom_sheet_drag_handle
@@ -3525,8 +3527,10 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id imageView6
 id imageView7
+id imageView8
 id imageview1
 id imageview3
 id immediateStop
