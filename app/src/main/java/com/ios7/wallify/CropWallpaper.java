@@ -1,7 +1,7 @@
 package com.ios7.wallify;
 
 import static androidx.core.content.ContextCompat.getSystemService;
-
+import com.ios7.wallify.MyClasses.EzFade;
 import android.app.WallpaperManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -58,6 +58,8 @@ public class CropWallpaper extends AppCompatActivity {
     private ImageView imageview3;
     private TextView textview2;
     private TextView time2;
+    private LinearLayout linear7;
+    private LinearLayout linear9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,9 +70,13 @@ public class CropWallpaper extends AppCompatActivity {
 
         cropImageView = findViewById(R.id.cropImageView);
         cropScreen = findViewById(R.id.cropScreen);
+        cropScreen.setVisibility(View.GONE);
         confirmScreen = findViewById(R.id.confirmScreen);
         textViewTopbar = findViewById(R.id.textViewTopbar);
         nextButton = findViewById(R.id.nextButton);
+        nextButton.setEnabled(false);
+        nextButton.setBackgroundResource(R.color.backgroundviolent);
+        nextButton.setText("Loading, wait...");
         goBackButton = findViewById(R.id.goBackButton);
         setWallpaperButton = findViewById(R.id.setWallpaperButton);
         cropPreview = findViewById(R.id.cropPreview);
@@ -78,9 +84,13 @@ public class CropWallpaper extends AppCompatActivity {
         imageview3 = findViewById(R.id.imageview3);
         textview2 = findViewById(R.id.textview2);
         time2 = findViewById(R.id.time2);
+        linear7 = findViewById(R.id.linear7);
+        linear9 = findViewById(R.id.linear9);
         confirmScreen.setVisibility(View.GONE);
         goBackButton.setVisibility(View.GONE);
         setWallpaperButton.setVisibility(View.GONE);
+        linear7.setClipToOutline(true);
+        linear9.setClipToOutline(true);
         // Create the bottom sheet to warn the user
         BottomSheetDialog bottomSheet = new BottomSheetDialog(this);
         // Use the custom warning_dialog.xml as the bottomsheet
@@ -105,6 +115,7 @@ public class CropWallpaper extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View _view) {
+                EzFade.crossfade(cropScreen, confirmScreen, 500);
                 cropScreen.setVisibility(View.GONE);
                 confirmScreen.setVisibility(View.VISIBLE);
                 goBackButton.setVisibility(View.VISIBLE);
@@ -126,9 +137,9 @@ public class CropWallpaper extends AppCompatActivity {
                     int mutedLight = palette.getLightMutedColor(0x000000);
                     int mutedDark = palette.getDarkMutedColor(0x000000);
                     // Set the vibrantLight color to textview2
-                    textview2.setTextColor(vibrantLight);
+                    // textview2.setTextColor(vibrantLight);
                     // Set the vibrantLight color to time2
-                    time2.setTextColor(vibrantLight);
+                    // time2.setTextColor(vibrantLight);
                 });
             }
         });
@@ -174,8 +185,6 @@ public class CropWallpaper extends AppCompatActivity {
        // );
 
         try {
-
-
             Glide.with(getApplicationContext())
                     .asBitmap()
                     .load(link)
@@ -183,7 +192,11 @@ public class CropWallpaper extends AppCompatActivity {
                         @Override
                         public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
                             try {
+                                nextButton.setEnabled(true);
+                                nextButton.setBackgroundResource(R.drawable.activetab);
+                                nextButton.setText("Next");
                             cropImageView.setImageBitmap(resource);
+                            EzFade.fadeIn(cropScreen, 500);
                             } catch (Exception e) {
                                 // Show the error in a toast
                                 Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();

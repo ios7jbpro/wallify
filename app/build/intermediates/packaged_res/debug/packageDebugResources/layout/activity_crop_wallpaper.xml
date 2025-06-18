@@ -213,59 +213,6 @@
                                     </LinearLayout>
 
                                     <LinearLayout
-                                        android:id="@+id/LinearLayout2"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:gravity="center_vertical"
-                                        android:orientation="horizontal">
-
-                                        <LinearLayout
-                                            android:id="@+id/LinearLayout3"
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginLeft="10dp"
-                                            android:orientation="vertical">
-
-                                            <TextView
-                                                android:id="@+id/time2"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_gravity="center_horizontal"
-                                                android:text="03\n11"
-                                                android:textColor="#FFFFFF"
-                                                android:textSize="16sp"
-                                                android:textStyle="bold" />
-                                        </LinearLayout>
-
-                                        <LinearLayout
-                                            android:id="@+id/LinearLayout15"
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:gravity="bottom"
-                                            android:orientation="vertical"
-                                            android:padding="8dp">
-
-                                            <TextView
-                                                android:id="@+id/Tarik"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="Saturday, 28 December"
-                                                android:textColor="#FFFFFF"
-                                                android:textSize="12sp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:id="@+id/AM_PM"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="PM"
-                                                android:textColor="#FFFFFF"
-                                                android:textSize="16sp"
-                                                android:textStyle="bold" />
-                                        </LinearLayout>
-                                    </LinearLayout>
-
-                                    <LinearLayout
                                         android:id="@+id/linear14"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"

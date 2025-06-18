@@ -22,7 +22,20 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextView AMPM;
 
   @NonNull
@@ -40,13 +53,52 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
   @NonNull
   public final LinearLayout LinearLayout1;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final LinearLayout LinearLayout15;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final LinearLayout LinearLayout2;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final LinearLayout LinearLayout3;
 
   @NonNull
@@ -67,7 +119,20 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
   @NonNull
   public final LinearLayout SearchBg;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextView Tarik;
 
   @NonNull
@@ -160,19 +225,32 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
   @NonNull
   public final TextView textview4;
 
-  @NonNull
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
   public final TextView time2;
 
   @NonNull
   public final LinearLayout topBar;
 
-  private ActivityCropWallpaperBinding(@NonNull LinearLayout rootView, @NonNull TextView AMPM,
+  private ActivityCropWallpaperBinding(@NonNull LinearLayout rootView, @Nullable TextView AMPM,
       @NonNull ImageView Game, @NonNull ImageView ImageView4, @NonNull ImageView ImageView5,
       @NonNull ImageView ImageView6, @NonNull LinearLayout LinearLayout1,
-      @NonNull LinearLayout LinearLayout15, @NonNull LinearLayout LinearLayout2,
-      @NonNull LinearLayout LinearLayout3, @NonNull LinearLayout LinearLayout4,
+      @Nullable LinearLayout LinearLayout15, @Nullable LinearLayout LinearLayout2,
+      @Nullable LinearLayout LinearLayout3, @NonNull LinearLayout LinearLayout4,
       @NonNull LinearLayout LinearLayout5, @NonNull ImageView Massage, @NonNull ImageView More,
-      @NonNull ImageView Phone, @NonNull LinearLayout SearchBg, @NonNull TextView Tarik,
+      @NonNull ImageView Phone, @NonNull LinearLayout SearchBg, @Nullable TextView Tarik,
       @NonNull ImageView Translator, @NonNull LinearLayout bottomBar,
       @NonNull LinearLayout confirmScreen, @NonNull LinearLayout content,
       @NonNull CropImageView cropImageView, @NonNull ImageView cropPreview,
@@ -186,7 +264,7 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
       @NonNull LinearLayout linearpreviewcard, @NonNull LinearLayout mainEditingPage,
       @NonNull TextView nextButton, @NonNull TextView setWallpaperButton,
       @NonNull TextView textViewTopbar, @NonNull TextView textview2, @NonNull TextView textview3,
-      @NonNull TextView textview4, @NonNull TextView time2, @NonNull LinearLayout topBar) {
+      @NonNull TextView textview4, @Nullable TextView time2, @NonNull LinearLayout topBar) {
     this.rootView = rootView;
     this.AMPM = AMPM;
     this.Game = Game;
@@ -267,9 +345,6 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
     missingId: {
       id = R.id.AM_PM;
       TextView AMPM = ViewBindings.findChildViewById(rootView, id);
-      if (AMPM == null) {
-        break missingId;
-      }
 
       id = R.id.Game;
       ImageView Game = ViewBindings.findChildViewById(rootView, id);
@@ -303,21 +378,12 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
 
       id = R.id.LinearLayout15;
       LinearLayout LinearLayout15 = ViewBindings.findChildViewById(rootView, id);
-      if (LinearLayout15 == null) {
-        break missingId;
-      }
 
       id = R.id.LinearLayout2;
       LinearLayout LinearLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (LinearLayout2 == null) {
-        break missingId;
-      }
 
       id = R.id.LinearLayout3;
       LinearLayout LinearLayout3 = ViewBindings.findChildViewById(rootView, id);
-      if (LinearLayout3 == null) {
-        break missingId;
-      }
 
       id = R.id.LinearLayout4;
       LinearLayout LinearLayout4 = ViewBindings.findChildViewById(rootView, id);
@@ -357,9 +423,6 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
 
       id = R.id.Tarik;
       TextView Tarik = ViewBindings.findChildViewById(rootView, id);
-      if (Tarik == null) {
-        break missingId;
-      }
 
       id = R.id.Translator;
       ImageView Translator = ViewBindings.findChildViewById(rootView, id);
@@ -543,9 +606,6 @@ public final class ActivityCropWallpaperBinding implements ViewBinding {
 
       id = R.id.time2;
       TextView time2 = ViewBindings.findChildViewById(rootView, id);
-      if (time2 == null) {
-        break missingId;
-      }
 
       id = R.id.topBar;
       LinearLayout topBar = ViewBindings.findChildViewById(rootView, id);
