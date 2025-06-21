@@ -58,6 +58,7 @@ class WalldownloadkotlinActivity : AppCompatActivity() {
         val imageView1 = findViewById<ImageView>(R.id.imageview1)
         val imageView3 = findViewById<ImageView>(R.id.imageview3)
         try {
+            // I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN I HATE KOTLIN WHO MADE KOTLIN I HATE KOTLIN THIS IS NONSENSE WHY ARE WE USING QUESTION MARKS IN A CODING LANGUAGE WHAT THE FUCK I HATE THIS
             Glide.with(this)
                 .load(config.getString("repo", "")?.trim()+intent.getStringExtra("wallpaperLink")?.trim())
                 .into(imageView1)
