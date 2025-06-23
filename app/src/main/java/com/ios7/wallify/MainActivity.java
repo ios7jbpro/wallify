@@ -153,6 +153,12 @@ public class MainActivity extends AppCompatActivity {
 		if (config.getString("colorextraction", "").equals("")) {
 			config.edit().putString("colorextraction", "1").commit();
 		}
+		if (config.getString("disableanims", "").equals("")) {
+			config.edit().putString("disableanims", "0").commit();
+		}
+		if (config.getString("disableblur", "").equals("")) {
+			config.edit().putString("disableblur", "0").commit();
+		}
 		// Check for debuuger/debug build
 		if (android.os.Debug.isDebuggerConnected()) {
 			config.edit().putString("debugMode", "1").commit();
@@ -161,8 +167,6 @@ public class MainActivity extends AppCompatActivity {
 			config.edit().putString("disableblur", "1").commit();
 		} else  {
 			config.edit().putString("debugMode", "0").commit();
-			config.edit().remove("disableanims").commit();
-			config.edit().remove("disableblur").commit();
 		}
 		if (config.getString("disableblur", "").equals("")) {
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) { // API 31+
