@@ -3239,7 +3239,6 @@ id CropOverlayView
 id CropProgressBar
 id ExitSetup1
 id FUNCTION
-id FirstFragment
 id Game
 id ImageView4
 id ImageView5
@@ -3263,7 +3262,6 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id Search_bg
-id SecondFragment
 id SetupProgress1
 id SetupProgress2
 id SetupProgress3
@@ -3308,8 +3306,6 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
-id action_FirstFragment_to_SecondFragment
-id action_SecondFragment_to_FirstFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3649,7 +3645,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
-id nav_graph
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -4133,8 +4128,21 @@ mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_monochrome
-navigation nav_graph
 plurals mtrl_badge_content_description
+string ColorExtractionFailed
+string Credits
+string CropWall
+string DisableAnims
+string DisableBlur
+string Download
+string ExtractColors
+string Loading
+string ReinitSetup
+string SetWall
+string SettingsTab
+string WallColors
+string WallPreview
+string WallpaperTab
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -4206,7 +4214,6 @@ string icon_content_description
 string in_progress
 string indeterminate
 string item_view_role_description
-string lorem_ipsum
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular

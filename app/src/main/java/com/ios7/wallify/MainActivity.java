@@ -187,7 +187,6 @@ public class MainActivity extends AppCompatActivity {
 				getWindow().setStatusBarColor(0xFFFFFFFF);
 				break;
 		}
-		// Sets how many pages do you have in the ViewPager. IF YOURE A NEWBIE DO NOT TOUCH THIS!
 		pageLoaderInit.setTabCount(2);
 		viewpager1.setAdapter(pageLoaderInit);
 		ViewPager viewPager = findViewById(R.id.viewpager1);

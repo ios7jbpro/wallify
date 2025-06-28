@@ -55,7 +55,7 @@
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="4dp"
 					android:layout_marginBottom="6dp"
-					android:text="Preview"
+					android:text="@string/WallPreview"
 					android:textColor="@color/textprimary"
 					android:textSize="20sp"
 					android:textStyle="bold" />
@@ -348,7 +348,7 @@
 							android:background="@drawable/roundedbg"
 							android:foreground="?attr/selectableItemBackground"
 							android:padding="6dp"
-							android:text="Crop"
+							android:text="@string/CropWall"
 							android:textColor="@color/textprimary"
 							android:textStyle="bold" />
 					</LinearLayout>
@@ -373,7 +373,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="4dp"
-					android:text="Colors"
+					android:text="@string/WallColors"
 					android:textColor="@color/textprimary"
 					android:textSize="20sp"
 					android:textStyle="bold" />
@@ -441,7 +441,7 @@
 						android:layout_weight="1"
 						android:gravity="center_horizontal|center_vertical"
 						android:padding="8dp"
-						android:text="Extraction failed! Connect and check debugger"
+						android:text="@string/ColorExtractionFailed"
 						android:textColor="#F44336" />
 
 					<androidx.cardview.widget.CardView
@@ -517,7 +517,7 @@
 						android:layout_marginLeft="4dp"
 						android:layout_weight="0"
 						android:gravity="center_horizontal|center_vertical"
-						android:text="Extracting colors..."
+						android:text="@string/Loading"
 						android:textColor="@color/textprimary"
 						android:textStyle="bold" />
 
@@ -543,7 +543,7 @@
 				android:background="@drawable/activetab"
 				android:gravity="center_horizontal|center_vertical"
 				android:padding="16dp"
-				android:text="Download"
+				android:text="@string/Download"
 				android:textColor="@color/textprimary"
 				android:textSize="12sp"
 				android:textStyle="bold" />
@@ -557,7 +557,7 @@
 				android:background="@drawable/activetab"
 				android:gravity="center_horizontal|center_vertical"
 				android:padding="16dp"
-				android:text="Set wallpaper"
+				android:text="@string/SetWall"
 				android:textColor="@color/textprimary"
 				android:textSize="12sp"
 				android:textStyle="bold" />

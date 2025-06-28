@@ -143,7 +143,7 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:text="Settings"
+					android:text="@string/SettingsTab"
 					android:textColor="@color/textprimary"
 					android:textSize="20sp"
 					android:textStyle="bold" />
@@ -170,7 +170,7 @@
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
 							android:padding="8dp"
-							android:text="Extract wallpaper colors(debugger suggested)"
+							android:text="@string/ExtractColors"
 							android:textColor="@color/textprimary"
 							android:textSize="12sp" />
 
@@ -192,7 +192,7 @@
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
 							android:padding="8dp"
-							android:text="Disable app animatons(for lowend)"
+							android:text="@string/DisableAnims"
 							android:textColor="@color/textprimary"
 							android:textSize="12sp" />
 
@@ -214,7 +214,7 @@
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
 							android:padding="8dp"
-							android:text="Disable blur(Currently broken)"
+							android:text="@string/DisableBlur"
 							android:textColor="@color/textprimary"
 							android:textSize="12sp" />
 
@@ -258,7 +258,7 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
-						android:text="Reinitiate setup screen"
+						android:text="@string/ReinitSetup"
 						android:textColor="@color/textprimary"
 						android:textSize="14sp" />
 				</LinearLayout>
@@ -268,7 +268,7 @@
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:text="Credits"
+					android:text="@string/Credits"
 					android:textColor="@color/textprimary"
 					android:textSize="20sp"
 					android:textStyle="bold" />
@@ -283,7 +283,6 @@
 						android:id="@+id/listView"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
-						android:layout_marginTop="4dp"
 						android:divider="@android:color/transparent"
 						android:dividerHeight="0dp"
 						android:listSelector="@android:color/transparent"

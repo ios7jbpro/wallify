@@ -63,7 +63,7 @@
 				android:background="@drawable/roundedbg"
 				android:gravity="center_horizontal|center_vertical"
 				android:padding="16dp"
-				android:text="Wallpapers"
+				android:text="@string/WallpaperTab"
 				android:textColor="@color/textprimary"
 				android:textSize="12sp"
 				android:textStyle="bold" />
@@ -79,7 +79,7 @@
 				android:padding="16dp"
 				android:paddingTop="16dp"
 				android:paddingBottom="16dp"
-				android:text="Settings / Info"
+				android:text="@string/SettingsTab"
 				android:textColor="@color/textprimary"
 				android:textSize="12sp"
 				android:textStyle="bold" />
