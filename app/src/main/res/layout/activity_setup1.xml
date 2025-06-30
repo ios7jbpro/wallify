@@ -153,7 +153,7 @@
                         android:layout_height="wrap_content"
                         android:alpha="0.5"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="This is a new experimental wallpaper app project.\nIt's made to test my skills.\nThe main point is to not use a single external library.\nI'd love your feedback and ideas in the GitHub!"
+                        android:text="This is a new experimental wallpaper app project.\nIt's made to test my skills.\nThe main point is to create a lightweight app."
                         android:textColor="@color/textprimary"
                         android:textSize="15sp"
                         android:textStyle="italic" />
@@ -164,7 +164,7 @@
                         android:layout_height="wrap_content"
                         android:alpha="0.5"
                         android:gravity="center_horizontal|center_vertical"
-                        android:text="an actual setup screen will be here\n(soon i hope trust me)"
+                        android:text="I'd love your feedback and ideas in the GitHub!"
                         android:textColor="@color/textprimary"
                         android:textSize="11sp"
                         android:textStyle="italic" />
@@ -196,7 +196,7 @@
                             android:background="@drawable/roundedbgviolent"
                             android:elevation="0px"
                             android:padding="10dp"
-                            android:text="Continue"
+                            android:text="@string/next"
                             android:textAllCaps="false"
                             android:textColor="@color/textprimary"
                             android:textStyle="bold" />
@@ -215,7 +215,7 @@
                         android:id="@+id/textView9"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Configuration"
+                        android:text="@string/SettingsTab"
                         android:textColor="@color/textprimary"
                         android:textSize="35sp"
                         android:textStyle="bold" />
@@ -237,7 +237,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="8dp"
-                            android:text="Extract wallpaper colors)"
+                            android:text="@string/ExtractColors"
                             android:textColor="@color/textprimary"
                             android:textSize="12sp" />
 
@@ -260,7 +260,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:padding="8dp"
-                            android:text="Disable app animatons\n(suggested for lowend devices)"
+                            android:text="@string/DisableAnims"
                             android:textColor="@color/textprimary"
                             android:textSize="12sp" />
 
@@ -289,7 +289,7 @@
                             android:background="@drawable/roundedbgviolent"
                             android:elevation="0px"
                             android:padding="10dp"
-                            android:text="Continue"
+                            android:text="@string/next"
                             android:textAllCaps="false"
                             android:textColor="@color/textprimary"
                             android:textStyle="bold" />
@@ -336,7 +336,7 @@
                             android:background="@drawable/roundedbgviolent"
                             android:elevation="0px"
                             android:padding="10dp"
-                            android:text="Continue"
+                            android:text="@string/next"
                             android:textAllCaps="false"
                             android:textColor="@color/textprimary"
                             android:textStyle="bold" />

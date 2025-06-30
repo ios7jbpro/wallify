@@ -4,7 +4,7 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\f52ee1f8005bee6fc35c97b7506200cc\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "/home/ios7/.gradle/caches/8.9/transforms/f52ee1f8005bee6fc35c97b7506200cc/transformed/appcompat-1.7.0/res/values-h720dp-v13/values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
