@@ -4,13 +4,13 @@
             "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-night-v31/values-night-v31.xml",
             "map": [
                 {
-                    "source": "/home/ios7/StudioProjects/wallify/app/src/main/res/values-night-v31/colors.xml",
+                    "source": "C:\\Users\\baris\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night-v31\\colors.xml",
                     "from": {
                         "startLines": "5,2,3,9,12,13,10,11,4,7,6,8",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "258,55,127,501,725,807,573,647,205,376,328,426",
+                        "startOffsets": "263,57,130,510,737,820,583,658,209,383,334,434",
                         "endColumns": "69,71,77,71,81,78,73,77,52,49,47,74",
-                        "endOffsets": "323,122,200,568,802,881,642,720,253,421,371,496"
+                        "endOffsets": "328,124,203,577,814,894,652,731,257,428,377,504"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
