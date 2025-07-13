@@ -337,54 +337,65 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 					.url(url)
 					.build();
 
-		client.newCall(request).enqueue(new Callback() {
-			@Override
-			public void onFailure(Call call, IOException e) {
-				textview3.setText("Cannot reach tips service");
-				e.printStackTrace();
-			}
-
-			@Override
-			public void onResponse(Call call, Response response) throws IOException {
-				if (response.isSuccessful()) {
-					final String responseBody = response.body().string();
+		// Try to counteract the issue of hireachy by using try and catch
+		try {
+			client.newCall(request).enqueue(new Callback() {
+				@Override
+				public void onFailure(Call call, IOException e) {
+					// Sub-workaround
 					try {
-						totalTips = Integer.parseInt(responseBody.trim());
-					} catch (NumberFormatException e) {
-						Log.e("NumberFormatException", "Error parsing totalTips: " + e.getMessage());
-						Log.e("NumberFormatException", "Response body: " + responseBody);
-						Log.e("NumberFormatException", "Setting totalTips to 5 as a fallback");
-						totalTips = 5;
+						textview3.setText("Cannot reach tips service");
+					} catch (Exception ex) {
+						textview3.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs and report this.");
+						Log.e("TipsLoader","Crash detected:" + ex);
 					}
-					Random rand = new Random();
-					int randomNum = rand.nextInt(totalTips) + 1;
-					Request request = new Request.Builder()
-							.url((config.getString("repo", "") + "tips/" + randomNum))
-							.build();
-
-					client.newCall(request).enqueue(new Callback() {
-						@Override
-						public void onFailure(Call call, IOException e) {
-							textview3.setText("Cannot reach tips service");
-							e.printStackTrace();
-						}
-
-						@Override
-						public void onResponse(Call call, Response response) throws IOException {
-							if (response.isSuccessful()) {
-								final String responseBody = response.body().string();
-								requireActivity().runOnUiThread(new Runnable() {
-									@Override
-									public void run() {
-										textview3.setText(responseBody+"\nClick me to see wallpapers repository");
-									}
-								});
-							}
-						}
-					});
+					e.printStackTrace();
 				}
-			}
-		});
+
+				@Override
+				public void onResponse(Call call, Response response) throws IOException {
+					if (response.isSuccessful()) {
+						final String responseBody = response.body().string();
+						try {
+							totalTips = Integer.parseInt(responseBody.trim());
+						} catch (NumberFormatException e) {
+							Log.e("NumberFormatException", "Error parsing totalTips: " + e.getMessage());
+							Log.e("NumberFormatException", "Response body: " + responseBody);
+							Log.e("NumberFormatException", "Setting totalTips to 5 as a fallback");
+							totalTips = 5;
+						}
+						Random rand = new Random();
+						int randomNum = rand.nextInt(totalTips) + 1;
+						Request request = new Request.Builder()
+								.url((config.getString("repo", "") + "tips/" + randomNum))
+								.build();
+
+						client.newCall(request).enqueue(new Callback() {
+							@Override
+							public void onFailure(Call call, IOException e) {
+								textview3.setText("Cannot reach tips service");
+								e.printStackTrace();
+							}
+
+							@Override
+							public void onResponse(Call call, Response response) throws IOException {
+								if (response.isSuccessful()) {
+									final String responseBody = response.body().string();
+									requireActivity().runOnUiThread(new Runnable() {
+										@Override
+										public void run() {
+											textview3.setText(responseBody + "\nClick me to see wallpapers repository");
+										}
+									});
+								}
+							}
+						});
+					}
+				}
+			});
+		} catch (Exception e) {
+			textview3.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs.");
+		}
 	}
 
 }
