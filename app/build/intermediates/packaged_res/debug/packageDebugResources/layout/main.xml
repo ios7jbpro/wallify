@@ -44,7 +44,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:background="@color/backgroundviolent"
-		android:orientation="horizontal">
+		android:orientation="vertical">
 
 		<LinearLayout
 			android:id="@+id/linear4"
@@ -84,5 +84,16 @@
 				android:textSize="12sp"
 				android:textStyle="bold" />
 		</LinearLayout>
+
+		<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:id="@+id/bottomnav1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/backgroundviolent"
+			android:hapticFeedbackEnabled="true"
+			app:itemIconTint="@color/colorAccent"
+			app:itemTextColor="@color/textprimary"
+			app:menu="@menu/bottomnav" />
+
 	</LinearLayout>
 </LinearLayout>

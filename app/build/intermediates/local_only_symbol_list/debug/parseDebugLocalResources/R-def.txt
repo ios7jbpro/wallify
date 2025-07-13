@@ -71,6 +71,7 @@ id background_topright
 id backgroundlayout
 id bottomBar
 id bottombarroot
+id bottomnav1
 id button1
 id button2
 id cancelbutton
@@ -141,6 +142,8 @@ id nextButton
 id nextbutton1
 id nextbutton2
 id nextbutton3
+id page_1
+id page_2
 id previewStatusBar
 id progressBar
 id progressBar2
@@ -208,6 +211,7 @@ layout walldownloadkotlin
 layout wallpaperlist
 layout wallpapers_fragment
 layout warning_dialog
+menu bottomnav
 mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground

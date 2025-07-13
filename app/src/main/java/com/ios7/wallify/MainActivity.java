@@ -37,11 +37,15 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.ViewPager.OnAdapterChangeListener;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.io.*;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 import org.json.*;
+import com.ios7.wallify.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
 	private TextView button1;
 	private TextView button2;
 	// private View tab1bg;
+	private BottomNavigationView bottom_nav;
+	private Boolean navDetector;
 
 	private PageLoaderInitFragmentAdapter pageLoaderInit;
 	private SharedPreferences config;
@@ -78,6 +84,15 @@ public class MainActivity extends AppCompatActivity {
 		// tab1bg.setBackgroundResource(R.drawable.activetab);
 		 button1 = findViewById(R.id.button1);
 		 button2 = findViewById(R.id.button2);
+		 linear4.setVisibility(View.GONE);
+		 try {
+			 bottom_nav = findViewById(R.id.bottomnav1);
+			 navDetector = false;
+		 } catch (Exception a) {
+			 Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+			 Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
+			 navDetector = true;
+		 }
 		 button1.setBackgroundResource(R.drawable.activetab);
 		 button2.setBackgroundResource(R.drawable.roundedbgviolent);
 		pageLoaderInit = new PageLoaderInitFragmentAdapter(getApplicationContext(), getSupportFragmentManager());
@@ -206,12 +221,24 @@ public class MainActivity extends AppCompatActivity {
 					button1.setBackgroundResource(R.drawable.activetab);
 					button2.setBackgroundResource(R.drawable.roundedbgviolent);
 					config.edit().putString("currenttab", "0").commit();
+					try {
+						bottom_nav.setSelectedItemId(R.id.page_1);
+					} catch (Exception e) {
+						Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+						Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
+					}
 				}
 				if (position == 1) {
 					// tab1bg.setBackgroundResource(R.drawable.roundedbgviolent);
 					button2.setBackgroundResource(R.drawable.activetab);
 					button1.setBackgroundResource(R.drawable.roundedbgviolent);
 					config.edit().putString("currenttab", "1").commit();
+					try {
+						bottom_nav.setSelectedItemId(R.id.page_2);
+					} catch (Exception e) {
+						Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+						Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
+					}
 				}
 
 			}
@@ -221,6 +248,33 @@ public class MainActivity extends AppCompatActivity {
 
 			}
 		});
+
+		if (navDetector = false) {
+			linear4.setVisibility(View.GONE);
+		} else {
+			try {
+				bottom_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+					@Override
+					public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+						int id = item.getItemId();
+						if (id == R.id.page_1) {
+							viewpager1.setCurrentItem((int) 0);
+							return true;
+						} else if (id == R.id.page_2) {
+							viewpager1.setCurrentItem((int) 1);
+							return true;
+						} else {
+							return false;
+						}
+					}
+				});
+			} catch (Exception e) {
+				Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+				Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
+				linear4.setVisibility(View.VISIBLE);
+			}
+		}
+
 
 		Window window = getWindow();
 

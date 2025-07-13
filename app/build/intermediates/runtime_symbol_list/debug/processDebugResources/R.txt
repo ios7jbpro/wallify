@@ -3357,6 +3357,7 @@ int id blocking 0x7f09007c
 int id bottom 0x7f09007d
 int id bottomBar 0x7f09007e
 int id bottombarroot 0x7f09007f
+int id bottomnav1 0x7f0902ac
 int id bounce 0x7f090080
 int id bounceBoth 0x7f090081
 int id bounceEnd 0x7f090082
@@ -3690,6 +3691,8 @@ int id outward 0x7f0901c9
 int id oval 0x7f0901ca
 int id overshoot 0x7f0901cb
 int id packed 0x7f0901cc
+int id page_1 0x7f0902aa
+int id page_2 0x7f0902ab
 int id parallax 0x7f0901cd
 int id parent 0x7f0901ce
 int id parentPanel 0x7f0901cf
@@ -4122,6 +4125,7 @@ int layout walldownloadkotlin 0x7f0c0078
 int layout wallpaperlist 0x7f0c0079
 int layout wallpapers_fragment 0x7f0c007a
 int layout warning_dialog 0x7f0c007b
+int menu bottomnav 0x7f0e0001
 int menu crop_image_menu 0x7f0e0000
 int mipmap ic_launcher 0x7f0f0000
 int mipmap ic_launcher_background 0x7f0f0001

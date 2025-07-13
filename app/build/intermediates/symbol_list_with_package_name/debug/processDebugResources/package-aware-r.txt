@@ -3358,6 +3358,7 @@ id blocking
 id bottom
 id bottomBar
 id bottombarroot
+id bottomnav1
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3691,6 +3692,8 @@ id outward
 id oval
 id overshoot
 id packed
+id page_1
+id page_2
 id parallax
 id parent
 id parentPanel
@@ -4123,6 +4126,7 @@ layout walldownloadkotlin
 layout wallpaperlist
 layout wallpapers_fragment
 layout warning_dialog
+menu bottomnav
 menu crop_image_menu
 mipmap ic_launcher
 mipmap ic_launcher_background
