@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.ios7.wallify.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -22,6 +23,22 @@ public final class MainBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout bottombarroot;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final BottomNavigationView bottomnav1;
 
   @NonNull
   public final TextView button1;
@@ -45,11 +62,12 @@ public final class MainBinding implements ViewBinding {
   public final ViewPager viewpager1;
 
   private MainBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout bottombarroot,
-      @NonNull TextView button1, @NonNull TextView button2, @NonNull LinearLayout linear1,
-      @NonNull LinearLayout linear2, @NonNull LinearLayout linear4, @NonNull TextView textview1,
-      @NonNull ViewPager viewpager1) {
+      @Nullable BottomNavigationView bottomnav1, @NonNull TextView button1,
+      @NonNull TextView button2, @NonNull LinearLayout linear1, @NonNull LinearLayout linear2,
+      @NonNull LinearLayout linear4, @NonNull TextView textview1, @NonNull ViewPager viewpager1) {
     this.rootView = rootView;
     this.bottombarroot = bottombarroot;
+    this.bottomnav1 = bottomnav1;
     this.button1 = button1;
     this.button2 = button2;
     this.linear1 = linear1;
@@ -91,6 +109,9 @@ public final class MainBinding implements ViewBinding {
       if (bottombarroot == null) {
         break missingId;
       }
+
+      id = R.id.bottomnav1;
+      BottomNavigationView bottomnav1 = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.button1;
       TextView button1 = ViewBindings.findChildViewById(rootView, id);
@@ -134,8 +155,8 @@ public final class MainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new MainBinding((LinearLayout) rootView, bottombarroot, button1, button2, linear1,
-          linear2, linear4, textview1, viewpager1);
+      return new MainBinding((LinearLayout) rootView, bottombarroot, bottomnav1, button1, button2,
+          linear1, linear2, linear4, textview1, viewpager1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

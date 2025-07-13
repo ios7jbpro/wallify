@@ -39,6 +39,8 @@
 			android:background="@color/backgroundviolent"
 			android:orientation="vertical">
 
+
+
 			<LinearLayout
 				android:id="@+id/linear4"
 				android:layout_width="match_parent"

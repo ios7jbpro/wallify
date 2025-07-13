@@ -52,6 +52,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\mipmap-mdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_settings_icon.png.flat",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\settings_icon.png"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_default_image.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\default_image.png"
     },
@@ -98,10 +102,6 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable_fade.xml.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable\\fade.xml"
-    },
-    {
-        "merged": "com.ios7.wallify.app-debug-78:/layout-large_main.xml.flat",
-        "source": "com.ios7.wallify.app-main-80:/layout-large/main.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_jhgg_2.png.flat",
@@ -258,6 +258,10 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_wall_bottomleft.jpg.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\wall_bottomleft.jpg"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-78:/drawable-xhdpi_settings_icon.png.flat",
+        "source": "com.ios7.wallify.app-main-80:/drawable-xhdpi/settings_icon.png"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\mipmap-hdpi_ic_launcher.png.flat",

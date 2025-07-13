@@ -36,6 +36,7 @@ drawable roundedbgdialog
 drawable roundedbginfocard
 drawable roundedbginfocardcompleter
 drawable roundedbgviolent
+drawable settings_icon
 drawable wall_bottomleft
 drawable wall_bottomright
 drawable wall_icon

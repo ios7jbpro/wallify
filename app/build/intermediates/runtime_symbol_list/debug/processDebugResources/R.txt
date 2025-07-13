@@ -3220,6 +3220,7 @@ int drawable roundedbgdialog 0x7f0700f8
 int drawable roundedbginfocard 0x7f0700f9
 int drawable roundedbginfocardcompleter 0x7f0700fa
 int drawable roundedbgviolent 0x7f0700fb
+int drawable settings_icon 0x7f070104
 int drawable test_level_drawable 0x7f0700fc
 int drawable tooltip_frame_dark 0x7f0700fd
 int drawable tooltip_frame_light 0x7f0700fe
