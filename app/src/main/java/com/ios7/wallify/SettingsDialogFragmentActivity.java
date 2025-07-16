@@ -336,6 +336,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				textview3.setText(endOutput);
 				switchDisableAnims.setChecked(true);
 				switchColorPreviews.setChecked(true);
+				switchDisableBlur.setChecked(true);
 			});
 		} else {
 			linearReinitSetup.setVisibility(View.GONE);
