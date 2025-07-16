@@ -22,6 +22,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AppRestarter"
+            android:exported="false" />
+        <activity
             android:name=".ManualDebugEnabler"
             android:exported="false" />
         <activity

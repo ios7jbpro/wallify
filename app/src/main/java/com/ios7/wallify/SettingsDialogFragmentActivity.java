@@ -53,6 +53,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private LinearLayout linear30;
 	private LinearLayout linearReinitSetup;
 	private LinearLayout linearManualDebug;
+	private LinearLayout linearRestartApp;
 	private TextView textviewManualDebug;
 
 	private SharedPreferences config;
@@ -87,6 +88,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linear30 = _view.findViewById(R.id.linear30);
 		linearReinitSetup = _view.findViewById(R.id.linearReinitSetup);
 		linearManualDebug = _view.findViewById(R.id.linearManualDebug);
+		linearRestartApp = _view.findViewById(R.id.linearRestartApp);
 		textviewManualDebug = _view.findViewById(R.id.textviewManualDebug);
 		linearManualDebug.setVisibility(View.VISIBLE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
@@ -163,6 +165,18 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				Log.d("MANDEBUG", "Launching manual debug enabler");
 				Intent intent = new Intent();
 				intent.setClass(getActivity(), ManualDebugEnabler.class);
+				startActivity(intent);
+				Log.d("MANDEBUG", "Exiting the app");
+				getActivity().finish();
+			}
+		});
+
+		linearRestartApp.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Log.d("RESTART", "Restarting app");
+				Intent intent = new Intent();
+				intent.setClass(getActivity(), AppRestarter.class);
 				startActivity(intent);
 				Log.d("MANDEBUG", "Exiting the app");
 				getActivity().finish();

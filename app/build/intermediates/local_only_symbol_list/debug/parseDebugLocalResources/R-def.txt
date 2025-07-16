@@ -136,6 +136,7 @@ id linearDisableAnims
 id linearDisableBlur
 id linearManualDebug
 id linearReinitSetup
+id linearRestartApp
 id linearloading
 id linearpreviewcard
 id listView
@@ -173,6 +174,7 @@ id textView
 id textView10
 id textView11
 id textView12
+id textView127
 id textView13
 id textView14
 id textView15
@@ -201,6 +203,7 @@ id textview5
 id textview8
 id textviewManualDebug
 id textviewReinitSetup
+id textviewRestartApp
 id textviewtipsloading
 id time2
 id topBar
@@ -209,6 +212,7 @@ id wallimage
 id wallname
 layout abandon_dialog
 layout activity_app_abandoned
+layout activity_app_restarter
 layout activity_crop_wallpaper
 layout activity_manual_debug_enabler
 layout activity_setup1

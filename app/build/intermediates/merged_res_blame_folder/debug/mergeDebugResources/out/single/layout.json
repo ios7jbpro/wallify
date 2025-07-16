@@ -52,6 +52,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout\\main.xml"
     },
     {
+        "merged": "com.ios7.wallify.app-mergeDebugResources-77:/layout/activity_app_restarter.xml",
+        "source": "com.ios7.wallify.app-main-80:/layout/activity_app_restarter.xml"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-77:\\layout\\activity_setup1.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout\\activity_setup1.xml"
     },

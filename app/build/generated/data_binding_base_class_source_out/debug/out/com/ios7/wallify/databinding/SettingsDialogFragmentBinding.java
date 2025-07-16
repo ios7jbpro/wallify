@@ -60,6 +60,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final LinearLayout linearReinitSetup;
 
   @NonNull
+  public final LinearLayout linearRestartApp;
+
+  @NonNull
   public final ListView listView;
 
   @NonNull
@@ -96,6 +99,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final TextView textviewReinitSetup;
 
   @NonNull
+  public final TextView textviewRestartApp;
+
+  @NonNull
   public final TextView textviewtipsloading;
 
   private SettingsDialogFragmentBinding(@NonNull LinearLayout rootView,
@@ -104,12 +110,13 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       @NonNull LinearLayout linear1, @NonNull LinearLayout linear2, @NonNull LinearLayout linear30,
       @NonNull LinearLayout linearColorPreviews, @NonNull LinearLayout linearDisableAnims,
       @NonNull LinearLayout linearDisableBlur, @NonNull LinearLayout linearManualDebug,
-      @NonNull LinearLayout linearReinitSetup, @NonNull ListView listView,
-      @NonNull Switch switchColorPreviews, @NonNull Switch switchDisableAnims,
-      @NonNull Switch switchDisableBlur, @NonNull TextView textView14, @NonNull TextView textview2,
-      @NonNull TextView textview3, @NonNull TextView textview40, @NonNull TextView textview5,
-      @NonNull TextView textview8, @NonNull TextView textviewManualDebug,
-      @NonNull TextView textviewReinitSetup, @NonNull TextView textviewtipsloading) {
+      @NonNull LinearLayout linearReinitSetup, @NonNull LinearLayout linearRestartApp,
+      @NonNull ListView listView, @NonNull Switch switchColorPreviews,
+      @NonNull Switch switchDisableAnims, @NonNull Switch switchDisableBlur,
+      @NonNull TextView textView14, @NonNull TextView textview2, @NonNull TextView textview3,
+      @NonNull TextView textview40, @NonNull TextView textview5, @NonNull TextView textview8,
+      @NonNull TextView textviewManualDebug, @NonNull TextView textviewReinitSetup,
+      @NonNull TextView textviewRestartApp, @NonNull TextView textviewtipsloading) {
     this.rootView = rootView;
     this.LinearOptionsContainer = LinearOptionsContainer;
     this.imageView5 = imageView5;
@@ -123,6 +130,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.linearDisableBlur = linearDisableBlur;
     this.linearManualDebug = linearManualDebug;
     this.linearReinitSetup = linearReinitSetup;
+    this.linearRestartApp = linearRestartApp;
     this.listView = listView;
     this.switchColorPreviews = switchColorPreviews;
     this.switchDisableAnims = switchDisableAnims;
@@ -135,6 +143,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.textview8 = textview8;
     this.textviewManualDebug = textviewManualDebug;
     this.textviewReinitSetup = textviewReinitSetup;
+    this.textviewRestartApp = textviewRestartApp;
     this.textviewtipsloading = textviewtipsloading;
   }
 
@@ -237,6 +246,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearRestartApp;
+      LinearLayout linearRestartApp = ViewBindings.findChildViewById(rootView, id);
+      if (linearRestartApp == null) {
+        break missingId;
+      }
+
       id = R.id.listView;
       ListView listView = ViewBindings.findChildViewById(rootView, id);
       if (listView == null) {
@@ -309,6 +324,12 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textviewRestartApp;
+      TextView textviewRestartApp = ViewBindings.findChildViewById(rootView, id);
+      if (textviewRestartApp == null) {
+        break missingId;
+      }
+
       id = R.id.textviewtipsloading;
       TextView textviewtipsloading = ViewBindings.findChildViewById(rootView, id);
       if (textviewtipsloading == null) {
@@ -317,10 +338,10 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
 
       return new SettingsDialogFragmentBinding((LinearLayout) rootView, LinearOptionsContainer,
           imageView5, imageView6, imageView8, linear1, linear2, linear30, linearColorPreviews,
-          linearDisableAnims, linearDisableBlur, linearManualDebug, linearReinitSetup, listView,
-          switchColorPreviews, switchDisableAnims, switchDisableBlur, textView14, textview2,
-          textview3, textview40, textview5, textview8, textviewManualDebug, textviewReinitSetup,
-          textviewtipsloading);
+          linearDisableAnims, linearDisableBlur, linearManualDebug, linearReinitSetup,
+          linearRestartApp, listView, switchColorPreviews, switchDisableAnims, switchDisableBlur,
+          textView14, textview2, textview3, textview40, textview5, textview8, textviewManualDebug,
+          textviewReinitSetup, textviewRestartApp, textviewtipsloading);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

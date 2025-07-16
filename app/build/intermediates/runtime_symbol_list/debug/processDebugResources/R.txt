@@ -3578,6 +3578,7 @@ int id linearDisableAnims 0x7f090156
 int id linearDisableBlur 0x7f090157
 int id linearManualDebug 0x7f0902b2
 int id linearReinitSetup 0x7f090158
+int id linearRestartApp 0x7f0902b5
 int id linearloading 0x7f090159
 int id linearpreviewcard 0x7f09015a
 int id listMode 0x7f09015b
@@ -3838,6 +3839,7 @@ int id textView 0x7f090259
 int id textView10 0x7f09025a
 int id textView11 0x7f09025b
 int id textView12 0x7f09025c
+int id textView127 0x7f0902b6
 int id textView13 0x7f09025d
 int id textView14 0x7f09025e
 int id textView15 0x7f09025f
@@ -3875,6 +3877,7 @@ int id textview5 0x7f09027c
 int id textview8 0x7f09027d
 int id textviewManualDebug 0x7f0902b3
 int id textviewReinitSetup 0x7f09027e
+int id textviewRestartApp 0x7f0902b7
 int id textviewtipsloading 0x7f09027f
 int id time 0x7f090280
 int id time2 0x7f090281
@@ -4042,6 +4045,7 @@ int layout abc_search_view 0x7f0c001a
 int layout abc_select_dialog_material 0x7f0c001b
 int layout abc_tooltip 0x7f0c001c
 int layout activity_app_abandoned 0x7f0c001d
+int layout activity_app_restarter 0x7f0c007e
 int layout activity_crop_wallpaper 0x7f0c001e
 int layout activity_manual_debug_enabler 0x7f0c007d
 int layout activity_setup1 0x7f0c001f

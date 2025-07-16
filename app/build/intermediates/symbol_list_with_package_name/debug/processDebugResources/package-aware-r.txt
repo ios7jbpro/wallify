@@ -3579,6 +3579,7 @@ id linearDisableAnims
 id linearDisableBlur
 id linearManualDebug
 id linearReinitSetup
+id linearRestartApp
 id linearloading
 id linearpreviewcard
 id listMode
@@ -3839,6 +3840,7 @@ id textView
 id textView10
 id textView11
 id textView12
+id textView127
 id textView13
 id textView14
 id textView15
@@ -3876,6 +3878,7 @@ id textview5
 id textview8
 id textviewManualDebug
 id textviewReinitSetup
+id textviewRestartApp
 id textviewtipsloading
 id time
 id time2
@@ -4043,6 +4046,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_app_abandoned
+layout activity_app_restarter
 layout activity_crop_wallpaper
 layout activity_manual_debug_enabler
 layout activity_setup1
