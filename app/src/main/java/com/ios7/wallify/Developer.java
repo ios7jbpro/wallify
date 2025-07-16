@@ -6,7 +6,7 @@ public class Developer {
     private String devUrl;
 
     // Constructor to initialize the Developer object
-    public Developer(String name, String imageUrl) {
+    public Developer(String name, String imageUrl, String devUrl) {
         this.name = name;
         this.imageUrl = imageUrl;
         this.devUrl = devUrl;

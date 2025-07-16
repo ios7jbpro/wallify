@@ -69,6 +69,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 	private void initialize(Bundle _savedInstanceState, View _view) {
 		linear1 = _view.findViewById(R.id.linear1);
+		linear1.setClipToOutline(true);
 		linear2 = _view.findViewById(R.id.linear2);
 		textview5 = _view.findViewById(R.id.textview5);
 		textview2 = _view.findViewById(R.id.textview2);
@@ -191,14 +192,15 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						JSONObject jsonObject = jsonArray.getJSONObject(i);
 						String name = jsonObject.getString("name");
 						String imageUrl = jsonObject.getString("pfp");
-						setListViewHeightBasedOnChildren(listView);
+
+						String devUrl = "";
 						try {
-							String devUrl = jsonObject.getString("url");
+							devUrl = jsonObject.getString("url");
 						} catch (JSONException e) {
-							Log.e("FETCH_ERROR", "JSON parsing error. Setting devurl to nothing." + "Error at position:" + i, e);
-							String devUrl = "";
+							Log.e("FETCH_ERROR", "JSON parsing error. Setting devurl to nothing. Error at position:" + i, e);
 						}
-						Developer developer = new Developer(name, imageUrl);
+
+						Developer developer = new Developer(name, imageUrl, devUrl);
 						developerList.add(developer);
 						setListViewHeightBasedOnChildren(listView);
 					}
@@ -219,7 +221,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 									String name = clickedDeveloper.getName();
 									String imageUrl = clickedDeveloper.getImageUrl();
 									String devUrl = clickedDeveloper.getDevUrl();
-									Toast.makeText(getContext(), "Clicked on: " + name + ", URL:" + devUrl, Toast.LENGTH_SHORT).show();
+									// Toast.makeText(getContext(), "Clicked on: " + name + ", URL:" + devUrl, Toast.LENGTH_SHORT).show();
 									if (devUrl == null || devUrl.isEmpty()) {
 										Toast.makeText(getContext(), "No URL found for this developer.", Toast.LENGTH_SHORT).show();
 									} else {
