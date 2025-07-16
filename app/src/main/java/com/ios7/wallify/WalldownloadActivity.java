@@ -729,6 +729,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 
 						@Override
 						public void onSequenceCanceled(TapTarget lastTarget) {
+							config.edit().putString("wallTutComplete", "1").commit();
 							Snackbar.make(linear4, "Tutorial cancelled", Snackbar.LENGTH_SHORT)
 									.setAction("Dismiss", new View.OnClickListener() {
 										@Override
