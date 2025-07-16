@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-76:\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\f52ee1f8005bee6fc35c97b7506200cc\\transformed\\appcompat-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -71,6 +71,75 @@
                         "endLines": "23,24,28,29",
                         "endColumns": "8,98,8,88",
                         "endOffsets": "1236,1335,1506,1595"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\f52ee1f8005bee6fc35c97b7506200cc\\transformed\\appcompat-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36,37,38,39,66",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "1785,1855,1939,2023,2119,2221,2323,5305",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "1850,1934,2018,2114,2216,2318,2412,5389"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,148,200,246,302,355,402,455,508,558,606",
+                        "endColumns": "45,46,51,45,55,52,46,52,52,49,47,50",
+                        "endOffsets": "96,143,195,241,297,350,397,450,503,553,601,652"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,67,68,69,70,71,72,73,74",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2417,2492,2603,2692,2793,2900,3007,3106,3213,3316,3443,3531,3655,3757,3859,3975,4077,4191,4319,4435,4557,4693,4813,4947,5067,5179,5394,5511,5635,5765,5887,6025,6159,6275",
+                        "endColumns": "74,110,88,100,106,106,98,106,102,126,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "2487,2598,2687,2788,2895,3002,3101,3208,3311,3438,3526,3650,3752,3854,3970,4072,4186,4314,4430,4552,4688,4808,4942,5062,5174,5300,5506,5630,5760,5882,6020,6154,6270,6390"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\baris\\StudioProjects\\wallify\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "from": {
+                        "startLines": "2,-1,-1,-1",
+                        "startColumns": "0,-1,-1,-1",
+                        "startOffsets": "53,-1,-1,-1",
+                        "endLines": "14,-1,-1,-1",
+                        "endColumns": "8,-1,-1,-1",
+                        "endOffsets": "829,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "14,27,28,32",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "657,1426,1525,1696",
+                        "endLines": "26,27,31,32",
+                        "endColumns": "8,98,8,88",
+                        "endOffsets": "1421,1520,1691,1780"
                     }
                 }
             ]
