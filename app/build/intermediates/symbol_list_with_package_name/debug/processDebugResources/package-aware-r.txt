@@ -47,6 +47,8 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim slide_down
+anim slide_up
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3839,6 +3841,7 @@ id textView12
 id textView13
 id textView14
 id textView15
+id textView16
 id textView2
 id textView3
 id textView4
@@ -4039,6 +4042,7 @@ layout abc_tooltip
 layout activity_app_abandoned
 layout activity_crop_wallpaper
 layout activity_setup1
+layout activity_share_image_loader
 layout categorylist
 layout crop_image_activity
 layout crop_image_view
@@ -4706,6 +4710,8 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style BottomSheetActivity
+style BottomSheetAnimation
 style CardView
 style CardView_Dark
 style CardView_Light

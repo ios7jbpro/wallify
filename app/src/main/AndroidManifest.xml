@@ -22,6 +22,10 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ShareImageLoader"
+            android:exported="false"
+            android:theme="@style/BottomSheetActivity" />
+        <activity
             android:name=".WalldownloadkotlinActivity"
             android:exported="false" />
         <activity
@@ -101,7 +105,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
-
 
         <uses-library
             android:name="org.apache.http.legacy"

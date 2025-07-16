@@ -1,7 +1,10 @@
 package com.ios7.wallify;
 
+import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetView;
 import com.ios7.wallify.MyClasses.EzBlur;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -255,6 +258,22 @@ public class SetupActivity1 extends AppCompatActivity {
                     loopedTimer16.start(1, () -> {
                         if (Math.abs(SetupProgress3.getAlpha() - 1) < 0.1f) {
                             loopedTimer16.stop();
+                            TapTargetView.showFor(SetupActivity1.this, TapTarget.forView(nextbutton3, "Pay attention!", "Tooltips like this one will be shown throught the app to guide you!")
+                                            .outerCircleColor(R.color.backgroundviolent)      // Specify a color for the outer circle
+                                            .outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
+                                            .targetCircleColor(R.color.textprimary)   // Specify a color for the target circle
+                                            .titleTextSize(20)                  // Specify the size (in sp) of the title text
+                                            .titleTextColor(R.color.textprimary)      // Specify the color of the title text
+                                            .descriptionTextSize(10)            // Specify the size (in sp) of the description text
+                                            .descriptionTextColor(R.color.textprimary)  // Specify the color of the description text
+                                            .textColor(R.color.textprimary)            // Specify a color for both the title and description text
+                                            .textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
+                                            .dimColor(R.color.background)            // If set, will dim behind the view with 30% opacity of the given color
+                                            .drawShadow(true)                   // Whether to draw a drop shadow or not
+                                            .cancelable(true)                  // Whether tapping outside the outer circle dismisses the view
+                                            .tintTarget(true)                   // Whether to tint the target view's color
+                                            .transparentTarget(true)           // Specify whether the target is transparent (displays the content underneath)
+                                            .targetRadius(60));
                         } else {
                             SetupProgress3.setAlpha(SetupProgress3.getAlpha() + 0.08f);
                             Log.d("DEBUG", "Prog3lpha: " + SetupProgress3.getAlpha());

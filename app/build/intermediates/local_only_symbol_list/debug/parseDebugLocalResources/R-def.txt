@@ -1,5 +1,7 @@
 R_DEF: Internal format may change without notice
 local
+anim slide_down
+anim slide_up
 color RED
 color activetab
 color background
@@ -173,6 +175,7 @@ id textView12
 id textView13
 id textView14
 id textView15
+id textView16
 id textView2
 id textView3
 id textView4
@@ -205,6 +208,7 @@ layout abandon_dialog
 layout activity_app_abandoned
 layout activity_crop_wallpaper
 layout activity_setup1
+layout activity_share_image_loader
 layout categorylist
 layout devs
 layout main
@@ -249,4 +253,6 @@ style AppTheme
 style AppTheme.AppBarOverlay
 style AppTheme.FullScreen
 style AppTheme.PopupOverlay
+style BottomSheetActivity
+style BottomSheetAnimation
 xml file_paths

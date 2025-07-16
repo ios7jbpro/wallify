@@ -38,6 +38,8 @@ import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager.widget.ViewPager.OnAdapterChangeListener;
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 
+import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.io.*;

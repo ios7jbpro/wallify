@@ -40,6 +40,10 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
+import com.getkeepsafe.taptargetview.TapTarget;
+import com.getkeepsafe.taptargetview.TapTargetSequence;
+import com.getkeepsafe.taptargetview.TapTargetView;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.io.*;
@@ -300,6 +304,9 @@ public class WalldownloadActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v){
 				String imageUrl = config.getString("repo", "")+getIntent().getStringExtra("wallpaperLink");
+				config.edit().putString("isImageReady", "0").commit();
+				Intent intent = new Intent(getApplicationContext(), ShareImageLoader.class);
+				startActivity(intent);
 
 				Glide.with(v.getContext())
 						.asFile()
@@ -307,6 +314,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 						.into(new CustomTarget<File>() {
 							@Override
 							public void onResourceReady(@NonNull File resource, @Nullable Transition<? super File> transition) {
+								config.edit().putString("isImageReady", "1").commit();
 								Uri contentUri = FileProvider.getUriForFile(
 										v.getContext(),
 										"com.ios7.wallify.fileprovider",
@@ -551,6 +559,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				final String _message = _param2;
 			}
 		};
+
 	}
 
 
@@ -653,6 +662,84 @@ public class WalldownloadActivity extends AppCompatActivity {
 				time2.setTextColor(Color.WHITE);
 			}
 		}, (int)(Double.parseDouble(config.getString("timeout", "")))); */
+
+		if (config.getString("wallTutComplete", "") == "1") {
+			// Do nothing
+		} else {
+			new TapTargetSequence(this)
+					.targets(
+							TapTarget.forView(button3, "Sharing", "You can now share images! Give it a try(this won't be shown again)")
+									.outerCircleColor(R.color.backgroundviolent)      // Specify a color for the outer circle
+									.outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
+									.targetCircleColor(R.color.textprimary)   // Specify a color for the target circle
+									.titleTextSize(20)                  // Specify the size (in sp) of the title text
+									.titleTextColor(R.color.textprimary)      // Specify the color of the title text
+									.descriptionTextSize(10)            // Specify the size (in sp) of the description text
+									.descriptionTextColor(R.color.textprimary)  // Specify the color of the description text
+									.textColor(R.color.textprimary)            // Specify a color for both the title and description text
+									.textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
+									.dimColor(R.color.background)            // If set, will dim behind the view with 30% opacity of the given color
+									.drawShadow(true)                   // Whether to draw a drop shadow or not
+									.cancelable(true)                  // Whether tapping outside the outer circle dismisses the view
+									.tintTarget(true)                   // Whether to tint the target view's color
+									.transparentTarget(true)           // Specify whether the target is transparent (displays the content underneath)
+									.targetRadius(60),                  // Specify the target radius (in dp)
+							TapTarget.forView(button4, "Images", "You also can share images! Click the button, give it a few seconds to download")
+									.outerCircleColor(R.color.backgroundviolent)      // Specify a color for the outer circle
+									.outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
+									.targetCircleColor(R.color.textprimary)   // Specify a color for the target circle
+									.titleTextSize(20)                  // Specify the size (in sp) of the title text
+									.titleTextColor(R.color.textprimary)      // Specify the color of the title text
+									.descriptionTextSize(10)            // Specify the size (in sp) of the description text
+									.descriptionTextColor(R.color.textprimary)  // Specify the color of the description text
+									.textColor(R.color.textprimary)            // Specify a color for both the title and description text
+									.textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
+									.dimColor(R.color.background)            // If set, will dim behind the view with 30% opacity of the given color
+									.drawShadow(true)                   // Whether to draw a drop shadow or not
+									.cancelable(true)                  // Whether tapping outside the outer circle dismisses the view
+									.tintTarget(true)                   // Whether to tint the target view's color
+									.transparentTarget(true)           // Specify whether the target is transparent (displays the content underneath)
+									.targetRadius(60),                  // Specify the target radius (in dp)
+							TapTarget.forView(button2, "Set a wallpaper", "Give it a try yourself! Set this very image as your wallpaper!")
+									.outerCircleColor(R.color.backgroundviolent)      // Specify a color for the outer circle
+									.outerCircleAlpha(0.96f)            // Specify the alpha amount for the outer circle
+									.targetCircleColor(R.color.textprimary)   // Specify a color for the target circle
+									.titleTextSize(20)                  // Specify the size (in sp) of the title text
+									.titleTextColor(R.color.textprimary)      // Specify the color of the title text
+									.descriptionTextSize(10)            // Specify the size (in sp) of the description text
+									.descriptionTextColor(R.color.textprimary)  // Specify the color of the description text
+									.textColor(R.color.textprimary)            // Specify a color for both the title and description text
+									.textTypeface(Typeface.SANS_SERIF)  // Specify a typeface for the text
+									.dimColor(R.color.background)            // If set, will dim behind the view with 30% opacity of the given color
+									.drawShadow(true)                   // Whether to draw a drop shadow or not
+									.cancelable(true)                  // Whether tapping outside the outer circle dismisses the view
+									.tintTarget(true)                   // Whether to tint the target view's color
+									.transparentTarget(true)           // Specify whether the target is transparent (displays the content underneath)
+									.targetRadius(60)                  // Specify the target radius (in dp)
+					).listener(new TapTargetSequence.Listener() {
+						@Override
+						public void onSequenceFinish() {
+							config.edit().putString("wallTutComplete", "1").commit();
+						}
+
+						@Override
+						public void onSequenceStep(TapTarget lastTarget, boolean targetClicked) {
+							// Perform action for the current target
+						}
+
+						@Override
+						public void onSequenceCanceled(TapTarget lastTarget) {
+							Snackbar.make(linear4, "Tutorial cancelled", Snackbar.LENGTH_SHORT)
+									.setAction("Dismiss", new View.OnClickListener() {
+										@Override
+										public void onClick(View v) {
+											config.edit().putString("wallTutComplete", "1").commit();
+										}
+									})
+									.show();
+						}
+					}).start();
+		}
 
 	}
 
