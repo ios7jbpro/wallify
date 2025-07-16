@@ -50,6 +50,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.ios7.wallify.ManualDebugEnabler"
+            android:exported="false" />
+        <activity
             android:name="com.ios7.wallify.ShareImageLoader"
             android:exported="false"
             android:theme="@style/BottomSheetActivity" />

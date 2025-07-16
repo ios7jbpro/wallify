@@ -52,6 +52,8 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private ListView listView;
 	private LinearLayout linear30;
 	private LinearLayout linearReinitSetup;
+	private LinearLayout linearManualDebug;
+	private TextView textviewManualDebug;
 
 	private SharedPreferences config;
 	private Intent repolauncher;
@@ -84,6 +86,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		textview4 = _view.findViewById(R.id.textview4);
 		linear30 = _view.findViewById(R.id.linear30);
 		linearReinitSetup = _view.findViewById(R.id.linearReinitSetup);
+		linearManualDebug = _view.findViewById(R.id.linearManualDebug);
+		textviewManualDebug = _view.findViewById(R.id.textviewManualDebug);
+		linearManualDebug.setVisibility(View.VISIBLE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 
 	}
@@ -133,6 +138,10 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			}
 		});
 
+		if (config.getString("debugMode", "").equals("1")) {
+			textviewManualDebug.setText("Exit forced debug mode");
+		}
+
 		textview3.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View _view) {
@@ -145,6 +154,18 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 					Intent repolauncher = new Intent(Intent.ACTION_VIEW, Uri.parse(remoterepo));
 					startActivity(repolauncher);
 				}
+			}
+		});
+
+		linearManualDebug.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				Log.d("MANDEBUG", "Launching manual debug enabler");
+				Intent intent = new Intent();
+				intent.setClass(getActivity(), ManualDebugEnabler.class);
+				startActivity(intent);
+				Log.d("MANDEBUG", "Exiting the app");
+				getActivity().finish();
 			}
 		});
 

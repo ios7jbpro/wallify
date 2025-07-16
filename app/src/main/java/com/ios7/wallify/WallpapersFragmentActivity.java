@@ -121,20 +121,9 @@ public class WallpapersFragmentActivity extends Fragment {
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 		temporaryCache = getContext().getSharedPreferences("temporaryCache", Activity.MODE_PRIVATE);
 		fetchcategoryjson = new RequestNetwork((Activity) getContext());
-		// Create a timer that waits for 5 seconds
-		relay = new TimerTask() {
-			@Override
-			public void run() {
-				getActivity().runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						textloading.setVisibility(View.VISIBLE);
-					}
-
-				});
-			}
-		};
-		_timer.schedule(relay, 5000);
+		EzTimer.runWithDelay(5000, () -> {
+			textloading.setVisibility(View.VISIBLE);
+		});
 		
 		listview1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override

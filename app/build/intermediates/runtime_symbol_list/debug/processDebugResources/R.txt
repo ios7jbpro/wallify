@@ -3576,6 +3576,7 @@ int id linear9 0x7f090154
 int id linearColorPreviews 0x7f090155
 int id linearDisableAnims 0x7f090156
 int id linearDisableBlur 0x7f090157
+int id linearManualDebug 0x7f0902b2
 int id linearReinitSetup 0x7f090158
 int id linearloading 0x7f090159
 int id linearpreviewcard 0x7f09015a
@@ -3841,6 +3842,7 @@ int id textView13 0x7f09025d
 int id textView14 0x7f09025e
 int id textView15 0x7f09025f
 int id textView16 0x7f0902b1
+int id textView17 0x7f0902b4
 int id textView2 0x7f090260
 int id textView3 0x7f090261
 int id textView4 0x7f090262
@@ -3871,6 +3873,7 @@ int id textview4 0x7f09027a
 int id textview40 0x7f09027b
 int id textview5 0x7f09027c
 int id textview8 0x7f09027d
+int id textviewManualDebug 0x7f0902b3
 int id textviewReinitSetup 0x7f09027e
 int id textviewtipsloading 0x7f09027f
 int id time 0x7f090280
@@ -4040,6 +4043,7 @@ int layout abc_select_dialog_material 0x7f0c001b
 int layout abc_tooltip 0x7f0c001c
 int layout activity_app_abandoned 0x7f0c001d
 int layout activity_crop_wallpaper 0x7f0c001e
+int layout activity_manual_debug_enabler 0x7f0c007d
 int layout activity_setup1 0x7f0c001f
 int layout activity_share_image_loader 0x7f0c0020
 int layout categorylist 0x7f0c0021

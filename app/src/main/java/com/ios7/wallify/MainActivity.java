@@ -192,15 +192,32 @@ public class MainActivity extends AppCompatActivity {
 		if (config.getString("disableblur", "").equals("")) {
 			config.edit().putString("disableblur", "0").commit();
 		}
+
+
 		// Check for debuuger/debug build
+		if (config.getString("forcedDebug", "").equals("1")) {
+			config.edit().putString("debugMode", "1").commit();
+		} else {
+			config.edit().putString("debugMode", "0").commit();
+		}
+
 		if (android.os.Debug.isDebuggerConnected()) {
 			config.edit().putString("debugMode", "1").commit();
 			textview1.setText("WALLIFY");
 			config.edit().putString("disableanims", "1").commit();
 			config.edit().putString("disableblur", "1").commit();
-		} else  {
+		} else if (config.getString("forcedDebug", "").equals("1")) {
+			config.edit().putString("debugMode", "1").commit();
+			textview1.setText("DEBUGGER NOT ATTACHED!");
+			config.edit().putString("disableanims", "1").commit();
+			config.edit().putString("disableblur", "1").commit();
+		} else {
 			config.edit().putString("debugMode", "0").commit();
 		}
+
+		Log.d("MANDEBUG", "Forceddebug state:"+config.getString("forcedDebug", ""));
+		Log.d("MANDEBUG", "DebugMode state:"+config.getString("debugMode", ""));
+
 		if (config.getString("disableblur", "").equals("")) {
 			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) { // API 31+
 				config.edit().putString("disableblur", "0").commit();

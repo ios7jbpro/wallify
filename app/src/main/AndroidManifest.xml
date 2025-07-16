@@ -22,6 +22,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ManualDebugEnabler"
+            android:exported="false" />
+        <activity
             android:name=".ShareImageLoader"
             android:exported="false"
             android:theme="@style/BottomSheetActivity" />
