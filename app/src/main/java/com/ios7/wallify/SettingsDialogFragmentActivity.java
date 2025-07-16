@@ -216,8 +216,6 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 									// Get the clicked Developer object from the adapters
 									Developer clickedDeveloper = (Developer) parent.getItemAtPosition(position);
 
-									// Now you have access to the clickedDeveloper's data
-									// For example, you can get their name or image URL:
 									String name = clickedDeveloper.getName();
 									String imageUrl = clickedDeveloper.getImageUrl();
 									String devUrl = clickedDeveloper.getDevUrl();
