@@ -11,6 +11,9 @@
     <item name="android:fontFamily">@font/saira_medium</item>
     <item name="android:textViewStyle">@style/AppTheme</item>
     <item name="android:textColor">@color/textprimary</item>
+    <item name="android:windowSplashScreenBackground">@color/background</item>
+    <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+    <item name="android:windowBackground">@color/background</item>
 </style><style name="AppTheme.FullScreen" parent="AppTheme">
 <item name="android:windowFullscreen">true</item>
 <item name="android:windowContentOverlay">@null</item>
@@ -26,6 +29,9 @@
     <item name="android:fontFamily">@font/saira_medium</item>
     <item name="android:textViewStyle">@style/AppTheme</item>
     <item name="android:textColor">@color/textprimary</item>
+    <item name="android:windowSplashScreenBackground">@color/background</item>
+    <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+    <item name="android:windowBackground">@color/background</item>
 </style><style name="AppTheme.FullScreen" parent="AppTheme">
 <item name="android:windowFullscreen">true</item>
 <item name="android:windowContentOverlay">@null</item>
