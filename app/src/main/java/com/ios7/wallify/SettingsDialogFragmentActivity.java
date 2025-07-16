@@ -38,6 +38,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.ios7.wallify.MyClasses.EzIntent;
+import com.ios7.wallify.MyClasses.EzTimer;
 import com.ios7.wallify.MyClasses.EzTimerLooped;
 import com.squareup.picasso.Picasso;
 
@@ -207,6 +208,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						JSONObject jsonObject = jsonArray.getJSONObject(i);
 						String name = jsonObject.getString("name");
 						String imageUrl = jsonObject.getString("pfp");
+						setListViewHeightBasedOnChildren(listView);
 						try {
 							String devUrl = jsonObject.getString("url");
 						} catch (JSONException e) {
@@ -215,6 +217,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						}
 						Developer developer = new Developer(name, imageUrl);
 						developerList.add(developer);
+						setListViewHeightBasedOnChildren(listView);
 					}
 
 					getActivity().runOnUiThread(new Runnable() {
@@ -245,13 +248,18 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 							});
 						}
 					});
+					setListViewHeightBasedOnChildren(listView);
 
 				} catch (JSONException e) {
 					Log.e("FETCH_ERROR", "JSON parsing error", e);
 				}
+				setListViewHeightBasedOnChildren(listView);
+				EzTimer.runWithDelay(100, () -> {
+					setListViewHeightBasedOnChildren(listView);
+				});
 			}
-
 		});
+		setListViewHeightBasedOnChildren(listView);
 
 		// Listen for linear30 clicks
 		linear30.setOnClickListener(new View.OnClickListener() {
@@ -331,6 +339,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 	private void tipsLoader() {
 		textview3.findViewById(R.id.textview3);
+		textview3.setText("TipsLoader service started.\nWaiting for the remote fetch, this text will update itself...\n\nClick me to see the wallpapers repository");
 		OkHttpClient client = new OkHttpClient();
 		String url = (config.getString("repo", "") + "tips/total");
 		Request request = new Request.Builder()
@@ -397,5 +406,26 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			textview3.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs.");
 		}
 	}
+
+	public static void setListViewHeightBasedOnChildren(ListView listView) {
+		ListAdapter listAdapter = listView.getAdapter();
+		if (listAdapter == null) return;
+
+		int totalHeight = 0;
+		for (int i = 0; i < listAdapter.getCount(); i++) {
+			View listItem = listAdapter.getView(i, null, listView);
+			listItem.measure(
+					View.MeasureSpec.makeMeasureSpec(listView.getWidth(), View.MeasureSpec.UNSPECIFIED),
+					View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED)
+			);
+			totalHeight += listItem.getMeasuredHeight();
+		}
+
+		ViewGroup.LayoutParams params = listView.getLayoutParams();
+		params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
+		listView.setLayoutParams(params);
+		listView.requestLayout();
+	}
+
 
 }

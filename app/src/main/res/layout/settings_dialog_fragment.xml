@@ -37,7 +37,6 @@
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_weight="0"
-						android:background="@drawable/roundedbginfocard"
 						android:gravity="center_horizontal|center_vertical"
 						android:orientation="horizontal"
 						android:paddingLeft="6dp"
@@ -65,7 +64,13 @@
 								android:id="@+id/textview2"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:padding="6dp"
+								android:paddingHorizontal="6dp"
+								android:paddingStart="6dp"
+								android:paddingLeft="6dp"
+								android:paddingTop="3dp"
+								android:paddingEnd="6dp"
+								android:paddingRight="6dp"
+								android:paddingBottom="1dp"
 								android:text="Wallify"
 								android:textColor="@color/textprimary"
 								android:textSize="30sp"
@@ -93,47 +98,16 @@
 									android:scaleType="fitCenter"
 									app:srcCompat="@drawable/kotlin" />
 
+								<TextView
+									android:id="@+id/textView14"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_weight="0"
+									android:text="←TOTALLY uses kotlin, trust" />
+
 							</LinearLayout>
 						</LinearLayout>
 
-					</LinearLayout>
-
-					<LinearLayout
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:layout_weight="0"
-						android:background="@drawable/roundedbginfocardcompleter"
-						android:orientation="horizontal"
-						android:paddingLeft="0dp"
-						android:paddingTop="6dp"
-						android:paddingRight="3dp"
-						android:paddingBottom="6dp">
-
-						<de.hdodenhof.circleimageview.CircleImageView
-							android:id="@+id/imageView7"
-							android:layout_width="0dp"
-							android:layout_height="wrap_content"
-							android:layout_marginRight="4dp"
-							android:layout_weight="0"
-							android:adjustViewBounds="false"
-							android:cropToPadding="false"
-							android:scaleType="centerCrop"
-							android:src="@mipmap/ic_launcher"
-							android:visibility="invisible" />
-
-						<TextView
-							android:id="@+id/textview"
-							android:layout_width="0dp"
-							android:layout_height="wrap_content"
-							android:layout_weight="0"
-							android:paddingLeft="0dp"
-							android:paddingTop="8dp"
-							android:paddingRight="0dp"
-							android:paddingBottom="8dp"
-							android:text=" "
-							android:textColor="@color/textprimary"
-							android:textSize="30sp"
-							android:textStyle="bold" />
 					</LinearLayout>
 
 				</LinearLayout>

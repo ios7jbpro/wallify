@@ -44,6 +44,9 @@
 <item name="android:windowLightStatusBar">true</item>
 <item name="android:navigationBarColor">@color/backgroundviolent</item>
 <item name="android:windowLightNavigationBar">true</item>
+    <item name="android:fontFamily">@font/saira_medium</item>
+    <item name="android:textViewStyle">@style/AppTheme</item>
+    <item name="android:textColor">@color/textprimary</item>
 </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
     <style name="AppTheme.FullScreen" parent="AppTheme">

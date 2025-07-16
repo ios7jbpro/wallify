@@ -3527,7 +3527,6 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
-id imageView7
 id imageView8
 id imageview1
 id imageview3
@@ -3835,6 +3834,7 @@ id textView10
 id textView11
 id textView12
 id textView13
+id textView14
 id textView2
 id textView3
 id textView4
@@ -3858,7 +3858,6 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id textloading
-id textview
 id textview1
 id textview2
 id textview3
