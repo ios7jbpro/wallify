@@ -40,6 +40,15 @@
 			android:orientation="vertical">
 
 
+			<com.google.android.material.navigation.NavigationView
+				android:id="@+id/navview1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/backgroundviolent"
+				app:itemBackground="@color/backgroundviolent"
+				app:itemIconTint="@color/textprimary"
+				app:itemTextColor="@color/textprimary"
+				app:menu="@menu/bottomnav" />
 
 			<LinearLayout
 				android:id="@+id/linear4"

@@ -45,6 +45,8 @@ import java.text.*;
 import java.util.*;
 import java.util.regex.*;
 import org.json.*;
+
+import com.google.android.material.navigation.NavigationView;
 import com.ios7.wallify.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -59,7 +61,8 @@ public class MainActivity extends AppCompatActivity {
 	private TextView button2;
 	// private View tab1bg;
 	private BottomNavigationView bottom_nav;
-	private Boolean navDetector;
+	private NavigationView navview1;
+	private String navDetector;
 
 	private PageLoaderInitFragmentAdapter pageLoaderInit;
 	private SharedPreferences config;
@@ -87,11 +90,24 @@ public class MainActivity extends AppCompatActivity {
 		 linear4.setVisibility(View.GONE);
 		 try {
 			 bottom_nav = findViewById(R.id.bottomnav1);
-			 navDetector = false;
+			 // We do this part to force the code to do some action and fail on tablets, so we can know it's a tablet
+			 bottom_nav.setVisibility(View.GONE);
+			 bottom_nav.setVisibility(View.VISIBLE);
+			 navDetector = "1";
 		 } catch (Exception a) {
-			 Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
-			 Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
-			 navDetector = true;
+			 try {
+				 Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+				 Log.d("DEBUG", "Trying the tablet oriented navview1");
+				 navview1 = findViewById(R.id.navview1);
+				 // We do this part to force the code to do some action and fail on tablets, so we can know it's some screen size that doesnt have a layout
+				 navview1.setVisibility(View.GONE);
+				 navview1.setVisibility(View.VISIBLE);
+				 navDetector = "2";
+			 } catch (Exception e) {
+				 Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+				 Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
+				 navDetector = "0";
+			 }
 		 }
 		 button1.setBackgroundResource(R.drawable.activetab);
 		 button2.setBackgroundResource(R.drawable.roundedbgviolent);
@@ -249,31 +265,52 @@ public class MainActivity extends AppCompatActivity {
 			}
 		});
 
-		if (navDetector = false) {
+		if (navDetector == "1") {
 			linear4.setVisibility(View.GONE);
-		} else {
-			try {
-				bottom_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-					@Override
-					public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-						int id = item.getItemId();
-						if (id == R.id.page_1) {
-							viewpager1.setCurrentItem((int) 0);
-							return true;
-						} else if (id == R.id.page_2) {
-							viewpager1.setCurrentItem((int) 1);
-							return true;
-						} else {
-							return false;
-						}
+			bottom_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+				@Override
+				public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+					int id = item.getItemId();
+					if (id == R.id.page_1) {
+						viewpager1.setCurrentItem((int) 0);
+						return true;
+					} else if (id == R.id.page_2) {
+						viewpager1.setCurrentItem((int) 1);
+						return true;
+					} else {
+						return false;
 					}
-				});
-			} catch (Exception e) {
-				Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
-				Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
-				linear4.setVisibility(View.VISIBLE);
+				}
+			});
+		} else if (navDetector == "2") {
+			linear4.setVisibility(View.GONE);
+			navview1.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+				@Override
+				public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+					int id = item.getItemId();
+					if (id == R.id.page_1) {
+						viewpager1.setCurrentItem(0);
+						return true;
+					} else if (id == R.id.page_2) {
+						viewpager1.setCurrentItem(1);
+						return true;
+					}
+					return false;
+				}
+			});
+		} else {
+			{
+				try {
+
+				} catch (Exception e) {
+					Log.d("DEBUG", "Bottom nav not found, possible a large screen device?");
+					Log.d("DEBUG", "Defaulting to the old bottom navigation view and disabling all the new code");
+					linear4.setVisibility(View.VISIBLE);
+				}
 			}
 		}
+
+		Log.d("DEBUG", "NavView current style is" + navDetector);
 
 
 		Window window = getWindow();

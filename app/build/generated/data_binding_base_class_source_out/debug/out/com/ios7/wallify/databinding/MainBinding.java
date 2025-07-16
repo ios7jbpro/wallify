@@ -12,6 +12,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationView;
 import com.ios7.wallify.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -55,6 +56,22 @@ public final class MainBinding implements ViewBinding {
   @NonNull
   public final LinearLayout linear4;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final NavigationView navview1;
+
   @NonNull
   public final TextView textview1;
 
@@ -64,7 +81,8 @@ public final class MainBinding implements ViewBinding {
   private MainBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout bottombarroot,
       @Nullable BottomNavigationView bottomnav1, @NonNull TextView button1,
       @NonNull TextView button2, @NonNull LinearLayout linear1, @NonNull LinearLayout linear2,
-      @NonNull LinearLayout linear4, @NonNull TextView textview1, @NonNull ViewPager viewpager1) {
+      @NonNull LinearLayout linear4, @Nullable NavigationView navview1, @NonNull TextView textview1,
+      @NonNull ViewPager viewpager1) {
     this.rootView = rootView;
     this.bottombarroot = bottombarroot;
     this.bottomnav1 = bottomnav1;
@@ -73,6 +91,7 @@ public final class MainBinding implements ViewBinding {
     this.linear1 = linear1;
     this.linear2 = linear2;
     this.linear4 = linear4;
+    this.navview1 = navview1;
     this.textview1 = textview1;
     this.viewpager1 = viewpager1;
   }
@@ -143,6 +162,9 @@ public final class MainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.navview1;
+      NavigationView navview1 = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.textview1;
       TextView textview1 = ViewBindings.findChildViewById(rootView, id);
       if (textview1 == null) {
@@ -156,7 +178,7 @@ public final class MainBinding implements ViewBinding {
       }
 
       return new MainBinding((LinearLayout) rootView, bottombarroot, bottomnav1, button1, button2,
-          linear1, linear2, linear4, textview1, viewpager1);
+          linear1, linear2, linear4, navview1, textview1, viewpager1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -138,6 +138,7 @@ id listview1
 id main
 id mainEditingPage
 id mainframe
+id navview1
 id nextButton
 id nextbutton1
 id nextbutton2

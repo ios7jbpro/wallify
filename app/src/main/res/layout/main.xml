@@ -83,6 +83,7 @@
 				android:textColor="@color/textprimary"
 				android:textSize="12sp"
 				android:textStyle="bold" />
+
 		</LinearLayout>
 
 		<com.google.android.material.bottomnavigation.BottomNavigationView
@@ -93,7 +94,9 @@
 			android:hapticFeedbackEnabled="true"
 			app:itemIconTint="@color/colorAccent"
 			app:itemTextColor="@color/textprimary"
-			app:menu="@menu/bottomnav" />
+			app:menu="@menu/bottomnav" >
+
+		</com.google.android.material.bottomnavigation.BottomNavigationView>
 
 	</LinearLayout>
 </LinearLayout>

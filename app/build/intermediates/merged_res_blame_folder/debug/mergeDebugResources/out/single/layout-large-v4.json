@@ -1,14 +1,18 @@
 [
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-77:/layout-large-v4/walldownload.xml",
-        "source": "com.ios7.wallify.app-main-80:/layout-large/walldownload.xml"
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-77:\\layout-large-v4\\activity_crop_wallpaper.xml",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout-large\\activity_crop_wallpaper.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-77:/layout-large-v4/activity_crop_wallpaper.xml",
-        "source": "com.ios7.wallify.app-main-80:/layout-large/activity_crop_wallpaper.xml"
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-77:\\layout-large-v4\\main.xml",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout-large\\main.xml"
     },
     {
         "merged": "com.ios7.wallify.app-mergeDebugResources-77:/layout-large-v4/main.xml",
         "source": "com.ios7.wallify.app-main-80:/layout-large/main.xml"
+    },
+    {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-77:\\layout-large-v4\\walldownload.xml",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout-large\\walldownload.xml"
     }
 ]

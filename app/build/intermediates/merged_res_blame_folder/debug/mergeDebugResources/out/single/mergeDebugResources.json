@@ -104,6 +104,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable\\fade.xml"
     },
     {
+        "merged": "com.ios7.wallify.app-debug-78:/layout-large_main.xml.flat",
+        "source": "com.ios7.wallify.app-main-80:/layout-large/main.xml"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_jhgg_2.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\jhgg_2.png"
     },
@@ -124,12 +128,12 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\wall_bottomright.png"
     },
     {
-        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable_roundedbginfocard.xml.flat",
-        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable\\roundedbginfocard.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\layout_abandon_dialog.xml.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout\\abandon_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable_roundedbginfocard.xml.flat",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable\\roundedbginfocard.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\layout-large_activity_crop_wallpaper.xml.flat",
@@ -156,10 +160,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout\\wallpaperlist.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-78:/layout_settings_dialog_fragment.xml.flat",
-        "source": "com.ios7.wallify.app-main-80:/layout/settings_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_ic_apps_white.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\ic_apps_white.png"
     },
@@ -176,12 +176,12 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout\\activity_crop_wallpaper.xml"
     },
     {
-        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_kotlin.png.flat",
-        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\kotlin.png"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\layout-large_main.xml.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout-large\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\drawable-xhdpi_kotlin.png.flat",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\kotlin.png"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\mipmap-xhdpi_ic_launcher.png.flat",

@@ -3653,6 +3653,7 @@ int id navigation_bar_item_labels_group 0x7f0901a3
 int id navigation_bar_item_large_label_view 0x7f0901a4
 int id navigation_bar_item_small_label_view 0x7f0901a5
 int id navigation_header_container 0x7f0901a6
+int id navview1 0x7f0902ad
 int id never 0x7f0901a7
 int id neverCompleteToEnd 0x7f0901a8
 int id neverCompleteToStart 0x7f0901a9
