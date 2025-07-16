@@ -50,6 +50,8 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
@@ -393,13 +395,14 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 									requireActivity().runOnUiThread(new Runnable() {
 										@Override
 										public void run() {
-											textview3.setText(responseBody + "\nClick me to see wallpapers repository");
+											textview3.setText(responseBody);
 										}
 									});
 								}
 							}
 						});
 					}
+					new FetchCommitMessageTask().execute();
 				}
 			});
 		} catch (Exception e) {
@@ -425,6 +428,44 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1));
 		listView.setLayoutParams(params);
 		listView.requestLayout();
+	}
+
+	// GPT generated, I can't be botheres with jsonobjects sorry not sorry
+	private class FetchCommitMessageTask extends AsyncTask<Void, Void, String> {
+		@Override
+		protected String doInBackground(Void... voids) {
+			try {
+				URL url = new URL("https://api.github.com/repos/ios7jbpro/wallify/commits/main");
+				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+				connection.setRequestProperty("User-Agent", "Wallify-App"); // GitHub requires this
+				connection.connect();
+
+				InputStream inputStream = connection.getInputStream();
+				BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+				StringBuilder jsonBuilder = new StringBuilder();
+				String line;
+				while ((line = reader.readLine()) != null) {
+					jsonBuilder.append(line);
+				}
+
+				// Convert JSON string to JSONObject
+				JSONObject json = new JSONObject(jsonBuilder.toString());
+				JSONObject commit = json.getJSONObject("commit");
+				String message = commit.getString("message");
+
+				return message;
+
+
+			} catch (Exception e) {
+				e.printStackTrace();
+				return "Failed to fetch commit message";
+			}
+		}
+		@Override
+		protected void onPostExecute(String message) {
+			// My own code to connect to TipsLoader, and add the commit message.
+			textview3.setText(textview3.getText()+"\n\nLast commit message:"+message+"\n\nClick me to see the wallpapers repository");
+		}
 	}
 
 
