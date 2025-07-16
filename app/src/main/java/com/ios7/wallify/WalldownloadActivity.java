@@ -30,11 +30,14 @@ import android.widget.TextView;
 import androidx.annotation.*;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.core.app.ShareCompat;
 import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.google.gson.Gson;
@@ -98,6 +101,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private ImageView More;
 	private TextView button1;
 	private TextView button2;
+	private TextView button3;
+	private TextView button4;
 	private TextView textViewLoading;
 	private ProgressBar progress_bar_loading;
 	private LinearLayout color1;
@@ -181,6 +186,8 @@ public class WalldownloadActivity extends AppCompatActivity {
 		More = findViewById(R.id.More);
 		button1 = findViewById(R.id.button1);
 		button2 = findViewById(R.id.button2);
+		button3 = findViewById(R.id.button3);
+		button4 = findViewById(R.id.button4);
 		color1 = findViewById(R.id.color1);
 		color2 = findViewById(R.id.color2);
 		color3 = findViewById(R.id.color3);
@@ -273,6 +280,53 @@ public class WalldownloadActivity extends AppCompatActivity {
 					startActivity(legacyWallLauncher);
 					return true;
 				}
+			}
+		});
+
+		button3.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View _view){
+				Log.d("SHARE", "Attempting to share:"+config.getString("repo", "")+getIntent().getStringExtra("wallpaperLink"));
+				ShareCompat.IntentBuilder
+						.from(WalldownloadActivity.this)
+						.setText(config.getString("repo", "")+getIntent().getStringExtra("wallpaperLink"))
+						.setType("text/plain")
+						.setChooserTitle("Share URL with")
+						.startChooser();
+			}
+		});
+
+		button4.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v){
+				String imageUrl = config.getString("repo", "")+getIntent().getStringExtra("wallpaperLink");
+
+				Glide.with(v.getContext())
+						.asFile()
+						.load(imageUrl)
+						.into(new CustomTarget<File>() {
+							@Override
+							public void onResourceReady(@NonNull File resource, @Nullable Transition<? super File> transition) {
+								Uri contentUri = FileProvider.getUriForFile(
+										v.getContext(),
+										"com.ios7.wallify.fileprovider",
+										resource
+								);
+
+								if (contentUri != null) {
+									Intent shareIntent = new Intent(Intent.ACTION_SEND);
+									shareIntent.setType("image/jpeg");
+									shareIntent.putExtra(Intent.EXTRA_STREAM, contentUri);
+									shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+									v.getContext().startActivity(Intent.createChooser(shareIntent, "Share Image"));
+								}
+							}
+
+							@Override
+							public void onLoadCleared(@Nullable Drawable placeholder) {
+								// no cleanup needed here for this use case
+							}
+						});
 			}
 		});
 

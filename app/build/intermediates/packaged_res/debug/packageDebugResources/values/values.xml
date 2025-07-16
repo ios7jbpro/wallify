@@ -24,6 +24,8 @@
     <string name="ReinitSetup">Reinitiate setup screen</string>
     <string name="SetWall">Set wallpaper</string>
     <string name="SettingsTab">Settings</string>
+    <string name="ShareIMAGE">Share(Image)</string>
+    <string name="ShareURL">Share(URL)</string>
     <string name="WallColors">Colors</string>
     <string name="WallPreview">Preview</string>
     <string name="WallpaperTab">Wallpapers</string>

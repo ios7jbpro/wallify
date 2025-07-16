@@ -8,7 +8,7 @@
 
 	<LinearLayout
 		android:id="@+id/linear1"
-		android:layout_width="250dp"
+		android:layout_width="210dp"
 		android:layout_height="match_parent"
 		android:background="@color/backgroundviolent"
 		android:orientation="vertical">
@@ -42,13 +42,22 @@
 
 			<com.google.android.material.navigation.NavigationView
 				android:id="@+id/navview1"
-				android:layout_width="match_parent"
+				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:background="@color/backgroundviolent"
 				app:itemBackground="@color/backgroundviolent"
 				app:itemIconTint="@color/textprimary"
 				app:itemTextColor="@color/textprimary"
 				app:menu="@menu/bottomnav" />
+
+			<TextView
+				android:id="@+id/textView15"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:alpha="0.6"
+				android:text="Tablet interface is still under work.\nThings might be broken.\nOr janky."
+				android:textSize="12sp" />
 
 			<LinearLayout
 				android:id="@+id/linear4"

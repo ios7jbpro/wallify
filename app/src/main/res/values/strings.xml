@@ -23,4 +23,6 @@
     <string name="Download">Download</string>
     <string name="SetWall">Set wallpaper</string>
     <string name="CropWall">Crop</string>
+    <string name="ShareURL">Share(URL)</string>
+    <string name="ShareIMAGE">Share(Image)</string>
 </resources>

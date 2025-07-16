@@ -193,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
 		// Check for debuuger/debug build
 		if (android.os.Debug.isDebuggerConnected()) {
 			config.edit().putString("debugMode", "1").commit();
-			textview1.setText("Wallify(DEBUGGER DETECTED, DO NOT USE THIS IN PRODUCTION)");
+			textview1.setText("WALLIFY");
 			config.edit().putString("disableanims", "1").commit();
 			config.edit().putString("disableblur", "1").commit();
 		} else  {

@@ -72,6 +72,22 @@ public final class MainBinding implements ViewBinding {
   @Nullable
   public final NavigationView navview1;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView textView15;
+
   @NonNull
   public final TextView textview1;
 
@@ -81,8 +97,8 @@ public final class MainBinding implements ViewBinding {
   private MainBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout bottombarroot,
       @Nullable BottomNavigationView bottomnav1, @NonNull TextView button1,
       @NonNull TextView button2, @NonNull LinearLayout linear1, @NonNull LinearLayout linear2,
-      @NonNull LinearLayout linear4, @Nullable NavigationView navview1, @NonNull TextView textview1,
-      @NonNull ViewPager viewpager1) {
+      @NonNull LinearLayout linear4, @Nullable NavigationView navview1,
+      @Nullable TextView textView15, @NonNull TextView textview1, @NonNull ViewPager viewpager1) {
     this.rootView = rootView;
     this.bottombarroot = bottombarroot;
     this.bottomnav1 = bottomnav1;
@@ -92,6 +108,7 @@ public final class MainBinding implements ViewBinding {
     this.linear2 = linear2;
     this.linear4 = linear4;
     this.navview1 = navview1;
+    this.textView15 = textView15;
     this.textview1 = textview1;
     this.viewpager1 = viewpager1;
   }
@@ -165,6 +182,9 @@ public final class MainBinding implements ViewBinding {
       id = R.id.navview1;
       NavigationView navview1 = ViewBindings.findChildViewById(rootView, id);
 
+      id = R.id.textView15;
+      TextView textView15 = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.textview1;
       TextView textview1 = ViewBindings.findChildViewById(rootView, id);
       if (textview1 == null) {
@@ -178,7 +198,7 @@ public final class MainBinding implements ViewBinding {
       }
 
       return new MainBinding((LinearLayout) rootView, bottombarroot, bottomnav1, button1, button2,
-          linear1, linear2, linear4, navview1, textview1, viewpager1);
+          linear1, linear2, linear4, navview1, textView15, textview1, viewpager1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

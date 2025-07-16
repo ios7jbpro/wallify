@@ -3366,6 +3366,8 @@ id bounceEnd
 id bounceStart
 id button1
 id button2
+id button3
+id button4
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3836,6 +3838,7 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
 id textView2
 id textView3
 id textView4
@@ -4146,6 +4149,8 @@ string Loading
 string ReinitSetup
 string SetWall
 string SettingsTab
+string ShareIMAGE
+string ShareURL
 string WallColors
 string WallPreview
 string WallpaperTab
@@ -5714,4 +5719,5 @@ styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
+xml file_paths
 xml library_file_paths

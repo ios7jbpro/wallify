@@ -296,6 +296,7 @@ public class WallpapersFragmentActivity extends Fragment {
 				Log.d("WallpaperDebug", "Setting selected wall to = '" + String.valueOf((long)(_position)) + "'");
 				// Set wallpaperName on config
 				config.edit().putString("wallpaperName", walllist.get((int)_position).get("name").toString()).commit();
+				launchWallPreview.putExtra("wallpaperLink", walllist.get((int) _position).get("link").toString());
 				launchWallPreview.setClass(getContext().getApplicationContext(), WalldownloadActivity.class);
 				startActivity(launchWallPreview);
 			}

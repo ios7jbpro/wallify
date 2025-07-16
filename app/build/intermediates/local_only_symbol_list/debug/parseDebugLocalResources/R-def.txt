@@ -75,6 +75,8 @@ id bottombarroot
 id bottomnav1
 id button1
 id button2
+id button3
+id button4
 id cancelbutton
 id circleimageview1
 id closebtn
@@ -170,6 +172,7 @@ id textView11
 id textView12
 id textView13
 id textView14
+id textView15
 id textView2
 id textView3
 id textView4
@@ -229,6 +232,8 @@ string Loading
 string ReinitSetup
 string SetWall
 string SettingsTab
+string ShareIMAGE
+string ShareURL
 string WallColors
 string WallPreview
 string WallpaperTab
@@ -244,3 +249,4 @@ style AppTheme
 style AppTheme.AppBarOverlay
 style AppTheme.FullScreen
 style AppTheme.PopupOverlay
+xml file_paths

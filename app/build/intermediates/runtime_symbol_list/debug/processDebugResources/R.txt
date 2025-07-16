@@ -3365,6 +3365,8 @@ int id bounceEnd 0x7f090083
 int id bounceStart 0x7f090084
 int id button1 0x7f090085
 int id button2 0x7f090086
+int id button3 0x7f0902af
+int id button4 0x7f0902b0
 int id buttonPanel 0x7f090087
 int id cache_measures 0x7f090088
 int id callMeasure 0x7f090089
@@ -3835,6 +3837,7 @@ int id textView11 0x7f090258
 int id textView12 0x7f090259
 int id textView13 0x7f09025a
 int id textView14 0x7f09025b
+int id textView15 0x7f0902ae
 int id textView2 0x7f09025c
 int id textView3 0x7f09025d
 int id textView4 0x7f09025e
@@ -4145,6 +4148,8 @@ int string Loading 0x7f110007
 int string ReinitSetup 0x7f110008
 int string SetWall 0x7f110009
 int string SettingsTab 0x7f11000a
+int string ShareIMAGE 0x7f110114
+int string ShareURL 0x7f110115
 int string WallColors 0x7f11000b
 int string WallPreview 0x7f11000c
 int string WallpaperTab 0x7f11000d
@@ -7739,4 +7744,5 @@ int styleable ViewTransition_upDuration 13
 int styleable ViewTransition_viewTransitionMode 14
 int[] styleable include { 0x7f03013c }
 int styleable include_constraintSet 0
+int xml file_paths 0x7f140001
 int xml library_file_paths 0x7f140000

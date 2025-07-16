@@ -308,9 +308,10 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				String timeoutval = config.getString("timeout", "");
 				String colorextractionval = ("(enforced on debug)" + config.getString("colorextraction", ""));
 				String disableanimsval = ("(enforced on debug)" + config.getString("disableanims", ""));
+				String disableblurval = ("(enforced on debug)" + config.getString("disableblur", ""));
 				String setupcompleteval = config.getString("setupcomplete", "");
 				String debugmodeval = config.getString("debugMode", "");
-				String endOutput = ("repo:" + repoval + "\ntimeoutval:" + timeoutval + "\ncolorextraction:" + colorextractionval + "\ndisableanims:" + disableanimsval + "\nsetupcomplete:" + setupcompleteval + "\ndebugMode:" + debugmodeval + "\n*USING DEBUG WILL RESET SOME OF THE FLAGS*");
+				String endOutput = ("repo:" + repoval + "\ntimeoutval:" + timeoutval + "\ncolorextraction:" + colorextractionval + "\ndisableanims:" + disableanimsval + "\ndisableblur:" + disableblurval + "\nsetupcomplete:" + setupcompleteval + "\ndebugMode:" + debugmodeval + "\n*USING DEBUG WILL RESET SOME OF THE FLAGS*");
 				textview3.setText(endOutput);
 				switchDisableAnims.setChecked(true);
 				switchColorPreviews.setChecked(true);

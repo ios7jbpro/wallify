@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-101:12
-INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-101:12
-INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-101:12
-INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-101:12
+ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:2:1-111:12
 MERGED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:2:1-36:12
 MERGED from [androidx.databinding:viewbinding:8.7.3] C:\Users\baris\.gradle\caches\8.9\transforms\175fe1849b3e626ac4088d117a2318e9\transformed\viewbinding-8.7.3\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common-android:2.9.0] C:\Users\baris\.gradle\caches\8.9\transforms\db08e701c35e4f9cbac5857bc1056eba\transformed\navigation-common-release\AndroidManifest.xml:17:1-22:12
@@ -136,8 +136,8 @@ ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xm
 	android:name
 		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:10:22-75
 application
-ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:12:5-99:19
-INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:12:5-99:19
+ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:12:5-109:19
+INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:12:5-109:19
 MERGED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:20:5-34:19
 MERGED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:20:5-34:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\baris\.gradle\caches\8.9\transforms\517a29f9572219eff507b09edda77ea2\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
@@ -340,12 +340,28 @@ MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\baris\.gradle\caches\8.9\tra
 		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:93:17-49
 	android:name
 		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:92:17-75
-uses-library#org.apache.http.legacy
-ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:96:9-98:40
-	android:required
+provider#androidx.core.content.FileProvider
+ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:95:9-103:20
+	android:grantUriPermissions
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:99:13-47
+	android:authorities
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:97:13-64
+	android:exported
 		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:98:13-37
 	android:name
-		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:97:13-50
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:96:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:100:13-102:54
+	android:resource
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:102:17-51
+	android:name
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:101:17-67
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:106:9-108:40
+	android:required
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:108:13-37
+	android:name
+		ADDED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml:107:13-50
 uses-sdk
 INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\baris\StudioProjects\wallify\app\src\main\AndroidManifest.xml
@@ -582,12 +598,6 @@ ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\c
 		ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:24:13-37
 	android:name
 		ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:22:13-63
-meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:26:13-28:62
-	android:resource
-		ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:28:17-59
-	android:name
-		ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:27:17-67
 activity#com.canhub.cropper.CropImageActivity
 ADDED from [com.vanniktech:android-image-cropper:4.6.0] C:\Users\baris\.gradle\caches\8.9\transforms\72cb10608144cd39947f6d2b41c9c643\transformed\android-image-cropper-4.6.0\AndroidManifest.xml:31:9-33:39
 	android:exported

@@ -65,6 +65,12 @@ public final class WalldownloadBinding implements ViewBinding {
   public final TextView button2;
 
   @NonNull
+  public final TextView button3;
+
+  @NonNull
+  public final TextView button4;
+
+  @NonNull
   public final LinearLayout color1;
 
   @NonNull
@@ -189,12 +195,13 @@ public final class WalldownloadBinding implements ViewBinding {
       @NonNull LinearLayout LinearLayout1, @NonNull LinearLayout LinearLayout4,
       @NonNull LinearLayout LinearLayout5, @NonNull ImageView Massage, @NonNull ImageView More,
       @NonNull ImageView Phone, @NonNull LinearLayout SearchBg, @NonNull ImageView Translator,
-      @NonNull TextView button1, @NonNull TextView button2, @NonNull LinearLayout color1,
-      @NonNull LinearLayout color2, @NonNull LinearLayout color3, @NonNull LinearLayout color4,
-      @NonNull LinearLayout color5, @NonNull LinearLayout color6,
-      @NonNull LinearLayout colorpreviews, @NonNull LinearLayout colorpreviewsloading,
-      @NonNull ImageView imageview1, @NonNull ImageView imageview3, @NonNull LinearLayout linear1,
-      @NonNull FrameLayout linear10, @NonNull LinearLayout linear11, @NonNull LinearLayout linear14,
+      @NonNull TextView button1, @NonNull TextView button2, @NonNull TextView button3,
+      @NonNull TextView button4, @NonNull LinearLayout color1, @NonNull LinearLayout color2,
+      @NonNull LinearLayout color3, @NonNull LinearLayout color4, @NonNull LinearLayout color5,
+      @NonNull LinearLayout color6, @NonNull LinearLayout colorpreviews,
+      @NonNull LinearLayout colorpreviewsloading, @NonNull ImageView imageview1,
+      @NonNull ImageView imageview3, @NonNull LinearLayout linear1, @NonNull FrameLayout linear10,
+      @NonNull LinearLayout linear11, @NonNull LinearLayout linear14,
       @NonNull LinearLayout linear15, @NonNull LinearLayout linear16,
       @NonNull LinearLayout linear17, @NonNull LinearLayout linear18,
       @NonNull LinearLayout linear19, @NonNull LinearLayout linear2, @NonNull LinearLayout linear20,
@@ -220,6 +227,8 @@ public final class WalldownloadBinding implements ViewBinding {
     this.Translator = Translator;
     this.button1 = button1;
     this.button2 = button2;
+    this.button3 = button3;
+    this.button4 = button4;
     this.color1 = color1;
     this.color2 = color2;
     this.color3 = color3;
@@ -370,6 +379,18 @@ public final class WalldownloadBinding implements ViewBinding {
       id = R.id.button2;
       TextView button2 = ViewBindings.findChildViewById(rootView, id);
       if (button2 == null) {
+        break missingId;
+      }
+
+      id = R.id.button3;
+      TextView button3 = ViewBindings.findChildViewById(rootView, id);
+      if (button3 == null) {
+        break missingId;
+      }
+
+      id = R.id.button4;
+      TextView button4 = ViewBindings.findChildViewById(rootView, id);
+      if (button4 == null) {
         break missingId;
       }
 
@@ -615,10 +636,10 @@ public final class WalldownloadBinding implements ViewBinding {
 
       return new WalldownloadBinding((LinearLayout) rootView, Game, ImageView4, ImageView5,
           ImageView6, LinearLayout1, LinearLayout4, LinearLayout5, Massage, More, Phone, SearchBg,
-          Translator, button1, button2, color1, color2, color3, color4, color5, color6,
-          colorpreviews, colorpreviewsloading, imageview1, imageview3, linear1, linear10, linear11,
-          linear14, linear15, linear16, linear17, linear18, linear19, linear2, linear20, linear4,
-          linear5, linear6, linear7, linear8, linear9, linearpreviewcard, previewStatusBar,
+          Translator, button1, button2, button3, button4, color1, color2, color3, color4, color5,
+          color6, colorpreviews, colorpreviewsloading, imageview1, imageview3, linear1, linear10,
+          linear11, linear14, linear15, linear16, linear17, linear18, linear19, linear2, linear20,
+          linear4, linear5, linear6, linear7, linear8, linear9, linearpreviewcard, previewStatusBar,
           progressBarLoading, textView2, textView3, textView5, textViewCrop, textViewLoading,
           textview1, textview2, textview3, textview4, time2);
     }

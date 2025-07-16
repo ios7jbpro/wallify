@@ -42,6 +42,34 @@
 			android:padding="8dp">
 
 			<TextView
+				android:id="@+id/button4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:layout_weight="1"
+				android:background="@drawable/activetab"
+				android:gravity="center_horizontal|center_vertical"
+				android:padding="16dp"
+				android:text="@string/ShareIMAGE"
+				android:textColor="@color/textprimary"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+
+			<TextView
+				android:id="@+id/button3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:layout_weight="1"
+				android:background="@drawable/activetab"
+				android:gravity="center_horizontal|center_vertical"
+				android:padding="16dp"
+				android:text="@string/ShareURL"
+				android:textColor="@color/textprimary"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+
+			<TextView
 				android:id="@+id/button1"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -384,7 +412,7 @@
 						android:background="@drawable/roundedbg"
 						android:foreground="?attr/selectableItemBackground"
 						android:padding="6dp"
-						android:text="@string/Credits"
+						android:text="@string/CropWall"
 						android:textColor="@color/textprimary"
 						android:textStyle="bold" />
 				</LinearLayout>
