@@ -3865,6 +3865,7 @@ int id textview40 0x7f090277
 int id textview5 0x7f090278
 int id textview8 0x7f090279
 int id textviewReinitSetup 0x7f09027a
+int id textviewtipsloading 0x7f0902ac
 int id time 0x7f09027b
 int id time2 0x7f09027c
 int id title 0x7f09027d

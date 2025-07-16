@@ -3866,6 +3866,7 @@ id textview40
 id textview5
 id textview8
 id textviewReinitSetup
+id textviewtipsloading
 id time
 id time2
 id title

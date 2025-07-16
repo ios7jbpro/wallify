@@ -16,8 +16,8 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\layout\\activity_crop_wallpaper.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-77:/layout/wallpaperlist.xml",
-        "source": "com.ios7.wallify.app-main-80:/layout/wallpaperlist.xml"
+        "merged": "com.ios7.wallify.app-mergeDebugResources-77:/layout/settings_dialog_fragment.xml",
+        "source": "com.ios7.wallify.app-main-80:/layout/settings_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-77:\\layout\\setwall1.xml",

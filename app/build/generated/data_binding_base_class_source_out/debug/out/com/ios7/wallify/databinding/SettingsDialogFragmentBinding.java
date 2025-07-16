@@ -89,6 +89,9 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   @NonNull
   public final TextView textviewReinitSetup;
 
+  @NonNull
+  public final TextView textviewtipsloading;
+
   private SettingsDialogFragmentBinding(@NonNull LinearLayout rootView,
       @NonNull LinearLayout LinearOptionsContainer, @NonNull ImageView imageView5,
       @NonNull CircleImageView imageView6, @NonNull ImageView imageView8,
@@ -99,7 +102,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       @NonNull Switch switchDisableAnims, @NonNull Switch switchDisableBlur,
       @NonNull TextView textView14, @NonNull TextView textview2, @NonNull TextView textview3,
       @NonNull TextView textview40, @NonNull TextView textview5, @NonNull TextView textview8,
-      @NonNull TextView textviewReinitSetup) {
+      @NonNull TextView textviewReinitSetup, @NonNull TextView textviewtipsloading) {
     this.rootView = rootView;
     this.LinearOptionsContainer = LinearOptionsContainer;
     this.imageView5 = imageView5;
@@ -123,6 +126,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.textview5 = textview5;
     this.textview8 = textview8;
     this.textviewReinitSetup = textviewReinitSetup;
+    this.textviewtipsloading = textviewtipsloading;
   }
 
   @Override
@@ -284,11 +288,17 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textviewtipsloading;
+      TextView textviewtipsloading = ViewBindings.findChildViewById(rootView, id);
+      if (textviewtipsloading == null) {
+        break missingId;
+      }
+
       return new SettingsDialogFragmentBinding((LinearLayout) rootView, LinearOptionsContainer,
           imageView5, imageView6, imageView8, linear1, linear2, linear30, linearColorPreviews,
           linearDisableAnims, linearDisableBlur, linearReinitSetup, listView, switchColorPreviews,
           switchDisableAnims, switchDisableBlur, textView14, textview2, textview3, textview40,
-          textview5, textview8, textviewReinitSetup);
+          textview5, textview8, textviewReinitSetup, textviewtipsloading);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

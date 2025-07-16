@@ -1,46 +1,25 @@
 package com.ios7.wallify;
 
-import android.animation.*;
 import android.app.*;
 import android.app.Activity;
 import android.content.*;
 import android.content.ClipboardManager;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.content.res.*;
 import android.graphics.*;
 import android.graphics.drawable.*;
-import android.media.*;
 import android.net.*;
 import android.os.*;
-import android.text.*;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.text.style.*;
 import android.util.*;
 import android.view.*;
-import android.view.View.*;
-import android.view.animation.*;
-import android.webkit.*;
 import android.widget.*;
-import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.*;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.privacysandbox.tools.core.model.Method;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.ios7.wallify.MyClasses.EzIntent;
 import com.ios7.wallify.MyClasses.EzTimer;
 import com.ios7.wallify.MyClasses.EzTimerLooped;
-import com.squareup.picasso.Picasso;
 
 import de.hdodenhof.circleimageview.*;
 import okhttp3.Call;
@@ -52,9 +31,8 @@ import okhttp3.Response;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.text.*;
 import java.util.*;
-import java.util.regex.*;
+
 import org.json.*;
 
 public class SettingsDialogFragmentActivity extends DialogFragment {
@@ -67,6 +45,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private LinearLayout linear5;
 	private CircleImageView circleimageview1;
 	private TextView textview4;
+	private TextView textviewtipsloading;
 	private Switch switchColorPreviews;
 	private Switch switchDisableAnims;
 	private Switch switchDisableBlur;
@@ -94,6 +73,8 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		textview5 = _view.findViewById(R.id.textview5);
 		textview2 = _view.findViewById(R.id.textview2);
 		textview3 = _view.findViewById(R.id.textview3);
+		textviewtipsloading = _view.findViewById(R.id.textviewtipsloading);
+		textview3.setVisibility(View.GONE);
 		linear5 = _view.findViewById(R.id.linear5);
 		switchColorPreviews = _view.findViewById(R.id.switchColorPreviews);
 		switchDisableAnims = _view.findViewById(R.id.switchDisableAnims);
@@ -318,6 +299,8 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			textview2.setText("DEBUG");
 			linear30.setVisibility(View.GONE);
 			listView.setVisibility(View.GONE);
+			textviewtipsloading.setVisibility(View.GONE);
+			textview3.setVisibility(View.VISIBLE);
 			textview3.setText("Loading debug values...\nStarting a timer...");
 			EzTimerLooped loopedTimer15 = new EzTimerLooped();
 			loopedTimer15.start(50, () -> {
@@ -355,8 +338,10 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				public void onFailure(Call call, IOException e) {
 					// Sub-workaround
 					try {
+						textviewtipsloading.setText("Cannot reach tips service");
 						textview3.setText("Cannot reach tips service");
 					} catch (Exception ex) {
+						textviewtipsloading.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs and report this.");
 						textview3.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs and report this.");
 						Log.e("TipsLoader","Crash detected:" + ex);
 					}
@@ -384,6 +369,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 						client.newCall(request).enqueue(new Callback() {
 							@Override
 							public void onFailure(Call call, IOException e) {
+								textviewtipsloading.setText("Cannot reach tips service");
 								textview3.setText("Cannot reach tips service");
 								e.printStackTrace();
 							}
@@ -432,6 +418,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 
 	// GPT generated, I can't be botheres with jsonobjects sorry not sorry
 	private class FetchCommitMessageTask extends AsyncTask<Void, Void, String> {
+		boolean tipsFailed;
 		@Override
 		protected String doInBackground(Void... voids) {
 			try {
@@ -453,8 +440,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				JSONObject commit = json.getJSONObject("commit");
 				String message = commit.getString("message");
 
-				return message;
+				tipsFailed = false;
 
+				return message;
 
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -464,7 +452,13 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		@Override
 		protected void onPostExecute(String message) {
 			// My own code to connect to TipsLoader, and add the commit message.
-			textview3.setText(textview3.getText()+"\n\nLast commit message:"+message+"\n\nClick me to see the wallpapers repository");
+			if (tipsFailed == false) {
+				textview3.setText(textview3.getText() + "\n\nLast commit message:" + message + "\n\nClick me to see the wallpapers repository");
+				textviewtipsloading.setVisibility(View.GONE);
+				textview3.setVisibility(View.VISIBLE);
+			} else {
+				textviewtipsloading.setText("TipsLoader service failed, check logs");
+			}
 		}
 	}
 
