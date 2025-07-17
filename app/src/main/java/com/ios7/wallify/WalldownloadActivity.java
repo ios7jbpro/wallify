@@ -663,7 +663,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 			}
 		}, (int)(Double.parseDouble(config.getString("timeout", "")))); */
 
-		if (config.getString("wallTutComplete", "") == "1") {
+		if (config.getString("wallTutComplete", "").equals("1")) {
 			// Do nothing
 		} else {
 			new TapTargetSequence(this)
