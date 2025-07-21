@@ -46,6 +46,8 @@ import com.getkeepsafe.taptargetview.TapTargetView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.ios7.wallify.MyClasses.EzFade;
+
 import java.io.*;
 import java.nio.file.attribute.FileTime;
 import java.text.*;
@@ -63,7 +65,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private ArrayList<HashMap<String, Object>> walljsonlistmap = new ArrayList<>();
 	
 	private LinearLayout linear1;
-	private LinearLayout linear6;
+	private LinearLayout linearloadhires;
 	private LinearLayout linear2;
 	private LinearLayout linear5;
 	private LinearLayout linear4;
@@ -146,7 +148,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 
 	private void initialize(Bundle _savedInstanceState) {
 		linear1 = findViewById(R.id.linear1);
-		linear6 = findViewById(R.id.linear6);
+		linearloadhires = findViewById(R.id.linearloadhires);
 		linear2 = findViewById(R.id.linear2);
 		linear5 = findViewById(R.id.linear5);
 		linear4 = findViewById(R.id.linear4);
@@ -304,9 +306,9 @@ public class WalldownloadActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v){
 				String imageUrl = config.getString("repo", "")+getIntent().getStringExtra("wallpaperLink");
-				config.edit().putString("isImageReady", "0").commit();
-				Intent intent = new Intent(getApplicationContext(), ShareImageLoader.class);
-				startActivity(intent);
+				// linear1.setVisibility(View.GONE);
+				// linearloadhires.setVisibility(View.VISIBLE);
+				EzFade.crossfade(linear1, linearloadhires);
 
 				Glide.with(v.getContext())
 						.asFile()
@@ -314,7 +316,9 @@ public class WalldownloadActivity extends AppCompatActivity {
 						.into(new CustomTarget<File>() {
 							@Override
 							public void onResourceReady(@NonNull File resource, @Nullable Transition<? super File> transition) {
-								config.edit().putString("isImageReady", "1").commit();
+								// linear1.setVisibility(View.VISIBLE);
+								// linearloadhires.setVisibility(View.GONE);
+								EzFade.crossfade(linearloadhires, linear1);
 								Uri contentUri = FileProvider.getUriForFile(
 										v.getContext(),
 										"com.ios7.wallify.fileprovider",

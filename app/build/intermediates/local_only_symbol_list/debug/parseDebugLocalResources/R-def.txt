@@ -137,6 +137,7 @@ id linearDisableBlur
 id linearManualDebug
 id linearReinitSetup
 id linearRestartApp
+id linearloadhires
 id linearloading
 id linearpreviewcard
 id listView
@@ -157,6 +158,7 @@ id progressBar2
 id progressBar3
 id progressBar4
 id progressBar5
+id progressBar6
 id progress_bar_loading
 id progressbar1
 id quitGui
@@ -180,6 +182,7 @@ id textView14
 id textView15
 id textView16
 id textView17
+id textView18
 id textView2
 id textView3
 id textView4

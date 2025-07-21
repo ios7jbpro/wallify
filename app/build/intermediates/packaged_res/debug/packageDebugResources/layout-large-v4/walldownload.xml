@@ -42,6 +42,20 @@
 			android:padding="8dp">
 
 			<TextView
+				android:id="@+id/textViewCrop"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="8dp"
+				android:layout_weight="1"
+				android:background="@drawable/activetab"
+				android:gravity="center_horizontal|center_vertical"
+				android:padding="16dp"
+				android:text="@string/CropWall"
+				android:textColor="@color/textprimary"
+				android:textSize="12sp"
+				android:textStyle="bold" />
+
+			<TextView
 				android:id="@+id/button4"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
@@ -404,17 +418,6 @@
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="horizontal">
 
-					<TextView
-						android:id="@+id/textViewCrop"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:layout_weight="0"
-						android:background="@drawable/roundedbg"
-						android:foreground="?attr/selectableItemBackground"
-						android:padding="6dp"
-						android:text="@string/CropWall"
-						android:textColor="@color/textprimary"
-						android:textStyle="bold" />
 				</LinearLayout>
 
 				<TextView
@@ -587,10 +590,4 @@
 		</LinearLayout>
 	</LinearLayout>
 
-	<LinearLayout
-		android:id="@+id/linear6"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="horizontal"
-		android:padding="8dp" />
 </LinearLayout>

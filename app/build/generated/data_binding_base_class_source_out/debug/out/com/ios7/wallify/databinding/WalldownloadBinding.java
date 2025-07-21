@@ -140,9 +140,6 @@ public final class WalldownloadBinding implements ViewBinding {
   public final LinearLayout linear5;
 
   @NonNull
-  public final LinearLayout linear6;
-
-  @NonNull
   public final LinearLayout linear7;
 
   @NonNull
@@ -151,14 +148,62 @@ public final class WalldownloadBinding implements ViewBinding {
   @NonNull
   public final LinearLayout linear9;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout linearloadhires;
+
   @NonNull
   public final LinearLayout linearpreviewcard;
 
   @NonNull
   public final LinearLayout previewStatusBar;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ProgressBar progressBar6;
+
   @NonNull
   public final ProgressBar progressBarLoading;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final TextView textView18;
 
   @NonNull
   public final TextView textView2;
@@ -205,13 +250,15 @@ public final class WalldownloadBinding implements ViewBinding {
       @NonNull LinearLayout linear15, @NonNull LinearLayout linear16,
       @NonNull LinearLayout linear17, @NonNull LinearLayout linear18,
       @NonNull LinearLayout linear19, @NonNull LinearLayout linear2, @NonNull LinearLayout linear20,
-      @NonNull LinearLayout linear4, @NonNull LinearLayout linear5, @NonNull LinearLayout linear6,
-      @NonNull LinearLayout linear7, @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
-      @NonNull LinearLayout linearpreviewcard, @NonNull LinearLayout previewStatusBar,
-      @NonNull ProgressBar progressBarLoading, @NonNull TextView textView2,
-      @NonNull TextView textView3, @NonNull TextView textView5, @NonNull TextView textViewCrop,
-      @NonNull TextView textViewLoading, @NonNull TextView textview1, @NonNull TextView textview2,
-      @NonNull TextView textview3, @NonNull TextView textview4, @NonNull TextView time2) {
+      @NonNull LinearLayout linear4, @NonNull LinearLayout linear5, @NonNull LinearLayout linear7,
+      @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
+      @Nullable LinearLayout linearloadhires, @NonNull LinearLayout linearpreviewcard,
+      @NonNull LinearLayout previewStatusBar, @Nullable ProgressBar progressBar6,
+      @NonNull ProgressBar progressBarLoading, @Nullable TextView textView18,
+      @NonNull TextView textView2, @NonNull TextView textView3, @NonNull TextView textView5,
+      @NonNull TextView textViewCrop, @NonNull TextView textViewLoading,
+      @NonNull TextView textview1, @NonNull TextView textview2, @NonNull TextView textview3,
+      @NonNull TextView textview4, @NonNull TextView time2) {
     this.rootView = rootView;
     this.Game = Game;
     this.ImageView4 = ImageView4;
@@ -252,13 +299,15 @@ public final class WalldownloadBinding implements ViewBinding {
     this.linear20 = linear20;
     this.linear4 = linear4;
     this.linear5 = linear5;
-    this.linear6 = linear6;
     this.linear7 = linear7;
     this.linear8 = linear8;
     this.linear9 = linear9;
+    this.linearloadhires = linearloadhires;
     this.linearpreviewcard = linearpreviewcard;
     this.previewStatusBar = previewStatusBar;
+    this.progressBar6 = progressBar6;
     this.progressBarLoading = progressBarLoading;
+    this.textView18 = textView18;
     this.textView2 = textView2;
     this.textView3 = textView3;
     this.textView5 = textView5;
@@ -532,12 +581,6 @@ public final class WalldownloadBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linear6;
-      LinearLayout linear6 = ViewBindings.findChildViewById(rootView, id);
-      if (linear6 == null) {
-        break missingId;
-      }
-
       id = R.id.linear7;
       LinearLayout linear7 = ViewBindings.findChildViewById(rootView, id);
       if (linear7 == null) {
@@ -556,6 +599,9 @@ public final class WalldownloadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearloadhires;
+      LinearLayout linearloadhires = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.linearpreviewcard;
       LinearLayout linearpreviewcard = ViewBindings.findChildViewById(rootView, id);
       if (linearpreviewcard == null) {
@@ -568,11 +614,17 @@ public final class WalldownloadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar6;
+      ProgressBar progressBar6 = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.progress_bar_loading;
       ProgressBar progressBarLoading = ViewBindings.findChildViewById(rootView, id);
       if (progressBarLoading == null) {
         break missingId;
       }
+
+      id = R.id.textView18;
+      TextView textView18 = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
@@ -639,9 +691,10 @@ public final class WalldownloadBinding implements ViewBinding {
           Translator, button1, button2, button3, button4, color1, color2, color3, color4, color5,
           color6, colorpreviews, colorpreviewsloading, imageview1, imageview3, linear1, linear10,
           linear11, linear14, linear15, linear16, linear17, linear18, linear19, linear2, linear20,
-          linear4, linear5, linear6, linear7, linear8, linear9, linearpreviewcard, previewStatusBar,
-          progressBarLoading, textView2, textView3, textView5, textViewCrop, textViewLoading,
-          textview1, textview2, textview3, textview4, time2);
+          linear4, linear5, linear7, linear8, linear9, linearloadhires, linearpreviewcard,
+          previewStatusBar, progressBar6, progressBarLoading, textView18, textView2, textView3,
+          textView5, textViewCrop, textViewLoading, textview1, textview2, textview3, textview4,
+          time2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

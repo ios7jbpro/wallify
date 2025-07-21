@@ -3579,6 +3579,7 @@ int id linearDisableBlur 0x7f090157
 int id linearManualDebug 0x7f090158
 int id linearReinitSetup 0x7f090159
 int id linearRestartApp 0x7f09015a
+int id linearloadhires 0x7f0902b8
 int id linearloading 0x7f09015b
 int id linearpreviewcard 0x7f09015c
 int id listMode 0x7f09015d
@@ -3721,6 +3722,7 @@ int id progressBar2 0x7f0901e5
 int id progressBar3 0x7f0901e6
 int id progressBar4 0x7f0901e7
 int id progressBar5 0x7f0901e8
+int id progressBar6 0x7f0902b9
 int id progress_bar_loading 0x7f0901e9
 int id progress_circular 0x7f0901ea
 int id progress_horizontal 0x7f0901eb
@@ -3845,6 +3847,7 @@ int id textView14 0x7f090261
 int id textView15 0x7f090262
 int id textView16 0x7f090263
 int id textView17 0x7f090264
+int id textView18 0x7f0902ba
 int id textView2 0x7f090265
 int id textView3 0x7f090266
 int id textView4 0x7f090267
