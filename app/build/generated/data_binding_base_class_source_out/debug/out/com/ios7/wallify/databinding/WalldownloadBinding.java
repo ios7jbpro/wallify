@@ -148,20 +148,7 @@ public final class WalldownloadBinding implements ViewBinding {
   @NonNull
   public final LinearLayout linear9;
 
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-large/</li>
-   * </ul>
-   */
-  @Nullable
+  @NonNull
   public final LinearLayout linearloadhires;
 
   @NonNull
@@ -170,39 +157,13 @@ public final class WalldownloadBinding implements ViewBinding {
   @NonNull
   public final LinearLayout previewStatusBar;
 
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-large/</li>
-   * </ul>
-   */
-  @Nullable
+  @NonNull
   public final ProgressBar progressBar6;
 
   @NonNull
   public final ProgressBar progressBarLoading;
 
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-large/</li>
-   * </ul>
-   */
-  @Nullable
+  @NonNull
   public final TextView textView18;
 
   @NonNull
@@ -252,9 +213,9 @@ public final class WalldownloadBinding implements ViewBinding {
       @NonNull LinearLayout linear19, @NonNull LinearLayout linear2, @NonNull LinearLayout linear20,
       @NonNull LinearLayout linear4, @NonNull LinearLayout linear5, @NonNull LinearLayout linear7,
       @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
-      @Nullable LinearLayout linearloadhires, @NonNull LinearLayout linearpreviewcard,
-      @NonNull LinearLayout previewStatusBar, @Nullable ProgressBar progressBar6,
-      @NonNull ProgressBar progressBarLoading, @Nullable TextView textView18,
+      @NonNull LinearLayout linearloadhires, @NonNull LinearLayout linearpreviewcard,
+      @NonNull LinearLayout previewStatusBar, @NonNull ProgressBar progressBar6,
+      @NonNull ProgressBar progressBarLoading, @NonNull TextView textView18,
       @NonNull TextView textView2, @NonNull TextView textView3, @NonNull TextView textView5,
       @NonNull TextView textViewCrop, @NonNull TextView textViewLoading,
       @NonNull TextView textview1, @NonNull TextView textview2, @NonNull TextView textview3,
@@ -601,6 +562,9 @@ public final class WalldownloadBinding implements ViewBinding {
 
       id = R.id.linearloadhires;
       LinearLayout linearloadhires = ViewBindings.findChildViewById(rootView, id);
+      if (linearloadhires == null) {
+        break missingId;
+      }
 
       id = R.id.linearpreviewcard;
       LinearLayout linearpreviewcard = ViewBindings.findChildViewById(rootView, id);
@@ -616,6 +580,9 @@ public final class WalldownloadBinding implements ViewBinding {
 
       id = R.id.progressBar6;
       ProgressBar progressBar6 = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar6 == null) {
+        break missingId;
+      }
 
       id = R.id.progress_bar_loading;
       ProgressBar progressBarLoading = ViewBindings.findChildViewById(rootView, id);
@@ -625,6 +592,9 @@ public final class WalldownloadBinding implements ViewBinding {
 
       id = R.id.textView18;
       TextView textView18 = ViewBindings.findChildViewById(rootView, id);
+      if (textView18 == null) {
+        break missingId;
+      }
 
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);

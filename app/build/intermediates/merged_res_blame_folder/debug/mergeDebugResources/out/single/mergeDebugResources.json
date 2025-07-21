@@ -284,10 +284,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\drawable-xhdpi\\wall_bottomleft.jpg"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-78:/layout_walldownload.xml.flat",
-        "source": "com.ios7.wallify.app-main-80:/layout/walldownload.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-78:\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-80:\\mipmap-hdpi\\ic_launcher.png"
     },
