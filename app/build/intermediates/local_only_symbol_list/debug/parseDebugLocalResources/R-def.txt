@@ -15,6 +15,7 @@ color md_theme_onSurfaceVariant
 color md_theme_primary
 color nav_item_color
 color splashbackground
+color switch_tint
 color textactivetab
 color textprimary
 color titletextcolor
@@ -42,6 +43,7 @@ drawable roundedbginfocard
 drawable roundedbginfocardcompleter
 drawable roundedbgviolent
 drawable settings_icon
+drawable switch_checked
 drawable wall_bottomleft
 drawable wall_bottomright
 drawable wall_icon
@@ -269,5 +271,6 @@ style AppTheme.FullScreen
 style AppTheme.PopupOverlay
 style BottomSheetActivity
 style BottomSheetAnimation
+style M3Switch
 style Theme.Material3BottomNav
 xml file_paths

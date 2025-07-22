@@ -2531,6 +2531,7 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color switch_tint
 color textactivetab
 color textprimary
 color titletextcolor
@@ -3802,6 +3803,7 @@ drawable roundedbginfocard
 drawable roundedbginfocardcompleter
 drawable roundedbgviolent
 drawable settings_icon
+drawable switch_checked
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -5367,6 +5369,7 @@ style CardView_Light
 style DialogWindowTheme
 style FloatingDialogTheme
 style FloatingDialogWindowTheme
+style M3Switch
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text

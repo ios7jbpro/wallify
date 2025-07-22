@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.materialswitch.MaterialSwitch;
 import com.ios7.wallify.R;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
@@ -66,13 +66,13 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final ListView listView;
 
   @NonNull
-  public final Switch switchColorPreviews;
+  public final MaterialSwitch switchColorPreviews;
 
   @NonNull
-  public final Switch switchDisableAnims;
+  public final MaterialSwitch switchDisableAnims;
 
   @NonNull
-  public final Switch switchDisableBlur;
+  public final MaterialSwitch switchDisableBlur;
 
   @NonNull
   public final TextView textView14;
@@ -111,8 +111,8 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       @NonNull LinearLayout linearColorPreviews, @NonNull LinearLayout linearDisableAnims,
       @NonNull LinearLayout linearDisableBlur, @NonNull LinearLayout linearManualDebug,
       @NonNull LinearLayout linearReinitSetup, @NonNull LinearLayout linearRestartApp,
-      @NonNull ListView listView, @NonNull Switch switchColorPreviews,
-      @NonNull Switch switchDisableAnims, @NonNull Switch switchDisableBlur,
+      @NonNull ListView listView, @NonNull MaterialSwitch switchColorPreviews,
+      @NonNull MaterialSwitch switchDisableAnims, @NonNull MaterialSwitch switchDisableBlur,
       @NonNull TextView textView14, @NonNull TextView textview2, @NonNull TextView textview3,
       @NonNull TextView textview40, @NonNull TextView textview5, @NonNull TextView textview8,
       @NonNull TextView textviewManualDebug, @NonNull TextView textviewReinitSetup,
@@ -259,19 +259,19 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       }
 
       id = R.id.switchColorPreviews;
-      Switch switchColorPreviews = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchColorPreviews = ViewBindings.findChildViewById(rootView, id);
       if (switchColorPreviews == null) {
         break missingId;
       }
 
       id = R.id.switchDisableAnims;
-      Switch switchDisableAnims = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchDisableAnims = ViewBindings.findChildViewById(rootView, id);
       if (switchDisableAnims == null) {
         break missingId;
       }
 
       id = R.id.switchDisableBlur;
-      Switch switchDisableBlur = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchDisableBlur = ViewBindings.findChildViewById(rootView, id);
       if (switchDisableBlur == null) {
         break missingId;
       }

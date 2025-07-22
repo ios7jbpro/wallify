@@ -141,15 +141,21 @@
 						android:orientation="horizontal"
 						android:padding="8dp">
 
-						<Switch
+						<com.google.android.material.materialswitch.MaterialSwitch
 							android:id="@+id/switchColorPreviews"
+							style="Widget.Material3.CompoundButton.Switch"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
 							android:padding="8dp"
 							android:text="@string/ExtractColors"
 							android:textColor="@color/textprimary"
-							android:textSize="12sp" />
+							android:textSize="12sp"
+							android:theme="@style/M3Switch"
+							app:thumbIcon="@drawable/switch_checked"
+							app:thumbIconTint="@color/textprimary"
+							app:thumbTint="@color/colorAccent"
+							app:trackTint="@color/switch_tint" />
 
 					</LinearLayout>
 
@@ -163,15 +169,21 @@
 						android:orientation="horizontal"
 						android:padding="8dp">
 
-						<Switch
+						<com.google.android.material.materialswitch.MaterialSwitch
 							android:id="@+id/switchDisableAnims"
+							style="Widget.Material3.CompoundButton.Switch"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
 							android:padding="8dp"
 							android:text="@string/DisableAnims"
 							android:textColor="@color/textprimary"
-							android:textSize="12sp" />
+							android:textSize="12sp"
+							android:theme="@style/M3Switch"
+							app:thumbIcon="@drawable/switch_checked"
+							app:thumbIconTint="@color/textprimary"
+							app:thumbTint="@color/colorAccent"
+							app:trackTint="@color/switch_tint"/>
 
 					</LinearLayout>
 
@@ -185,15 +197,21 @@
 						android:orientation="horizontal"
 						android:padding="8dp">
 
-						<Switch
+						<com.google.android.material.materialswitch.MaterialSwitch
 							android:id="@+id/switchDisableBlur"
+							style="Widget.Material3.CompoundButton.Switch"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_weight="1"
 							android:padding="8dp"
 							android:text="@string/DisableBlur"
 							android:textColor="@color/textprimary"
-							android:textSize="12sp" />
+							android:textSize="12sp"
+							android:theme="@style/M3Switch"
+							app:thumbIcon="@drawable/switch_checked"
+							app:thumbIconTint="@color/textprimary"
+							app:thumbTint="@color/colorAccent"
+							app:trackTint="@color/switch_tint"/>
 
 					</LinearLayout>
 				</LinearLayout>

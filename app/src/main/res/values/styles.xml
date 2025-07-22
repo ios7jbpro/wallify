@@ -46,6 +46,11 @@
         <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
         <item name="android:windowBackground">@color/background</item>
     </style>
+    <style name="M3Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbTint">@color/colorAccent</item>
+        <item name="trackTint">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorControlNormal</item>
+    </style>
 
     <style name="BottomSheetAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_up</item>

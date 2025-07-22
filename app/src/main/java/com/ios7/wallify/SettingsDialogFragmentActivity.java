@@ -16,6 +16,7 @@ import android.widget.*;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.*;
+import androidx.appcompat.widget.SwitchCompat;
 import androidx.fragment.app.DialogFragment;
 
 import com.ios7.wallify.MyClasses.EzTimer;
@@ -46,9 +47,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private CircleImageView circleimageview1;
 	private TextView textview4;
 	private TextView textviewtipsloading;
-	private Switch switchColorPreviews;
-	private Switch switchDisableAnims;
-	private Switch switchDisableBlur;
+	private SwitchCompat switchColorPreviews;
+	private SwitchCompat switchDisableAnims;
+	private SwitchCompat switchDisableBlur;
 	private ListView listView;
 	private LinearLayout linear30;
 	private LinearLayout linearReinitSetup;
@@ -107,7 +108,6 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 			switchDisableBlur.setChecked(true);
 		}
 
-		// Listen for switchColorPreviews on check changed
 		switchColorPreviews.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 			@Override
 			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

@@ -16,8 +16,8 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\settings_dialog_fragment.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-81:/layout_main.xml.flat",
-        "source": "com.ios7.wallify.app-main-83:/layout/main.xml"
+        "merged": "com.ios7.wallify.app-debug-81:/layout_settings_dialog_fragment.xml.flat",
+        "source": "com.ios7.wallify.app-main-83:/layout/settings_dialog_fragment.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
@@ -166,6 +166,14 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\mipmap-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\drawable-xhdpi_switch_checked.png.flat",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\drawable-xhdpi\\switch_checked.png"
+    },
+    {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\color_switch_tint.xml.flat",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\color\\switch_tint.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
