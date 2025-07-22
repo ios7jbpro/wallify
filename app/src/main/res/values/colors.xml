@@ -13,4 +13,6 @@
     <color name="colorControlHighlight">#BBDEFB</color>
     <color name="colorControlNormal">#90CAF9</color>
     <color name="RED">#FFFF0000</color>
+    <color name="md_theme_primary">@color/colorAccent</color>
+    <color name="md_theme_onSurfaceVariant">@color/colorAccent</color>
 </resources>

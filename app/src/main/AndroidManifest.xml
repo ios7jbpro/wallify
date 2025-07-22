@@ -19,7 +19,7 @@
         android:resizeableActivity="true"
         android:screenOrientation="unspecified"
         android:supportsPictureInPicture="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.Material3BottomNav"
         android:usesCleartextTraffic="true">
         <activity
             android:name=".AppRestarter"

@@ -11,6 +11,9 @@ color colorControlHighlight
 color colorControlNormal
 color colorPrimary
 color colorPrimaryDark
+color md_theme_onSurfaceVariant
+color md_theme_primary
+color nav_item_color
 color splashbackground
 color textactivetab
 color textprimary
@@ -266,4 +269,5 @@ style AppTheme.FullScreen
 style AppTheme.PopupOverlay
 style BottomSheetActivity
 style BottomSheetAnimation
+style Theme.Material3BottomNav
 xml file_paths

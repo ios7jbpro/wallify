@@ -88,13 +88,14 @@
 
 		<com.google.android.material.bottomnavigation.BottomNavigationView
 			android:id="@+id/bottomnav1"
+			style="@style/Theme.Material3BottomNav"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:background="@color/backgroundviolent"
 			android:hapticFeedbackEnabled="true"
-			app:itemIconTint="@color/colorAccent"
+			app:itemIconTint="@color/nav_item_color"
 			app:itemTextColor="@color/textprimary"
-			app:menu="@menu/bottomnav" >
+			app:menu="@menu/bottomnav">
 
 		</com.google.android.material.bottomnavigation.BottomNavigationView>
 

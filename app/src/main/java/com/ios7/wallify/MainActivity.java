@@ -41,6 +41,7 @@ import androidx.viewpager.widget.ViewPager.OnPageChangeListener;
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
 
 import java.io.*;
 import java.text.*;
@@ -286,7 +287,8 @@ public class MainActivity extends AppCompatActivity {
 
 		if (navDetector == "1") {
 			linear4.setVisibility(View.GONE);
-			bottom_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+			/*bottom_nav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 				@Override
 				public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 					int id = item.getItemId();
@@ -300,7 +302,28 @@ public class MainActivity extends AppCompatActivity {
 						return false;
 					}
 				}
+			});*/
+			// Migrate to modern material3 navigationbar
+			bottom_nav.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+				@Override
+				public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+					int id = item.getItemId();
+					if (id == R.id.page_1) {
+						viewpager1.setCurrentItem(0);
+						return true;
+					} else if (id == R.id.page_2) {
+						viewpager1.setCurrentItem(1);
+						return true;
+					} else {
+						return false;
+					}
+				}
 			});
+			int activeColor = ContextCompat.getColor(this, R.color.activetab);
+			ColorStateList colorStateList = ColorStateList.valueOf(activeColor);
+			bottom_nav.setItemActiveIndicatorColor(colorStateList);
+
+
 		} else if (navDetector == "2") {
 			linear4.setVisibility(View.GONE);
 			navview1.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

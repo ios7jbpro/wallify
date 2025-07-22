@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="27"
-        android:targetSdkVersion="34" />
+        android:targetSdkVersion="35" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -47,7 +47,7 @@
         android:screenOrientation="unspecified"
         android:supportsPictureInPicture="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/Theme.Material3BottomNav"
         android:usesCleartextTraffic="true" >
         <activity
             android:name="com.ios7.wallify.AppRestarter"

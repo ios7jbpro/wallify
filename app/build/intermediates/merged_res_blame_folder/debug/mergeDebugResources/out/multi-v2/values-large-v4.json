@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-79:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\f52ee1f8005bee6fc35c97b7506200cc\\transformed\\appcompat-1.7.0\\res\\values-large-v4\\values-large-v4.xml",
@@ -14,20 +14,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\517a29f9572219eff507b09edda77ea2\\transformed\\material-1.12.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\59d7f2b0b958a142a5695ae8fadbaa22\\transformed\\material-1.14.0-alpha03\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,169,285,407",
-                        "endColumns": "113,115,121,133",
-                        "endOffsets": "164,280,402,536"
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,169,285,419,555,677",
+                        "endColumns": "113,115,133,135,121,133",
+                        "endOffsets": "164,280,414,550,672,806"
                     },
                     "to": {
-                        "startLines": "11,12,13,14",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "752,866,982,1104",
-                        "endColumns": "113,115,121,133",
-                        "endOffsets": "861,977,1099,1233"
+                        "startLines": "11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "752,866,982,1116,1252,1374",
+                        "endColumns": "113,115,133,135,121,133",
+                        "endOffsets": "861,977,1111,1247,1369,1503"
                     }
                 }
             ]

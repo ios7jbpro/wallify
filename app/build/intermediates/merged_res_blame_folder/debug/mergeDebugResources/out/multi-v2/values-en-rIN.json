@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ios7.wallify.app-mergeDebugResources-76:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.ios7.wallify.app-mergeDebugResources-79:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\99aa19e2537dfec2c4bda1d0f8508f1d\\transformed\\foundation-release\\res\\values-en-rIN\\values-en-rIN.xml",
@@ -72,6 +72,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\f18eb83ca03c1fa9f006f45ae99fd973\\transformed\\core-1.16.0\\res\\values-en-rIN\\values-en-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,151,253,352,451,555,658,774",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "146,248,347,446,550,653,769,870"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,109",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "2762,2858,2960,3059,3158,3262,3365,10956",
+                        "endColumns": "95,101,98,98,103,102,115,100",
+                        "endOffsets": "2853,2955,3054,3153,3257,3360,3476,11052"
+                    }
+                },
+                {
                     "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\1789f3822bb68a1b25a5c8b79d065cce\\transformed\\ui-release\\res\\values-en-rIN\\values-en-rIN.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
@@ -86,23 +103,6 @@
                         "startOffsets": "3481,3573,3655,3749,3848,3935,4017,10338,10427,10511,10576,10640,10718,10883,11057,11134,11200",
                         "endColumns": "91,81,93,98,86,81,88,88,83,64,63,77,81,72,76,65,120",
                         "endOffsets": "3568,3650,3744,3843,3930,4012,4101,10422,10506,10571,10635,10713,10795,10951,11129,11195,11316"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\baris\\.gradle\\caches\\8.9\\transforms\\3e3dbb8b698303324171bd9019e07afe\\transformed\\core-1.13.1\\res\\values-en-rIN\\values-en-rIN.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,352,451,555,658,774",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "146,248,347,446,550,653,769,870"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,109",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "2762,2858,2960,3059,3158,3262,3365,10956",
-                        "endColumns": "95,101,98,98,103,102,115,100",
-                        "endOffsets": "2853,2955,3054,3153,3257,3360,3476,11052"
                     }
                 }
             ]
