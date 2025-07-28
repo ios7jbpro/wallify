@@ -101,13 +101,6 @@
 									android:scaleType="fitCenter"
 									app:srcCompat="@drawable/kotlin" />
 
-								<TextView
-									android:id="@+id/textView14"
-									android:layout_width="wrap_content"
-									android:layout_height="wrap_content"
-									android:layout_weight="0"
-									android:text="←TOTALLY uses kotlin, trust" />
-
 							</LinearLayout>
 						</LinearLayout>
 
