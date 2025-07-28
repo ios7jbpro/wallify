@@ -71,6 +71,16 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		return _view;
 	}
 
+
+	// am i STUPID?? WHY DID I NEVER THINK OF USING VOID CLASSES RATHER THAN COPY PASTING THE CODE EVERYWHERE??
+	// this code is now used instead of pasting it everywhere. just call noConnectionTerminator(); on wherever the app should show a warning and exit
+	private void noConnectionTerminator() {
+		Intent nointernet = new Intent();
+		nointernet.setClass(getActivity(), NoInternet.class);
+		startActivity(nointernet);
+		getActivity().finish();
+	}
+
 	private void initialize(Bundle _savedInstanceState, View _view) {
 		linear1 = _view.findViewById(R.id.linear1);
 		linear1.setClipToOutline(true);
@@ -377,6 +387,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 					try {
 						textviewtipsloading.setText("Cannot reach tips service");
 						textview3.setText("Cannot reach tips service");
+						noConnectionTerminator();
 					} catch (Exception ex) {
 						textviewtipsloading.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs and report this.");
 						textview3.setText("TipsLoader at SettingsDialogFragmentActivity has failed. Check logs and report this.");
@@ -408,6 +419,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 							public void onFailure(Call call, IOException e) {
 								textviewtipsloading.setText("Cannot reach tips service");
 								textview3.setText("Cannot reach tips service");
+								noConnectionTerminator();
 								e.printStackTrace();
 							}
 

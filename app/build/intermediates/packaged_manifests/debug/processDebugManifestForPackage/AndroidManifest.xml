@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ios7.wallify"
     android:versionCode="1"
-    android:versionName="1.5.2" >
+    android:versionName="1.5.3" >
 
     <uses-sdk
         android:minSdkVersion="27"
@@ -49,6 +49,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Material3BottomNav"
         android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.ios7.wallify.NoInternet"
+            android:exported="false" />
         <activity
             android:name="com.ios7.wallify.AppRestarter"
             android:exported="false" />

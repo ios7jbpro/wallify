@@ -4450,6 +4450,7 @@ id textView15
 id textView16
 id textView17
 id textView18
+id textView19
 id textView2
 id textView3
 id textView4
@@ -4659,6 +4660,7 @@ layout activity_app_abandoned
 layout activity_app_restarter
 layout activity_crop_wallpaper
 layout activity_manual_debug_enabler
+layout activity_no_internet
 layout activity_setup1
 layout activity_share_image_loader
 layout categorylist

@@ -22,6 +22,9 @@
         android:theme="@style/Theme.Material3BottomNav"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".NoInternet"
+            android:exported="false" />
+        <activity
             android:name=".AppRestarter"
             android:exported="false" />
         <activity

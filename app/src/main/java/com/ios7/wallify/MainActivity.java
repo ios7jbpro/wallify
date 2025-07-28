@@ -44,6 +44,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.*;
 import java.util.*;
 import java.util.regex.*;
@@ -76,7 +78,30 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.main);
 		initialize(_savedInstanceState);
 		initializeLogic();
+		// checkInternetOrCrash();
 	}
+
+	public void checkInternetOrCrash() {
+		new Thread(() -> {
+			try {
+				URL url = new URL("https://github.com");
+				HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+				connection.setConnectTimeout(3000); // 3 seconds timeout
+				connection.setReadTimeout(3000);
+				connection.setRequestMethod("HEAD");
+				connection.connect();
+
+				int responseCode = connection.getResponseCode();
+				if (responseCode != 200) {
+					throw new RuntimeException("GitHub unreachable - terminating by design.");
+				}
+
+			} catch (IOException e) {
+				throw new RuntimeException("No internet - terminating by design.", e);
+			}
+		}).start();
+	}
+
 
 
 	private void initialize(Bundle _savedInstanceState) {

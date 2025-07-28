@@ -16,10 +16,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\settings_dialog_fragment.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-debug-81:/layout_settings_dialog_fragment.xml.flat",
-        "source": "com.ios7.wallify.app-main-83:/layout/settings_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\mipmap-xxxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\mipmap-xxxhdpi\\ic_launcher_background.png"
     },
@@ -164,6 +160,10 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout-large\\activity_crop_wallpaper.xml"
     },
     {
+        "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\layout_activity_no_internet.xml.flat",
+        "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\activity_no_internet.xml"
+    },
+    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
@@ -214,6 +214,10 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\drawable-xhdpi_java.png.flat",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\drawable-xhdpi\\java.png"
+    },
+    {
+        "merged": "com.ios7.wallify.app-debug-81:/layout_activity_no_internet.xml.flat",
+        "source": "com.ios7.wallify.app-main-83:/layout/activity_no_internet.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-debug-81:\\mipmap-hdpi_ic_launcher.png.flat",
