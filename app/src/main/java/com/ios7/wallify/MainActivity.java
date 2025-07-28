@@ -241,6 +241,17 @@ public class MainActivity extends AppCompatActivity {
 			config.edit().putString("debugMode", "0").commit();
 		}
 
+		// Deprecation. Forces default values.
+		config.edit().putString("debugMode", "0").commit();
+		config.edit().putString("disableanims", "0").commit();
+		config.edit().putString("disableblur", "0").commit();
+		config.edit().putString("colorextraction", "1").commit();
+		textview1.setText(R.string.app_name);
+		// These options are now also hidden in settings.
+
+
+
+
 		Log.d("MANDEBUG", "Forceddebug state:"+config.getString("forcedDebug", ""));
 		Log.d("MANDEBUG", "DebugMode state:"+config.getString("debugMode", ""));
 

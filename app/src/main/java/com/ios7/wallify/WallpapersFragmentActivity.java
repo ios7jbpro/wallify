@@ -89,6 +89,14 @@ public class WallpapersFragmentActivity extends Fragment {
 	private RequestNetwork fetchcategoryjson;
 	private RequestNetwork.RequestListener _fetchcategoryjson_request_listener;
 	private String combinedOutput;
+
+
+	private void noConnectionTerminator() {
+		Intent nointernet = new Intent();
+		nointernet.setClass(getActivity(), NoInternet.class);
+		startActivity(nointernet);
+		getActivity().finish();
+	}
 	
 	@NonNull
 	@Override
@@ -163,30 +171,6 @@ public class WallpapersFragmentActivity extends Fragment {
 				}
 			}
 		});
-
-// Handle back button press
-		// Forget all this, it's jank. I'm building my own signal system.
-		//backPressedCallback = new OnBackPressedCallback(true) {
-		//	@Override
-		//	public void handleOnBackPressed() {
-		//		if (config.getString("currenttab", "").equals("0")) {
-		//			if (isGridVisible) {
-		//				gridlinear.setVisibility(View.GONE);
-		//				listview1.setVisibility(View.VISIBLE);
-		//				isGridVisible = false;
-		//				config.edit().putString("fragmentCanExit", "1").commit();
-		//			} else {
-		//				setEnabled(false); // temporarily disable this callback
-		//				requireActivity().getOnBackPressedDispatcher().onBackPressed(); // let activity handle it
-		//			}
-		//		}
-		//		// else: do nothing, let activity handle it directly
-		//	}
-		//};
-        //
-		// requireActivity()
-		//		.getOnBackPressedDispatcher()
-		//		.addCallback(getViewLifecycleOwner(), backPressedCallback);
 
 		// Create a timer that runs every 75 miliseconds
 		Handler handler = new Handler();
@@ -359,7 +343,12 @@ public class WallpapersFragmentActivity extends Fragment {
 				final String _tag = _param1;
 				final String _response = _param2;
 				final HashMap<String, Object> _responseHeaders = _param3;
-				categorylist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>() {}.getType());
+				try {
+					categorylist = new Gson().fromJson(_response, new TypeToken<ArrayList<HashMap<String, Object>>>() {
+					}.getType());
+				} catch (Exception e) {
+					noConnectionTerminator();
+				}
 				listview1.setAdapter(new Listview1Adapter(categorylist));
 				((BaseAdapter)listview1.getAdapter()).notifyDataSetChanged();
 				linearloading.setVisibility(View.GONE);

@@ -55,6 +55,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private LinearLayout linearReinitSetup;
 	private LinearLayout linearManualDebug;
 	private LinearLayout linearRestartApp;
+	private LinearLayout linearOptionsContainer;
 	private TextView textviewManualDebug;
 
 	private SharedPreferences config;
@@ -68,6 +69,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		listView = _view.findViewById(R.id.listView);
 		initialize(_savedInstanceState, _view);
 		initializeLogic();
+		optionsDeprecator();
 		return _view;
 	}
 
@@ -79,6 +81,12 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		nointernet.setClass(getActivity(), NoInternet.class);
 		startActivity(nointernet);
 		getActivity().finish();
+	}
+
+	private void optionsDeprecator() {
+		linearManualDebug.setVisibility(View.GONE);
+		linearOptionsContainer.setVisibility(View.GONE);
+		textview5.setVisibility(View.GONE);
 	}
 
 	private void initialize(Bundle _savedInstanceState, View _view) {
@@ -100,6 +108,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linearReinitSetup = _view.findViewById(R.id.linearReinitSetup);
 		linearManualDebug = _view.findViewById(R.id.linearManualDebug);
 		linearRestartApp = _view.findViewById(R.id.linearRestartApp);
+		linearOptionsContainer = _view.findViewById(R.id.LinearOptionsContainer);
 		textviewManualDebug = _view.findViewById(R.id.textviewManualDebug);
 		linearManualDebug.setVisibility(View.VISIBLE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
