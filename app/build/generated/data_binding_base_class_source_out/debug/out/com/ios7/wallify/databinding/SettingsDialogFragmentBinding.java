@@ -75,9 +75,6 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
   public final MaterialSwitch switchDisableBlur;
 
   @NonNull
-  public final TextView textView14;
-
-  @NonNull
   public final TextView textview2;
 
   @NonNull
@@ -113,8 +110,8 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
       @NonNull LinearLayout linearReinitSetup, @NonNull LinearLayout linearRestartApp,
       @NonNull ListView listView, @NonNull MaterialSwitch switchColorPreviews,
       @NonNull MaterialSwitch switchDisableAnims, @NonNull MaterialSwitch switchDisableBlur,
-      @NonNull TextView textView14, @NonNull TextView textview2, @NonNull TextView textview3,
-      @NonNull TextView textview40, @NonNull TextView textview5, @NonNull TextView textview8,
+      @NonNull TextView textview2, @NonNull TextView textview3, @NonNull TextView textview40,
+      @NonNull TextView textview5, @NonNull TextView textview8,
       @NonNull TextView textviewManualDebug, @NonNull TextView textviewReinitSetup,
       @NonNull TextView textviewRestartApp, @NonNull TextView textviewtipsloading) {
     this.rootView = rootView;
@@ -135,7 +132,6 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
     this.switchColorPreviews = switchColorPreviews;
     this.switchDisableAnims = switchDisableAnims;
     this.switchDisableBlur = switchDisableBlur;
-    this.textView14 = textView14;
     this.textview2 = textview2;
     this.textview3 = textview3;
     this.textview40 = textview40;
@@ -276,12 +272,6 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView14;
-      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
-      if (textView14 == null) {
-        break missingId;
-      }
-
       id = R.id.textview2;
       TextView textview2 = ViewBindings.findChildViewById(rootView, id);
       if (textview2 == null) {
@@ -340,7 +330,7 @@ public final class SettingsDialogFragmentBinding implements ViewBinding {
           imageView5, imageView6, imageView8, linear1, linear2, linear30, linearColorPreviews,
           linearDisableAnims, linearDisableBlur, linearManualDebug, linearReinitSetup,
           linearRestartApp, listView, switchColorPreviews, switchDisableAnims, switchDisableBlur,
-          textView14, textview2, textview3, textview40, textview5, textview8, textviewManualDebug,
+          textview2, textview3, textview40, textview5, textview8, textviewManualDebug,
           textviewReinitSetup, textviewRestartApp, textviewtipsloading);
     }
     String missingId = rootView.getResources().getResourceName(id);
