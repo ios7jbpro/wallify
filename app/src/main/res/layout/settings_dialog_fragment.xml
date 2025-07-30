@@ -119,6 +119,26 @@
 					android:textStyle="bold" />
 
 				<LinearLayout
+					android:id="@+id/linearRestartApp"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="8dp"
+					android:background="@drawable/roundedbgviolent"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:padding="8dp">
+
+					<TextView
+						android:id="@+id/textviewRestartApp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Restart app(for testing)"
+						android:textColor="@color/textprimary"
+						android:textSize="14sp" />
+				</LinearLayout>
+
+				<LinearLayout
 					android:id="@+id/LinearOptionsContainer"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
@@ -302,6 +322,36 @@
 					android:textColor="@color/textprimary"
 					android:textSize="12sp" />
 
+
+				<LinearLayout
+					android:id="@+id/linearReTip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:layout_marginBottom="4dp"
+					android:background="@drawable/roundedbgviolent"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:padding="4dp">
+
+					<ImageView
+						android:id="@+id/imageView7"
+						android:layout_width="24dp"
+						android:layout_height="24dp"
+						android:layout_weight="1"
+						app:srcCompat="@drawable/refresh"
+						app:tint="@color/textprimary"/>
+
+					<TextView
+						android:id="@+id/textviewReTip"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="4dp"
+						android:text="Re-roll tip"
+						android:textColor="@color/textprimary"
+						android:textSize="14sp" />
+				</LinearLayout>
+
 				<LinearLayout
 					android:id="@+id/linearManualDebug"
 					android:layout_width="match_parent"
@@ -319,27 +369,6 @@
 						android:layout_height="wrap_content"
 						android:padding="8dp"
 						android:text="Manually trigger debug mode"
-						android:textColor="@color/textprimary"
-						android:textSize="14sp" />
-				</LinearLayout>
-
-				<LinearLayout
-					android:id="@+id/linearRestartApp"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="8dp"
-					android:layout_marginBottom="4dp"
-					android:background="@drawable/roundedbgviolent"
-					android:gravity="center_vertical"
-					android:orientation="horizontal"
-					android:padding="8dp">
-
-					<TextView
-						android:id="@+id/textviewRestartApp"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="Restart app(for testing)"
 						android:textColor="@color/textprimary"
 						android:textSize="14sp" />
 				</LinearLayout>

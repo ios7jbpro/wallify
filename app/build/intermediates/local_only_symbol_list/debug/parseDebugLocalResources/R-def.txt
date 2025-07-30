@@ -37,6 +37,7 @@ drawable jhgg_2
 drawable kotlin
 drawable massage
 drawable phone
+drawable refresh
 drawable roundedbg
 drawable roundedbgdialog
 drawable roundedbginfocard
@@ -113,6 +114,7 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
 id imageView8
 id imageview1
 id imageview3
@@ -140,6 +142,7 @@ id linearColorPreviews
 id linearDisableAnims
 id linearDisableBlur
 id linearManualDebug
+id linearReTip
 id linearReinitSetup
 id linearRestartApp
 id linearloadhires
@@ -210,6 +213,7 @@ id textview40
 id textview5
 id textview8
 id textviewManualDebug
+id textviewReTip
 id textviewReinitSetup
 id textviewRestartApp
 id textviewtipsloading

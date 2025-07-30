@@ -3796,6 +3796,7 @@ int drawable notification_template_icon_low_bg 0x7f0700f8
 int drawable notification_tile_bg 0x7f0700f9
 int drawable notify_panel_notification_icon_bg 0x7f0700fa
 int drawable phone 0x7f0700fb
+int drawable refresh 0x7f07010b
 int drawable roundedbg 0x7f0700fc
 int drawable roundedbgdialog 0x7f0700fd
 int drawable roundedbginfocard 0x7f0700fe
@@ -4116,6 +4117,7 @@ int id imageView3 0x7f09012c
 int id imageView4 0x7f09012d
 int id imageView5 0x7f09012e
 int id imageView6 0x7f09012f
+int id imageView7 0x7f0902d1
 int id imageView8 0x7f090130
 int id imageview1 0x7f090131
 int id imageview3 0x7f090132
@@ -4163,6 +4165,7 @@ int id linearColorPreviews 0x7f09015b
 int id linearDisableAnims 0x7f09015c
 int id linearDisableBlur 0x7f09015d
 int id linearManualDebug 0x7f09015e
+int id linearReTip 0x7f0902d2
 int id linearReinitSetup 0x7f09015f
 int id linearRestartApp 0x7f090160
 int id linearloadhires 0x7f090161
@@ -4444,11 +4447,11 @@ int id textView11 0x7f090274
 int id textView12 0x7f090275
 int id textView127 0x7f090276
 int id textView13 0x7f090277
-int id textView15 0x7f090279
-int id textView16 0x7f09027a
-int id textView17 0x7f09027b
-int id textView18 0x7f09027c
-int id textView19 0x7f0902d1
+int id textView15 0x7f090278
+int id textView16 0x7f090279
+int id textView17 0x7f09027a
+int id textView18 0x7f09027b
+int id textView19 0x7f09027c
 int id textView2 0x7f09027d
 int id textView3 0x7f09027e
 int id textView4 0x7f09027f
@@ -4480,6 +4483,7 @@ int id textview40 0x7f090298
 int id textview5 0x7f090299
 int id textview8 0x7f09029a
 int id textviewManualDebug 0x7f09029b
+int id textviewReTip 0x7f0902d3
 int id textviewReinitSetup 0x7f09029c
 int id textviewRestartApp 0x7f09029d
 int id textviewtipsloading 0x7f09029e

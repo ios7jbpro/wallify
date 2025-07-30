@@ -57,6 +57,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private LinearLayout linearRestartApp;
 	private LinearLayout linearOptionsContainer;
 	private TextView textviewManualDebug;
+	private LinearLayout linearReTip;
 
 	private SharedPreferences config;
 	private Intent repolauncher;
@@ -86,7 +87,6 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	private void optionsDeprecator() {
 		linearManualDebug.setVisibility(View.GONE);
 		linearOptionsContainer.setVisibility(View.GONE);
-		textview5.setVisibility(View.GONE);
 	}
 
 	private void initialize(Bundle _savedInstanceState, View _view) {
@@ -110,6 +110,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		linearRestartApp = _view.findViewById(R.id.linearRestartApp);
 		linearOptionsContainer = _view.findViewById(R.id.LinearOptionsContainer);
 		textviewManualDebug = _view.findViewById(R.id.textviewManualDebug);
+		linearReTip = _view.findViewById(R.id.linearReTip);
 		linearManualDebug.setVisibility(View.VISIBLE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 
@@ -158,6 +159,17 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				}
 			}
 		});
+
+		linearReTip.setOnClickListener(
+				new View.OnClickListener() {
+					@Override
+					public void onClick(View view) {
+						textviewtipsloading.setVisibility(View.VISIBLE);
+						textview3.setVisibility(View.GONE);
+						tipsLoader();
+					}
+				}
+		);
 
 		if (config.getString("debugMode", "").equals("1")) {
 			textviewManualDebug.setText("Exit forced debug mode");
