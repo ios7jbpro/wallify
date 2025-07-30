@@ -8,10 +8,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\warning_dialog.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-80:/layout/settings_dialog_fragment.xml",
-        "source": "com.ios7.wallify.app-main-83:/layout/settings_dialog_fragment.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-80:\\layout\\categorylist.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\categorylist.xml"
     },
@@ -22,6 +18,10 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-80:\\layout\\activity_no_internet.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\activity_no_internet.xml"
+    },
+    {
+        "merged": "com.ios7.wallify.app-mergeDebugResources-80:/layout/main.xml",
+        "source": "com.ios7.wallify.app-main-83:/layout/main.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-80:\\layout\\activity_app_restarter.xml",

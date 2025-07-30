@@ -401,6 +401,7 @@ public class MainActivity extends AppCompatActivity {
 
 // finally change the color
 		window.setStatusBarColor(ContextCompat.getColor(this,R.color.backgroundviolent));
+		viewpager1.setClipToOutline(true);
 	}
 
 	public class PageLoaderInitFragmentAdapter extends FragmentStatePagerAdapter {
