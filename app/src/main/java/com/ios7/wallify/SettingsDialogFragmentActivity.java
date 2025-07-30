@@ -112,6 +112,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		textviewManualDebug = _view.findViewById(R.id.textviewManualDebug);
 		linearReTip = _view.findViewById(R.id.linearReTip);
 		linearManualDebug.setVisibility(View.VISIBLE);
+		linearReTip.setVisibility(View.GONE);
 		config = getContext().getSharedPreferences("config", Activity.MODE_PRIVATE);
 
 	}
@@ -166,6 +167,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 					public void onClick(View view) {
 						textviewtipsloading.setVisibility(View.VISIBLE);
 						textview3.setVisibility(View.GONE);
+						linearReTip.setVisibility(View.GONE);
 						tipsLoader();
 					}
 				}
@@ -528,6 +530,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				textview3.setText(textview3.getText() + "\n\nLast commit message:" + message + "\n\nClick me to see the wallpapers repository");
 				textviewtipsloading.setVisibility(View.GONE);
 				textview3.setVisibility(View.VISIBLE);
+				linearReTip.setVisibility(View.VISIBLE);
 			} else {
 				textviewtipsloading.setText("TipsLoader service failed, check logs");
 			}
