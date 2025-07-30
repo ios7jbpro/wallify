@@ -527,7 +527,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 		protected void onPostExecute(String message) {
 			// My own code to connect to TipsLoader, and add the commit message.
 			if (tipsFailed == false) {
-				textview3.setText(textview3.getText() + "\n\nLast commit message:" + message + "\n\nClick me to see the wallpapers repository");
+				textview3.setText(textview3.getText() + "\n-----------------\nLast commit message:" + message + "\n\nClick me to see the wallpapers repository");
 				textviewtipsloading.setVisibility(View.GONE);
 				textview3.setVisibility(View.VISIBLE);
 				linearReTip.setVisibility(View.VISIBLE);
