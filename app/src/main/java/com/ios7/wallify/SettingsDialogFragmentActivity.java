@@ -458,7 +458,9 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 							}
 						});
 					}
-					new FetchCommitMessageTask().execute();
+					EzTimer.runWithDelay(300, () -> {
+						new FetchCommitMessageTask().execute();
+					});
 				}
 			});
 		} catch (Exception e) {
