@@ -46,6 +46,7 @@
         android:resizeableActivity="true"
         android:screenOrientation="unspecified"
         android:supportsPictureInPicture="true"
+        android:testOnly="true"
         android:theme="@style/Theme.Material3BottomNav"
         android:usesCleartextTraffic="true" >
         <activity
