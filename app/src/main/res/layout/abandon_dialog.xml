@@ -24,7 +24,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The app might be abandoned because I don't have the mood to develop this project further anymore. This might change in the long future, but for now, there will be no updates. I don't see the point in developing the app anymore, as no one actually really cares. It might receive minor QOL updates and SDK updates overtime, but that's about it.\n\nOne of my other plans is to fill this app with wallpapers before actually letting it to rot.\n\nThe endpoint has been changed to the internal ihs.ios7.xyz repo.\n\nContributions are closed except for insider people."
+        android:text="The app might be abandoned because I don't have the mood to develop this project further anymore. This might change in the long future, but for now, updates will be slowed down(or stop). I don't see the point in developing the app, as no one actually really cares about my works anymore. It might receive minor QOL updates and SDK updates overtime, but that's about it.\n\nDo not ask about this."
         android:textColor="@color/textprimary" />
 
     <LinearLayout
@@ -51,12 +51,11 @@
             android:id="@+id/closebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
             android:layout_weight="1"
             android:background="@drawable/roundedbgviolent"
             android:gravity="center_horizontal|center_vertical"
             android:padding="8dp"
-            android:text="Close"
+            android:text="I understand"
             android:textColor="@color/textprimary"
             android:textSize="16dp"
             android:textStyle="bold" />

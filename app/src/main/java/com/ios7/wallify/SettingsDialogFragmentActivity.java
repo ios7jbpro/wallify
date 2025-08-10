@@ -118,7 +118,6 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 	}
 
 	private void initializeLogic() {
-		linear30.setVisibility(View.GONE);
 		if (config.getString("colorextraction", "").equals("1")) {
 			switchColorPreviews.setChecked(true);
 		}
@@ -323,6 +322,7 @@ public class SettingsDialogFragmentActivity extends DialogFragment {
 				// Find views inside the custom layout
 				TextView closebtn = customView.findViewById(R.id.closebtn);
 				TextView repobtn = customView.findViewById(R.id.repobtn);
+				repobtn.setVisibility(View.GONE);
 
 				// Create a dialog and set the custom view
 				AlertDialog.Builder _builder = new AlertDialog.Builder(requireContext());
