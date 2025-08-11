@@ -3674,6 +3674,7 @@ int drawable btn_radio_off_mtrl 0x7f07007e
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07007f
 int drawable btn_radio_on_mtrl 0x7f070080
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f070081
+int drawable chatpfp 0x7f07010c
 int drawable default_image 0x7f070082
 int drawable design_fab_background 0x7f070083
 int drawable design_ic_visibility 0x7f070084
@@ -4119,9 +4120,13 @@ int id imageView5 0x7f09012e
 int id imageView6 0x7f09012f
 int id imageView7 0x7f090130
 int id imageView8 0x7f090131
-int id imageViewPfp 0x7f0902d6
+int id imageViewPrePfp 0x7f0902da
 int id imageview1 0x7f090132
 int id imageview3 0x7f090133
+int id imageviewpfp 0x7f0902dc
+int id imageviewpfp3 0x7f0902dd
+int id imageviewprereact 0x7f0902e1
+int id imageviewreactionpfp 0x7f0902df
 int id immediateStop 0x7f090134
 int id included 0x7f090135
 int id indeterminate 0x7f090136
@@ -4169,10 +4174,12 @@ int id linearManualDebug 0x7f09015f
 int id linearReTip 0x7f090160
 int id linearReinitSetup 0x7f090161
 int id linearRestartApp 0x7f090162
+int id linearanotherpfpclipper 0x7f0902db
 int id linearloadhires 0x7f090163
 int id linearloading 0x7f090164
 int id linearpfpprevbg 0x7f0902d5
 int id linearpfppreview 0x7f0902d4
+int id linearprereact 0x7f0902e2
 int id linearpreviewcard 0x7f090165
 int id listMode 0x7f090166
 int id listView 0x7f090167
@@ -4314,6 +4321,7 @@ int id pathRelative 0x7f0901ee
 int id peekHeight 0x7f0901ef
 int id percent 0x7f0901f0
 int id pfpClipper 0x7f0902d9
+int id pfpClipper3 0x7f0902de
 int id pin 0x7f0901f1
 int id pooling_container_listener_holder_tag 0x7f0901f2
 int id position 0x7f0901f3
@@ -4334,6 +4342,7 @@ int id protection_layout 0x7f090201
 int id quitGui 0x7f090202
 int id radio 0x7f090203
 int id ratio 0x7f090204
+int id reactionpfpclipper 0x7f0902e0
 int id rectangle 0x7f090205
 int id rectangleHorizontalOnly 0x7f090206
 int id rectangleVerticalOnly 0x7f090207

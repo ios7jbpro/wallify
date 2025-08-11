@@ -1,48 +1,30 @@
 package com.ios7.wallify;
 
-import android.animation.*;
 import android.app.*;
 import android.app.Activity;
-import android.content.*;
-import android.content.ClipboardManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.*;
 import android.graphics.*;
 import android.graphics.drawable.*;
-import android.media.*;
-import android.net.*;
 import android.net.Uri;
 import android.os.*;
-import android.text.*;
-import android.text.style.*;
 import android.util.*;
-import android.view.*;
 import android.view.View;
-import android.view.View.*;
-import android.view.animation.*;
-import android.webkit.*;
 import android.widget.*;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.*;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.app.ShareCompat;
-import androidx.core.content.ContextCompat;
 import androidx.core.content.FileProvider;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.getkeepsafe.taptargetview.TapTarget;
 import com.getkeepsafe.taptargetview.TapTargetSequence;
-import com.getkeepsafe.taptargetview.TapTargetView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -50,16 +32,12 @@ import com.ios7.wallify.MyClasses.EzFade;
 import com.ios7.wallify.MyClasses.EzTimer;
 
 import java.io.*;
-import java.nio.file.attribute.FileTime;
-import java.text.*;
 import java.util.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.regex.*;
-import org.json.*;
+
 import androidx.palette.graphics.Palette;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 
 public class WalldownloadActivity extends AppCompatActivity {
 	
@@ -143,6 +121,13 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private LinearLayout linearpfpprevbg;
 	private ImageView imageviewpfp;
 	private LinearLayout pfpclipper;
+	private LinearLayout linearanotherpfpclipper;
+	private ImageView imageviewpfp3;
+	private LinearLayout pfpclipper3;
+	private ImageView imageviewreactionpfp;
+	private LinearLayout reactionpfpclipper;
+	private ImageView imageviewprereact;
+	private LinearLayout linearprereact;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -214,8 +199,15 @@ public class WalldownloadActivity extends AppCompatActivity {
 		linearpreviewcard = findViewById(R.id.linearpreviewcard);
 		linearpfppreview = findViewById(R.id.linearpfppreview);
 		linearpfpprevbg = findViewById(R.id.linearpfpprevbg);
-		imageviewpfp = findViewById(R.id.imageViewPfp);
+		imageviewpfp = findViewById(R.id.imageviewpfp);
 		pfpclipper = findViewById(R.id.pfpClipper);
+		linearanotherpfpclipper = findViewById(R.id.linearanotherpfpclipper);
+		imageviewpfp3 = findViewById(R.id.imageviewpfp3);
+		pfpclipper3 = findViewById(R.id.pfpClipper3);
+		imageviewreactionpfp = findViewById(R.id.imageviewreactionpfp);
+		reactionpfpclipper = findViewById(R.id.reactionpfpclipper);
+		imageviewprereact = findViewById(R.id.imageviewprereact);
+		linearprereact = findViewById(R.id.linearprereact);
 		linearpfppreview.setVisibility(View.GONE);
 		selectedItemList = getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		fetchJson = new RequestNetwork(this);
@@ -376,7 +368,13 @@ public class WalldownloadActivity extends AppCompatActivity {
 									imageview1.setImageDrawable(resource);
 									imageview3.setImageDrawable(resource);
 									imageviewpfp.setImageDrawable(resource);
+									imageviewpfp3.setImageDrawable(resource);
+									imageviewreactionpfp.setImageDrawable(resource);
 									pfpclipper.setClipToOutline(true);
+									linearanotherpfpclipper.setClipToOutline(true);
+									pfpclipper3.setClipToOutline(true);
+									reactionpfpclipper.setClipToOutline(true);
+									linearprereact.setClipToOutline(true);
 
 									Drawable drawable = imageview1.getDrawable();
 									if (!(drawable instanceof BitmapDrawable)) {

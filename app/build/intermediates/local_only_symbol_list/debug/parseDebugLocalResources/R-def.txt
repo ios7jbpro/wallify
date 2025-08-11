@@ -20,6 +20,7 @@ color textactivetab
 color textprimary
 color titletextcolor
 drawable activetab
+drawable chatpfp
 drawable default_image
 drawable devpfp1
 drawable fade
@@ -116,9 +117,13 @@ id imageView5
 id imageView6
 id imageView7
 id imageView8
-id imageViewPfp
+id imageViewPrePfp
 id imageview1
 id imageview3
+id imageviewpfp
+id imageviewpfp3
+id imageviewprereact
+id imageviewreactionpfp
 id leavebutton
 id linear1
 id linear10
@@ -146,10 +151,12 @@ id linearManualDebug
 id linearReTip
 id linearReinitSetup
 id linearRestartApp
+id linearanotherpfpclipper
 id linearloadhires
 id linearloading
 id linearpfpprevbg
 id linearpfppreview
+id linearprereact
 id linearpreviewcard
 id listView
 id listview1
@@ -164,6 +171,7 @@ id nextbutton3
 id page_1
 id page_2
 id pfpClipper
+id pfpClipper3
 id previewStatusBar
 id progressBar
 id progressBar2
@@ -174,6 +182,7 @@ id progressBar6
 id progress_bar_loading
 id progressbar1
 id quitGui
+id reactionpfpclipper
 id repobtn
 id rootlayout
 id rootlinear

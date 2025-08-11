@@ -108,13 +108,77 @@ public final class WalldownloadBinding implements ViewBinding {
    * </ul>
    */
   @Nullable
-  public final ImageView imageViewPfp;
+  public final ImageView imageViewPrePfp;
 
   @NonNull
   public final ImageView imageview1;
 
   @NonNull
   public final ImageView imageview3;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView imageviewpfp;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView imageviewpfp3;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView imageviewprereact;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final ImageView imageviewreactionpfp;
 
   @NonNull
   public final LinearLayout linear1;
@@ -164,6 +228,22 @@ public final class WalldownloadBinding implements ViewBinding {
   @NonNull
   public final LinearLayout linear9;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout linearanotherpfpclipper;
+
   @NonNull
   public final LinearLayout linearloadhires;
 
@@ -199,6 +279,22 @@ public final class WalldownloadBinding implements ViewBinding {
   @Nullable
   public final LinearLayout linearpfppreview;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout linearprereact;
+
   @NonNull
   public final LinearLayout linearpreviewcard;
 
@@ -218,6 +314,22 @@ public final class WalldownloadBinding implements ViewBinding {
   @Nullable
   public final LinearLayout pfpClipper;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout pfpClipper3;
+
   @NonNull
   public final LinearLayout previewStatusBar;
 
@@ -226,6 +338,22 @@ public final class WalldownloadBinding implements ViewBinding {
 
   @NonNull
   public final ProgressBar progressBarLoading;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-large/</li>
+   * </ul>
+   */
+  @Nullable
+  public final LinearLayout reactionpfpclipper;
 
   /**
    * This binding is not available in all configurations.
@@ -301,18 +429,22 @@ public final class WalldownloadBinding implements ViewBinding {
       @NonNull TextView button4, @NonNull LinearLayout color1, @NonNull LinearLayout color2,
       @NonNull LinearLayout color3, @NonNull LinearLayout color4, @NonNull LinearLayout color5,
       @NonNull LinearLayout color6, @NonNull LinearLayout colorpreviews,
-      @NonNull LinearLayout colorpreviewsloading, @Nullable ImageView imageViewPfp,
-      @NonNull ImageView imageview1, @NonNull ImageView imageview3, @NonNull LinearLayout linear1,
-      @NonNull FrameLayout linear10, @NonNull LinearLayout linear11, @NonNull LinearLayout linear14,
-      @NonNull LinearLayout linear15, @NonNull LinearLayout linear16,
-      @NonNull LinearLayout linear17, @NonNull LinearLayout linear18,
-      @NonNull LinearLayout linear19, @NonNull LinearLayout linear2, @NonNull LinearLayout linear20,
-      @NonNull LinearLayout linear4, @NonNull LinearLayout linear5, @NonNull LinearLayout linear7,
-      @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
-      @NonNull LinearLayout linearloadhires, @Nullable LinearLayout linearpfpprevbg,
-      @Nullable LinearLayout linearpfppreview, @NonNull LinearLayout linearpreviewcard,
-      @Nullable LinearLayout pfpClipper, @NonNull LinearLayout previewStatusBar,
-      @NonNull ProgressBar progressBar6, @NonNull ProgressBar progressBarLoading,
+      @NonNull LinearLayout colorpreviewsloading, @Nullable ImageView imageViewPrePfp,
+      @NonNull ImageView imageview1, @NonNull ImageView imageview3,
+      @Nullable ImageView imageviewpfp, @Nullable ImageView imageviewpfp3,
+      @Nullable ImageView imageviewprereact, @Nullable ImageView imageviewreactionpfp,
+      @NonNull LinearLayout linear1, @NonNull FrameLayout linear10, @NonNull LinearLayout linear11,
+      @NonNull LinearLayout linear14, @NonNull LinearLayout linear15,
+      @NonNull LinearLayout linear16, @NonNull LinearLayout linear17,
+      @NonNull LinearLayout linear18, @NonNull LinearLayout linear19, @NonNull LinearLayout linear2,
+      @NonNull LinearLayout linear20, @NonNull LinearLayout linear4, @NonNull LinearLayout linear5,
+      @NonNull LinearLayout linear7, @NonNull FrameLayout linear8, @NonNull LinearLayout linear9,
+      @Nullable LinearLayout linearanotherpfpclipper, @NonNull LinearLayout linearloadhires,
+      @Nullable LinearLayout linearpfpprevbg, @Nullable LinearLayout linearpfppreview,
+      @Nullable LinearLayout linearprereact, @NonNull LinearLayout linearpreviewcard,
+      @Nullable LinearLayout pfpClipper, @Nullable LinearLayout pfpClipper3,
+      @NonNull LinearLayout previewStatusBar, @NonNull ProgressBar progressBar6,
+      @NonNull ProgressBar progressBarLoading, @Nullable LinearLayout reactionpfpclipper,
       @Nullable TextView textView14, @NonNull TextView textView18, @NonNull TextView textView2,
       @Nullable TextView textView20, @NonNull TextView textView3, @NonNull TextView textView5,
       @NonNull TextView textViewCrop, @NonNull TextView textViewLoading,
@@ -343,9 +475,13 @@ public final class WalldownloadBinding implements ViewBinding {
     this.color6 = color6;
     this.colorpreviews = colorpreviews;
     this.colorpreviewsloading = colorpreviewsloading;
-    this.imageViewPfp = imageViewPfp;
+    this.imageViewPrePfp = imageViewPrePfp;
     this.imageview1 = imageview1;
     this.imageview3 = imageview3;
+    this.imageviewpfp = imageviewpfp;
+    this.imageviewpfp3 = imageviewpfp3;
+    this.imageviewprereact = imageviewprereact;
+    this.imageviewreactionpfp = imageviewreactionpfp;
     this.linear1 = linear1;
     this.linear10 = linear10;
     this.linear11 = linear11;
@@ -362,14 +498,18 @@ public final class WalldownloadBinding implements ViewBinding {
     this.linear7 = linear7;
     this.linear8 = linear8;
     this.linear9 = linear9;
+    this.linearanotherpfpclipper = linearanotherpfpclipper;
     this.linearloadhires = linearloadhires;
     this.linearpfpprevbg = linearpfpprevbg;
     this.linearpfppreview = linearpfppreview;
+    this.linearprereact = linearprereact;
     this.linearpreviewcard = linearpreviewcard;
     this.pfpClipper = pfpClipper;
+    this.pfpClipper3 = pfpClipper3;
     this.previewStatusBar = previewStatusBar;
     this.progressBar6 = progressBar6;
     this.progressBarLoading = progressBarLoading;
+    this.reactionpfpclipper = reactionpfpclipper;
     this.textView14 = textView14;
     this.textView18 = textView18;
     this.textView2 = textView2;
@@ -556,8 +696,8 @@ public final class WalldownloadBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageViewPfp;
-      ImageView imageViewPfp = ViewBindings.findChildViewById(rootView, id);
+      id = R.id.imageViewPrePfp;
+      ImageView imageViewPrePfp = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.imageview1;
       ImageView imageview1 = ViewBindings.findChildViewById(rootView, id);
@@ -570,6 +710,18 @@ public final class WalldownloadBinding implements ViewBinding {
       if (imageview3 == null) {
         break missingId;
       }
+
+      id = R.id.imageviewpfp;
+      ImageView imageviewpfp = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.imageviewpfp3;
+      ImageView imageviewpfp3 = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.imageviewprereact;
+      ImageView imageviewprereact = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.imageviewreactionpfp;
+      ImageView imageviewreactionpfp = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.linear1;
       LinearLayout linear1 = ViewBindings.findChildViewById(rootView, id);
@@ -667,6 +819,9 @@ public final class WalldownloadBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.linearanotherpfpclipper;
+      LinearLayout linearanotherpfpclipper = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.linearloadhires;
       LinearLayout linearloadhires = ViewBindings.findChildViewById(rootView, id);
       if (linearloadhires == null) {
@@ -679,6 +834,9 @@ public final class WalldownloadBinding implements ViewBinding {
       id = R.id.linearpfppreview;
       LinearLayout linearpfppreview = ViewBindings.findChildViewById(rootView, id);
 
+      id = R.id.linearprereact;
+      LinearLayout linearprereact = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.linearpreviewcard;
       LinearLayout linearpreviewcard = ViewBindings.findChildViewById(rootView, id);
       if (linearpreviewcard == null) {
@@ -687,6 +845,9 @@ public final class WalldownloadBinding implements ViewBinding {
 
       id = R.id.pfpClipper;
       LinearLayout pfpClipper = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.pfpClipper3;
+      LinearLayout pfpClipper3 = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.previewStatusBar;
       LinearLayout previewStatusBar = ViewBindings.findChildViewById(rootView, id);
@@ -705,6 +866,9 @@ public final class WalldownloadBinding implements ViewBinding {
       if (progressBarLoading == null) {
         break missingId;
       }
+
+      id = R.id.reactionpfpclipper;
+      LinearLayout reactionpfpclipper = ViewBindings.findChildViewById(rootView, id);
 
       id = R.id.textView14;
       TextView textView14 = ViewBindings.findChildViewById(rootView, id);
@@ -781,13 +945,14 @@ public final class WalldownloadBinding implements ViewBinding {
       return new WalldownloadBinding((LinearLayout) rootView, Game, ImageView4, ImageView5,
           ImageView6, LinearLayout1, LinearLayout4, LinearLayout5, Massage, More, Phone, SearchBg,
           Translator, button1, button2, button3, button4, color1, color2, color3, color4, color5,
-          color6, colorpreviews, colorpreviewsloading, imageViewPfp, imageview1, imageview3,
-          linear1, linear10, linear11, linear14, linear15, linear16, linear17, linear18, linear19,
-          linear2, linear20, linear4, linear5, linear7, linear8, linear9, linearloadhires,
-          linearpfpprevbg, linearpfppreview, linearpreviewcard, pfpClipper, previewStatusBar,
-          progressBar6, progressBarLoading, textView14, textView18, textView2, textView20,
-          textView3, textView5, textViewCrop, textViewLoading, textview1, textview2, textview3,
-          textview4, time2);
+          color6, colorpreviews, colorpreviewsloading, imageViewPrePfp, imageview1, imageview3,
+          imageviewpfp, imageviewpfp3, imageviewprereact, imageviewreactionpfp, linear1, linear10,
+          linear11, linear14, linear15, linear16, linear17, linear18, linear19, linear2, linear20,
+          linear4, linear5, linear7, linear8, linear9, linearanotherpfpclipper, linearloadhires,
+          linearpfpprevbg, linearpfppreview, linearprereact, linearpreviewcard, pfpClipper,
+          pfpClipper3, previewStatusBar, progressBar6, progressBarLoading, reactionpfpclipper,
+          textView14, textView18, textView2, textView20, textView3, textView5, textViewCrop,
+          textViewLoading, textview1, textview2, textview3, textview4, time2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
