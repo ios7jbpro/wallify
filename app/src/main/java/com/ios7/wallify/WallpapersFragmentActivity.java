@@ -514,6 +514,8 @@ public class WallpapersFragmentActivity extends Fragment {
 			final ImageView wallimage = _view.findViewById(R.id.wallimage);
 			final LinearLayout linear3 = _view.findViewById(R.id.linear3);
 			final TextView wallname = _view.findViewById(R.id.wallname);
+			boolean isPfp;
+			isPfp = false;
 			linear1.setAlpha(0);
 
 			Glide.with(getContext().getApplicationContext()).load(Uri.parse(config.getString("repo", "") + walllist.get((int)_position).get("lowprew").toString())).into(wallimage);
@@ -534,6 +536,22 @@ public class WallpapersFragmentActivity extends Fragment {
 				linear3.setVisibility(View.VISIBLE);
 				linear3.setBackgroundDrawable(getResources().getDrawable(R.drawable.fade));
 				wallname.setText(walllist.get((int)_position).get("name").toString());
+				String original = wallname.getText().toString();
+				if (original.startsWith("fpfp.")) {
+					isPfp = true;
+					// remove the "fpfp." part
+					original = original.substring("fpfp.".length());
+					// update the textview with the cleaned text
+					wallname.setText(original);
+				}
+				if (isPfp) {
+					linear2.post(() -> {
+						int width = linear2.getWidth();
+						ViewGroup.LayoutParams params = linear2.getLayoutParams();
+						params.height = width;
+						linear2.setLayoutParams(params);
+					});
+				}
 				if (config.getString("debugMode", "").equals("1")) {
 					wallname.setText(walllist.get((int)_position).get("name").toString()+"(index:"+_position+")");
 					linear3.setVisibility(View.VISIBLE);
