@@ -4119,6 +4119,7 @@ int id imageView5 0x7f09012e
 int id imageView6 0x7f09012f
 int id imageView7 0x7f090130
 int id imageView8 0x7f090131
+int id imageViewPfp 0x7f0902d6
 int id imageview1 0x7f090132
 int id imageview3 0x7f090133
 int id immediateStop 0x7f090134
@@ -4170,6 +4171,8 @@ int id linearReinitSetup 0x7f090161
 int id linearRestartApp 0x7f090162
 int id linearloadhires 0x7f090163
 int id linearloading 0x7f090164
+int id linearpfpprevbg 0x7f0902d5
+int id linearpfppreview 0x7f0902d4
 int id linearpreviewcard 0x7f090165
 int id listMode 0x7f090166
 int id listView 0x7f090167
@@ -4310,6 +4313,7 @@ int id path 0x7f0901ed
 int id pathRelative 0x7f0901ee
 int id peekHeight 0x7f0901ef
 int id percent 0x7f0901f0
+int id pfpClipper 0x7f0902d9
 int id pin 0x7f0901f1
 int id pooling_container_listener_holder_tag 0x7f0901f2
 int id position 0x7f0901f3
@@ -4447,12 +4451,14 @@ int id textView11 0x7f090276
 int id textView12 0x7f090277
 int id textView127 0x7f090278
 int id textView13 0x7f090279
+int id textView14 0x7f0902d7
 int id textView15 0x7f09027a
 int id textView16 0x7f09027b
 int id textView17 0x7f09027c
 int id textView18 0x7f09027d
 int id textView19 0x7f09027e
 int id textView2 0x7f09027f
+int id textView20 0x7f0902d8
 int id textView3 0x7f090280
 int id textView4 0x7f090281
 int id textView5 0x7f090282

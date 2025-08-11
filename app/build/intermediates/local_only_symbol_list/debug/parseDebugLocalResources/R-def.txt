@@ -116,6 +116,7 @@ id imageView5
 id imageView6
 id imageView7
 id imageView8
+id imageViewPfp
 id imageview1
 id imageview3
 id leavebutton
@@ -147,6 +148,8 @@ id linearReinitSetup
 id linearRestartApp
 id linearloadhires
 id linearloading
+id linearpfpprevbg
+id linearpfppreview
 id linearpreviewcard
 id listView
 id listview1
@@ -160,6 +163,7 @@ id nextbutton2
 id nextbutton3
 id page_1
 id page_2
+id pfpClipper
 id previewStatusBar
 id progressBar
 id progressBar2
@@ -186,12 +190,14 @@ id textView11
 id textView12
 id textView127
 id textView13
+id textView14
 id textView15
 id textView16
 id textView17
 id textView18
 id textView19
 id textView2
+id textView20
 id textView3
 id textView4
 id textView5

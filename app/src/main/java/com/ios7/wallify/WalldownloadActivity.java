@@ -47,6 +47,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ios7.wallify.MyClasses.EzFade;
+import com.ios7.wallify.MyClasses.EzTimer;
 
 import java.io.*;
 import java.nio.file.attribute.FileTime;
@@ -137,6 +138,11 @@ public class WalldownloadActivity extends AppCompatActivity {
 	private String mixedUrl;
 	private String allhexvals;
 	private Intent legacyWallLauncher;
+	private LinearLayout linearpreviewcard;
+	private LinearLayout linearpfppreview;
+	private LinearLayout linearpfpprevbg;
+	private ImageView imageviewpfp;
+	private LinearLayout pfpclipper;
 	
 	@Override
 	protected void onCreate(Bundle _savedInstanceState) {
@@ -205,6 +211,12 @@ public class WalldownloadActivity extends AppCompatActivity {
 		colorpreviews = findViewById(R.id.colorpreviews);
 		textViewCrop = findViewById(R.id.textViewCrop);
 		colorpreviewsloading = findViewById(R.id.colorpreviewsloading);
+		linearpreviewcard = findViewById(R.id.linearpreviewcard);
+		linearpfppreview = findViewById(R.id.linearpfppreview);
+		linearpfpprevbg = findViewById(R.id.linearpfpprevbg);
+		imageviewpfp = findViewById(R.id.imageViewPfp);
+		pfpclipper = findViewById(R.id.pfpClipper);
+		linearpfppreview.setVisibility(View.GONE);
 		selectedItemList = getSharedPreferences("selectedItemList", Activity.MODE_PRIVATE);
 		fetchJson = new RequestNetwork(this);
 		downloadWall = new RequestNetwork(this);
@@ -343,6 +355,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 		});
 
 		_fetchJson_request_listener = new RequestNetwork.RequestListener() {
+			boolean isPfp;
 			@Override
 			public void onResponse(String _param1, String _param2, HashMap<String, Object> _param3) {
 				final String _tag = _param1;
@@ -354,8 +367,6 @@ public class WalldownloadActivity extends AppCompatActivity {
 				if (config.getString("wallpaperName", "").equals("")) {
 					textview1.setText(config.getString("categoryName", ""));
 				}
-				// mixedUrl = config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("link").toString();
-				// Log.d("WallpaperDebug", "Mixed URL = '" + mixedUrl + "'");
 				try {
 					Glide.with(getApplicationContext())
 							.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int)Double.parseDouble(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString()))
@@ -363,6 +374,9 @@ public class WalldownloadActivity extends AppCompatActivity {
 								@Override
 								public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
 									imageview1.setImageDrawable(resource);
+									imageview3.setImageDrawable(resource);
+									imageviewpfp.setImageDrawable(resource);
+									pfpclipper.setClipToOutline(true);
 
 									Drawable drawable = imageview1.getDrawable();
 									if (!(drawable instanceof BitmapDrawable)) {
@@ -497,7 +511,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 				}
 
 				try {
-					Glide.with(getApplicationContext())
+					/* Glide.with(getApplicationContext())
 							.load(Uri.parse(config.getString("repo", "") + walljsonlistmap.get((int) Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("lowprew").toString()))
 							.into(new SimpleTarget<Drawable>() {
 								@Override
@@ -508,7 +522,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 								@Override
 								public void onLoadFailed(@Nullable Drawable errorDrawable) {
 								}
-							});
+							}); */
 				} catch (Exception e) {
 					Log.e("WallpaperDebug", "Exception: " + e.getMessage());
 					//Log.e("WallpaperDebug", "Tried to load in:" + config.getString("repo", "") + walljsonlistmap.get((int)Integer.parseInt(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString());
@@ -518,6 +532,18 @@ public class WalldownloadActivity extends AppCompatActivity {
 				}
 				try {
 					textview1.setText(walljsonlistmap.get((int) Double.parseDouble(selectedItemList.getString("selectedWall", ""))).get("name").toString());
+					String original = textview1.getText().toString();
+					isPfp = false;
+					if (original.startsWith("fpfp.")) {
+						isPfp = true;
+						linearpfppreview.setVisibility(View.VISIBLE);
+						button2.setVisibility(View.GONE);
+						// remove the "fpfp." part
+						original = original.substring("fpfp.".length());
+						// update the textview with the cleaned text
+						textview1.setText(original);
+
+					}
 				} catch (Exception e) {
 					Log.e("WallpaperDebug", "Exception: " + e.getMessage());
 					//Log.e("WallpaperDebug", "Tried to load in:" + config.getString("repo", "") + walljsonlistmap.get((int)Integer.parseInt(selectedItemList.getString("selectedWall", "0"))).get("lowprew").toString());
@@ -538,6 +564,16 @@ public class WalldownloadActivity extends AppCompatActivity {
 					Log.e("WallpaperDebug", "repo:" + config.getString("repo", ""));
 					Log.e("WallpaperDebug", "selectedWall:" + selectedItemList.getString("selectedWall", ""));
 				}
+
+				if(isPfp){
+					linearpreviewcard.setVisibility(View.GONE);
+					textView3.setVisibility(View.GONE);
+					EzTimer.runWithDelay(150, () -> {
+							colorpreviews.setVisibility(View.GONE);
+					});
+					colorpreviewsloading.setVisibility(View.GONE);
+				}
+
 			}
 			
 			@Override

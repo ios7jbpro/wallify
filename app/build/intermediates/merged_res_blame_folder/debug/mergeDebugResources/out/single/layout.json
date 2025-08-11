@@ -16,10 +16,6 @@
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\abandon_dialog.xml"
     },
     {
-        "merged": "com.ios7.wallify.app-mergeDebugResources-80:/layout/abandon_dialog.xml",
-        "source": "com.ios7.wallify.app-main-83:/layout/abandon_dialog.xml"
-    },
-    {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-80:\\layout\\activity_no_internet.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\activity_no_internet.xml"
     },
@@ -74,6 +70,10 @@
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-80:\\layout\\walldownloadkotlin.xml",
         "source": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-main-83:\\layout\\walldownloadkotlin.xml"
+    },
+    {
+        "merged": "com.ios7.wallify.app-mergeDebugResources-80:/layout/walldownload.xml",
+        "source": "com.ios7.wallify.app-main-83:/layout/walldownload.xml"
     },
     {
         "merged": "C:\\Users\\baris\\.gradle\\daemon\\8.9\\com.ios7.wallify.app-mergeDebugResources-80:\\layout\\activity_app_abandoned.xml",
