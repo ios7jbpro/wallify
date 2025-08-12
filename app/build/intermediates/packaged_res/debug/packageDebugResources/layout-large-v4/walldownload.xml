@@ -439,6 +439,267 @@
 
 				</LinearLayout>
 
+				<LinearLayout
+					android:id="@+id/linearpfppreview"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="6dp"
+					android:background="@drawable/roundedbgviolent"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:padding="8dp">
+
+					<LinearLayout
+						android:id="@+id/linearpfpprevbg"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="@drawable/roundedbg"
+						android:orientation="vertical"
+						android:padding="16dp">
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_weight="0"
+							android:orientation="horizontal">
+
+							<LinearLayout
+								android:id="@+id/pfpClipper"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="0"
+								android:background="@drawable/roundedbg"
+								android:clipChildren="true"
+								android:orientation="horizontal">
+
+								<ImageView
+									android:id="@+id/imageviewpfp"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_weight="0"
+									android:scaleType="centerCrop"
+									app:srcCompat="@android:mipmap/sym_def_app_icon" />
+							</LinearLayout>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:layout_weight="0"
+								android:orientation="vertical">
+
+								<TextView
+									android:id="@+id/textView14"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="AGreatfulDisplayName"
+									android:textColor="@color/textprimary"
+									android:textSize="17sp"
+									android:textStyle="bold" />
+
+								<TextView
+									android:id="@+id/textView20"
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:singleLine="false"
+									android:text="A wonderful message that attempts to wrap lines just so you see the amazing work"
+									android:textColor="@color/textprimary" />
+							</LinearLayout>
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="8dp"
+							android:layout_weight="0"
+							android:orientation="horizontal">
+
+							<LinearLayout
+								android:id="@+id/linearanotherpfpclipper"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="0"
+								android:background="@drawable/roundedbg"
+								android:clipChildren="true"
+								android:orientation="horizontal">
+
+								<ImageView
+									android:id="@+id/imageViewPrePfp"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_weight="0"
+									app:srcCompat="@drawable/chatpfp" />
+							</LinearLayout>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:layout_weight="0"
+								android:orientation="vertical">
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="Someone Else"
+									android:textColor="@color/textprimary"
+									android:textSize="17sp"
+									android:textStyle="bold" />
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:singleLine="false"
+									android:text="Whoa, that image of yours look gorgeous!"
+									android:textColor="@color/textprimary" />
+
+								<LinearLayout
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:layout_marginTop="4dp"
+									android:background="@drawable/roundedbgviolent"
+									android:gravity="center_horizontal|center_vertical"
+									android:orientation="horizontal"
+									android:padding="6dp">
+
+									<LinearLayout
+										android:id="@+id/reactionpfpclipper"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_weight="0"
+										android:background="@drawable/roundedbgviolent"
+										android:orientation="horizontal">
+
+										<ImageView
+											android:id="@+id/imageviewreactionpfp"
+											android:layout_width="20dp"
+											android:layout_height="20dp"
+											android:layout_weight="0"
+											android:scaleType="centerCrop"
+											app:srcCompat="@android:mipmap/sym_def_app_icon" />
+									</LinearLayout>
+
+									<TextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginLeft="4dp"
+										android:layout_weight="1"
+										android:text="❤️" />
+								</LinearLayout>
+							</LinearLayout>
+						</LinearLayout>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="match_parent"
+							android:layout_marginTop="8dp"
+							android:layout_weight="0"
+							android:orientation="horizontal">
+
+							<LinearLayout
+								android:id="@+id/pfpClipper3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_weight="0"
+								android:background="@drawable/roundedbg"
+								android:clipChildren="true"
+								android:orientation="horizontal">
+
+								<ImageView
+									android:id="@+id/imageviewpfp3"
+									android:layout_width="50dp"
+									android:layout_height="50dp"
+									android:layout_weight="0"
+									android:scaleType="centerCrop"
+									app:srcCompat="@android:mipmap/sym_def_app_icon" />
+							</LinearLayout>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginLeft="8dp"
+								android:layout_weight="0"
+								android:orientation="vertical">
+
+								<TextView
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:text="AGreatfulDisplayName"
+									android:textColor="@color/textprimary"
+									android:textSize="17sp"
+									android:textStyle="bold" />
+
+								<TextView
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:singleLine="false"
+									android:text="Why thank you! I'm flattared!"
+									android:textColor="@color/textprimary" />
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="match_parent"
+									android:layout_marginTop="4dp"
+									android:orientation="horizontal">
+
+									<LinearLayout
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginRight="8dp"
+										android:background="@drawable/roundedbgviolent"
+										android:gravity="center_horizontal|center_vertical"
+										android:orientation="horizontal"
+										android:padding="6dp">
+
+										<LinearLayout
+											android:id="@+id/linearprereact"
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:layout_weight="0"
+											android:background="@drawable/roundedbgviolent"
+											android:orientation="horizontal">
+
+											<ImageView
+												android:id="@+id/imageviewprereact"
+												android:layout_width="20dp"
+												android:layout_height="20dp"
+												android:layout_weight="0"
+												android:scaleType="centerCrop"
+												app:srcCompat="@drawable/chatpfp" />
+										</LinearLayout>
+
+										<TextView
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:layout_marginLeft="4dp"
+											android:layout_weight="1"
+											android:text="💖" />
+									</LinearLayout>
+
+									<LinearLayout
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginRight="8dp"
+										android:background="@drawable/roundedbgviolent"
+										android:gravity="center_horizontal|center_vertical"
+										android:orientation="horizontal"
+										android:padding="6dp">
+
+										<TextView
+											android:layout_width="wrap_content"
+											android:layout_height="wrap_content"
+											android:layout_weight="1"
+											android:alpha="0.5"
+											android:text="+1 thread" />
+									</LinearLayout>
+								</LinearLayout>
+
+							</LinearLayout>
+						</LinearLayout>
+
+					</LinearLayout>
+				</LinearLayout>
+
 				<TextView
 					android:id="@+id/textView3"
 					android:layout_width="match_parent"

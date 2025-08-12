@@ -30,6 +30,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.ios7.wallify.MyClasses.EzFade;
 import com.ios7.wallify.MyClasses.EzTimer;
+import com.ios7.wallify.MyClasses.EzTimerLooped;
 
 import java.io.*;
 import java.util.*;
@@ -536,6 +537,7 @@ public class WalldownloadActivity extends AppCompatActivity {
 						isPfp = true;
 						linearpfppreview.setVisibility(View.VISIBLE);
 						button2.setVisibility(View.GONE);
+						textViewCrop.setVisibility(View.GONE);
 						// remove the "fpfp." part
 						original = original.substring("fpfp.".length());
 						// update the textview with the cleaned text
@@ -569,6 +571,11 @@ public class WalldownloadActivity extends AppCompatActivity {
 					EzTimer.runWithDelay(150, () -> {
 							colorpreviews.setVisibility(View.GONE);
 					});
+					EzTimerLooped loopedTimer = new EzTimerLooped();
+					loopedTimer.start(100, () -> {
+						colorpreviews.setVisibility(View.GONE);
+					});
+
 					colorpreviewsloading.setVisibility(View.GONE);
 				}
 
